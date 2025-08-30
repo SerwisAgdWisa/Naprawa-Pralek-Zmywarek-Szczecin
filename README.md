@@ -1,0 +1,1 @@
+# Naprawa-Pralek-Zmywarek-Szczecin
