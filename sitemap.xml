@@ -1,8 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://vikacumna-glitch.github.io/Naprawa-Pralek-Zmywarek-Szczecin/</loc>
-    <lastmod>2025-09-02</lastmod>
-    <priority>1.0</priority>
+    <loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/</loc>
+    <lastmod>2023-09-02</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/o-nas.html</loc>
+    <lastmod>2023-09-02</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/uslugi.html</loc>
+    <lastmod>2023-09-02</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/kontakt.html</loc>
+    <lastmod>2023-09-02</lastmod>
+    <priority>0.64</priority>
   </url>
 </urlset>
