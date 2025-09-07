@@ -1,87 +1,27 @@
 <!DOCTYPE html>
-
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Naprawa Pralek Stargard | Serwis Pralek AGD</title>
-  <meta name="description" content="Naprawa pralek Stargard – szybki serwis, dojazd do klienta. Pralka nie wiruje, nie pobiera wody, nie grzeje? Zadzwoń lub napisz na WhatsApp – naprawimy!">
-  <meta name="keywords" content="naprawa pralek Stargard, serwis pralek Stargard, pralka nie wiruje, pralka nie pobiera wody, pralka nie grzeje, naprawa AGD Stargard">
+  <title>Naprawa Pralek Stargard | Serwis AGD</title>
+  <meta name="description" content="Profesjonalna naprawa pralek w Stargardzie. Pralka nie wiruje, nie pobiera wody, głośno odwirowuje? Zadzwoń lub napisz na WhatsApp – szybka naprawa!">
+  <meta name="keywords" content="pralka nie wiruje Stargard, pralka głośno odwirowuje Stargard, pralka nie pobiera wody Stargard, naprawa AGD Stargard, serwis pralek Stargard">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-    }
-    section {
-      padding: 20px;
-      max-width: 600px;
-      margin: auto;
-      background: white;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      margin-top: 20px;
-    }
-    form label {
-      display: block;
-      margin-bottom: 10px;
-      font-weight: bold;
-    }
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
-    button {
-      margin-top: 15px;
-      padding: 12px;
-      background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
-      border: none;
-      color: white;
-      font-size: 16px;
-      cursor: pointer;
-      border-radius: 25px;
-      width: 100%;
-      font-weight: bold;
-    }
-    button:hover {
-      background: linear-gradient(135deg, #e55a2b 0%, #de831a 100%);
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #eee;
-      margin-top: 20px;
-    }
-    .contact-info {
-      background: #e6f3ff;
-      padding: 15px;
-      border-radius: 5px;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .phone-link {
-      color: #667eea;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 18px;
-    }
-    .phone-link:hover {
-      text-decoration: underline;
-    }
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f9f9f9; color:#333; }
+    header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; text-align:center; }
+    header h1 { margin:0; }
+    section { padding:20px; max-width:600px; margin:auto; background:white; box-shadow:0 2px 5px rgba(0,0,0,0.1); margin-top:20px; }
+    form label { display:block; margin-bottom:10px; font-weight:bold; }
+    input, textarea { width:100%; padding:10px; margin-top:5px; border:1px solid #ccc; border-radius:4px; box-sizing:border-box; }
+    button { margin-top:15px; padding:12px; background:linear-gradient(135deg,#ff6b35 0%,#f7931e 100%); border:none; color:white; font-size:16px; cursor:pointer; border-radius:25px; width:100%; font-weight:bold; }
+    button:hover { background:linear-gradient(135deg,#e55a2b 0%,#de831a 100%); }
+    footer { text-align:center; padding:20px; background:#eee; margin-top:20px; }
+    .contact-info { background:#e6f3ff; padding:15px; border-radius:5px; text-align:center; margin-bottom:20px; }
+    .phone-link { color:#667eea; text-decoration:none; font-weight:bold; font-size:18px; }
+    .phone-link:hover { text-decoration:underline; }
+    .top-button { text-align:center; margin-top:10px; }
+    .top-button a { display:inline-block; padding:12px 25px; background:linear-gradient(135deg,#ff6b35 0%,#f7931e 100%); color:white; font-weight:bold; border-radius:25px; text-decoration:none; font-size:16px; }
+    .top-button a:hover { background:linear-gradient(135deg,#e55a2b 0%,#de831a 100%); }
   </style>
 </head>
 <body>
@@ -91,12 +31,18 @@
   <p>Profesjonalny serwis pralek w Stargardzie</p>
 </header>
 
+<!-- Кнопка сверху -->
+<section class="top-button">
+  <a href="#form">Zamów Naprawę</a>
+</section>
+
 <section>
   <div class="contact-info">
     <p>📞 Zadzwoń teraz: <a href="tel:+48721988949" class="phone-link">+48 721 988 949</a></p>
     <p>💬 WhatsApp: <a href="https://wa.me/48721988949" class="phone-link">+48 721 988 949</a></p>
   </div>
-  <form onsubmit="sendToWhatsApp(event)">
+
+  <form id="form" onsubmit="sendToWhatsApp(event)">
     <label>Imię i nazwisko:
       <input type="text" id="name" required>
     </label>
@@ -119,7 +65,6 @@
 <section>
   <h2>Naprawa pralek w Stargardzie</h2>
   <p>Oferujemy kompleksowy serwis pralek wszystkich marek w Stargardzie i okolicach. Dojazd do klienta, szybka diagnoza i profesjonalna naprawa.</p>
-
   <h3>Typowe usterki pralek:</h3>
   <ul>
     <li>Pralka nie pobiera wody</li>
@@ -130,18 +75,6 @@
     <li>Pralka hałasuje podczas prania</li>
     <li>Pralka nie odpompowuje wody</li>
     <li>Błędy na wyświetlaczu</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Dlaczego warto wybrać nasz serwis?</h2>
-  <ul>
-    <li>✓ Dojazd do klienta w Stargardzie</li>
-    <li>✓ Diagnoza i wycena</li>
-    <li>✓ Oryginalne części zamienne</li>
-    <li>✓ Gwarancja na wykonane usługi</li>
-    <li>✓ Wieloletnie doświadczenie</li>
-    <li>✓ Konkurencyjne ceny</li>
   </ul>
 </section>
 
