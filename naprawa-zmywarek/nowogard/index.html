@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Naprawa Zmywarek Nowogard | Usługi AGD</title>
-  <meta name="description" content="Naprawa zmywarek Nowogard – szybki serwis, dojazd do klienta. Zmywarka nie pobiera wody, nie grzeje, nie domywa naczyń? Zadzwoń lub napisz na WhatsApp – naprawimy!">
-  <meta name="keywords" content="naprawa zmywarek Nowogard, serwis zmywarek Nowogard, zmywarka nie pobiera wody, zmywarka nie grzeje, zmywarka nie domywa naczyń, naprawa AGD Nowogard">
+  <title>Naprawa Pralek Nowogard | Serwis Pralek AGD</title>
+  <meta name="description" content="Naprawa pralek Nowogard – szybki serwis, dojazd do klienta. Pralka nie wiruje, nie pobiera wody, nie grzeje? Zadzwoń lub napisz na WhatsApp – naprawimy!">
+  <meta name="keywords" content="naprawa pralek Nowogard, serwis pralek Nowogard, pralka nie wiruje, pralka nie pobiera wody, pralka nie grzeje, naprawa AGD Nowogard">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -15,7 +16,7 @@
       color: #333;
     }
     header {
-      background: #0073e6;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       color: white;
       padding: 20px;
       text-align: center;
@@ -42,19 +43,22 @@
       margin-top: 5px;
       border: 1px solid #ccc;
       border-radius: 4px;
+      box-sizing: border-box;
     }
     button {
       margin-top: 15px;
       padding: 12px;
-      background: #0073e6;
+      background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
       border: none;
       color: white;
       font-size: 16px;
       cursor: pointer;
-      border-radius: 4px;
+      border-radius: 25px;
+      width: 100%;
+      font-weight: bold;
     }
     button:hover {
-      background: #005bb5;
+      background: linear-gradient(135deg, #e55a2b 0%, #de831a 100%);
     }
     footer {
       text-align: center;
@@ -62,28 +66,37 @@
       background: #eee;
       margin-top: 20px;
     }
+    .contact-info {
+      background: #e6f3ff;
+      padding: 15px;
+      border-radius: 5px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .phone-link {
+      color: #667eea;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .phone-link:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Naprawa Zmywarek Nowogard</h1>
-  <p>Szybki serwis zmywarek – zgłoś problem online!</p>
+  <h1>Naprawa Pralek Nowogard</h1>
+  <p>Profesjonalny serwis pralek w Goleniowie</p>
 </header>
 
 <section>
-  <h2>Typowe usterki zmywarek:</h2>
-  <ul>
-    <li>Zmywarka nie pobiera wody</li>
-    <li>Zmywarka nie grzeje</li>
-    <li>Zmywarka nie domywa naczyń</li>
-    <li>Zmywarka zatrzymuje program</li>
-    <li>Zmywarka przecieka</li>
-  </ul>
-</section>
+  <div class="contact-info">
+    <p>📞 Zadzwoń teraz: <a href="tel:+48721988949" class="phone-link">+48 721 988 949</a></p>
+    <p>💬 WhatsApp: <a href="https://wa.me/48721988949" class="phone-link">+48 721 988 949</a></p>
+  </div>
 
-<section>
-  <h2>Zgłoś problem przez WhatsApp</h2>
   <form onsubmit="sendToWhatsApp(event)">
     <label>Imię i nazwisko:
       <input type="text" id="name" required>
@@ -91,15 +104,50 @@
     <label>Telefon:
       <input type="tel" id="phone" required>
     </label>
-    <label>Opis usterki:
-      <textarea id="message" rows="4" required></textarea>
+    <label>Marka i model pralki:
+      <input type="text" id="brand" placeholder="np. Samsung WF80F5E2W2W">
     </label>
-    <button type="submit">Wyślij na WhatsApp</button>
+    <label>Opis usterki:
+      <textarea id="message" rows="4" required placeholder="Opisz dokładnie problem z pralką..."></textarea>
+    </label>
+    <label>Adres w Goleniowie:
+      <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania">
+    </label>
+    <button type="submit">Zamów Naprawę</button>
   </form>
 </section>
 
+<section>
+  <h2>Naprawa pralek w Nowogardzie</h2>
+  <p>Oferujemy kompleksowy serwis pralek wszystkich marek w Goleniowie i okolicach. Dojazd do klienta, szybka diagnoza i profesjonalna naprawa.</p>
+
+  <h3>Typowe usterki pralek:</h3>
+  <ul>
+    <li>Pralka nie pobiera wody</li>
+    <li>Pralka nie wiruje</li>
+    <li>Pralka nie grzeje wody</li>
+    <li>Pralka zatrzymuje program</li>
+    <li>Pralka przecieka</li>
+    <li>Pralka hałasuje podczas prania</li>
+    <li>Pralka nie odpompowuje wody</li>
+    <li>Błędy na wyświetlaczu</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Dlaczego warto wybrać nasz serwis?</h2>
+  <ul>
+    <li>✓ Dojazd do klienta w Nowogadzie</li>
+    <li>✓ Diagnoza i wycena</li>
+    <li>✓ Oryginalne części zamienne</li>
+    <li>✓ Gwarancja na wykonane usługi</li>
+    <li>✓ Wieloletnie doświadczenie</li>
+    <li>✓ Konkurencyjne ceny</li>
+  </ul>
+</section>
+
 <footer>
-  <p>© 2025 Naprawa Zmywarek Nowogard | Usługi AGD</p>
+  <p>© 2025 Naprawa Pralek Nowogard | Serwis AGD | Tel: +48 721 988 949</p>
 </footer>
 
 <script>
@@ -107,9 +155,18 @@ function sendToWhatsApp(event) {
   event.preventDefault();
   let name = document.getElementById("name").value;
   let phone = document.getElementById("phone").value;
+  let brand = document.getElementById("brand").value;
   let message = document.getElementById("message").value;
+  let address = document.getElementById("address").value;
 
-  let text = `Nowe zgłoszenie:\nImię: ${name}\nTelefon: ${phone}\nOpis: ${message}`;
+  let text = `🔧 NAPRAWA PRALKI - GOLENIÓW\n\n` +
+             `👤 Imię: ${name}\n` +
+             `📞 Telefon: ${phone}\n` +
+             `🏠 Adres: ${address}\n` +
+             `🔧 Marka/model: ${brand}\n` +
+             `❗ Problem: ${message}\n\n` +
+             `📍 Miasto: Goleniów`;
+             
   let url = "https://wa.me/48721988949?text=" + encodeURIComponent(text);
   window.open(url, '_blank');
 }
