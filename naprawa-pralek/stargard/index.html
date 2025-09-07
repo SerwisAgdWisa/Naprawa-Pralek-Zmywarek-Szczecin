@@ -1,113 +1,58 @@
 <!DOCTYPE html>
-
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Naprawa Zmywarek Stargard | Serwis Zmywarek AGD</title>
-  <meta name="description" content="Naprawa zmywarek Stargard – szybki serwis, dojazd do klienta. Zmywarka nie pobiera wody, nie grzeje, nie domywa naczyń? Zadzwoń lub napisz na WhatsApp – naprawimy!">
-  <meta name="keywords" content="naprawa zmywarek Stargard, serwis zmywarek Stargard, zmywarka nie pobiera wody, zmywarka nie grzeje, zmywarka nie domywa naczyń, naprawa AGD Stargard">
+  <title>Naprawa Pralek Stargard | Serwis AGD</title>
+  <meta name="description" content="Profesjonalna naprawa pralek w Stargardzie. Pralka nie wiruje, nie pobiera wody, głośno odwirowuje? Zadzwoń lub napisz na WhatsApp – szybka naprawa!">
+  <meta name="keywords" content="pralka nie wiruje Stargard, pralka głośno odwirowuje Stargard, pralka nie pobiera wody Stargard, naprawa AGD Stargard, serwis pralek Stargard">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-    }
-    section {
-      padding: 20px;
-      max-width: 600px;
-      margin: auto;
-      background: white;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      margin-top: 20px;
-    }
-    form label {
-      display: block;
-      margin-bottom: 10px;
-      font-weight: bold;
-    }
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
-    button {
-      margin-top: 15px;
-      padding: 12px;
-      background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
-      border: none;
-      color: white;
-      font-size: 16px;
-      cursor: pointer;
-      border-radius: 25px;
-      width: 100%;
-      font-weight: bold;
-    }
-    button:hover {
-      background: linear-gradient(135deg, #e55a2b 0%, #de831a 100%);
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #eee;
-      margin-top: 20px;
-    }
-    .contact-info {
-      background: #e6f3ff;
-      padding: 15px;
-      border-radius: 5px;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .phone-link {
-      color: #667eea;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 18px;
-    }
-    .phone-link:hover {
-      text-decoration: underline;
-    }
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f9f9f9; color:#333; }
+    header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color:white; padding:20px; text-align:center; }
+    header h1 { margin:0; }
+    section { padding:20px; max-width:600px; margin:auto; background:white; box-shadow:0 2px 5px rgba(0,0,0,0.1); margin-top:20px; }
+    form label { display:block; margin-bottom:10px; font-weight:bold; }
+    input, textarea { width:100%; padding:10px; margin-top:5px; border:1px solid #ccc; border-radius:4px; box-sizing:border-box; }
+    button { margin-top:15px; padding:12px; background:linear-gradient(135deg,#ff6b35 0%,#f7931e 100%); border:none; color:white; font-size:16px; cursor:pointer; border-radius:25px; width:100%; font-weight:bold; }
+    button:hover { background:linear-gradient(135deg,#e55a2b 0%,#de831a 100%); }
+    footer { text-align:center; padding:20px; background:#eee; margin-top:20px; }
+    .contact-info { background:#e6f3ff; padding:15px; border-radius:5px; text-align:center; margin-bottom:20px; }
+    .phone-link { color:#667eea; text-decoration:none; font-weight:bold; font-size:18px; }
+    .phone-link:hover { text-decoration:underline; }
+    .top-button { text-align:center; margin-top:10px; }
+    .top-button a { display:inline-block; padding:12px 25px; background:linear-gradient(135deg,#ff6b35 0%,#f7931e 100%); color:white; font-weight:bold; border-radius:25px; text-decoration:none; font-size:16px; }
+    .top-button a:hover { background:linear-gradient(135deg,#e55a2b 0%,#de831a 100%); }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Naprawa Zmywarek Stargard</h1>
-  <p>Profesjonalny serwis zmywarek w Stargardzie</p>
+  <h1>Naprawa Pralek Stargard</h1>
+  <p>Profesjonalny serwis pralek w Stargardzie</p>
 </header>
+
+<section class="top-button">
+  <a href="#form">Zamów Naprawę</a>
+</section>
 
 <section>
   <div class="contact-info">
     <p>📞 Zadzwoń teraz: <a href="tel:+48721988949" class="phone-link">+48 721 988 949</a></p>
     <p>💬 WhatsApp: <a href="https://wa.me/48721988949" class="phone-link">+48 721 988 949</a></p>
   </div>
-  <form onsubmit="sendToWhatsApp(event)">
+
+  <form id="form" onsubmit="sendToWhatsApp(event)">
     <label>Imię i nazwisko:
       <input type="text" id="name" required>
     </label>
     <label>Telefon:
       <input type="tel" id="phone" required>
     </label>
-    <label>Marka i model zmywarki:
-      <input type="text" id="brand" placeholder="np. Bosch SMS46AW01E">
+    <label>Marka i model pralki:
+      <input type="text" id="brand" placeholder="np. Samsung WF80F5E2W2W">
     </label>
     <label>Opis usterki:
-      <textarea id="message" rows="4" required placeholder="Opisz dokładnie problem ze zmywarką..."></textarea>
+      <textarea id="message" rows="4" required placeholder="Opisz dokładnie problem z pralką..."></textarea>
     </label>
     <label>Adres w Stargardzie:
       <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania">
@@ -117,38 +62,23 @@
 </section>
 
 <section>
-  <h2>Naprawa zmywarek w Stargardzie</h2>
-  <p>Specjalistyczny serwis zmywarek w Stargardzie i okolicach: Chociwel, Kozielice, Suchań. Naprawiamy wszystkie marki zmywarek - Bosch, Siemens, Whirlpool, Electrolux, Samsung. Ponad 500 naprawionych zmywarek rocznie w rejonie Stargardu.</p>
-
-  <h3>Najczęstsze usterki zmywarek w Stargardzie:</h3>
+  <h2>Naprawa pralek w Stargardzie</h2>
+  <p>Oferujemy kompleksowy serwis pralek wszystkich marek w Stargardzie i okolicach. Dojazd do klienta, szybka diagnoza i profesjonalna naprawa.</p>
+  <h3>Typowe usterki pralek:</h3>
   <ul>
-    <li>Zmywarka nie pobiera wody - problem z elektrozaworem wlotowym</li>
-    <li>Brudne naczynia po umyciu - zatkane ramiona spryskujące</li>
-    <li>Woda nie odpływa - zablokowany filtr lub pompa odpływowa</li>
-    <li>Zmywarka nie grzeje wody - uszkodzony element grzejny</li>
-    <li>Białe plamy na naczyniach - zły płukacz lub sól</li>
-    <li>Hałas podczas pracy - zużyte łożyska pompy</li>
-    <li>Przeciek wody z drzwi - uszkodzone uszczelki</li>
-    <li>Dozownik tabletek się nie otwiera</li>
-  </ul>
-
-  <p><strong>Stargardzkie osiedla objęte serwisem:</strong> Centrum, Kluczewo, Błonie, Pyrzycka, os. Zachód.</p>
-</section>
-
-<section>
-  <h2>Dlaczego warto wybrać nasz serwis?</h2>
-  <ul>
-    <li>✓ Dojazd do klienta w Stargardzie</li>
-    <li>✓ Diagnoza i wycena za darmo</li>
-    <li>✓ Oryginalne części zamienne</li>
-    <li>✓ Gwarancja na wykonane usługi</li>
-    <li>✓ Wieloletnie doświadczenie</li>
-    <li>✓ Konkurencyjne ceny</li>
+    <li>Pralka nie pobiera wody</li>
+    <li>Pralka nie wiruje</li>
+    <li>Pralka nie grzeje wody</li>
+    <li>Pralka zatrzymuje program</li>
+    <li>Pralka przecieka</li>
+    <li>Pralka hałasuje podczas prania</li>
+    <li>Pralka nie odpompowuje wody</li>
+    <li>Błędy na wyświetlaczu</li>
   </ul>
 </section>
 
 <footer>
-  <p>© 2025 Naprawa Zmywarek Stargard | Serwis AGD | Tel: +48 721 988 949</p>
+  <p>© 2025 Naprawa Pralek Stargard | Serwis AGD | Tel: +48 721 988 949</p>
 </footer>
 
 <script>
@@ -160,7 +90,7 @@ function sendToWhatsApp(event) {
   let message = document.getElementById("message").value;
   let address = document.getElementById("address").value;
 
-  let text = `🔧 NAPRAWA ZMYWARKI - STARGARD\n\n` +
+  let text = `🔧 NAPRAWA PRALKI - STARGARD\n\n` +
              `👤 Imię: ${name}\n` +
              `📞 Telefon: ${phone}\n` +
              `🏠 Adres: ${address}\n` +
