@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naprawa Zmywarek Police | Serwis Zmywarek AGD</title>
+  <meta name="description" content="Naprawa zmywarek Police – szybki serwis, dojazd do klienta. Zmywarka nie pobiera wody, nie grzeje, nie domywa naczyń? Zadzwoń lub napisz na WhatsApp – naprawimy!">
+  <meta name="keywords" content="naprawa zmywarek Police, serwis zmywarek Police, zmywarka nie pobiera wody, zmywarka nie grzeje, zmywarka nie domywa naczyń, naprawa AGD Police">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    section {
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-top: 20px;
+    }
+    form label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    button {
+      margin-top: 15px;
+      padding: 12px;
+      background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+      border: none;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 25px;
+      width: 100%;
+      font-weight: bold;
+    }
+    button:hover {
+      background: linear-gradient(135deg, #e55a2b 0%, #de831a 100%);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #eee;
+      margin-top: 20px;
+    }
+    .contact-info {
+      background: #e6f3ff;
+      padding: 15px;
+      border-radius: 5px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .phone-link {
+      color: #667eea;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .phone-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Naprawa Zmywarek Police</h1>
+  <p>Profesjonalny serwis zmywarek w Police</p>
+</header>
+
+<section>
+  <div class="contact-info">
+    <p>📞 Zadzwoń teraz: <a href="tel:+48721988949" class="phone-link">+48 721 988 949</a></p>
+    <p>💬 WhatsApp: <a href="https://wa.me/48721988949" class="phone-link">+48 721 988 949</a></p>
+  </div>
+
+  <form onsubmit="sendToWhatsApp(event)">
+    <label>Imię i nazwisko:
+      <input type="text" id="name" required>
+    </label>
+    <label>Telefon:
+      <input type="tel" id="phone" required>
+    </label>
+    <label>Marka i model zmywarki:
+      <input type="text" id="brand" placeholder="np. Bosch SMS46AW01E">
+    </label>
+    <label>Opis usterki:
+      <textarea id="message" rows="4" required placeholder="Opisz dokładnie problem ze zmywarką..."></textarea>
+    </label>
+    <label>Adres w Police:
+      <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania">
+    </label>
+    <button type="submit">Zamów Naprawę</button>
+  </form>
+</section>
+
+<section>
+  <h2>Naprawa zmywarek w Police</h2>
+  <p>Oferujemy kompleksowy serwis zmywarek wszystkich marek w Police i okolicach. Dojazd do klienta, szybka diagnoza i profesjonalna naprawa.</p>
+
+  <h3>Typowe usterki zmywarek:</h3>
+  <ul>
+    <li>Zmywarka nie pobiera wody</li>
+    <li>Zmywarka nie grzeje wody</li>
+    <li>Zmywarka nie domywa naczyń</li>
+    <li>Zmywarka zatrzymuje program</li>
+    <li>Zmywarka przecieka</li>
+    <li>Zmywarka nie odpompowuje wody</li>
+    <li>Problem z dozownikiem detergentu</li>
+    <li>Błędy na wyświetlaczu</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Dlaczego warto wybrać nasz serwis?</h2>
+  <ul>
+    <li>✓ Dojazd do klienta w Police</li>
+    <li>✓ Diagnoza i wycena za darmo</li>
+    <li>✓ Oryginalne części zamienne</li>
+    <li>✓ Gwarancja na wykonane usługi</li>
+    <li>✓ Wieloletnie doświadczenie</li>
+    <li>✓ Konkurencyjne ceny</li>
+  </ul>
+</section>
+
+<footer>
+  <p>© 2025 Naprawa Zmywarek Police | Serwis AGD | Tel: +48 721 988 949</p>
+</footer>
+
+<script>
+function sendToWhatsApp(event) {
+  event.preventDefault();
+  let name = document.getElementById("name").value;
+  let phone = document.getElementById("phone").value;
+  let brand = document.getElementById("brand").value;
+  let message = document.getElementById("message").value;
+  let address = document.getElementById("address").value;
+
+  let text = `🔧 NAPRAWA ZMYWARKI - POLICE\n\n` +
+             `👤 Imię: ${name}\n` +
+             `📞 Telefon: ${phone}\n` +
+             `🏠 Adres: ${address}\n` +
+             `🔧 Marka/model: ${brand}\n` +
+             `❗ Problem: ${message}\n\n` +
+             `📍 Miasto: Police`;
+             
+  let url = "https://wa.me/48721988949?text=" + encodeURIComponent(text);
+  window.open(url, '_blank');
+}
+</script>
+
+</body>
+</html>
