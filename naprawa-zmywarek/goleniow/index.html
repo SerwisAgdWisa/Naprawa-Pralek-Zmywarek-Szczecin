@@ -1,0 +1,44 @@
+<header>
+  <h1>Naprawa Zmywarek Goleniów</h1>
+  <p>Profesjonalny serwis zmywarek w Goleniowie</p>
+  
+  <!-- Новая кнопка сверху -->
+  <div style="text-align:center; margin: 15px 0;">
+    <a href="#contact-form" style="
+      display: inline-block;
+      padding: 12px 25px;
+      background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 25px;
+      font-size: 16px;
+    ">Zamów Naprawę</a>
+  </div>
+</header>
+
+<section id="contact-form">
+  <div class="contact-info">
+    <p>📞 Zadzwoń teraz: <a href="tel:+48721988949" class="phone-link">+48 721 988 949</a></p>
+    <p>💬 WhatsApp: <a href="https://wa.me/48721988949" class="phone-link">+48 721 988 949</a></p>
+  </div>
+
+  <form onsubmit="sendToWhatsApp(event)">
+    <label>Imię i nazwisko:
+      <input type="text" id="name" required>
+    </label>
+    <label>Telefon:
+      <input type="tel" id="phone" required>
+    </label>
+    <label>Marka i model zmywarki:
+      <input type="text" id="brand" placeholder="np. Bosch SMS46AW01E">
+    </label>
+    <label>Opis usterki:
+      <textarea id="message" rows="4" required placeholder="Opisz dokładnie problem ze zmywarką..."></textarea>
+    </label>
+    <label>Adres w Goleniowie:
+      <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania">
+    </label>
+    <button type="submit">Zamów Naprawę</button>
+  </form>
+</section>
