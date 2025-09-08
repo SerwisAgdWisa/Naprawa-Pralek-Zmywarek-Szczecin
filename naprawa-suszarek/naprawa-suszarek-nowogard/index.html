@@ -3,201 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Profesjonalny serwis suszarek w Nowogardzie. Naprawa wszystkich marek suszarek - Bosch, Samsung, LG, Whirlpool. Dojazd tego samego dnia. Gwarancja na usługi. Tel: 721988949">
-    <meta name="keywords" content="naprawa suszarek nowogard, serwis suszarek nowogard, mechanik suszarek nowogard, suszarka nie suszy nowogard, suszarka nie włącza się nowogard, serwis AGD nowogard">
+    <meta name="description" content="Profesjonalny serwis suszarek w Nowogardzie. Naprawa wszystkich marek suszarek z dojazdem i gwarancją. Tel: 721988949">
+    <meta name="keywords" content="naprawa suszarek Nowogard, serwis suszarek Nowogard, mechanik suszarek Nowogard, suszarka nie grzeje, suszarka nie wiruje">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Oleksandr Chumnyi WISA">
 
     <title>Naprawa Suszarek Nowogard | Serwis AGD WISA 721 988 949</title>
 
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "WISA - Naprawa Suszarek Nowogard",
-      "description": "Profesjonalny serwis suszarek w Nowogardzie",
-      "url": "https://serwisagdwisa.github.io/Naprawa-suszarek/Nowogard/index.html",
-      "telephone": "+48721988949",
-      "areaServed": "Nowogard",
-      "serviceType": "Naprawa suszarek",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Nowogard",
-        "addressRegion": "Zachodniopomorskie",
-        "addressCountry": "PL"
-      }
-    }
-    </script>
-
-    <link rel="stylesheet" href="../../style.css">
+    <style>
+        /* --- Основной стиль как на сайте AGD --- */
+        body { font-family: Arial,sans-serif; margin:0; padding:0; background:#f7f7f7; color:#333; }
+        header { background:#2c3e50; color:white; padding:1rem; display:flex; justify-content:space-between; align-items:center; }
+        .logo { font-size:1.8rem; font-weight:bold; color:#f39c12; }
+        .phone { font-size:1.2rem; color:#f39c12; text-decoration:none; }
+        .container { max-width:1200px; margin:0 auto; padding:0 20px; }
+        h1,h2,h3 { color:#2c3e50; }
+        .hero { background:linear-gradient(135deg,#667eea,#764ba2); color:white; text-align:center; padding:3rem 1rem; }
+        .hero a { background:#f39c12; color:white; padding:15px 30px; text-decoration:none; border-radius:50px; font-weight:bold; display:inline-block; margin-top:1rem; }
+        .content-section { background:white; margin:2rem 0; padding:2rem; border-radius:10px; }
+        .form-section { background:#34495e; color:white; padding:3rem 1rem; border-radius:10px; }
+        .form-section input, .form-section select, .form-section textarea { width:100%; padding:10px; margin:0.5rem 0; border-radius:5px; border:none; }
+        .submit-btn { background:#f39c12; color:white; padding:15px; border:none; width:100%; font-weight:bold; border-radius:5px; cursor:pointer; }
+        footer { background:#2c3e50; color:white; text-align:center; padding:2rem 1rem; margin-top:2rem; }
+        .whatsapp-float { position:fixed; bottom:20px; right:20px; background:#25d366; color:white; width:60px; height:60px; border-radius:50%; text-align:center; line-height:60px; font-size:30px; text-decoration:none; }
+    </style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">WISA</div>
-                <a href="tel:+48721988949" class="phone">📞 721 988 949</a>
-            </div>
-        </div>
-    </header>
 
-    <!-- Breadcrumbs -->
-    <div class="breadcrumbs">
-        <div class="container">
-            <a href="../../index.html">Strona główna</a> → <a href="../index.html">Naprawa Suszarek</a> → <span>Nowogard</span>
-        </div>
+<header>
+    <div class="container">
+        <div class="logo">WISA</div>
+        <a href="tel:+48721988949" class="phone">📞 721 988 949</a>
     </div>
+</header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>Naprawa Suszarek Nowogard</h1>
-            <p>Profesjonalny serwis suszarek w Nowogardzie • Dojazd tego samego dnia • Gwarancja na naprawy</p>
-            <a href="#order" class="cta-button">Zamów Naprawę Suszarki</a>
-        </div>
-    </section>
+<section class="hero">
+    <div class="container">
+        <h1>Naprawa Suszarek Nowogard</h1>
+        <p>Profesjonalny serwis suszarek w Nowogardzie • Dojazd tego samego dnia • Gwarancja na naprawy</p>
+        <a href="#order">Zamów Naprawę Suszarki</a>
+    </div>
+</section>
 
-    <!-- Problems Section -->
-    <section class="content-section">
-        <div class="container">
-            <h2>Najczęstsze Problemy z Suszarkami w Nowogardzie</h2>
-            <div class="problems-grid">
-                <div class="problem-card">
-                    <div class="problem-icon">🔥</div>
-                    <h3>Suszarka nie grzeje</h3>
-                    <p>Uszkodzona grzałka lub termostat</p>
-                </div>
-                <div class="problem-card">
-                    <div class="problem-icon">🌀</div>
-                    <h3>Suszarka nie wiruje</h3>
-                    <p>Problem z pasem napędowym lub silnikiem</p>
-                </div>
-                <div class="problem-card">
-                    <div class="problem-icon">💧</div>
-                    <h3>Suszarka nie suszy</h3>
-                    <p>Zatkany filtr lub wentylacja</p>
-                </div>
-                <div class="problem-card">
-                    <div class="problem-icon">🔊</div>
-                    <h3>Głośna praca</h3>
-                    <p>Zużyte łożyska lub amortyzatory</p>
-                </div>
-                <div class="problem-card">
-                    <div class="problem-icon">🚪</div>
-                    <h3>Problem z drzwiami</h3>
-                    <p>Uszkodzony zatrzask lub blokada drzwi</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="content-section">
+    <div class="container">
+        <h2>Najczęstsze Problemy z Suszarkami w Nowogardzie</h2>
+        <ul>
+            <li>Suszarka nie grzeje – problem z grzałką lub termostatem</li>
+            <li>Suszarka nie wiruje – awaria silnika lub paska napędowego</li>
+            <li>Suszarka hałasuje – zużyte łożyska lub amortyzatory</li>
+            <li>Suszarka nie startuje – problem z programatorem lub włącznikiem</li>
+        </ul>
+    </div>
+</section>
 
-    <!-- Brands Section -->
-    <section class="content-section">
-        <div class="container">
-            <h2>Naprawiamy Wszystkie Marki Suszarek w Nowogardzie</h2>
-            <div class="brands-grid">
-                <div class="brand-item">BOSCH</div>
-                <div class="brand-item">SAMSUNG</div>
-                <div class="brand-item">LG</div>
-                <div class="brand-item">WHIRLPOOL</div>
-                <div class="brand-item">ELECTROLUX</div>
-                <div class="brand-item">SIEMENS</div>
-                <div class="brand-item">CANDY</div>
-                <div class="brand-item">INDESIT</div>
-                <div class="brand-item">BEKO</div>
-                <div class="brand-item">AMICA</div>
-                <div class="brand-item">HOTPOINT</div>
-                <div class="brand-item">MIELE</div>
-            </div>
-        </div>
-    </section>
+<section class="content-section">
+    <div class="container">
+        <h2>Dlaczego Warto Wybrać Nasz Serwis Suszarek?</h2>
+        <ul>
+            <li>✅ Dojazd tego samego dnia w Nowogardzie</li>
+            <li>✅ Oryginalne części lub pełna kompatybilność</li>
+            <li>✅ Gwarancja na naprawy suszarek</li>
+            <li>✅ Profesjonalne i szybkie diagnozy</li>
+        </ul>
+    </div>
+</section>
 
-    <!-- Service Info -->
-    <section class="content-section">
-        <div class="container">
-            <h2>Dlaczego Warto Wybrać Nasz Serwis Suszarek?</h2>
-            
-            <h3>✅ Szybka Diagnostyka</h3>
-            <p>Dojeżdżamy do Nowogarda tego samego dnia. Diagnoza problemu z suszarką w miejscu klienta bez dodatkowych kosztów.</p>
-            
-            <h3>✅ Oryginalne Części Zamienne</h3>
-            <p>Stosujemy tylko oryginalne lub w pełni kompatybilne części. Naprawiamy wszystkie popularne marki.</p>
-            
-            <h3>✅ Gwarancja na Naprawę</h3>
-            <p>Na wszystkie naprawy suszarek udzielamy gwarancji. Problem powróci? Naprawimy bezpłatnie.</p>
-            
-            <h3>✅ Uczciwe Ceny</h3>
-            <p>Cena ustalana z góry, bez ukrytych kosztów. Transparent pricing dla każdego klienta.</p>
-            
-            <h3>✅ Doświadczenie</h3>
-            <p>Wieloletnie doświadczenie w naprawie suszarek w Nowogardzie i okolicach. Naprawiamy suszarki bębnowe, kondensacyjne i pompowe.</p>
-        </div>
-    </section>
+<section class="form-section" id="order">
+    <div class="container">
+        <h2>Zamów Naprawę Suszarki</h2>
+        <form id="orderForm">
+            <input type="text" name="name" placeholder="Imię i nazwisko" required>
+            <input type="tel" name="phone" placeholder="Telefon" required>
+            <input type="text" name="address" placeholder="Adres w Nowogardzie" required>
+            <select name="brand">
+                <option value="">Wybierz markę</option>
+                <option value="bosch">Bosch</option>
+                <option value="samsung">Samsung</option>
+                <option value="lg">LG</option>
+                <option value="whirlpool">Whirlpool</option>
+                <option value="inna">Inna marka</option>
+            </select>
+            <textarea name="problem" placeholder="Opisz problem z suszarką..." required></textarea>
+            <input type="datetime-local" name="time">
+            <button type="submit" class="submit-btn">Wyślij Zgłoszenie WhatsApp</button>
+        </form>
+    </div>
+</section>
 
-    <!-- Order Form Section -->
-    <section class="form-section" id="order">
-        <div class="container">
-            <div class="order-form">
-                <h2>Zamów Naprawę Suszarki w Nowogardzie</h2>
-                <form id="orderForm">
-                    <div class="form-group">
-                        <label for="name">Imię i nazwisko:</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Telefon:</label>
-                        <input type="tel" id="phone" name="phone" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="address">Adres w Nowogardzie:</label>
-                        <input type="text" id="address" name="address" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="brand">Marka suszarki:</label>
-                        <select id="brand" name="brand">
-                            <option value="">Wybierz markę</option>
-                            <option value="bosch">Bosch</option>
-                            <option value="samsung">Samsung</option>
-                            <option value="lg">LG</option>
-                            <option value="whirlpool">Whirlpool</option>
-                            <option value="electrolux">Electrolux</option>
-                            <option value="siemens">Siemens</option>
-                            <option value="inna">Inna marka</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="problem">Opisz problem z suszarką:</label>
-                        <textarea id="problem" name="problem" rows="4" placeholder="Np. suszarka nie grzeje, nie wiruje, głośno pracuje..." required></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="time">Preferowany termin wizyty:</label>
-                        <input type="datetime-local" id="time" name="time">
-                    </div>
-                    <button type="submit" class="submit-btn">Wyślij Zgłoszenie WhatsApp</button>
-                </form>
-            </div>
-        </div>
-    </section>
+<footer>
+    <div class="container">
+        <p>Serwis Suszarek Nowogard - WISA | 📞 721 988 949</p>
+        <p>&copy; 2025 WISA. Wszystkie prawa zastrzeżone.</p>
+    </div>
+</footer>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p><strong>Serwis Suszarek Nowogard - WISA</strong></p>
-            <p>📞 721 988 949 | Oleksandr Chumnyi</p>
-            <p>Profesjonalny serwis suszarek w Nowogardzie i okolicach</p>
-            <p style="margin-top: 1rem; font-size: 0.9rem;">&copy; 2025 Naprawa Suszarek Nowogard - WISA. Wszystkie prawa zastrzeżone.</p>
-        </div>
-    </footer>
+<a href="https://wa.me/48721988949" class="whatsapp-float" target="_blank">💬</a>
 
-    <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/48721988949" class="whatsapp-float" target="_blank">
-        💬
-    </a>
+<script>
+document.getElementById('orderForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    const f = new FormData(this);
+    let msg = `🔧 NAPRAWA SUSZARKI NOWOGARD\n\n👤 ${f.get('name')}\n📞 ${f.get('phone')}\n📍 ${f.get('address')}\n❗ Problem: ${f.get('problem')}`;
+    if(f.get('brand')) msg += `\n🔧 Marka: ${f.get('brand')}`;
+    if(f.get('time')) msg += `\n⏰ Termin: ${f.get('time')}`;
+    window.open('https://wa.me/48721988949?text='+encodeURIComponent(msg),'_blank');
+    alert('Dziękujemy za zgłoszenie naprawy suszarki w Nowogardzie! Przekierowanie do WhatsApp...');
+});
+</script>
 
-    <script src="../../script.js"></script>
 </body>
 </html>
