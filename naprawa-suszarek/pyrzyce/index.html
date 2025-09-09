@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naprawa Suszarek Pyrzyce | Serwis Suszarek AGD</title>
+  <meta name="description" content="Naprawa suszarek Pyrzyce – szybki serwis, dojazd do klienta. Suszarka nie grzeje, nie wiruje, nie włącza się? Zadzwoń lub napisz na WhatsApp – naprawimy!">
+  <meta name="keywords" content="naprawa suszarek Pyrzyce, serwis suszarek Pyrzyce, suszarka nie grzeje, suszarka nie wiruje, naprawa AGD Pyrzyce">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    section {
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-top: 20px;
+    }
+    form label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    button {
+      margin-top: 15px;
+      padding: 12px;
+      background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+      border: none;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 25px;
+      width: 100%;
+      font-weight: bold;
+    }
+    button:hover {
+      background: linear-gradient(135deg, #e55a2b 0%, #de831a 100%);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #eee;
+      margin-top: 20px;
+    }
+    .contact-info {
+      background: #e6f3ff;
+      padding: 15px;
+      border-radius: 5px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .phone-link {
+      color: #667eea;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .phone-link:hover {
+      text-decoration: underline;
+    }
+    .breadcrumb {
+      background: rgba(255,255,255,0.9);
+      padding: 10px 20px;
+      margin: 20px auto;
+      max-width: 600px;
+      border-radius: 5px;
+    }
+    .breadcrumb a {
+      color: #667eea;
+      text-decoration: none;
+    }
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Naprawa Suszarek Pyrzyce</h1>
+  <p>Profesjonalny serwis suszarek w Pyrzycach</p>
+  <a href="#order-form" style="display: inline-block; background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%); color: white; padding: 15px 30px; text-decoration: none; border-radius: 25px; font-size: 18px; font-weight: bold; margin-top: 20px;">Zamów Naprawę Teraz</a>
+</header>
+
+<div class="breadcrumb">
+  <a href="/">Home</a> → <a href="/naprawa-suszarek/">Naprawa Suszarek</a> → <span>Pyrzyce</span>
+</div>
+
+<section>
+  <div class="contact-info">
+    <p>📞 Zadzwoń teraz: <a href="tel:+48721988949" class="phone-link">+48 721 988 949</a></p>
+    <p>💬 WhatsApp: <a href="https://wa.me/48721988949" class="phone-link">+48 721 988 949</a></p>
+  </div>
+
+  <form id="order-form" onsubmit="sendToWhatsApp(event)">
+    <label>Imię i nazwisko:
+      <input type="text" id="name" required>
+    </label>
+    <label>Telefon:
+      <input type="tel" id="phone" required>
+    </label>
+    <label>Marka i model suszarki:
+      <input type="text" id="brand" placeholder="np. Electrolux EW6C4825GB">
+    </label>
+    <label>Opis usterki:
+      <textarea id="message" rows="4" required placeholder="Opisz dokładnie problem z suszarką..."></textarea>
+    </label>
+    <label>Adres w Pyrzycach:
+      <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania">
+    </label>
+    <button type="submit">Zamów Naprawę</button>
+  </form>
+</section>
+
+<section>
+  <h2>Naprawa suszarek w Pyrzycach</h2>
+  <p>Serwis suszarek w Pyrzycach i gminie. Naprawiamy wszystkie marki suszarek kondensacyjnych i pompy ciepła. Szybki dojazd do klienta w Pyrzycach.</p>
+
+  <h3>Najczęstsze usterki suszarek:</h3>
+  <ul>
+    <li>Suszarka nie grzeje - uszkodzony element grzejny</li>
+    <li>Suszarka nie wiruje - zerwany pas napędowy</li>
+    <li>Suszarka nie włącza się - awaria modułu sterującego</li>
+    <li>Suszarka zatrzymuje program</li>
+    <li>Nadmierne wibracje podczas pracy</li>
+    <li>Przecieki kondensatu</li>
+    <li>Błędy na wyświetlaczu</li>
+    <li>Problem z czujnikiem wilgotności</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Dlaczego warto wybrać nasz serwis?</h2>
+  <ul>
+    <li>✓ Dojazd do klienta w Pyrzycach</li>
+    <li>✓ Oryginalne części zamienne</li>
+    <li>✓ Gwarancja na wykonane usługi</li>
+    <li>✓ Wieloletnie doświadczenie</li>
+    <li>✓ Konkurencyjne ceny</li>
+  </ul>
+</section>
+
+<footer>
+  <p>© 2025 Naprawa Suszarek Pyrzyce | Serwis AGD | Tel: +48 721 988 949</p>
+  <p><a href="/" style="color: #667eea;">← Powrót do strony głównej</a> | <a href="/naprawa-suszarek/" style="color: #667eea;">← Naprawa Suszarek</a></p>
+</footer>
+
+<script>
+function sendToWhatsApp(event) {
+  event.preventDefault();
+  let name = document.getElementById("name").value;
+  let phone = document.getElementById("phone").value;
+  let brand = document.getElementById("brand").value;
+  let message = document.getElementById("message").value;
+  let address = document.getElementById("address").value;
+
+  let text = `🌪️ NAPRAWA SUSZARKI - PYRZYCE\n\n` +
+             `👤 Imię: ${name}\n` +
+             `📞 Telefon: ${phone}\n` +
+             `🏠 Adres: ${address}\n` +
+             `🔧 Marka/model: ${brand}\n` +
+             `❗ Problem: ${message}\n\n` +
+             `📍 Miasto
