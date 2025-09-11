@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naprawa Pralek Amica Szczecin | Serwis Pralek Amica | 721 988 949</title>
     <meta name="description" content="Profesjonalna naprawa pralek Amica w Szczecinie. Specjalizujemy się w modelach Amica: AWB, AWS, AWM. Tel: 721 988 949">
-    <meta name="keywords" content="naprawa pralek amica szczecin, serwis amica szczecin, pralka amica nie wiruje, awaria pralki amica, naprawa amica szczecin">
+    <meta name="keywords" content="naprawa pralek amica szczecin, serwis amica szczecin, pralka amica nie wiruje, awaria pralki amica">
     <link rel="stylesheet" href="../../../css/style.css">
 </head>
 <body>
@@ -21,11 +21,8 @@
         
         <div class="emergency-banner">
             <h2>⏰ Awaria pralki Amica? Zadzwoń: 721 988 949</h2>
-            <p>Dojazd w Szczecinie w ciągu 24 godzin</p>
         </div>
 
-        <h2>Specjalizujemy się w naprawie pralek Amica:</h2>
-        
         <div class="problems-grid">
             <div class="problem-card">
                 <h3>Modele AWB, AWS, AWM</h3>
@@ -35,29 +32,54 @@
                 <h3>Awaria pompy</h3>
                 <p>Wymiana pompy, usuwanie awarii</p>
             </div>
-            <div class="problem-card">
-                <h3>Problem z wirowaniem</h3>
-                <p>Naprawa łożysk, silnika</p>
-            </div>
         </div>
 
-        <div class="pricing-card">
-            <div class="price">Od 100 zł</div>
-            <ul class="price-details">
-                <li><span>Dojazd serwisanta</span><span>od 100 zł</span></li>
-                <li><span>Diagnoza pralki Amica</span><span>w cenie</span></li>
-                <li><span>Gwarancja na naprawę</span><span>na usługę</span></li>
-            </ul>
-            <p style="text-align: center; margin-top: 1rem; font-style: italic; color: rgba(255, 255, 255, 0.8);">
-                *Dokładna cena naprawy ustalana po diagnozie
-            </p>
-        </div>
+        <section class="order-section" id="order">
+            <div class="order-form">
+                <h2>Zamów Naprawę Pralki Amica</h2>
+                <form id="orderForm">
+                    <div class="form-group">
+                        <label for="name">Imię i nazwisko:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefon:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Adres (Szczecin):</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="problem">Opis problemu:</label>
+                        <textarea id="problem" name="problem" placeholder="Opisz co się dzieje z pralką Amica..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Wyślij Zgłoszenie</button>
+                </form>
+            </div>
+        </section>
 
         <div class="contact-cta">
-            <h2>Masz pralkę Amica z awarią?</h2>
-            <p>Znamy się na polskich markach!</p>
-            <p>Zadzwoń: <strong>721 988 949</strong></p>
+            <h2>Lepiej zadzwonić?</h2>
+            <a href="tel:+48721988949" class="cta-button">📞 721 988 949</a>
         </div>
     </div>
+
+    <a href="https://wa.me/48721988949" class="whatsapp-float" target="_blank">💬</a>
+
+    <script>
+        document.getElementById('orderForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+            let message = `🔧 ZGŁOSZENIE: Pralka Amica\n\n`;
+            message += `👤 Imię: ${formData.get('name')}\n`;
+            message += `📞 Telefon: ${formData.get('phone')}\n`;
+            message += `📍 Adres: ${formData.get('address')}\n`;
+            message += `❗ Problem: ${formData.get('problem')}\n`;
+            const whatsappURL = `https://wa.me/48721988949?text=${encodeURIComponent(message)}`;
+            window.open(whatsappURL, '_blank');
+            alert('Dziękujemy! Za chwilę zostaniesz przekierowany do WhatsApp.');
+        });
+    </script>
 </body>
 </html>
