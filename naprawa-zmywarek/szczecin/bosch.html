@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naprawa Zmywarek Bosch Szczecin | Serwis Zmywarek Bosch | 721 988 949</title>
+    <meta name="description" content="Specjalistyczny serwis zmywarek Bosch w Szczecinie. Naprawa zmywarek Bosch serie 4, 6, 8. Tel: 721 988 949">
+    <meta name="keywords" content="naprawa zmywarek bosch szczecin, serwis zmywarek bosch szczecin, zmywarka bosch nie myje, awaria zmywarki bosch szczecin">
+    <link rel="stylesheet" href="../../../css/style.css">
+</head>
+<body>
+    <div class="breadcrumb container">
+        <a href="../../../index.html">Strona Główna</a> > 
+        <a href="../../index.html">Naprawa Zmywarek</a> > 
+        <a href="../index.html">Szczecin</a> > 
+        <span>Zmywarki Bosch</span>
+    </div>
+
+    <div class="container">
+        <h1>Specjalistyczny Serwis Zmywarek Bosch w Szczecinie</h1>
+        
+        <div class="emergency-banner">
+            <h2>⏰ Awaria zmywarki Bosch? Zadzwoń: 721 988 949</h2>
+            <p>Dojazd w Szczecinie w ciągu 24 godzin</p>
+        </div>
+
+        <div class="problems-grid">
+            <div class="problem-card">
+                <h3>Bosch Serie 4, 6, 8</h3>
+                <p>Naprawa elektroniki, modułów sterujących</p>
+            </div>
+            <div class="problem-card">
+                <h3>Błędy: E01, E02, E09</h3>
+                <p>Diagnoza i naprawa kodów błędów Bosch</p>
+            </div>
+            <div class="problem-card">
+                <h3>Awaria pompy</h3>
+                <p>Wymiana pompy, czyszczenie filtrów</p>
+            </div>
+        </div>
+
+        <section class="order-section" id="order">
+            <div class="order-form">
+                <h2>Zamów Naprawę Zmywarki Bosch</h2>
+                <form id="orderForm">
+                    <div class="form-group">
+                        <label for="name">Imię i nazwisko:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefon:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Adres (Szczecin):</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="problem">Opis problemu:</label>
+                        <textarea id="problem" name="problem" placeholder="Opisz co się dzieje z zmywarką Bosch..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Wyślij Zgłoszenie</button>
+                </form>
+            </div>
+        </section>
+
+        <div class="contact-cta">
+            <h2>Lepiej zadzwonić?</h2>
+            <a href="tel:+48721988949" class="cta-button">📞 721 988 949</a>
+        </div>
+    </div>
+
+    <a href="https://wa.me/48721988949" class="whatsapp-float" target="_blank">💬</a>
+
+    <script>
+        document.getElementById('orderForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+            let message = `🔧 ZGŁOSZENIE: Zmywarka Bosch Szczecin\n\n`;
+            message += `👤 Imię: ${formData.get('name')}\n`;
+            message += `📞 Telefon: ${formData.get('phone')}\n`;
+            message += `📍 Adres: ${formData.get('address')}\n`;
+            message
