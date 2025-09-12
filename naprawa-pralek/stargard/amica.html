@@ -6,79 +6,420 @@
     <title>Naprawa Pralek Amica Stargard | Serwis Pralek Amica | 721 988 949</title>
     <meta name="description" content="Profesjonalna naprawa pralek Amica w Stargardzie. Specjalizujemy się w modelach Amica. Tel: 721 988 949">
     <meta name="keywords" content="naprawa pralek amica stargard, serwis amica stargard, pralka amica nie wiruje stargard, awaria pralki amica stargard">
-    <link rel="stylesheet" href="../../../css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #2c3e50 0%, #1a2530 100%);
+            color: white;
+            padding: 15px 0;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #f39c12;
+        }
+        
+        .phone-header {
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+        
+        /* Breadcrumb */
+        .breadcrumb {
+            padding: 15px 0;
+            font-size: 14px;
+            color: #666;
+            margin: 15px 0;
+        }
+        
+        .breadcrumb a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        
+        .breadcrumb span {
+            color: #e74c3c;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%232c3e50"/></svg>');
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+        
+        .hero h1 {
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+        }
+        
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto 20px;
+        }
+        
+        .btn-primary {
+            background-color: #f39c12;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 16px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+        
+        .btn-primary:hover {
+            background-color: #e67e22;
+        }
+        
+        /* Content Sections */
+        .content-section {
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+        
+        .content-section h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f39c12;
+        }
+        
+        /* Problem Grid */
+        .problems-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .problem-card {
+            background: #f8f9fa;
+            padding: 18px;
+            border-radius: 6px;
+            border-left: 4px solid #f39c12;
+            transition: transform 0.3s;
+        }
+        
+        .problem-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 12px rgba(0,0,0,0.08);
+        }
+        
+        .problem-card h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .problem-card ul {
+            padding-left: 20px;
+        }
+        
+        .problem-card li {
+            margin-bottom: 6px;
+        }
+        
+        /* Form Styles */
+        .form-section {
+            background: linear-gradient(135deg, #2c3e50 0%, #1a2530 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+        
+        .form-section h2 {
+            color: white;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        
+        .form-group textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+        
+        .submit-btn {
+            background-color: #25D366;
+            color: white;
+            border: none;
+            padding: 14px 20px;
+            font-size: 16px;
+            border-radius: 50px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-weight: bold;
+        }
+        
+        .submit-btn:hover {
+            background-color: #128C7E;
+        }
+        
+        /* Contact CTA */
+        .contact-cta {
+            text-align: center;
+            padding: 25px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: #28a745;
+            color: white;
+            padding: 14px 28px;
+            font-size: 16px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 15px;
+            transition: background-color 0.3s;
+        }
+        
+        .cta-button:hover {
+            background-color: #218838;
+        }
+        
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 25px 0;
+            margin-top: 40px;
+            text-align: center;
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .phone-header {
+                margin-top: 10px;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .problems-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .form-section {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="breadcrumb container">
-        <a href="../../../index.html">Strona Główna</a> > 
-        <a href="../../index.html">Naprawa Pralek</a> > 
-        <a href="../index.html">Stargard</a> > 
-        <span>Pralki Amica</span>
-    </div>
+    <header>
+        <div class="container header-content">
+            <div class="logo">WISA</div>
+            <a href="tel:+48721988949" class="phone-header">721 988 949</a>
+        </div>
+    </header>
 
     <div class="container">
-        <h1>Profesjonalny Serwis Pralek Amica w Stargardzie</h1>
-        
-        <div class="emergency-banner">
-            <h2>⏰ Awaria pralki Amica? Zadzwoń: 721 988 949</h2>
+        <div class="breadcrumb">
+            <a href="../../../index.html">Strona Główna</a> > 
+            <a href="../../index.html">Naprawa Pralek</a> > 
+            <a href="../index.html">Stargard</a> > 
+            <span>Pralki Amica</span>
         </div>
 
-        <div class="problems-grid">
-            <div class="problem-card">
-                <h3>Modele AWB, AWS, AWM</h3>
-                <p>Naprawa popularnych modeli Amica</p>
-            </div>
-            <div class="problem-card">
-                <h3>Awaria pompy</h3>
-                <p>Wymiana pompy, usuwanie awarii</p>
+        <div class="hero">
+            <h1>Profesjonalny Serwis Pralek Amica w Stargardzie</h1>
+            <p>Naprawiamy pralki Amica w Stargardzie i okolicach. Szybka diagnoza, profesjonalny serwis, gwarancja na wykonane naprawy.</p>
+            <a href="#order" class="btn-primary">Zamów Naprawę</a>
+        </div>
+
+        <div class="content-section">
+            <h2>Naprawiamy wszystkie modele pralek Amica</h2>
+            <p>Jako doświadczony serwis pralek Amica w Stargardzie, zajmujemy się naprawą wszystkich modeli tej marki. Specjalizujemy się w:</p>
+            
+            <div class="problems-grid">
+                <div class="problem-card">
+                    <h3>Popularne modele</h3>
+                    <ul>
+                        <li>Amica AWB 510</li>
+                        <li>Amica AWS 610</li>
+                        <li>Amica AWM 8120</li>
+                        <li>Amica AWM 6100</li>
+                        <li>Amica AWB 512</li>
+                        <li>Amica AWM 812</li>
+                    </ul>
+                </div>
+                <div class="problem-card">
+                    <h3>Typowe usterki</h3>
+                    <ul>
+                        <li>Brak wirowania</li>
+                        <li>Wycieki wody</li>
+                        <li>Awaria pompy</li>
+                        <li>Problem z grzaniem</li>
+                        <li>Błąd elektroniki</li>
+                        <li>Nieszczelność</li>
+                    </ul>
+                </div>
+                <div class="problem-card">
+                    <h3>Nasze usługi</h3>
+                    <ul>
+                        <li>Diagnostyka komputerowa</li>
+                        <li>Wymiana części zamiennych</li>
+                        <li>Czyszczenie i konserwacja</li>
+                        <li>Naprawa elektroniki</li>
+                        <li>Usuwanie awarii mechanicznych</li>
+                        <li>Serwis pogwarancyjny</li>
+                    </ul>
+                </div>
             </div>
         </div>
 
-        <section class="order-section" id="order">
-            <div class="order-form">
-                <h2>Zamów Naprawę Pralki Amica</h2>
-                <form id="orderForm">
-                    <div class="form-group">
-                        <label for="name">Imię i nazwisko:</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Telefon:</label>
-                        <input type="tel" id="phone" name="phone" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="address">Adres (Stargard):</label>
-                        <input type="text" id="address" name="address" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="problem">Opis problemu:</label>
-                        <textarea id="problem" name="problem" placeholder="Opisz co się dzieje z pralką Amica..."></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Wyślij Zgłoszenie</button>
-                </form>
-            </div>
-        </section>
+        <div class="form-section" id="order">
+            <h2>Zamów naprawę pralki Amica</h2>
+            <form id="orderForm">
+                <div class="form-group">
+                    <label for="name">Imię i nazwisko:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Numer telefonu:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Adres (Stargard):</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                <div class="form-group">
+                    <label for="model">Model pralki Amica:</label>
+                    <input type="text" id="model" name="model" placeholder="Np. Amica AWB 510">
+                </div>
+                <div class="form-group">
+                    <label for="problem">Opis problemu:</label>
+                    <textarea id="problem" name="problem" placeholder="Opisz co się stało z Twoją pralką..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.297-.497.1-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.988c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.772 11.772 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.243-1.641a11.822 11.822 0 005.753 1.484h.005c6.554 0 11.89-5.335 11.893-11.893A11.777 11.777 0 0020.463 3.488" fill="currentColor"/>
+                    </svg>
+                    Wyślij przez WhatsApp
+                </button>
+            </form>
+        </div>
 
         <div class="contact-cta">
             <h2>Lepiej zadzwonić?</h2>
             <a href="tel:+48721988949" class="cta-button">📞 721 988 949</a>
+            <p style="margin-top: 15px;">Czynne: Pon-Pt: 8:00-18:00 | Sob: 9:00-14:00</p>
         </div>
     </div>
 
-    <a href="https://wa.me/48721988949" class="whatsapp-float" target="_blank">💬</a>
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                <p>© 2023 Serwis Pralek Amica Stargard. Wszelkie prawa zastrzeżone.</p>
+            </div>
+        </div>
+    </footer>
 
     <script>
         document.getElementById('orderForm').addEventListener('submit', function(e) {
             e.preventDefault();
             const formData = new FormData(this);
+            
+            // Tworzymy wiadomość z danymi formularza
             let message = `🔧 ZGŁOSZENIE: Pralka Amica Stargard\n\n`;
             message += `👤 Imię: ${formData.get('name')}\n`;
             message += `📞 Telefon: ${formData.get('phone')}\n`;
             message += `📍 Adres: ${formData.get('address')}\n`;
+            
+            if (formData.get('model')) {
+                message += `🏷️ Model: ${formData.get('model')}\n`;
+            }
+            
             message += `❗ Problem: ${formData.get('problem')}\n`;
-            const whatsappURL = `https://wa.me/48721988949?text=${encodeURIComponent(message)}`;
-            window.open(whatsappURL, '_blank');
-            alert('Dziękujemy! Za chwilę zostaniesz przekierowany do WhatsApp.');
+            
+            // Kodujemy wiadomość dla URL
+            const encodedMessage = encodeURIComponent(message);
+            
+            // Otwieramy WhatsApp z przygotowaną wiadomością
+            window.open(`https://wa.me/48721988949?text=${encodedMessage}`, '_blank');
         });
     </script>
 </body>
