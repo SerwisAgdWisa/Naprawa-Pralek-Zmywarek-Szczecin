@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naprawa pralek Candy Pyrzyce | Serwis AGD</title>
+  <meta name="description" content="Naprawa pralek Candy w Pyrzycach. Pralka nie działa, pokazuje błędy E03, E21, przecieka, hałasuje? Zadzwoń lub napisz na WhatsApp – szybka pomoc!">
+  <meta name="keywords" content="naprawa pralek Candy Pyrzyce, serwis Candy Pyrzyce, pralka Candy nie działa, Candy AGD Pyrzyce">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Naprawa Pralek Candy Pyrzyce",
+    "telephone": "+48 721 988 949",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Pyrzyce",
+      "addressRegion": "Zachodniopomorskie",
+      "addressCountry": "PL"
+    },
+    "url": "https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-pralek/pyrzyce/candy.html"
+  }
+  </script>
+
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f9f9f9; color:#333; }
+    header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color:white; padding:20px; text-align:center; }
+    header h1 { margin:0; }
+    section { padding:20px; max-width:600px; margin:auto; background:white; box-shadow:0 2px 5px rgba(0,0,0,0.1); margin-top:20px; }
+    form label { display:block; margin-bottom:10px; font-weight:bold; }
+    input, textarea { width:100%; padding:10px; margin-top:5px; border:1px solid #ccc; border-radius:4px; box-sizing:border-box; }
+    button { margin-top:15px; padding:12px; background:linear-gradient(135deg,#ff6b35 0%,#f7931e 100%); border:none; color:white; font-size:16px; cursor:pointer; border-radius:25px; width:100%; font-weight:bold; }
+    button:hover { background:linear-gradient(135deg,#e55a2b 0%,#de831a 100%); }
+    footer { text-align:center; padding:20px; background:#eee; margin-top:20px; }
+    .contact-info { background:#e6f3ff; padding:15px; border-radius:5px; text-align:center; margin-bottom:20px; }
+    .phone-link { color:#667eea; text-decoration:none; font-weight:bold; font-size:18px; }
+    .phone-link:hover { text-decoration:underline; }
+    .top-button { text-align:center; margin-top:10px; }
+    .top-button a { display:inline-block; padding:12px 25px; background:linear-gradient(135deg,#ff6b35 0%,#f7931e 100%); color:white; font-weight:bold; border-radius:25px; text-decoration:none; font-size:16px; }
+    .top-button a:hover { background:linear-gradient(135deg,#e55a2b 0%,#de831a 100%); }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Naprawa pralek Candy Pyrzyce</h1>
+  <p>Profesjonalny serwis AGD marki Candy w Pyrzycach</p>
+</header>
+
+<section class="top-button">
+  <a href="#form">Zamów Naprawę</a>
+</section>
+
+<section>
+  <div class="contact-info">
+    <p>📞 <a href="tel:+48721988949" class="phone-link">+48 721 988 949</a></p>
+    <p>💬 <a href="https://wa.me/48721988949" class="phone-link">WhatsApp</a></p>
+  </div>
+
+  <form id="form" onsubmit="sendToWhatsApp(event)">
+    <label>Imię i nazwisko:<input type="text" id="name" required></label>
+    <label>Telefon:<input type="tel" id="phone" required></label>
+    <label>Model pralki Candy:<input type="text" id="brand" placeholder="np. Candy CS4 1062D3"></label>
+    <label>Opis usterki:<textarea id="message" rows="4" required></textarea></label>
+    <label>Adres w Pyrzycach:<input type="text" id="address"></label>
+    <button type="submit">Wyślij zgłoszenie na WhatsApp</button>
+  </form>
+</section>
+
+<section>
+  <h2>Typowe usterki pralek Candy:</h2>
+  <ul>
+    <li>Pralka nie grzeje wody</li>
+    <li>Pralka przecieka</li>
+    <li>Błędy E03, E21</li>
+    <li>Hałas podczas wirowania</li>
+  </ul>
+
+  <h3>Naprawiamy też:</h3>
+  <ul>
+    <li><a href="bosch.html">Bosch</a></li>
+    <li><a href="whirlpool.html">Whirlpool</a></li>
+    <li><a href="samsung.html">Samsung</a></li>
+    <li><a href="lg.html">LG</a></li>
+  </ul>
+</section>
+
+<footer>
+  <p>© 2025 Naprawa Pralek Candy Pyrzyce | Serwis AGD | Tel: +48 721 988 949</p>
+</footer>
+
+<script>
+function sendToWhatsApp(event) {
+  event.preventDefault();
+  let text = `🔧 NAPRAWA PRALKI CANDY - PYRZYCE\n\n` +
+             `👤 Imię: ${name.value}\n📞 Telefon: ${phone.value}\n🏠 Adres: ${address.value}\n🔧 Model: ${brand.value}\n❗ Problem: ${message.value}\n\n📍 Miasto: Pyrzyce`;
+  window.open("https://wa.me/48721988949?text=" + encodeURIComponent(text), '_blank');
+}
+</script>
+
+</body>
+</html>
