@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naprawa pralek Indesit Pyrzyce | Serwis AGD</title>
+  <meta name="description" content="Naprawa pralek Indesit w Pyrzycach. Pralka nie działa, pokazuje błędy F01, F05, przecieka? Zadzwoń lub napisz na WhatsApp – szybka pomoc!">
+  <meta name="keywords" content="naprawa pralek Indesit Pyrzyce, serwis Indesit Pyrzyce, pralka Indesit nie działa, Indesit AGD Pyrzyce">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Naprawa Pralek Indesit Pyrzyce",
+    "telephone": "+48 721 988 949",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Pyrzyce",
+      "addressRegion": "Zachodniopomorskie",
+      "addressCountry": "PL"
+    },
+    "url": "https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-pralek/pyrzyce/indesit.html"
+  }
+  </script>
+
+  <style>/* Стили — те же, что в предыдущих */</style>
+</head>
+<body>
+
+<header>
+  <h1>Naprawa pralek Indesit Pyrzyce</h1>
+  <p>Profesjonalny serwis AGD marki Indesit w Pyrzycach</p>
+</header>
+
+<section class="top-button">
+  <a href="#form">Zamów Naprawę</a>
+</section>
+
+<section>
+  <div class="contact-info">
+    <p>📞 <a href="tel:+48721988949" class="phone-link">+48 721 988 949</a></p>
+    <p>💬 <a href="https://wa.me/48721988949" class="phone-link">WhatsApp</a></p>
+  </div>
+
+  <form id="form" onsubmit="sendToWhatsApp(event)">
+    <label>Imię i nazwisko:<input type="text" id="name" required></label>
+    <label>Telefon:<input type="tel" id="phone" required></label>
+    <label>Model pralki Indesit:<input type="text" id="brand" placeholder="np. Indesit IWSC 51051"></label>
+    <label>Opis usterki:<textarea id="message" rows="4" required></textarea></label>
+    <label>Adres w Pyrzycach:<input type="text" id="address"></label>
+    <button type="submit">Wyślij zgłoszenie na WhatsApp</button>
+  </form>
+</section>
+
+<section>
+  <h2>Typowe usterki pralek Indesit:</h2>
+  <ul>
+    <li>Pralka nie działa</li>
+    <li>Pralka przecieka</li>
+    <li>Błędy F01, F05</li>
+    <li>Nie odpompowuje wody</li>
+  </ul>
+
+  <h3>Naprawiamy też:</h3>
+  <ul>
+    <li><a href="siemens.html">Siemens</a></li>
+    <li><a href="amica.html">Amica</a></li>
+    <li><a href="beko.html">Beko</a></li>
+  </ul>
+</section>
+
+<footer>
+  <p>© 2025 Naprawa Pralek Indesit Pyrzyce | Serwis AGD | Tel: +48 721 988 949</p>
+</footer>
+
+<script>
+function sendToWhatsApp(event) {
+  event.preventDefault();
+  let text = `🔧 NAPRAWA PRALKI INDESIT - PYRZYCE\n\n` +
+             `👤 Imię: ${name.value}\n📞 Telefon: ${phone.value}\n🏠 Adres: ${address.value}\n🔧 Model: ${brand.value}\n❗ Problem: ${message.value}\n\n📍 Miasto: Pyrzyce`;
+  window.open("https://wa.me/48721988949?text=" + encodeURIComponent(text), '_blank');
+}
+</script>
+
+</body>
+</html>
