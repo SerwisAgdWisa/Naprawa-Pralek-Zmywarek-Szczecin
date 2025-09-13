@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naprawa Zmywarek Beko Stargard | Serwis WISA 721 988 949</title>
+  <meta name="description" content="Serwis zmywarek Beko w Stargardzie. Naprawa, części zamienne, gwarancja. Tel: 721988949">
+  <meta name="keywords" content="naprawa zmywarek Beko Stargard, serwis Beko Stargard, części do Beko">
+  <link rel="canonical" href="https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-zmywarek/stargard/beko.html">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Naprawa Zmywarek",
+        "item": "https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-zmywarek/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Stargard",
+        "item": "https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-zmywarek/stargard/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Beko",
+        "item": "https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-zmywarek/stargard/beko.html"
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    body { font-family: Arial,sans-serif; margin:0; padding:0; background:#f9f9f9; color:#333; }
+    header { background:linear-gradient(135deg,#667eea,#764ba2); color:white; padding:20px; text-align:center; }
+    header h1 { margin:0; }
+    section { padding:20px; max-width:600px; margin:auto; background:white; box-shadow:0 2px 5px rgba(0,0,0,0.1); margin-top:20px; }
+    form label { display:block; margin-bottom:10px; font-weight:bold; }
+    input, textarea { width:100%; padding:10px; margin-top:5px; border:1px solid #ccc; border-radius:4px; box-sizing:border-box; }
+    button { margin-top:15px; padding:12px; background:linear-gradient(135deg,#ff6b35,#f7931e); border:none; color:white; font-size:16px; cursor:pointer; border-radius:25px; width:100%; font-weight:bold; }
+    button:hover { background:linear-gradient(135deg,#e55a2b,#de831a); }
+    footer { text-align:center; padding:20px; background:#eee; margin-top:20px; }
+    .contact-info { background:#e6f3ff; padding:15px; border-radius:5px; text-align:center; margin-bottom:20px; }
+    .phone-link { color:#667eea; text-decoration:none; font-weight:bold; font-size:18px; }
+    .phone-link:hover { text-decoration:underline; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Naprawa Zmywarek Beko Stargard</h1>
+  <p>Profesjonalny serwis zmywarek Beko w Stargardzie</p>
+</header>
+
+<section>
+  <div class="contact-info">
+    <p>📞 Zadzwoń teraz: <a href="tel:+48721988949" class="phone-link">+48 721 988 949</a></p>
+    <p>💬 WhatsApp: <a href="https://wa.me/48721988949" class="phone-link">+48 721 988 949</a></p>
+  </div>
+  <form onsubmit="sendToWhatsApp(event)">
+    <label>Imię i nazwisko:
+      <input type="text" id="name" required>
+    </label>
+    <label>Telefon:
+      <input type="tel" id="phone" required>
+    </label>
+    <label>Model Beko:
+      <input type="text" id="model" placeholder="np. DFN16430X">
+    </label>
+    <label>Opis usterki:
+      <textarea id="message" rows="4" required></textarea>
+    </label>
+    <label>Adres w Stargardzie:
+      <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania">
+    </label>
+    <button type="submit">Wyślij zgłoszenie na WhatsApp</button>
+  </form>
+</section>
+
+<section>
+  <h2>Typowe usterki zmywarek Beko</h2>
+  <ul>
+    <li>Błąd E01 – problem z grzałką</li>
+    <li>Błąd E02 – awaria czujnika temperatury</li>
+    <li>Zmywarka nie pobiera wody</li>
+    <li>Woda nie odpływa</li>
+    <li>Hałas podczas pracy</li>
+    <li>Brudne naczynia po cyklu</li>
+  </ul>
+  <p><strong>Obsługiwane osiedla:</strong> Centrum, Kluczewo, Pyrzycka, os. Zachód, Błonie</p>
+</section>
+
+<footer>
+  <p>© 2025 Naprawa Zmywarek Beko Stargard | Serwis AGD | Tel: +48 721 988 949</p>
+</footer>
+
+<script>
+function sendToWhatsApp(event) {
+  event.preventDefault();
+  let name = document.getElementById("name").value;
+  let phone = document.getElementById("phone").value;
+  let model = document.getElementById("model").value;
+  let message = document.getElementById("message").value;
+  let address = document.getElementById("address").value;
+
+  let text = `🔧 NAPRAWA ZMYWARKI BEKO - STARGARD\n\n` +
+             `👤 Imię: ${name}\n` +
+             `📞 Telefon: ${phone}\n` +
+             `🏠 Adres: ${address}\n` +
+             `🔧 Model: ${model}\n` +
+             `❗ Problem: ${message}\n\n` +
+             `📍 Miasto: Stargard`;
+
+  window.open("https://wa.me/48721988949?text=" + encodeURIComponent(text), '_blank');
+}
+</script>
+
+</body>
+</html>
