@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Naprawa pralek Siemens Pyrzyce | Serwis AGD</title>
-  <meta name="description" content="Naprawa pralek Siemens w Pyrzycach. Pralka nie działa, pokazuje błędy E18, E23, zatrzymuje program? Zadzwoń lub napisz na WhatsApp – szybka pomoc!">
-  <meta name="keywords" content="naprawa pralek Siemens Pyrzyce, serwis Siemens Pyrzyce, pralka Siemens nie działa, Siemens AGD Pyrzyce">
+  <meta name="description" content="Naprawa pralek Siemens w Pyrzycach. Pralka nie działa, pokazuje błędy E18, E23, zatrzymuje program? Zadzwoń lub napisz na WhatsApp – szybka pomoc!" />
+  <meta name="keywords" content="naprawa pralek Siemens Pyrzyce, serwis Siemens Pyrzyce, pralka Siemens nie działa, Siemens AGD Pyrzyce" />
 
+  <!-- Mikroznaczniki LocalBusiness -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -23,7 +24,54 @@
   }
   </script>
 
-  <style>/* Стили — те же, что в предыдущих */</style>
+  <!-- Mikroznaczniki BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Naprawa pralek",
+        "item": "https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-pralek/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Pyrzyce",
+        "item": "https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-pralek/pyrzyce/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Siemens",
+        "item": "https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-pralek/pyrzyce/siemens.html"
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#fff; color:#333; }
+    header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color:white; padding:20px; text-align:center; }
+    nav { padding:10px 20px; font-size:14px; background:#f5f5f5; }
+    nav a { color:#667eea; text-decoration:none; }
+    nav a:hover { text-decoration:underline; }
+    section { padding:20px; max-width:600px; margin:auto; }
+    .contact-info { background:#eef3ff; padding:15px; border-radius:5px; text-align:center; margin-bottom:20px; }
+    .phone-link { color:#667eea; text-decoration:none; font-weight:bold; font-size:18px; }
+    .phone-link:hover { text-decoration:underline; }
+    form label { display:block; margin-bottom:10px; font-weight:bold; }
+    input, textarea { width:100%; padding:10px; margin-top:5px; border:1px solid #ccc; border-radius:4px; box-sizing:border-box; }
+    button { margin-top:15px; padding:12px; background:linear-gradient(135deg,#ff6b35 0%,#f7931e 100%); border:none; color:white; font-size:16px; cursor:pointer; border-radius:25px; width:100%; font-weight:bold; }
+    button:hover { background:linear-gradient(135deg,#e55a2b 0%,#de831a 100%); }
+    footer { text-align:center; padding:20px; background:#eee; margin-top:40px; font-size:14px; }
+    ul { padding-left:20px; }
+    .top-button { text-align:center; margin:20px 0; }
+    .top-button a { display:inline-block; padding:12px 25px; background:linear-gradient(135deg,#ff6b35 0%,#f7931e 100%); color:white; font-weight:bold; border-radius:25px; text-decoration:none; font-size:16px; }
+    .top-button a:hover { background:linear-gradient(135deg,#e55a2b 0%,#de831a 100%); }
+  </style>
 </head>
 <body>
 
@@ -31,6 +79,12 @@
   <h1>Naprawa pralek Siemens Pyrzyce</h1>
   <p>Profesjonalny serwis AGD marki Siemens w Pyrzycach</p>
 </header>
+
+<nav aria-label="breadcrumb">
+  <a href="/naprawa-pralek/">Naprawa pralek</a> › 
+  <a href="/naprawa-pralek/pyrzyce/">Pyrzyce</a> › 
+  <span>Siemens</span>
+</nav>
 
 <section class="top-button">
   <a href="#form">Zamów Naprawę</a>
@@ -59,6 +113,7 @@
     <li>Pralka zatrzymuje program</li>
     <li>Błędy E18, E23</li>
     <li>Nie odpompowuje wody</li>
+    <li>Hałas podczas wirowania</li>
   </ul>
 
   <h3>Naprawiamy też:</h3>
@@ -76,8 +131,15 @@
 <script>
 function sendToWhatsApp(event) {
   event.preventDefault();
-  let text = `🔧 NAPRAWA PRALKI SIEMENS - PYRZYCE\n\n` +
-             `👤 Imię: ${name.value}\n📞 Telefon: ${phone.value}\n🏠 Adres: ${address.value}\n🔧 Model: ${brand.value}\n❗ Problem: ${message.value}\n\n📍 Miasto: Pyrzyce`;
+  const name = document.getElementById("name").value;
+  const phone = document.getElementById("phone").value;
+  const brand = document.getElementById("brand").value;
+  const message = document.getElementById("message").value;
+  const address = document.getElementById("address").value;
+
+  const text = `🔧 NAPRAWA PRALKI SIEMENS - PYRZYCE\n\n` +
+               `👤 Imię: ${name}\n📞 Telefon: ${phone}\n🏠 Adres: ${address}\n🔧 Model: ${brand}\n❗ Problem: ${message}\n\n📍 Miasto: Pyrzyce`;
+
   window.open("https://wa.me/48721988949?text=" + encodeURIComponent(text), '_blank');
 }
 </script>
