@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indesit Maszewo | Naprawa Pralek F05 F06 F12</title>
+  <meta name="description" content="Maszewo – naprawa pralek Indesit z błędami F05, F06, F12. Diagnoza, części, serwis na miejscu. Modele: IWSC, IWE, BWE, MTWE, EcoTime.">
+  <meta name="keywords" content="Indesit Maszewo, Indesit F05, Indesit F06, Indesit F12, serwis Indesit Maszewo, naprawa pralki Indesit">
+  <style>/* Twój CSS – bez zmian */</style>
+</head>
+<body>
+
+<header>
+  <h1>Pralka Indesit – Maszewo</h1>
+  <p>Błąd F05, F06, F12 – serwis na miejscu</p>
+</header>
+
+<section>
+  <div class="contact-info">
+    <p>📞 Zadzwoń teraz: <a href="tel:+48721988949" class="phone-link">+48 721 988 949</a></p>
+    <p>💬 WhatsApp: <a href="https://wa.me/48721988949" class="phone-link">+48 721 988 949</a></p>
+  </div>
+
+  <form onsubmit="sendToWhatsApp(event)">
+    <label>Imię i nazwisko:
+      <input type="text" id="name" required>
+    </label>
+    <label>Telefon:
+      <input type="tel" id="phone" required>
+    </label>
+    <label>Model pralki Indesit:
+      <input type="text" id="brand" placeholder="np. Indesit IWSC51051">
+    </label>
+    <label>Opis usterki:
+      <textarea id="message" rows="4" required placeholder="Błąd F05, pralka nie odpompowuje, zatrzymuje program..."></textarea>
+    </label>
+    <label>Adres w Maszewie:
+      <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania">
+    </label>
+    <button type="submit">Wyślij zgłoszenie na WhatsApp</button>
+  </form>
+</section>
+
+<section>
+  <h2>Naprawa pralek Indesit – Maszewo</h2>
+  <p>Serwisujemy pralki Indesit z błędami F05, F06, F12.  
+  Diagnoza na miejscu, części, konkretna robota.</p>
+
+  <h3>Typowe błędy Indesit:</h3>
+  <ul>
+    <li><strong>F05</strong> – brak odpływu wody (pompa, filtr, wąż) [A](https://serwisy.org.pl/pralka-indesit-jak-naprawic-blad-f05-praktyczny-poradnik/?copilot_analytics_metadata=eyJldmVudEluZm9fbWVzc2FnZUlkIjoieXR5UDYzb2VvSnpQUVVQbkcxS0ZhIiwiZXZlbnRJbmZvX2NsaWNrU291cmNlIjoiY2l0YXRpb25MaW5rIiwiZXZlbnRJbmZvX2NsaWNrRGVzdGluYXRpb24iOiJodHRwczpcL1wvc2Vyd2lzeS5vcmcucGxcL3ByYWxrYS1pbmRlc2l0LWphay1uYXByYXdpYy1ibGFkLWYwNS1wcmFrdHljem55LXBvcmFkbmlrXC8iLCJldmVudEluZm9fY29udmVyc2F0aW9uSWQiOiJ3QkZ2NldBOTNQU3h6OEtYOUc2elcifQ%3D%3D&citationMarker=9F742443-6C92-4C44-BF58-8F5A7C53B6F1) [B](https://mobiserwis24.pl/pralka-pytania/pralka-indesit-f05-wyjasnienie-kodu-bledu-i-sposoby-naprawy/?copilot_analytics_metadata=eyJldmVudEluZm9fY2xpY2tEZXN0aW5hdGlvbiI6Imh0dHBzOlwvXC9tb2Jpc2Vyd2lzMjQucGxcL3ByYWxrYS1weXRhbmlhXC9wcmFsa2EtaW5kZXNpdC1mMDUtd3lqYXNuaWVuaWUta29kdS1ibGVkdS1pLXNwb3NvYnktbmFwcmF3eVwvIiwiZXZlbnRJbmZvX2NsaWNrU291cmNlIjoiY2l0YXRpb25MaW5rIiwiZXZlbnRJbmZvX21lc3NhZ2VJZCI6Inl0eVA2M29lb0p6UFFVUG5HMUtGYSIsImV2ZW50SW5mb19jb252ZXJzYXRpb25JZCI6IndCRnY2V0E5M1BTeHo4S1g5RzZ6VyJ9&citationMarker=9F742443-6C92-4C44-BF58-8F5A7C53B6F1)</li>
+    <li><strong>F06</strong> – awaria czujnika obrotów silnika</li>
+    <li><strong>F12</strong> – brak komunikacji między modułami</li>
+    <li>Inne: zatrzymanie programu, błędy elektroniki, woda w bębnie po zakończeniu cyklu</li>
+  </ul>
+
+  <p>Modele: IWSC, IWE, BWE, MTWE, EcoTime</p>
+</section>
+
+<section>
+  <h2>Serwis Indesit – Maszewo</h2>
+  <ul>
+    <li>Dojazd do klienta</li>
+    <li>Diagnoza i części</li>
+    <li>Naprawa bez gadania</li>
+    <li>Gwarancja na usługę</li>
+  </ul>
+</section>
+
+<footer>
+  <p>© 2025 Naprawa Pralek Indesit Maszewo | Serwis AGD | Tel: +48 721 988 949</p>
+</footer>
+
+<script>
+function sendToWhatsApp(event) {
+  event.preventDefault();
+  let name = document.getElementById("name").value;
+  let phone = document.getElementById("phone").value;
+  let brand = document.getElementById("brand").value;
+  let message = document.getElementById("message").value;
+  let address = document.getElementById("address").value;
+
+  let text = `🔧 PRALKA INDESIT – MASZEWO\n\n` +
+             `👤 Imię: ${name}\n` +
+             `📞 Telefon: ${phone}\n` +
+             `🏠 Adres: ${address}\n` +
+             `🔧 Model: ${brand}\n` +
+             `❗ Problem: ${message}\n\n` +
+             `📍 Miasto: Maszewo`;
+             
+  let url = "https://wa.me/48721988949?text=" + encodeURIComponent(text);
+  window.open(url, '_blank');
+}
+</script>
+
+</body>
+</html>
