@@ -1,553 +1,98 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Profesjonalny serwis pralek w Nowogardzie. Naprawa wszystkich marek pralek - Bosch, Samsung, LG, Whirlpool. Dojazd tego samego dnia. Gwarancja na usługi. Tel: 721988949">
-    <meta name="keywords" content="naprawa pralek nowogard, serwis pralek nowogard, mechanik pralek nowogard, pralka nie odprowadza wody nowogard, pralka nie wiruje nowogard, serwis AGD nowogard">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Oleksandr Chumnyi WISA">
-    <meta name="geo.region" content="PL-ZP">
-    <meta name="geo.placename" content="Nowogard, Zachodniopomorskie">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="Naprawa Pralek Nowogard | Serwis AGD WISA">
-    <meta property="og:description" content="Profesjonalny serwis pralek w Nowogardzie. Dojazd tego samego dnia. Gwarancja na naprawy.">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="pl_PL">
-
-    <title>Naprawa Pralek Nowogard | Serwis Pralek - Oleksandr Chumnyi WISA 721 988 949</title>
-
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "WISA - Naprawa Pralek Nowogard",
-      "description": "Profesjonalny serwis pralek w Nowogardzie",
-      "url": "https://serwisagdwisa.github.io/naprawa-pralek-nowogard.html",
-      "telephone": "+48721988949",
-      "areaServed": "Nowogard",
-      "serviceType": "Naprawa pralek",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Nowogard",
-        "addressRegion": "Zachodniopomorskie",
-        "addressCountry": "PL"
-      }
-    }
-    </script>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Header */
-        header {
-            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
-            padding: 1rem 0;
-            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
-            color: white;
-        }
-
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .logo {
-            font-size: 2rem;
-            font-weight: bold;
-            color: #667eea;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-
-        .phone {
-            font-size: 1.5rem;
-            color: #f39c12;
-            font-weight: bold;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-
-        .phone:hover {
-            color: #e67e22;
-            transform: scale(1.05);
-        }
-
-        /* Navigation */
-        .breadcrumbs {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 1rem 0;
-            color: white;
-        }
-
-        .breadcrumbs a {
-            color: #f39c12;
-            text-decoration: none;
-        }
-
-        .breadcrumbs a:hover {
-            text-decoration: underline;
-        }
-
-        /* Hero Section */
-        .hero {
-            padding: 3rem 0;
-            text-align: center;
-            color: white;
-        }
-
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-        }
-
-        .cta-button {
-            display: inline-block;
-            background: linear-gradient(45deg, #e74c3c, #f39c12);
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 50px;
-            font-size: 1.2rem;
-            font-weight: bold;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-        }
-
-        /* Content Sections */
-        .content-section {
-            background: rgba(255, 255, 255, 0.95);
-            margin: 2rem 0;
-            padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .content-section h2 {
-            color: #2c3e50;
-            margin-bottom: 1.5rem;
-            font-size: 2rem;
-            text-align: center;
-        }
-
-        .content-section h3 {
-            color: #34495e;
-            margin: 1.5rem 0 1rem 0;
-            font-size: 1.3rem;
-        }
-
-        /* Problems Grid */
-        .problems-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
-
-        .problem-card {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 1.5rem;
-            border-radius: 10px;
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
-
-        .problem-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .problem-icon {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        /* Brands Grid */
-        .brands-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 1rem;
-            text-align: center;
-            margin: 2rem 0;
-        }
-
-        .brand-item {
-            background: #f8f9fa;
-            padding: 1rem;
-            border-radius: 8px;
-            font-weight: bold;
-            color: #2c3e50;
-            transition: all 0.3s ease;
-        }
-
-        .brand-item:hover {
-            background: #667eea;
-            color: white;
-            transform: scale(1.05);
-        }
-
-        /* Form Section */
-        .form-section {
-            background: linear-gradient(135deg, #2c3e50, #34495e);
-            color: white;
-            padding: 3rem 0;
-        }
-
-        .order-form {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            padding: 2rem;
-            border-radius: 15px;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .order-form h2 {
-            text-align: center;
-            margin-bottom: 2rem;
-            color: white;
-        }
-
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: bold;
-            color: white;
-        }
-
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
-            width: 100%;
-            padding: 12px;
-            border: none;
-            border-radius: 8px;
-            font-size: 1rem;
-            background: rgba(255, 255, 255, 0.9);
-            color: #333;
-        }
-
-        .submit-btn {
-            width: 100%;
-            background: linear-gradient(45deg, #e74c3c, #f39c12);
-            color: white;
-            padding: 15px;
-            border: none;
-            border-radius: 8px;
-            font-size: 1.2rem;
-            font-weight: bold;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .submit-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-        }
-
-        /* Footer */
-        footer {
-            background: linear-gradient(135deg, #2c3e50, #34495e);
-            color: white;
-            text-align: center;
-            padding: 2rem 0;
-        }
-
-        /* WhatsApp Float */
-        .whatsapp-float {
-            position: fixed;
-            width: 60px;
-            height: 60px;
-            bottom: 20px;
-            right: 20px;
-            background: #25d366;
-            color: white;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 24px;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-            z-index: 100;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-        }
-
-        .whatsapp-float:hover {
-            transform: scale(1.1);
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
-            
-            .header-content {
-                flex-direction: column;
-                gap: 1rem;
-            }
-            
-            .logo {
-                font-size: 1.5rem;
-            }
-            
-            .phone {
-                font-size: 1.3rem;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naprawa Pralek Nowogard | Serwis AGD z Dojazdem</title>
+  <meta name="description" content="Naprawa pralek w Nowogardzie – szybki serwis z dojazdem. Pralka nie wiruje, nie grzeje, pokazuje błąd E21 lub F13? Zadzwoń lub napisz na WhatsApp – naprawimy!">
+  <meta name="keywords" content="naprawa pralek Nowogard, serwis AGD Nowogard, pralka nie wiruje, pralka nie grzeje, błąd E21, błąd F13, naprawa pralki Nowogard">
+  <style>/* стиль как у тебя */</style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">WISA</div>
-                <a href="tel:+48721988949" class="phone">📞 721 988 949</a>
-            </div>
-        </div>
-    </header>
 
-    <!-- Breadcrumbs -->
-    <div class="breadcrumbs">
-        <div class="container">
-            <a href="index.html">Strona główna</a> → <span>Naprawa Pralek Nowogard</span>
-        </div>
-    </div>
+<header>
+  <h1>Naprawa Pralek Nowogard</h1>
+  <p>Profesjonalny serwis pralek z dojazdem do klienta</p>
+</header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>Naprawa Pralek Nowogard</h1>
-            <p>Profesjonalny serwis pralek w Nowogardzie • Dojazd tego samego dnia • Gwarancja na naprawy</p>
-            <a href="#order" class="cta-button">Zamów Naprawę Pralki</a>
-        </div>
-    </section>
+<section>
+  <div class="contact-info">
+    <p>📞 Zadzwoń teraz: <a href="tel:+48721988949" class="phone-link">+48 721 988 949</a></p>
+    <p>💬 WhatsApp: <a href="https://wa.me/48721988949" class="phone-link">+48 721 988 949</a></p>
+  </div>
 
-    <!-- Problems Section -->
-    <section class="content-section">
-        <div class="container">
-            <h2>Najczęstsze Problemy z Pralkami w Nowogardzie</h2>
-            <div class="problems-grid">
-                <div class="problem-card">
-                    <div class="problem-icon">💧</div>
-                    <h3>Pralka nie odprowadza wody</h3>
-                    <p>Zatkana pompa, filtr lub wąż odpływowy</p>
-                </div>
-                <div class="problem-card">
-                    <div class="problem-icon">🌀</div>
-                    <h3>Pralka nie wiruje</h3>
-                    <p>Problem z silnikiem lub paskiem napędowym</p>
-                </div>
-                <div class="problem-card">
-                    <div class="problem-icon">🔊</div>
-                    <h3>Pralka głośno pracuje</h3>
-                    <p>Zużyte łożyska lub problemy z amortyzatorami</p>
-                </div>
-                <div class="problem-card">
-                    <div class="problem-icon">🚿</div>
-                    <h3>Pralka nie pobiera wody</h3>
-                    <p>Zatkany filtr wlotowy lub uszkodzony elektrozawór</p>
-                </div>
-                <div class="problem-card">
-                    <div class="problem-icon">🔥</div>
-                    <h3>Pralka nie grzeje wody</h3>
-                    <p>Uszkodzona grzałka lub czujnik temperatury</p>
-                </div>
-                <div class="problem-card">
-                    <div class="problem-icon">🚪</div>
-                    <h3>Problemy z zamkiem</h3>
-                    <p>Uszkodzony blokada drzwi lub mechanizm</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <form onsubmit="sendToWhatsApp(event)">
+    <label>Imię i nazwisko:
+      <input type="text" id="name" required>
+    </label>
+    <label>Telefon:
+      <input type="tel" id="phone" required>
+    </label>
+    <label>Marka i model pralki:
+      <input type="text" id="brand" placeholder="np. Bosch WAN2826SPL">
+    </label>
+    <label>Opis usterki:
+      <textarea id="message" rows="4" required placeholder="Opisz dokładnie problem z pralką..."></textarea>
+    </label>
+    <label>Adres w Nowogardzie:
+      <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania">
+    </label>
+    <button type="submit">Zamów Naprawę</button>
+  </form>
+</section>
 
-    <!-- Brands Section -->
-    <section class="content-section">
-        <div class="container">
-            <h2>Naprawiamy Wszystkie Marki Pralek w Nowogardzie</h2>
-            <div class="brands-grid">
-                <div class="brand-item">BOSCH</div>
-                <div class="brand-item">SAMSUNG</div>
-                <div class="brand-item">LG</div>
-                <div class="brand-item">WHIRLPOOL</div>
-                <div class="brand-item">ELECTROLUX</div>
-                <div class="brand-item">SIEMENS</div>
-                <div class="brand-item">CANDY</div>
-                <div class="brand-item">INDESIT</div>
-                <div class="brand-item">BEKO</div>
-                <div class="brand-item">AMICA</div>
-                <div class="brand-item">HOTPOINT</div>
-                <div class="brand-item">MIELE</div>
-            </div>
-        </div>
-    </section>
+<section>
+  <h2>Typowe usterki pralek:</h2>
+  <ul>
+    <li>❗ Pralka nie pobiera wody</li>
+    <li>❗ Pralka nie wiruje</li>
+    <li>❗ Pralka nie grzeje – błąd F13</li>
+    <li>❗ Pralka zatrzymuje program</li>
+    <li>❗ Pralka przecieka</li>
+    <li>❗ Błąd E21 – problem z odpompowaniem</li>
+    <li>❗ Błąd F05 – czujnik poziomu wody</li>
+    <li>❗ Hałas podczas wirowania</li>
+  </ul>
+  <p>Naprawiamy marki: Samsung, Bosch, LG, Whirlpool, Beko, Electrolux, Amica</p>
+</section>
 
-    <!-- Service Info -->
-    <section class="content-section">
-        <div class="container">
-            <h2>Dlaczego Warto Wybrać Nasz Serwis Pralek w Nowogardzie?</h2>
-            
-            <h3>✅ Szybka Diagnostyka</h3>
-            <p>Dojeżdżamy do Nowogarda tego samego dnia. Diagnoza problemu z pralką w miejscu zamieszkania klienta, bez dodatkowych kosztów za wycenę.</p>
-            
-            <h3>✅ Oryginalne Części Zamienne</h3>
-            <p>Używamy wyłącznie oryginalnych lub w pełni kompatybilnych części zamiennych do pralek. Mamy dostęp do części dla wszystkich popularnych marek.</p>
-            
-            <h3>✅ Gwarancja na Naprawę</h3>
-            <p>Na wszystkie naprawy pralek w Nowogardzie udzielamy gwarancji. Jeśli problem powróci, naprawimy bezpłatnie.</p>
-            
-            <h3>✅ Uczciwe Ceny</h3>
-            <p>Transparent pricing bez ukrytych kosztów. Cena naprawy pralki ustalana z góry, bez niespodzianek na koniec.</p>
-            
-            <h3>✅ Doświadczenie</h3>
-            <p>Wieloletnie doświadczenie w naprawie pralek w Nowogardzie i okolicach. Serwisujemy wszystkie typy pralek - automatyczne, ładowane od góry i z przodu.</p>
-        </div>
-    </section>
+<section>
+  <h2>Dlaczego warto wybrać nasz serwis?</h2>
+  <ul>
+    <li>✓ Dojazd do klienta w Nowogardzie</li>
+    <li>✓ Szybka diagnoza i wycena</li>
+    <li>✓ Oryginalne części zamienne</li>
+    <li>✓ Gwarancja na wykonane usługi</li>
+    <li>✓ Wieloletnie doświadczenie</li>
+    <li>✓ Konkurencyjne ceny</li>
+  </ul>
+</section>
 
-    <!-- Order Form Section -->
-    <section class="form-section" id="order">
-        <div class="container">
-            <div class="order-form">
-                <h2>Zamów Naprawę Pralki w Nowogardzie</h2>
-                <form id="orderForm">
-                    <div class="form-group">
-                        <label for="name">Imię i nazwisko:</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Telefon:</label>
-                        <input type="tel" id="phone" name="phone" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="address">Adres w Nowogardzie:</label>
-                        <input type="text" id="address" name="address" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="brand">Marka pralki:</label>
-                        <select id="brand" name="brand">
-                            <option value="">Wybierz markę</option>
-                            <option value="bosch">Bosch</option>
-                            <option value="samsung">Samsung</option>
-                            <option value="lg">LG</option>
-                            <option value="whirlpool">Whirlpool</option>
-                            <option value="electrolux">Electrolux</option>
-                            <option value="siemens">Siemens</option>
-                            <option value="inna">Inna marka</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="problem">Opisz problem z pralką:</label>
-                        <textarea id="problem" name="problem" rows="4" placeholder="Np. pralka nie odprowadza wody, głośno pracuje, nie wiruje..." required></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="time">Preferowany termin wizyty:</label>
-                        <input type="datetime-local" id="time" name="time">
-                    </div>
-                    <button type="submit" class="submit-btn">Wyślij Zgłoszenie WhatsApp</button>
-                </form>
-            </div>
-        </div>
-    </section>
+<footer>
+  <p>© 2025 Naprawa Pralek Nowogard | Serwis AGD | Tel: +48 721 988 949</p>
+</footer>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p><strong>Serwis Pralek Nowogard - WISA</strong></p>
-            <p>📞 721 988 949 | Oleksandr Chumnyi</p>
-            <p>Profesjonalny serwis pralek w Nowogardzie i okolicach</p>
-            <p style="margin-top: 1rem; font-size: 0.9rem;">&copy; 2025 Naprawa Pralek Nowogard - WISA. Wszystkie prawa zastrzeżone.</p>
-        </div>
-    </footer>
+<script>
+function sendToWhatsApp(event) {
+  event.preventDefault();
+  let name = document.getElementById("name").value;
+  let phone = document.getElementById("phone").value;
+  let brand = document.getElementById("brand").value;
+  let message = document.getElementById("message").value;
+  let address = document.getElementById("address").value;
 
-    <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/48721988949" class="whatsapp-float" target="_blank">
-        💬
-    </a>
+  let text = `🔧 NAPRAWA PRALKI – NOWOGARD\n\n` +
+             `👤 Imię: ${name}\n` +
+             `📞 Telefon: ${phone}\n` +
+             `🏠 Adres: ${address}\n` +
+             `🔧 Marka/model: ${brand}\n` +
+             `❗ Problem: ${message}\n\n` +
+             `📍 Miasto: Nowogard`;
+             
+  let url = "https://wa.me/48721988949?text=" + encodeURIComponent(text);
+  window.open(url, '_blank');
+}
+</script>
 
-    <script>
-        // Form submission handling
-        document.getElementById('orderForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const formData = new FormData(this);
-            const name = formData.get('name');
-            const phone = formData.get('phone');
-            const address = formData.get('address');
-            const brand = formData.get('brand');
-            const problem = formData.get('problem');
-            const time = formData.get('time');
-            
-            let message = `🔧 NAPRAWA PRALKI NOWOGARD\n\n`;
-            message += `👤 Imię: ${name}\n`;
-            message += `📞 Telefon: ${phone}\n`;
-            message += `📍 Adres: ${address}\n`;
-            if (brand) message += `🔧 Marka: ${brand}\n`;
-            message += `❗ Problem: ${problem}\n`;
-            if (time) message += `⏰ Termin: ${time}\n`;
-            
-            const whatsappURL = `https://wa.me/48721988949?text=${encodeURIComponent(message)}`;
-            window.open(whatsappURL, '_blank');
-            
-            alert('Dziękujemy za zgłoszenie naprawy pralki w Nowogardzie! Za chwilę zostaniesz przekierowany do WhatsApp.');
-        });
-
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-    </script>
 </body>
 </html>
