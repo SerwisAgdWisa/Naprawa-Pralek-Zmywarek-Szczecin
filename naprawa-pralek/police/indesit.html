@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indesit Police | Naprawa Pralek F05 F06 F12</title>
+  <meta name="description" content="Police – naprawa pralek Indesit z błędami F05, F06, F12. Diagnoza, części, serwis na miejscu. Modele: IWSC, IWE, BWE, MTWE, EcoTime.">
+  <meta name="keywords" content="Indesit Police, Indesit F05, Indesit F06, Indesit F12, serwis Indesit Police, naprawa pralki Indesit">
+  <style>/* Twój CSS – bez zmian */</style>
+</head>
+<body>
+
+<header>
+  <h1>Pralka Indesit – Police</h1>
+  <p>Błąd F05, F06, F12 – serwis na miejscu</p>
+</header>
+
+<section>
+  <div class="contact-info">
+    <p>📞 Zadzwoń teraz: <a href="tel:+48721988949" class="phone-link">+48 721 988 949</a></p>
+    <p>💬 WhatsApp: <a href="https://wa.me/48721988949" class="phone-link">+48 721 988 949</a></p>
+  </div>
+
+  <form onsubmit="sendToWhatsApp(event)">
+    <label>Imię i nazwisko:
+      <input type="text" id="name" required>
+    </label>
+    <label>Telefon:
+      <input type="tel" id="phone" required>
+    </label>
+    <label>Model pralki Indesit:
+      <input type="text" id="brand" placeholder="np. Indesit IWSC51051">
+    </label>
+    <label>Opis usterki:
+      <textarea id="message" rows="4" required placeholder="Błąd F05, pralka nie odpompowuje, zatrzymuje program..."></textarea>
+    </label>
+    <label>Adres w Policach:
+      <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania">
+    </label>
+    <button type="submit">Wyślij zgłoszenie na WhatsApp</button>
+  </form>
+</section>
+
+<section>
+  <h2>Naprawa pralek Indesit – Police</h2>
+  <p>Serwisujemy pralki Indesit z błędami F05, F06, F12.  
+  Diagnoza na miejscu, części, konkretna robota.</p>
+
+  <h3>Typowe błędy Indesit:</h3>
+  <ul>
+    <li><strong>F05</strong> – brak odpływu wody (pompa, filtr, wąż) [A](https://serwisy.org.pl/szybka-naprawa-bledu-f05-w-pralce-eksperckie-wskazowki/?copilot_analytics_metadata=eyJldmVudEluZm9fbWVzc2FnZUlkIjoiRzU4eXRleWZCeXVGcnJRZlFSVmhuIiwiZXZlbnRJbmZvX2NvbnZlcnNhdGlvbklkIjoid0JGdjZXQTkzUFN4ejhLWDlHNnpXIiwiZXZlbnRJbmZvX2NsaWNrU291cmNlIjoiY2l0YXRpb25MaW5rIiwiZXZlbnRJbmZvX2NsaWNrRGVzdGluYXRpb24iOiJodHRwczpcL1wvc2Vyd2lzeS5vcmcucGxcL3N6eWJrYS1uYXByYXdhLWJsZWR1LWYwNS13LXByYWxjZS1la3NwZXJja2llLXdza2F6b3draVwvIn0%3D&citationMarker=9F742443-6C92-4C44-BF58-8F5A7C53B6F1)</li>
+    <li><strong>F06</strong> – awaria czujnika obrotów silnika</li>
+    <li><strong>F12</strong> – brak komunikacji między modułami</li>
+    <li>Inne: zatrzymanie programu, błędy elektroniki, woda w bębnie po zakończeniu cyklu</li>
+  </ul>
+
+  <p>Modele: IWSC, IWE, BWE, MTWE, EcoTime</p>
+</section>
+
+<section>
+  <h2>Serwis Indesit – Police</h2>
+  <ul>
+    <li>Dojazd do klienta</li>
+    <li>Diagnoza i części</li>
+    <li>Naprawa bez gadania</li>
+    <li>Gwarancja na usługę</li>
+  </ul>
+</section>
+
+<footer>
+  <p>© 2025 Naprawa Pralek Indesit Police | Serwis AGD | Tel: +48 721 988 949</p>
+</footer>
+
+<script>
+function sendToWhatsApp(event) {
+  event.preventDefault();
+  let name = document.getElementById("name").value;
+  let phone = document.getElementById("phone").value;
+  let brand = document.getElementById("brand").value;
+  let message = document.getElementById("message").value;
+  let address = document.getElementById("address").value;
+
+  let text = `🔧 PRALKA INDESIT – POLICE\n\n` +
+             `👤 Imię: ${name}\n` +
+             `📞 Telefon: ${phone}\n` +
+             `🏠 Adres: ${address}\n` +
+             `🔧 Model: ${brand}\n` +
+             `❗ Problem: ${message}\n\n` +
+             `📍 Miasto: Police`;
+             
+  let url = "https://wa.me/48721988949?text=" + encodeURIComponent(text);
+  window.open(url, '_blank');
+}
+</script>
+
+</body>
+</html>
