@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Naprawa Zmywarek Pyrzyce | Serwis Zmywarek AGD</title>
-  <meta name="description" content="Naprawa zmywarek Pyrzyce – szybki serwis, dojazd do klienta. Zmywarka nie pobiera wody, nie grzeje, nie domywa naczyń? Zadzwoń lub napisz na WhatsApp – naprawimy!">
-  <meta name="keywords" content="naprawa zmywarek Pyrzyce, serwis zmywarek Pyrzyce, zmywarka nie pobiera wody, zmywarka nie grzeje, zmywarka nie domywa naczyń, naprawa AGD Pyrzyce">
+  <title>Naprawa Zmywarek Pyrzyce | Serwis Zmywarek i Wyparzarek AGD</title>
+  <meta name="description" content="Naprawa zmywarek i wyparzarek Pyrzyce – szybki serwis, dojazd do klienta. Zmywarka nie pobiera wody, wyparzarka nie działa? Zadzwoń lub napisz na WhatsApp – naprawimy!">
+  <meta name="keywords" content="naprawa zmywarek Pyrzyce, serwis zmywarek Pyrzyce, naprawa AGD Pyrzyce, zmywarka nie pobiera wody, zmywarka nie grzeje, naprawa wyparzarki Pyrzyce, serwis wyparzarek gastronomicznych, zmywarko-wyparzarka Pyrzyce">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -88,7 +87,7 @@
 
 <header>
   <h1>Naprawa Zmywarek Pyrzyce</h1>
-  <p>Profesjonalny serwis zmywarek w Pyrzycach</p>
+  <p>Profesjonalny serwis zmywarek i wyparzarek w Pyrzycach</p>
 </header>
 
 <section>
@@ -104,11 +103,11 @@
     <label>Telefon:
       <input type="tel" id="phone" required>
     </label>
-    <label>Marka i model zmywarki:
+    <label>Marka i model urządzenia:
       <input type="text" id="brand" placeholder="np. Bosch SMS46AW01E">
     </label>
     <label>Opis usterki:
-      <textarea id="message" rows="4" required placeholder="Opisz dokładnie problem ze zmywarką..."></textarea>
+      <textarea id="message" rows="4" required placeholder="Opisz dokładnie problem..."></textarea>
     </label>
     <label>Adres w Pyrzycach:
       <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania">
@@ -148,6 +147,19 @@
   </ul>
 </section>
 
+<section>
+  <h2>Naprawa Zmywarek i Wyparzarek Pyrzyce</h2>
+  <p>Obsługujemy również <strong>Pyrzyce i okolice</strong> – dojazd w cenie, szybka diagnoza, naprawa na miejscu. Naprawiamy wszystkie typy urządzeń: zmywarki domowe, <strong>zmywarko-wyparzarki gastronomiczne</strong>, wyparzarki przemysłowe – niezależnie od marki.</p>
+  <ul>
+    <li>❗ Zmywarka nie pobiera wody</li>
+    <li>❗ Przeciek spod drzwi</li>
+    <li>❗ Brak grzania lub wyparzania</li>
+    <li>❗ Hałas podczas pracy</li>
+    <li>❗ Błędy E4, F2, F01</li>
+  </ul>
+  <p><strong>Obsługiwane lokalizacje:</strong> Pyrzyce, Żabów, Mielęcin, Ryszewko, Mechowo</p>
+</section>
+
 <footer>
   <p>© 2025 Naprawa Zmywarek Pyrzyce | Serwis AGD | Tel: +48 721 988 949</p>
 </footer>
@@ -161,18 +173,4 @@ function sendToWhatsApp(event) {
   let message = document.getElementById("message").value;
   let address = document.getElementById("address").value;
 
-  let text = `🔧 NAPRAWA ZMYWARKI - PYRZYCE\n\n` +
-             `👤 Imię: ${name}\n` +
-             `📞 Telefon: ${phone}\n` +
-             `🏠 Adres: ${address}\n` +
-             `🔧 Marka/model: ${brand}\n` +
-             `❗ Problem: ${message}\n\n` +
-             `📍 Miasto: Pyrzyce`;
-             
-  let url = "https://wa.me/48721988949?text=" + encodeURIComponent(text);
-  window.open(url, '_blank');
-}
-</script>
-
-</body>
-</html>
+  let text = `
