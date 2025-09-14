@@ -1,12 +1,90 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Indesit Police | Naprawa Pralek F05 F06 F12</title>
   <meta name="description" content="Police – naprawa pralek Indesit z błędami F05, F06, F12. Diagnoza, części, serwis na miejscu. Modele: IWSC, IWE, BWE, MTWE, EcoTime.">
   <meta name="keywords" content="Indesit Police, Indesit F05, Indesit F06, Indesit F12, serwis Indesit Police, naprawa pralki Indesit">
-  <style>/* Twój CSS – bez zmian */</style>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f2f2f2;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+      color: white;
+      padding: 25px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    section {
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+    .contact-info {
+      background: #e6f3ff;
+      padding: 15px;
+      border-radius: 5px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .phone-link {
+      color: #ff6b35;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .phone-link:hover {
+      text-decoration: underline;
+    }
+    form label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    button {
+      margin-top: 15px;
+      padding: 12px;
+      background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+      border: none;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 25px;
+      width: 100%;
+      font-weight: bold;
+    }
+    button:hover {
+      background: linear-gradient(135deg, #e55a2b 0%, #de831a 100%);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #eee;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
 
@@ -23,19 +101,19 @@
 
   <form onsubmit="sendToWhatsApp(event)">
     <label>Imię i nazwisko:
-      <input type="text" id="name" required>
+      <input type="text" id="name" required />
     </label>
     <label>Telefon:
-      <input type="tel" id="phone" required>
+      <input type="tel" id="phone" required />
     </label>
     <label>Model pralki Indesit:
-      <input type="text" id="brand" placeholder="np. Indesit IWSC51051">
+      <input type="text" id="brand" placeholder="np. Indesit IWSC51051" />
     </label>
     <label>Opis usterki:
       <textarea id="message" rows="4" required placeholder="Błąd F05, pralka nie odpompowuje, zatrzymuje program..."></textarea>
     </label>
     <label>Adres w Policach:
-      <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania">
+      <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania" />
     </label>
     <button type="submit">Wyślij zgłoszenie na WhatsApp</button>
   </form>
@@ -48,8 +126,8 @@
 
   <h3>Typowe błędy Indesit:</h3>
   <ul>
-    <li><strong>F05</strong> – brak odpływu wody (pompa, filtr, wąż) [A](https://serwisy.org.pl/szybka-naprawa-bledu-f05-w-pralce-eksperckie-wskazowki/?copilot_analytics_metadata=eyJldmVudEluZm9fbWVzc2FnZUlkIjoiRzU4eXRleWZCeXVGcnJRZlFSVmhuIiwiZXZlbnRJbmZvX2NvbnZlcnNhdGlvbklkIjoid0JGdjZXQTkzUFN4ejhLWDlHNnpXIiwiZXZlbnRJbmZvX2NsaWNrU291cmNlIjoiY2l0YXRpb25MaW5rIiwiZXZlbnRJbmZvX2NsaWNrRGVzdGluYXRpb24iOiJodHRwczpcL1wvc2Vyd2lzeS5vcmcucGxcL3N6eWJrYS1uYXByYXdhLWJsZWR1LWYwNS13LXByYWxjZS1la3NwZXJja2llLXdza2F6b3draVwvIn0%3D&citationMarker=9F742443-6C92-4C44-BF58-8F5A7C53B6F1)</li>
-    <li><strong>F06</strong> – awaria czujnika obrotów silnika</li>
+    <li><strong>F05</strong> – awaria odpływu (pompa, filtr, wąż)</li>
+    <li><strong>F06</strong> – awaria przycisków obsługi</li>
     <li><strong>F12</strong> – brak komunikacji między modułami</li>
     <li>Inne: zatrzymanie programu, błędy elektroniki, woda w bębnie po zakończeniu cyklu</li>
   </ul>
@@ -87,9 +165,8 @@ function sendToWhatsApp(event) {
              `🔧 Model: ${brand}\n` +
              `❗ Problem: ${message}\n\n` +
              `📍 Miasto: Police`;
-             
-  let url = "https://wa.me/48721988949?text=" + encodeURIComponent(text);
-  window.open(url, '_blank');
+
+  window.open("https://wa.me/48721988949?text=" + encodeURIComponent(text), "_blank");
 }
 </script>
 
