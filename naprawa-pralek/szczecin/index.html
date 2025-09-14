@@ -1,52 +1,192 @@
-<header>
-  <h1>Naprawa Pralek Szczecin</h1>
-  <p>Profesjonalny serwis pralek w Szczecinie</p>
+<!DOCTYPE html>
 
-  <!-- Кнопка Zamów Naprawę -->
-  <div style="text-align:center; margin:20px 0;">
-    <a href="https://wa.me/48721988949" 
-       style="display:inline-block; padding:15px 30px; background:linear-gradient(135deg,#ff6b35 0%,#f7931e 100%); 
-              color:white; font-weight:bold; border-radius:25px; text-decoration:none; font-size:16px;">
-       Zamów Naprawę
-    </a>
-  </div>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naprawa Pralek Szczecin | Serwis WISA 721 988 949</title>
+    <meta name="description" content="Serwis pralek w Szczecinie. Dojazd do wszystkich dzielnic. Naprawa wszystkich marek z gwarancją. Tel: 721988949">
+    <meta name="keywords" content="naprawa pralek Szczecin, serwis pralek Szczecin, pralka nie wiruje Szczecin">
+
+```
+<!-- SEO Breadcrumbs -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Naprawa Pralek",
+      "item": "https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-pralek/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Szczecin",
+      "item": "https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-pralek/szczecin/"
+    }
+  ]
+}
+</script>
+
+<style>
+    body { font-family: Arial,sans-serif; margin:0; padding:0; background:#f7f7f7; color:#333; }
+    header { background:#2c3e50; color:white; padding:1rem; display:flex; justify-content:space-between; align-items:center; }
+    .logo { font-size:1.8rem; font-weight:bold; color:#f39c12; }
+    .phone { font-size:1.2rem; color:#f39c12; text-decoration:none; }
+    .container { max-width:1000px; margin:0 auto; padding:0 20px; }
+    .hero { background:linear-gradient(135deg,#667eea,#764ba2); color:white; text-align:center; padding:2rem 1rem; }
+    .hero a { background:#f39c12; color:white; padding:12px 25px; text-decoration:none; border-radius:25px; font-weight:bold; display:inline-block; margin-top:1rem; }
+    .content { background:white; margin:2rem 0; padding:1.5rem; border-radius:8px; }
+    .form-section { background:#34495e; color:white; padding:2rem 1rem; border-radius:8px; }
+    .form-section input, .form-section textarea { width:100%; padding:8px; margin:0.3rem 0; border-radius:4px; border:none; box-sizing:border-box; }
+    .btn { background:#f39c12; color:white; padding:10px; border:none; width:100%; font-weight:bold; border-radius:4px; cursor:pointer; }
+    footer { background:#2c3e50; color:white; text-align:center; padding:1rem; margin-top:2rem; }
+    .breadcrumb { background:rgba(255,255,255,0.9); padding:8px 15px; margin:15px 0; border-radius:4px; font-size:14px; }
+    .breadcrumb a { color:#667eea; text-decoration:none; }
+    #confirmation { display:none; text-align:center; color:#2ecc71; font-weight:bold; margin-top:15px; }
+    .map-container { margin:2rem 0; }
+    .map-container iframe { border-radius:8px; }
+    .seo-links { background:#ecf0f1; padding:1.5rem; border-radius:8px; margin:2rem 0; }
+    .seo-links a { color:#2c3e50; text-decoration:none; margin:0 10px; }
+    .seo-links a:hover { text-decoration:underline; }
+    .districts { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:10px; margin:1rem 0; }
+    .district { background:#3498db; color:white; padding:8px; border-radius:4px; text-align:center; font-size:14px; }
+</style>
+```
+
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">WISA</div>
+        <a href="tel:+48721988949" class="phone">721 988 949</a>
+    </div>
 </header>
 
-<section>
-  <div class="contact-info">
-    <p>📞 Zadzwoń teraz: <a href="tel:+48721988949" class="phone-link">+48 721 988 949</a></p>
-    <p>💬 WhatsApp: <a href="https://wa.me/48721988949" class="phone-link">+48 721 988 949</a></p>
-  </div>
+<div class="container">
+    <div class="breadcrumb">
+        <a href="/">Home</a> → <a href="/naprawa-pralek/">Naprawa Pralek</a> → Szczecin
+    </div>
+</div>
 
-  <form onsubmit="sendToWhatsApp(event)">
-    <label>Imię i nazwisko:
-      <input type="text" id="name" required>
-    </label>
-    <label>Telefon:
-      <input type="tel" id="phone" required>
-    </label>
-    <label>Marka i model pralki:
-      <input type="text" id="brand" placeholder="np. Samsung WF80F5E2W2W">
-    </label>
-    <label>Opis usterki:
-      <textarea id="message" rows="4" required placeholder="Opisz dokładnie problem z pralką..."></textarea>
-    </label>
-    <label>Adres w Szczecinie:
-      <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania">
-    </label>
-    <button type="submit">Zamów Naprawę</button>
-  </form>
-
-  <!-- Карта -->
-  <div style="margin-top:20px;">
-    <h2>Lokalizacja w Szczecinie</h2>
-    <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2448.12345!2d14.5537!3d53.4285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4700fc7a1a1b123%3A0x123abc456!2sSzczecin%2C%20Poland!5e0!3m2!1sen!2sus!4v1694065938432!5m2!1sen!2sus" 
-      width="100%" 
-      height="350" 
-      style="border:0; border-radius:12px;" 
-      allowfullscreen="" 
-      loading="lazy">
-    </iframe>
-  </div>
+<section class="hero">
+    <div class="container">
+        <h1>Naprawa Pralek Szczecin</h1>
+        <p>Serwis pralek we wszystkich dzielnicach Szczecina</p>
+        <a href="#order">Zamów Naprawę</a>
+    </div>
 </section>
+
+<section class="content">
+    <div class="container">
+        <h2>Najczęstsze usterki pralek w Szczecinie</h2>
+        <ul>
+            <li>Pralka nie wiruje - uszkodzony pas lub silnik</li>
+            <li>Pralka nie pobiera wody - problem z elektrozaworem</li>
+            <li>Pralka nie grzeje - spalona grzałka</li>
+            <li>Pralka nie odpompowuje - zatkana pompa</li>
+            <li>Przecieki wody - uszkodzone uszczelki</li>
+            <li>Błędy na wyświetlaczu</li>
+        </ul>
+
+```
+    <h3>Obsługiwane dzielnice Szczecina</h3>
+    <div class="districts">
+        <div class="district">Centrum</div>
+        <div class="district">Pogodno</div>
+        <div class="district">Gumieńce</div>
+        <div class="district">Żelechowa</div>
+        <div class="district">Dąbie</div>
+        <div class="district">Niebuszewo</div>
+        <div class="district">Prawobrzeże</div>
+        <div class="district">Północ</div>
+    </div>
+</div>
+```
+
+</section>
+
+<section class="content">
+    <div class="container">
+        <h2>Lokalizacja serwisu w Szczecinie</h2>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2448.123456789!2d14.5537!3d53.4285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTPCsDI1JzQyLjYiTiAxNMKwMzMnMTMuMyJF!5e0!3m2!1spl!2spl!4v1634567890123!5m2!1spl!2spl" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <p>Dojazd do wszystkich dzielnic Szczecina w ciągu godziny. Obsługujemy również okolice: Police, Goleniów, Stargard.</p>
+    </div>
+</section>
+
+<section class="form-section" id="order">
+    <div class="container">
+        <h2>Zamów serwis pralki</h2>
+        <form id="orderForm">
+            <input type="text" name="name" placeholder="Imię i nazwisko" required>
+            <input type="tel" name="phone" placeholder="Telefon" required>
+            <input type="text" name="address" placeholder="Dzielnica i adres w Szczecinie" required>
+            <input type="text" name="brand" placeholder="Marka pralki (np. Samsung, Bosch)">
+            <textarea name="problem" placeholder="Opis problemu..." required></textarea>
+            <button type="submit" class="btn">Wyślij WhatsApp</button>
+        </form>
+
+```
+    <div id="confirmation">
+        ✅ Dziękujemy! Wiadomość została przygotowana w WhatsApp.
+    </div>
+</div>
+```
+
+</section>
+
+<section class="seo-links">
+    <div class="container">
+        <h3>Nasze usługi AGD w Szczecinie</h3>
+        <p>
+            <a href="/">Serwis AGD Szczecin</a> |
+            <a href="/naprawa-pralek/">Naprawa Pralek</a> |
+            <a href="/naprawa-zmywarek/">Naprawa Zmywarek</a> |
+            <a href="/naprawa-suszarek/">Naprawa Suszarek</a> |
+            <a href="/naprawa-piekarnikow/">Naprawa Piekarników</a>
+        </p>
+
+```
+    <h4>Marki pralek serwisowane w Szczecinie</h4>
+    <p>
+        <a href="/naprawa-pralek/szczecin/samsung/">Samsung</a> |
+        <a href="/naprawa-pralek/szczecin/bosch/">Bosch</a> |
+        <a href="/naprawa-pralek/szczecin/lg/">LG</a> |
+        <a href="/naprawa-pralek/szczecin/whirlpool/">Whirlpool</a> |
+        <a href="/naprawa-pralek/szczecin/electrolux/">Electrolux</a>
+    </p>
+</div>
+```
+
+</section>
+
+<footer>
+    <div class="container">
+        <p>Serwis Pralek Szczecin - WISA | 721 988 949</p>
+        <p><a href="/naprawa-pralek/" style="color:#f39c12;">← Naprawa Pralek</a> | <a href="/" style="color:#f39c12;">← Serwis AGD</a></p>
+    </div>
+</footer>
+
+<script>
+document.getElementById('orderForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    const f = new FormData(this);
+    let msg = `PRALKA SZCZECIN\n\n👤 ${f.get('name')}\n📞 ${f.get('phone')}\n📍 ${f.get('address')}\n❗ ${f.get('problem')}`;
+    if(f.get('brand')) msg += `\n🔧 Marka: ${f.get('brand')}`;
+    
+    document.getElementById('confirmation').style.display = 'block';
+    
+    setTimeout(() => {
+        window.open('https://wa.me/48721988949?text='+encodeURIComponent(msg),'_blank');
+    }, 1000);
+});
+</script>
+
+</body>
+</html>
