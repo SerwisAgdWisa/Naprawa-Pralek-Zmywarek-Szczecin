@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
@@ -56,7 +56,7 @@
         "longitude": 14.5528
       },
       "areaServed": [
-        "Szczecin", "Stargard", "Pyrzyce", "Goleniów", 
+        "Szczecin", "Stargard", "Pyrzyce", "Goleniów",
         "Maszewo", "Nowogard", "Police", "Zachodniopomorskie"
       ],
       "serviceType": "Serwis AGD",
@@ -73,7 +73,7 @@
             }
           },
           {
-            "@type": "Offer", 
+            "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
               "name": "Naprawa zmywarek",
@@ -83,7 +83,7 @@
           {
             "@type": "Offer",
             "itemOffered": {
-              "@type": "Service", 
+              "@type": "Service",
               "name": "Naprawa lodówek",
               "description": "Serwis lodówek i zamrażarek, układy chłodnicze"
             }
@@ -92,7 +92,7 @@
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Naprawa piekarników", 
+              "name": "Naprawa piekarników",
               "description": "Naprawa piekarników elektrycznych i gazowych"
             }
           },
@@ -108,7 +108,7 @@
       },
       "openingHours": [
         "Mo-Fr 08:00-20:00",
-        "Sa 09:00-18:00", 
+        "Sa 09:00-18:00",
         "Su 10:00-16:00"
       ],
       "sameAs": [
@@ -117,443 +117,8 @@
     }
     </script>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Header */
-        header {
-            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
-            padding: 1rem 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
-        }
-
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .logo {
-            font-size: 2rem;
-            font-weight: bold;
-            color: #667eea;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-
-        .phone {
-            font-size: 1.5rem;
-            color: #f39c12;
-            font-weight: bold;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-
-        .phone:hover {
-            color: #e67e22;
-            transform: scale(1.05);
-        }
-
-        /* Hero Section */
-        .hero {
-            margin-top: 100px;
-            padding: 4rem 0;
-            text-align: center;
-            color: white;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
-            animation: fadeInUp 1s ease;
-            font-weight: bold;
-            color: white;
-        }
-
-        .hero p {
-            font-size: 1.3rem;
-            margin-bottom: 2rem;
-            animation: fadeInUp 1s ease 0.2s both;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-            font-weight: 600;
-            color: white;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background: linear-gradient(45deg, #e74c3c, #f39c12);
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 50px;
-            font-size: 1.2rem;
-            font-weight: bold;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            animation: fadeInUp 1s ease 0.4s both;
-        }
-
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-        }
-
-        /* Services Section */
-        .services {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 4rem 0;
-            color: white;
-        }
-
-        .services h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            color: white;
-            margin-bottom: 3rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .service-card {
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(10px);
-            padding: 2rem;
-            border-radius: 15px;
-            text-align: center;
-            transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-        }
-
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-            background: rgba(255, 255, 255, 0.25);
-        }
-
-        .service-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .service-card h3 {
-            color: white;
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-        }
-
-        .service-card p {
-            color: rgba(255, 255, 255, 0.95);
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-        }
-
-        /* Order Form Section */
-        .order-section {
-            background: linear-gradient(135deg, #2c3e50, #34495e);
-            color: white;
-            padding: 4rem 0;
-        }
-
-        .order-form {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            padding: 2rem;
-            border-radius: 15px;
-            max-width: 600px;
-            margin: 0 auto;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .order-form h2 {
-            text-align: center;
-            margin-bottom: 2rem;
-            font-size: 2rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: bold;
-            color: white;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-        }
-
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
-            width: 100%;
-            padding: 12px;
-            border: none;
-            border-radius: 8px;
-            font-size: 1rem;
-            background: rgba(255, 255, 255, 0.9);
-            color: #333;
-        }
-
-        .form-group textarea {
-            height: 100px;
-            resize: vertical;
-        }
-
-        .submit-btn {
-            width: 100%;
-            background: linear-gradient(45deg, #e74c3c, #f39c12);
-            color: white;
-            padding: 15px;
-            border: none;
-            border-radius: 8px;
-            font-size: 1.2rem;
-            font-weight: bold;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .submit-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-        }
-
-        /* Reviews Section */
-        .reviews {
-            background: linear-gradient(135deg, #2c3e50, #34495e);
-            padding: 4rem 0;
-            color: white;
-        }
-
-        .reviews h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            color: white;
-            margin-bottom: 3rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-
-        .reviews-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-        }
-
-        .review-card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            padding: 2rem;
-            border-radius: 15px;
-            text-align: center;
-            transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .review-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-            background: rgba(255, 255, 255, 0.15);
-        }
-
-        .stars {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .review-card p {
-            color: rgba(255, 255, 255, 0.9);
-            font-size: 1rem;
-            line-height: 1.5;
-            margin-bottom: 1.5rem;
-            font-style: italic;
-        }
-
-        .reviewer {
-            border-top: 1px solid rgba(255, 255, 255, 0.2);
-            padding-top: 1rem;
-        }
-
-        .reviewer strong {
-            color: #f39c12;
-            font-size: 1.1rem;
-            display: block;
-            margin-bottom: 0.25rem;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-        }
-
-        .reviewer span {
-            color: rgba(255, 255, 255, 0.7);
-            font-size: 0.9rem;
-        }
-
-        /* Pricing Section */
-        .pricing {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 4rem 0;
-            color: white;
-        }
-
-        .pricing h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            color: white;
-            margin-bottom: 3rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-
-        .pricing-card {
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(10px);
-            padding: 2rem;
-            border-radius: 15px;
-            max-width: 500px;
-            margin: 0 auto;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-        }
-
-        .price {
-            font-size: 2rem;
-            color: #f39c12;
-            font-weight: bold;
-            text-align: center;
-            margin-bottom: 1rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-
-        .price-details {
-            list-style: none;
-            padding: 0;
-        }
-
-        .price-details li {
-            padding: 0.5rem 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-            display: flex;
-            justify-content: space-between;
-            color: white;
-        }
-
-        /* Footer */
-        footer {
-            background: linear-gradient(135deg, #2c3e50, #34495e);
-            color: white;
-            text-align: center;
-            padding: 2rem 0;
-        }
-
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .footer-section h3 {
-            margin-bottom: 1rem;
-            color: #667eea;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-        }
-
-        .footer-section p {
-            color: rgba(255, 255, 255, 0.9);
-        }
-
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
-            
-            .hero p {
-                font-size: 1.1rem;
-            }
-            
-            .header-content {
-                flex-direction: column;
-                gap: 1rem;
-            }
-            
-            .logo {
-                font-size: 1.5rem;
-            }
-            
-            .phone {
-                font-size: 1.3rem;
-            }
-        }
-
-        /* Floating WhatsApp Button */
-        .whatsapp-float {
-            position: fixed;
-            width: 60px;
-            height: 60px;
-            bottom: 20px;
-            right: 20px;
-            background: #25d366;
-            color: white;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 24px;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-            z-index: 100;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-        }
-
-        .whatsapp-float:hover {
-            transform: scale(1.1);
-            box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4);
-        }
-    </style>
+    <!-- ПОДКЛЮЧЕНИЕ ОБЩЕГО СТИЛЯ -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header -->
@@ -603,13 +168,54 @@
                 <div class="service-card">
                     <div class="service-icon">❄️</div>
                     <h3>Naprawa Lodówek</h3>
-                    <p>Profesjonalna naprawa lodówek i zamrażarek w Szczecinie. Układy chłodnicze, termostaty, uszczelki.</p>
+                    <p>Profesjonalna naprawa lodówek i zamrażarek w Szczecinе. Układy chłodnicze, termostaty, uszczelki.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">⚡</div>
                     <h3>Szybki Serwis AGD</h3>
-                    <p>Dojazd tego samego dnia do Szczecina, Stargardu i okolic (50km). Uczciwe ceny za serwis AGD i gwarancja.</p>
+                    <p>Dojazd tego samego dnia do Szczecina, Stargardu и okolic (50km). Uczciwe ceny za serwis AGD i gwarancja.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cities Navigation Section -->
+    <section class="cities-navigation">
+        <div class="container">
+            <h2>Wybierz swoje miasto</h2>
+            <div class="cities-grid">
+                <a href="naprawa-pralek/szczecin/" class="city-card">
+                    <div class="service-icon">🏙️</div>
+                    <h3>Szczecin - Pralki</h3>
+                </a>
+                <a href="naprawa-pralek/stargard/" class="city-card">
+                    <div class="service-icon">🏛️</div>
+                    <h3>Stargard - Pralki</h3>
+                </a>
+                <a href="naprawa-pralek/goleniow/" class="city-card">
+                    <div class="service-icon">✈️</div>
+                    <h3>Goleniów - Pralki</h3>
+                </a>
+                <a href="naprawa-pralek/nowogard/" class="city-card">
+                    <div class="service-icon">🌳</div>
+                    <h3>Nowogard - Pralki</h3>
+                </a>
+                <a href="naprawa-suszarek/szczecin/" class="city-card">
+                    <div class="service-icon">🏙️</div>
+                    <h3>Szczecin - Suszarki</h3>
+                </a>
+                <a href="naprawa-suszarek/stargard/" class="city-card">
+                    <div class="service-icon">🏛️</div>
+                    <h3>Stargard - Suszarki</h3>
+                </a>
+                <a href="naprawa-suszarek/nowogard/" class="city-card">
+                    <div class="service-icon">🌳</div>
+                    <h3>Nowogard - Suszarki</h3>
+                </a>
+                <a href="naprawa-zmywarek/szczecin/" class="city-card">
+                    <div class="service-icon">🏙️</div>
+                    <h3>Szczecin - Zmywarki</h3>
+                </a>
             </div>
         </div>
     </section>
@@ -741,6 +347,12 @@
                     <p>✓ Naprawa piekarników</p>
                     <p>✓ Naprawa lodówek</p>
                 </div>
+                <div class="footer-section">
+                    <h3>Szybka nawigacja</h3>
+                    <p><a href="naprawa-pralek/">🔧 Naprawa Pralek</a></p>
+                    <p><a href="naprawa-suszarek/">🌪️ Naprawa Suszarek</a></p>
+                    <p><a href="naprawa-zmywarek/">🍽️ Naprawa Zmywarek</a></p>
+                </div>
             </div>
             <hr style="margin: 2rem 0; border: 1px solid rgba(255, 255, 255, 0.2);">
             <p>&copy; 2025 Serwis AGD Szczecin, Stargard - Oleksandr Chumnyi WISA. Wszystkie prawa zastrzeżone.</p>
@@ -756,7 +368,7 @@
         // Form submission handling
         document.getElementById('orderForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            
+           
             // Get form data
             const formData = new FormData(this);
             const service = formData.get('service');
@@ -765,7 +377,7 @@
             const address = formData.get('address');
             const problem = formData.get('problem');
             const time = formData.get('time');
-            
+           
             // Create WhatsApp message
             let message = `🔧 NOWE ZGŁOSZENIE SERWISOWE\n\n`;
             message += `👤 Imię: ${name}\n`;
@@ -774,11 +386,11 @@
             message += `🔧 Usługa: ${service}\n`;
             if (problem) message += `❗ Problem: ${problem}\n`;
             if (time) message += `⏰ Termin: ${time}\n`;
-            
+           
             // Open WhatsApp with pre-filled message
             const whatsappURL = `https://wa.me/48721988949?text=${encodeURIComponent(message)}`;
             window.open(whatsappURL, '_blank');
-            
+           
             // Show confirmation
             alert('Dziękujemy za zgłoszenie! Za chwilę zostaniesz przekierowany do WhatsApp.');
         });
