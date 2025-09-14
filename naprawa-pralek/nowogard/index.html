@@ -1,18 +1,96 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Naprawa Pralek Nowogard | Serwis AGD z Dojazdem</title>
-  <meta name="description" content="Naprawa pralek w Nowogardzie – szybki serwis z dojazdem. Pralka nie wiruje, nie grzeje, pokazuje błąd E21 lub F13? Zadzwoń lub napisz na WhatsApp – naprawimy!">
-  <meta name="keywords" content="naprawa pralek Nowogard, serwis AGD Nowogard, pralka nie wiruje, pralka nie grzeje, błąd E21, błąd F13, naprawa pralki Nowogard">
-  <style>/* стиль как у тебя */</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naprawa Pralek Nowogard | Błędy F05 F06 F12</title>
+  <meta name="description" content="Nowogard – naprawa pralek z błędami F05, F06, F12. Diagnoza, części, serwis na miejscu. Modele: Indesit, Beko, Bosch, Samsung, LG.">
+  <meta name="keywords" content="naprawa pralek Nowogard, serwis AGD Nowogard, pralka F05, F06, F12, pralka nie działa, pralka nie odpompowuje">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f2f2f2;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 25px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    section {
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+    .contact-info {
+      background: #e6f3ff;
+      padding: 15px;
+      border-radius: 5px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .phone-link {
+      color: #667eea;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .phone-link:hover {
+      text-decoration: underline;
+    }
+    form label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    button {
+      margin-top: 15px;
+      padding: 12px;
+      background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+      border: none;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 25px;
+      width: 100%;
+      font-weight: bold;
+    }
+    button:hover {
+      background: linear-gradient(135deg, #e55a2b 0%, #de831a 100%);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #eee;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
 
 <header>
-  <h1>Naprawa Pralek Nowogard</h1>
-  <p>Profesjonalny serwis pralek z dojazdem do klienta</p>
+  <h1>Naprawa Pralek – Nowogard</h1>
+  <p>Błędy F05, F06, F12 – serwis na miejscu</p>
 </header>
 
 <section>
@@ -23,48 +101,43 @@
 
   <form onsubmit="sendToWhatsApp(event)">
     <label>Imię i nazwisko:
-      <input type="text" id="name" required>
+      <input type="text" id="name" required />
     </label>
     <label>Telefon:
-      <input type="tel" id="phone" required>
+      <input type="tel" id="phone" required />
     </label>
     <label>Marka i model pralki:
-      <input type="text" id="brand" placeholder="np. Bosch WAN2826SPL">
+      <input type="text" id="brand" placeholder="np. Indesit IWSC51051" />
     </label>
     <label>Opis usterki:
-      <textarea id="message" rows="4" required placeholder="Opisz dokładnie problem z pralką..."></textarea>
+      <textarea id="message" rows="4" required placeholder="Błąd F05, pralka nie odpompowuje, zatrzymuje program..."></textarea>
     </label>
     <label>Adres w Nowogardzie:
-      <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania">
+      <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania" />
     </label>
-    <button type="submit">Zamów Naprawę</button>
+    <button type="submit">Wyślij zgłoszenie na WhatsApp</button>
   </form>
 </section>
 
 <section>
-  <h2>Typowe usterki pralek:</h2>
+  <h2>Typowe błędy pralek:</h2>
   <ul>
-    <li>❗ Pralka nie pobiera wody</li>
-    <li>❗ Pralka nie wiruje</li>
-    <li>❗ Pralka nie grzeje – błąd F13</li>
-    <li>❗ Pralka zatrzymuje program</li>
-    <li>❗ Pralka przecieka</li>
-    <li>❗ Błąd E21 – problem z odpompowaniem</li>
-    <li>❗ Błąd F05 – czujnik poziomu wody</li>
-    <li>❗ Hałas podczas wirowania</li>
+    <li><strong>F05</strong> – brak odpływu wody (pompa, filtr, wąż)</li>
+    <li><strong>F06</strong> – awaria przycisków lub czujnika obrotów</li>
+    <li><strong>F12</strong> – brak komunikacji między modułami</li>
+    <li>Inne: zatrzymanie programu, błędy elektroniki, przeciek, brak wirowania</li>
   </ul>
-  <p>Naprawiamy marki: Samsung, Bosch, LG, Whirlpool, Beko, Electrolux, Amica</p>
+
+  <p>Obsługiwane marki: Indesit, Beko, Bosch, Samsung, LG</p>
 </section>
 
 <section>
-  <h2>Dlaczego warto wybrać nasz serwis?</h2>
+  <h2>Serwis AGD – Nowogard</h2>
   <ul>
-    <li>✓ Dojazd do klienta w Nowogardzie</li>
-    <li>✓ Szybka diagnoza i wycena</li>
-    <li>✓ Oryginalne części zamienne</li>
-    <li>✓ Gwarancja na wykonane usługi</li>
-    <li>✓ Wieloletnie doświadczenie</li>
-    <li>✓ Konkurencyjne ceny</li>
+    <li>Dojazd do klienta</li>
+    <li>Diagnoza i części</li>
+    <li>Naprawa bez gadania</li>
+    <li>Gwarancja na usługę</li>
   </ul>
 </section>
 
@@ -88,9 +161,8 @@ function sendToWhatsApp(event) {
              `🔧 Marka/model: ${brand}\n` +
              `❗ Problem: ${message}\n\n` +
              `📍 Miasto: Nowogard`;
-             
-  let url = "https://wa.me/48721988949?text=" + encodeURIComponent(text);
-  window.open(url, '_blank');
+
+  window.open("https://wa.me/48721988949?text=" + encodeURIComponent(text), "_blank");
 }
 </script>
 
