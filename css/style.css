@@ -1,97 +1,248 @@
-/* === Глобальные переменные (цвета главной) === */
+/* === ЕДИНЫЙ ФИРМЕННЫЙ СТИЛЬ === */
 :root {
-  --main-color: #667eea;
-  --accent-color: #e67e22;
-  --bg-color: #f9f9f9;
-  --text-color: #333;
-  --shadow-color: rgba(0,0,0,0.1);
+  --main-color: #667eea;          /* Основной синий */
+  --accent-color: #e67e22;        /* Оранжевый акцент */
+  --bg-color: #f9f9f9;            /* Светло-серый фон */
+  --text-color: #333;             /* Темный текст */
+  --shadow-color: rgba(0,0,0,0.1); /* Тень */
+  --success-color: #27ae60;       /* Зеленый для успеха */
+  --white: #ffffff;               /* Белый */
 }
 
-/* === Города обслуживания === */
-body.szczecin     { --shadow-color: rgba(102,126,234,0.2); }
-body.stargard     { --shadow-color: rgba(255,87,34,0.2); }
-body.pyrzyce      { --shadow-color: rgba(46,204,113,0.2); }
-body.nowogard     { --shadow-color: rgba(52,152,219,0.2); }
-body.goleniow     { --shadow-color: rgba(155,89,182,0.2); }
-body.maszewo      { --shadow-color: rgba(241,196,15,0.2); }
-body.police       { --shadow-color: rgba(231,76,60,0.2); }
-
-/* === Марки техники === */
-body.bosch        { --main-color: #e74c3c; --accent-color: #c0392b; }
-body.beko         { --main-color: #3498db; --accent-color: #2980b9; }
-body.amica        { --main-color: #4caf50; --accent-color: #2e7d32; }
-body.samsung      { --main-color: #1abc9c; --accent-color: #16a085; }
-body.lg           { --main-color: #9b59b6; --accent-color: #8e44ad; }
-body.siemens      { --main-color: #34495e; --accent-color: #2c3e50; }
-body.whirlpool    { --main-color: #f39c12; --accent-color: #e67e22; }
-body.indesit      { --main-color: #2ecc71; --accent-color: #27ae60; }
-body.candy        { --main-color: #00bcd4; --accent-color: #0097a7; }
-body.hisense      { --main-color: #3f51b5; --accent-color: #303f9f; }
-body.haier        { --main-color: #8e44ad; --accent-color: #6c3483; }
-body.elektrolux,
-body.electrolux   { --main-color: #2980b9; --accent-color: #2471a3; }
-body.aeg          { --main-color: #d35400; --accent-color: #a04000; }
-body.miele        { --main-color: #7f8c8d; --accent-color: #34495e; }
-
-/* === Категории техники === */
-body.pralek,
-body.zmywarek,
-body.suszarek,
-body.lodowek,
-body.piekarnikow,
-body.ekspresow {
-  --bg-color: #f9f9f9;
-}
-
-/* === Общие стили === */
+/* === БАЗОВЫЕ СТИЛИ === */
 body {
   font-family: Arial, sans-serif;
   background: var(--bg-color);
   color: var(--text-color);
   margin: 0;
   padding: 0;
+  line-height: 1.6;
 }
 
-/* Хедер */
+/* === ХЕДЕР (единый для всех страниц) === */
 header {
-  background: var(--main-color);
-  color: white;
+  background: linear-gradient(135deg, var(--main-color) 0%, #764ba2 100%);
+  color: var(--white);
   padding: 30px 20px;
   text-align: center;
-  box-shadow: 0 4px 10px var(--shadow-color);
+  box-shadow: 0 4px 15px var(--shadow-color);
+  position: relative;
 }
-header h1 { margin: 0; font-size: 2.5em; }
-header p { margin: 10px 0 0; font-size: 1.2em; opacity: 0.9; }
-.nav-button.primary {
-  background: var(--accent-color);
-  border: none;
-  color: white;
-  padding: 15px 25px;
+
+header h1 { 
+  margin: 0; 
+  font-size: 2.5em; 
+  font-weight: bold;
+}
+
+header p { 
+  margin: 15px 0 0; 
+  font-size: 1.2em; 
+  opacity: 0.9; 
+}
+
+/* === КНОПКА "НАЗАД НА ГЛАВНУЮ" === */
+.back-to-home {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(255,255,255,0.2);
+  color: var(--white);
+  padding: 10px 20px;
   border-radius: 25px;
   text-decoration: none;
   font-weight: bold;
-  display: inline-block;
-  margin-top: 20px;
-  transition: background 0.3s ease;
-}
-.nav-button.primary:hover {
-  background: #00000022;
+  transition: all 0.3s ease;
+  border: 2px solid rgba(255,255,255,0.3);
 }
 
-/* Форма */
+.back-to-home:hover {
+  background: rgba(255,255,255,0.3);
+  color: var(--white);
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+/* === BREADCRUMB НАВИГАЦИЯ === */
+.breadcrumb { 
+  background: var(--white); 
+  padding: 15px 20px; 
+  border-bottom: 2px solid #e0e0e0; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.breadcrumb a { 
+  color: var(--main-color); 
+  text-decoration: none; 
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover { 
+  color: var(--accent-color);
+  text-decoration: underline; 
+}
+
+.breadcrumb .current {
+  color: #666;
+  font-weight: bold;
+}
+
+/* === EMERGENCY BANNER === */
+.emergency-banner { 
+  background: linear-gradient(135deg, var(--accent-color), #d35400); 
+  color: var(--white); 
+  padding: 30px; 
+  border-radius: 15px; 
+  text-align: center; 
+  margin: 30px auto; 
+  max-width: 1000px;
+  box-shadow: 0 8px 25px rgba(231, 76, 60, 0.3); 
+}
+
+.emergency-banner h2 { 
+  margin: 0 0 15px 0; 
+  font-size: 2em; 
+}
+
+.emergency-banner p { 
+  margin: 0; 
+  font-size: 1.1em; 
+}
+
+/* === КОНТАКТНАЯ ИНФОРМАЦИЯ === */
+.contact-info { 
+  background: linear-gradient(135deg, #e6f3ff, #f0f8ff); 
+  padding: 25px; 
+  border-radius: 12px; 
+  text-align: center; 
+  margin: 20px auto; 
+  max-width: 1000px;
+  border: 2px solid #b3d9ff; 
+}
+
+.phone-link { 
+  color: var(--main-color); 
+  text-decoration: none; 
+  font-weight: bold; 
+  font-size: 20px; 
+}
+
+.phone-link:hover { 
+  text-decoration: underline; 
+}
+
+/* === СЕКЦИИ === */
+section { 
+  padding: 30px 20px; 
+  max-width: 1000px; 
+  margin: 20px auto; 
+  background: var(--white); 
+  box-shadow: 0 2px 10px var(--shadow-color); 
+  border-radius: 10px; 
+}
+
+section h2 {
+  color: var(--main-color);
+  margin-top: 0;
+  font-size: 1.8em;
+}
+
+section h3 {
+  color: var(--accent-color);
+  margin-bottom: 15px;
+}
+
+/* === КАРТОЧКИ УСЛУГ === */
+.services-grid { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+  gap: 20px; 
+  margin: 30px 0; 
+}
+
+.service-card { 
+  background: var(--white); 
+  padding: 25px; 
+  border-radius: 12px; 
+  border-left: 4px solid var(--accent-color); 
+  box-shadow: 0 5px 15px var(--shadow-color); 
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card h3 {
+  color: var(--main-color);
+  margin: 0 0 15px 0;
+}
+
+.service-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.service-card li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.service-card li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+/* === СЕТКА ГОРОДОВ === */
+.cities-grid { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  gap: 20px; 
+  margin-top: 25px; 
+}
+
+.cities-grid a,
+.city-card { 
+  background: linear-gradient(135deg, var(--main-color), #764ba2); 
+  color: var(--white); 
+  padding: 25px; 
+  border-radius: 12px; 
+  text-decoration: none; 
+  font-weight: bold; 
+  transition: all 0.3s ease; 
+  text-align: center; 
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+.cities-grid a:hover,
+.city-card:hover { 
+  transform: translateY(-5px); 
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+  color: var(--white); 
+  text-decoration: none; 
+}
+
+/* === ФОРМА === */
 .form-section {
-  background: white;
-  border: 2px solid var(--accent-color);
+  background: linear-gradient(135deg, #e8f5e8, #f1f8e9);
+  border: 2px solid var(--success-color);
   border-radius: 12px;
   padding: 30px;
   margin: 30px auto;
-  max-width: 600px;
-  box-shadow: 0 2px 8px var(--shadow-color);
+  max-width: 800px;
+  box-shadow: 0 5px 15px var(--shadow-color);
 }
+
 .form-section h2 {
-  color: var(--accent-color);
-  margin-bottom: 20px;
+  color: var(--success-color);
+  margin-top: 0;
 }
+
 form input, form textarea, form button {
   width: 100%;
   margin-bottom: 15px;
@@ -100,68 +251,156 @@ form input, form textarea, form button {
   border: 2px solid #ddd;
   border-radius: 8px;
   box-sizing: border-box;
+  transition: border-color 0.3s ease;
 }
+
+form input:focus, form textarea:focus {
+  border-color: var(--main-color);
+  outline: none;
+}
+
 form button {
-  background: var(--main-color);
-  color: white;
+  background: linear-gradient(135deg, var(--main-color), #764ba2);
+  color: var(--white);
   border: none;
   cursor: pointer;
   font-weight: bold;
-  transition: background 0.3s ease;
-}
-form button:hover {
-  background: var(--accent-color);
+  transition: all 0.3s ease;
 }
 
-/* Карточки */
-.service-card {
-  background: white;
-  padding: 25px;
-  border-radius: 12px;
-  border-left: 4px solid var(--accent-color);
-  box-shadow: 0 2px 8px var(--shadow-color);
-  margin: 30px auto;
-  max-width: 800px;
+form button:hover {
+  background: linear-gradient(135deg, var(--accent-color), #d35400);
+  transform: translateY(-2px);
 }
-.service-card h3 {
-  color: var(--main-color);
-  margin-bottom: 10px;
-}
-.service-card ul {
+
+/* === ПРОБЛЕМЫ/СПИСКИ === */
+.problems ul {
   list-style: none;
   padding: 0;
 }
-.service-card li {
-  margin-bottom: 10px;
-  padding-left: 20px;
-  position: relative;
-}
-.service-card li::before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: var(--accent-color);
+
+.problems li {
+  background: #fff3e0;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px var(--shadow-color);
+  border-left: 4px solid var(--accent-color);
 }
 
-/* Футер */
+/* === НАВИГАЦИОННАЯ СЕКЦИЯ === */
+.navigation-section {
+  background: linear-gradient(135deg, var(--main-color), #764ba2);
+  color: var(--white);
+  padding: 30px;
+  border-radius: 12px;
+  margin: 40px auto;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.nav-button {
+  background: rgba(255,255,255,0.2);
+  color: var(--white);
+  padding: 15px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border: 2px solid rgba(255,255,255,0.3);
+}
+
+.nav-button:hover {
+  background: rgba(255,255,255,0.3);
+  color: var(--white);
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.nav-button.primary {
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.nav-button.primary:hover {
+  background: #d35400;
+  border-color: #d35400;
+}
+
+/* === ФУТЕР === */
 footer {
   text-align: center;
   padding: 30px;
   background: #2c3e50;
-  color: white;
+  color: var(--white);
   margin-top: 40px;
 }
+
 footer a {
   color: #3498db;
   text-decoration: none;
 }
+
 footer a:hover {
   text-decoration: underline;
 }
 
-/* Адаптация */
+/* === АДАПТИВНОСТЬ === */
 @media (max-width: 768px) {
-  header h1 { font-size: 2em; }
-  .form-section, .service-card { padding: 20px; }
-  form input, form textarea, form button { padding: 12px; }
+  .back-to-home {
+    position: static;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  header h1 { 
+    font-size: 2em; 
+  }
+  
+  .emergency-banner h2 { 
+    font-size: 1.5em; 
+  }
+  
+  .phone-link { 
+    font-size: 18px; 
+  }
+  
+  section { 
+    margin: 10px; 
+    padding: 20px 15px; 
+  }
+  
+  .nav-buttons { 
+    flex-direction: column; 
+    align-items: center; 
+  }
+  
+  .cities-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .form-section, 
+  .service-card { 
+    padding: 20px; 
+  }
+  
+  form input, 
+  form textarea, 
+  form button { 
+    padding: 12px; 
+  }
 }
