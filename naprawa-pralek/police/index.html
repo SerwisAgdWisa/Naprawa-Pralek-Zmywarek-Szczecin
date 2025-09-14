@@ -1,18 +1,96 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Indesit Police | Naprawa Pralek F05 F06 F12</title>
-  <meta name="description" content="Police – naprawa pralek Indesit z błędami F05, F06, F12. Diagnoza, części, serwis na miejscu. Modele: IWSC, IWE, BWE, MTWE, EcoTime.">
-  <meta name="keywords" content="Indesit Police, Indesit F05, Indesit F06, Indesit F12, serwis Indesit Police, naprawa pralki Indesit">
-  <style>/* Twój CSS – bez zmian */</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naprawa Pralek Pyrzyce | Indesit F05 F06 F12</title>
+  <meta name="description" content="Pyrzyce – naprawa pralek Indesit z błędami F05, F06, F12. Diagnoza, części, serwis na miejscu. Modele: IWSC, IWE, BWE, MTWE, EcoTime.">
+  <meta name="keywords" content="naprawa pralek Pyrzyce, Indesit Pyrzyce, serwis AGD Pyrzyce, F05, F06, F12, pralka nie odpompowuje, pralka nie działa">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f2f2f2;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+      color: white;
+      padding: 25px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    section {
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+    .contact-info {
+      background: #e6f3ff;
+      padding: 15px;
+      border-radius: 5px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .phone-link {
+      color: #ff6b35;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .phone-link:hover {
+      text-decoration: underline;
+    }
+    form label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    button {
+      margin-top: 15px;
+      padding: 12px;
+      background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+      border: none;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 25px;
+      width: 100%;
+      font-weight: bold;
+    }
+    button:hover {
+      background: linear-gradient(135deg, #e55a2b 0%, #de831a 100%);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #eee;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
 
 <header>
-  <h1>Pralka Indesit – Police</h1>
-  <p>Błąd F05, F06, F12 – serwis na miejscu</p>
+  <h1>Naprawa Pralek Pyrzyce</h1>
+  <p>Indesit – błędy F05, F06, F12 – serwis na miejscu</p>
 </header>
 
 <section>
@@ -23,33 +101,29 @@
 
   <form onsubmit="sendToWhatsApp(event)">
     <label>Imię i nazwisko:
-      <input type="text" id="name" required>
+      <input type="text" id="name" required />
     </label>
     <label>Telefon:
-      <input type="tel" id="phone" required>
+      <input type="tel" id="phone" required />
     </label>
-    <label>Model pralki Indesit:
-      <input type="text" id="brand" placeholder="np. Indesit IWSC51051">
+    <label>Marka i model pralki:
+      <input type="text" id="brand" placeholder="np. Indesit IWSC51051" />
     </label>
     <label>Opis usterki:
       <textarea id="message" rows="4" required placeholder="Błąd F05, pralka nie odpompowuje, zatrzymuje program..."></textarea>
     </label>
-    <label>Adres w Policach:
-      <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania">
+    <label>Adres w Pyrzycach:
+      <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania" />
     </label>
     <button type="submit">Wyślij zgłoszenie na WhatsApp</button>
   </form>
 </section>
 
 <section>
-  <h2>Naprawa pralek Indesit – Police</h2>
-  <p>Serwisujemy pralki Indesit z błędami F05, F06, F12.  
-  Diagnoza na miejscu, części, konkretna robota.</p>
-
-  <h3>Typowe błędy Indesit:</h3>
+  <h2>Typowe błędy Indesit:</h2>
   <ul>
-    <li><strong>F05</strong> – brak odpływu wody (pompa, filtr, wąż)</li>
-    <li><strong>F06</strong> – awaria czujnika obrotów silnika</li>
+    <li><strong>F05</strong> – awaria odpływu (pompa, filtr, wąż)</li>
+    <li><strong>F06</strong> – awaria przycisków obsługi</li>
     <li><strong>F12</strong> – brak komunikacji między modułami</li>
     <li>Inne: zatrzymanie programu, błędy elektroniki, woda w bębnie po zakończeniu cyklu</li>
   </ul>
@@ -58,17 +132,18 @@
 </section>
 
 <section>
-  <h2>Serwis Indesit – Police</h2>
+  <h2>Obsługiwane lokalizacje:</h2>
   <ul>
-    <li>Dojazd do klienta</li>
-    <li>Diagnoza i części</li>
-    <li>Naprawa bez gadania</li>
-    <li>Gwarancja na usługę</li>
+    <li>Pyrzyce</li>
+    <li>Żabów</li>
+    <li>Obryta</li>
+    <li>Ryszewko</li>
+    <li>Okolica Pyrzyc</li>
   </ul>
 </section>
 
 <footer>
-  <p>© 2025 Naprawa Pralek Indesit Police | Serwis AGD | Tel: +48 721 988 949</p>
+  <p>© 2025 Naprawa Pralek Pyrzyce | Serwis AGD | Tel: +48 721 988 949</p>
 </footer>
 
 <script>
@@ -80,16 +155,15 @@ function sendToWhatsApp(event) {
   let message = document.getElementById("message").value;
   let address = document.getElementById("address").value;
 
-  let text = `🔧 PRALKA INDESIT – POLICE\n\n` +
+  let text = `🔧 NAPRAWA PRALKI – PYRZYCE\n\n` +
              `👤 Imię: ${name}\n` +
              `📞 Telefon: ${phone}\n` +
              `🏠 Adres: ${address}\n` +
-             `🔧 Model: ${brand}\n` +
+             `🔧 Marka/model: ${brand}\n` +
              `❗ Problem: ${message}\n\n` +
-             `📍 Miasto: Police`;
-             
-  let url = "https://wa.me/48721988949?text=" + encodeURIComponent(text);
-  window.open(url, '_blank');
+             `📍 Miasto: Pyrzyce`;
+
+  window.open("https://wa.me/48721988949?text=" + encodeURIComponent(text), "_blank");
 }
 </script>
 
