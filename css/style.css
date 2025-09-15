@@ -484,3 +484,78 @@ footer {
     transform: scale(1.1);
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4);
 }
+/* Добавить к вашему CSS: */
+
+/* Content sections для подстраниц */
+.content {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    margin: 2rem 0;
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.content h2, .content h3 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.content ul li {
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 0.5rem;
+}
+
+.content p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Form section для подстраниц */
+.form-section {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 3rem 1rem;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.form-section input, .form-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    box-sizing: border-box;
+}
+
+.btn {
+    background: linear-gradient(45deg, #e74c3c, #f39c12);
+    color: white;
+    padding: 12px;
+    border: none;
+    width: 100%;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Confirmation message */
+#confirmation {
+    display: none;
+    text-align: center;
+    color: #2ecc71;
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 10px;
+    background: rgba(46, 204, 113, 0.2);
+    border-radius: 5px;
+}
