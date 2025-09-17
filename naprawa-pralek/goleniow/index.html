@@ -67,22 +67,41 @@
 <script>
 function sendToWhatsApp(event) {
   event.preventDefault();
+
   let name = document.getElementById("name").value;
   let phone = document.getElementById("phone").value;
   let brand = document.getElementById("brand").value;
   let message = document.getElementById("message").value;
   let address = document.getElementById("address").value;
 
-  let text = `🔧 NAPRAWA PRALKI - Goleniow\n\n` +
+  let text = `🔧 NAPRAWA PRALKI - GOLENIÓW\n\n` +
              `👤 Imię: ${name}\n` +
              `📞 Telefon: ${phone}\n` +
              `🏠 Adres: ${address}\n` +
              `🔧 Marka/model: ${brand}\n` +
              `❗ Problem: ${message}\n\n` +
-             `📍 Miasto: Goleniow`;
+             `📍 Miasto: Goleniów`;
 
-  let url = "https://wa.me/48721988949?text=" + encodeURIComponent(text);
-  window.open(url, '_blank');
+  let button = event.target.querySelector("button[type='submit']");
+  button.textContent = "Wysłano!";
+  button.style.backgroundColor = "#28a745";
+
+  // Показываем под формой текст подтверждения
+  let confirmText = document.createElement("p");
+  confirmText.textContent = "Twoja zgłoszenie zostało wysłane!";
+  confirmText.style.color = "#28a745";
+  confirmText.style.marginTop = "10px";
+  event.target.appendChild(confirmText);
+
+  // Переход в WhatsApp
+  window.location.href = "https://wa.me/48721988949?text=" + encodeURIComponent(text);
+
+  // Возврат кнопки через 5 секунд
+  setTimeout(() => {
+    button.textContent = "Zamów Naprawę";
+    button.style.backgroundColor = "";
+    confirmText.remove();
+  }, 5000);
 }
 </script>
 
