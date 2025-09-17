@@ -18,7 +18,40 @@
     </div>
   </div>
 </header>
+<section class="hero">
+  <div class="container hero-content">
+    <h1>Naprawa Pralek w Goleniowie</h1>
+    <p>Profesjonalny serwis pralek w Goleniowie – szybka diagnoza i naprawa</p>
+    <button onclick="document.getElementById('order-form').scrollIntoView({behavior:'smooth'})">
+      Wyślij zgłoszenie na WhatsApp
+    </button>
+  </div>
+</section>
 
+<!-- Секция с формой -->
+<section id="order-form" class="order-section">
+  <div class="container order-form">
+    <form onsubmit="sendToWhatsApp(event)">
+      <div class="form-group">
+        <label>Imię i nazwisko:</label>
+        <input type="text" id="name" required>
+      </div>
+      <div class="form-group">
+        <label>Telefon:</label>
+        <input type="tel" id="phone" required>
+      </div>
+      <div class="form-group">
+        <label>Marka i model pralki:</label>
+        <input type="text" id="brand" placeholder="np. Samsung WF80F5E2W2W">
+      </div>
+      <div class="form-group">
+        <label>Adres w Goleniowie:</label>
+        <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania">
+      </div>
+      <button type="submit">Wyślij zgłoszenie na WhatsApp</button>
+    </form>
+  </div>
+</section>
 <div class="floating-contact">
   <a href="tel:+48721988949" class="float-btn call-btn">📞 Zadzwoń</a>
   <a href="https://wa.me/48721988949" target="_blank" class="float-btn whatsapp-btn">💬 WhatsApp</a>
