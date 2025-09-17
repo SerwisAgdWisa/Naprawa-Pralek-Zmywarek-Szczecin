@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Naprawa Pralek Goleniów | Serwis Pralek AGD</title>
-  <meta name="description" content="Naprawa pralek Goleniów – szybki serwis, dojazd do klienta. Pralka nie wiruje, nie pobiera wody, nie grzeje? Zadzwoń lub napisz na WhatsApp – naprawimy!">
-  <meta name="keywords" content="naprawa pralek Goleniów, serwis pralek Goleniów, pralka nie wiruje, pralka nie pobiera wody, pralka nie grzeje, naprawa AGD Goleniów">
+  <title>Naprawa Pralek Goleniów | Serwis AGD WISA</title>
+  <meta name="description" content="Naprawa pralek Goleniów – szybki i profesjonalny serwis pralek w Goleniowie. Dojazd do klienta, diagnoza i naprawa na miejscu.">
+  <meta name="keywords" content="naprawa pralek Goleniów, serwis pralek Goleniów, pralka nie wiruje, pralka nie pobiera wody, pralka nie grzeje">
   <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
@@ -19,55 +18,53 @@
     </div>
   </div>
 </header>
+
 <div class="floating-contact">
   <a href="tel:+48721988949" class="float-btn call-btn">📞 Zadzwoń</a>
   <a href="https://wa.me/48721988949" target="_blank" class="float-btn whatsapp-btn">💬 WhatsApp</a>
 </div>
-<section class="hero">
-  <div class="container">
-    <h1>Naprawa Pralek Goleniów</h1>
-    <p>Profesjonalny serwis pralek w Goleniowie</p>
-    <a href="#order" class="cta-button">Zamów Naprawę</a>
-  </div>
-</section>
 
-<section id="order" class="order-section">
+<section class="order-section">
   <div class="container order-form">
     <form onsubmit="sendToWhatsApp(event)">
       <div class="form-group">
         <label>Imię i nazwisko:</label>
         <input type="text" id="name" required>
       </div>
-
       <div class="form-group">
         <label>Telefon:</label>
         <input type="tel" id="phone" required>
       </div>
-
       <div class="form-group">
         <label>Marka i model pralki:</label>
         <input type="text" id="brand" placeholder="np. Samsung WF80F5E2W2W">
       </div>
-
-      <div class="form-group">
-        <label>Opis usterki:</label>
-        <textarea id="message" rows="4" required placeholder="Opisz dokładnie problem z pralką..."></textarea>
-      </div>
-
       <div class="form-group">
         <label>Adres w Goleniowie:</label>
         <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania">
       </div>
-
+      <div class="form-group">
+        <label>Opis usterki:</label>
+        <textarea id="message" rows="4" required placeholder="Opisz dokładnie problem z pralką..."></textarea>
+      </div>
       <button type="submit" class="submit-btn">Wyślij zgłoszenie na WhatsApp</button>
     </form>
   </div>
 </section>
 
+<section class="seo-text">
+  <p>Każda naprawa wykonywana jest fachowo.</p>
+  <p>Naprawiamy pralki wszystkich marek w Goleniowie i okolicach. Dojazd do klienta, szybka diagnoza i profesjonalna naprawa.</p>
+  <p><a href="../../index.html">Powrót do strony głównej</a></p>
+</section>
+
+<footer>
+  <p>© 2025 Naprawa Pralek Goleniów | Serwis AGD WISA | Tel: +48 721 988 949</p>
+</footer>
+
 <script>
 function sendToWhatsApp(event) {
   event.preventDefault();
-
   let name = document.getElementById("name").value;
   let phone = document.getElementById("phone").value;
   let brand = document.getElementById("brand").value;
@@ -82,32 +79,11 @@ function sendToWhatsApp(event) {
              `❗ Problem: ${message}\n\n` +
              `📍 Miasto: Goleniów`;
 
-  let button = event.target.querySelector("button[type='submit']");
-  button.textContent = "Wysłano!";
-  button.style.backgroundColor = "#28a745";
-
-  // Показываем под формой текст подтверждения
-  let confirmText = document.createElement("p");
-  confirmText.textContent = "Twoja zgłoszenie zostało wysłane!";
-  confirmText.style.color = "#28a745";
-  confirmText.style.marginTop = "10px";
-  event.target.appendChild(confirmText);
-
-  // Переход в WhatsApp
-  window.location.href = "https://wa.me/48721988949?text=" + encodeURIComponent(text);
-
-  // Возврат кнопки через 5 секунд
-  setTimeout(() => {
-    button.textContent = "Zamów Naprawę";
-    button.style.backgroundColor = "";
-    confirmText.remove();
-  }, 5000);
+  let url = "https://wa.me/48721988949?text=" + encodeURIComponent(text);
+  window.open(url, '_blank');
+  alert("Twoja zgłoszenie zostało wysłane na WhatsApp!");
 }
 </script>
-<section class="seo-text">
-  <p>Każda naprawa wykonywana jest fachowo.</p>
-  <p>Naprawiamy pralki wszystkich marek w Goleniowie i okolicach. Dojazd do klienta, szybka diagnoza i profesjonalna naprawa.</p>
-  <p><a href="../../index.html">Powrót do strony głównej</a></p>
-</section>
+
 </body>
 </html>
