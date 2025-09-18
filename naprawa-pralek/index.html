@@ -60,35 +60,67 @@
             </div>
         </div>
     </section>
-<script>
-function sendToWhatsApp(event) {
-    event.preventDefault();
-    let name = document.getElementById("name").value;
-    let phone = document.getElementById("phone").value;
-    let brand = document.getElementById("brand").value;
-    let message = document.getElementById("message").value;
-    let city = document.getElementById("city").value;
-    let address = document.getElementById("address").value;
+<!-- Order Form -->
+    <section id="order" class="order-section">
+        <div class="container">
+            <form class="order-form" onsubmit="sendToWhatsApp(event)">
+                <h2>Zamów naprawę pralki</h2>
+                <div class="form-group">
+                    <label>Imię:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label>Telefon:</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label>Marka i model pralki:</label>
+                    <input type="text" id="brand" placeholder="np. Samsung WF80F5E2W2W">
+                </div>
+                <div class="form-group">
+                    <label>Miasto:</label>
+                    <input type="text" id="city" placeholder="np. Szczecin" required>
+                </div>
+                <div class="form-group">
+                    <label>Adres:</label>
+                    <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania" required>
+                </div>
+                <div class="form-group">
+                    <label>Opis problemu:</label>
+                    <textarea id="message" placeholder="Krótki opis problemu" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Wyślij na WhatsApp</button>
+            </form>
+        </div>
+    </section>
 
-    if(city === "") {
-        alert("Proszę wybrać miasto!");
-        return;
-    }
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/48721988949" target="_blank" class="whatsapp-float">💬</a>
 
-    // Формируем текст с %0A для переносов строк
-    let text = "🔧 NAPRAWA PRALKI%0A%0A" +
-               "👤 Imię: " + encodeURIComponent(name) + "%0A" +
-               "📞 Telefon: " + encodeURIComponent(phone) + "%0A" +
-               "🏠 Adres: " + encodeURIComponent(address + ", " + city) + "%0A" +
-               "🔧 Marka/model: " + encodeURIComponent(brand) + "%0A" +
-               "❗ Problem: " + encodeURIComponent(message);
+    <!-- WhatsApp Script -->
+    <script>
+        function sendToWhatsApp(event) {
+            event.preventDefault();
+            let name = document.getElementById("name").value;
+            let phone = document.getElementById("phone").value;
+            let brand = document.getElementById("brand").value;
+            let message = document.getElementById("message").value;
+            let city = document.getElementById("city").value;
+            let address = document.getElementById("address").value;
 
-    let url = "https://api.whatsapp.com/send?phone=48721988949&text=" + text;
+            let text = `🔧 NAPRAWA PRALKI\n\n` +
+                       `👤 Imię: ${name}\n` +
+                       `📞 Telefon: ${phone}\n` +
+                       `🏠 Adres: ${address}, ${city}\n` +
+                       `🔧 Marka/model: ${brand}\n` +
+                       `❗ Problem: ${message}`;
+
+          let url = "https://api.whatsapp.com/send?phone=48721988949&text=" + text;
     window.open(url, '_blank');
 
     alert("Twoja zgłoszenie zostało wysłane na WhatsApp!");
-}
-</script>
+        }
+    </script>
     
 </body>
 </html>
