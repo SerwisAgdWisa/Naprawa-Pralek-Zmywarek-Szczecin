@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naprawa Pralek Goleniów | Serwis Pralek wszystkich marek | WISA 721 988 949</title>
-    <meta name="description" content="Profesjonalna naprawa pralek w Goleniowie. Pralka nie otwiera drzwi, nie wypompowuje wody, nie grzeje wody. Tel: 721 988 949">
-    <meta name="keywords" content="naprawa pralek goleniow, serwis pralek, pralka nie wiruje, pralka cieknie, awaria pralki">
-    <link rel="stylesheet" href="../css/style.css">
+    <title>Naprawa Pralek Goleniów | WISA 721 988 949</title>
+    <p>Naprawa pralek w Goleniów – szybko i skutecznie. Naprawiamy wszystkie marki pralek, rozwiązujemy problemy z pralką, bębnem, pompą czy wyświetlaczem.</p>
+    <link rel="stylesheet" href="../css/style.css"> <!-- твой основной CSS -->
 </head>
 <body>
     <!-- Header -->
@@ -28,24 +27,34 @@
         </div>
     </section>
 
-    <!-- Common Problems -->
-    <div class="problems-grid container">
-        <div class="problem-card"><h3>Pralka nie otwiera drzwi</h3></div>
-        <div class="problem-card"><h3>Pralka nie wypompowuje wody</h3></div>
-        <div class="problem-card"><h3>Pralka nie grzeje wody</h3></div>
-        <div class="problem-card"><h3>Pralka nie pobiera wody</h3></div>
-        <div class="problem-card"><h3>Pralka nie wiruje</h3></div>
-        <div class="problem-card"><h3>Pralka hałasuje</h3></div>
-        <div class="problem-card"><h3>Pralka zatrzymuje program</h3></div>
-        <div class="problem-card"><h3>Wyskakuje błąd na wyświetlaczu</h3></div>
-        <div class="problem-card"><h3>Cieknie woda</h3></div>
+    <!-- Problems Grid -->
+    <section class="services">
+        <div class="container">
+            <h2>Najczęstsze problemy z pralkami</h2>
+            <div class="services-grid">
+    <div class="service-card"><h3>Pralka w Goleniów nie otwiera drzwi</h3></div>
+    <div class="service-card"><h3>Nie wypompowuje wody w Goleniowie</h3></div>
+    <div class="service-card"><h3>Brak podgrzewania wody</h3></div>
+    <div class="service-card"><h3>Pralka nie pobiera wody</h3></div>
+    <div class="service-card"><h3>Nie obraca bębna</h3></div>
+    <div class="service-card"><h3>Pralka hałasuje</h3></div>
+    <div class="service-card"><h3>Program zatrzymuje się</h3></div>
+    <div class="service-card"><h3>Błąd na wyświetlaczu</h3></div>
+    <div class="service-card"><h3>Wycieka woda</h3></div>
+</div>
+        </div>
+    </section>
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumb container">
+        <a href="../index.html">Strona Główna</a> > <span>Naprawa Pralek Goleniów</span>
     </div>
 
     <!-- Order Form -->
     <section id="order" class="order-section">
         <div class="container">
-            <form class="order-form" id="orderForm">
-                <h2>Zamów Naprawę Pralki</h2>
+            <form class="order-form" onsubmit="sendToWhatsApp(event)">
+                <h2>Zamów naprawę pralki</h2>
                 <div class="form-group">
                     <label>Imię:</label>
                     <input type="text" id="name" required>
@@ -59,50 +68,47 @@
                     <input type="text" id="brand" placeholder="np. Samsung WF80F5E2W2W">
                 </div>
                 <div class="form-group">
-                    <label>Adres:</label>
-                    <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania">
+                    <label>Miasto:</label>
+                    <input type="text" id="city" value="Goleniów" readonly>
                 </div>
-                <input type="hidden" id="city" value="Goleniów">
+                <div class="form-group">
+                    <label>Adres:</label>
+                    <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania" required>
+                </div>
                 <div class="form-group">
                     <label>Opis problemu:</label>
-                    <textarea id="message" placeholder="Opisz problem z pralką"></textarea>
+                    <textarea id="message" placeholder="Krótki opis problemu" required></textarea>
                 </div>
                 <button type="submit" class="submit-btn">Wyślij na WhatsApp</button>
             </form>
         </div>
     </section>
 
-    <!-- Breadcrumb -->
-    <div class="breadcrumb container">
-        <a href="../index.html">Strona Główna</a> > <span>Naprawa Pralek Goleniów</span>
-    </div>
-
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/48721988949" class="whatsapp-float" target="_blank">📱</a>
+    <a href="https://wa.me/48721988949" target="_blank" class="whatsapp-float">💬</a>
 
     <!-- WhatsApp Script -->
     <script>
-        document.getElementById('orderForm').addEventListener('submit', function(event){
+        function sendToWhatsApp(event) {
             event.preventDefault();
             let name = document.getElementById("name").value;
             let phone = document.getElementById("phone").value;
             let brand = document.getElementById("brand").value;
             let message = document.getElementById("message").value;
-            let address = document.getElementById("address").value;
             let city = document.getElementById("city").value;
+            let address = document.getElementById("address").value;
 
-            let text = `🔧 NAPRAWA PRALKI - ${city}\n\n` +
+            let text = `🔧 NAPRAWA PRALKI\n\n` +
                        `👤 Imię: ${name}\n` +
                        `📞 Telefon: ${phone}\n` +
-                       `🏠 Adres: ${address}\n` +
+                       `🏠 Adres: ${address}, ${city}\n` +
                        `🔧 Marka/model: ${brand}\n` +
-                       `❗ Problem: ${message}\n\n` +
-                       `📍 Miasto: ${city}`;
+                       `❗ Problem: ${message}`;
 
             let url = "https://wa.me/48721988949?text=" + encodeURIComponent(text);
             window.open(url, '_blank');
-            alert("Twoja wiadomość została wysłana na WhatsApp!");
-        });
+            alert("Twoja zgłoszenie zostało wysłane na WhatsApp!");
+        }
     </script>
 </body>
 </html>
