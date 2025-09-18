@@ -1,135 +1,141 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naprawa Pralek Szczecin, Stargard | Serwis Pralek wszystkich marek | WISA 721 988 949</title>
-    <meta name="description" content="Profesjonalna naprawa pralek w Szczecinie, Stargardzie i całym Zachodniopomorskiem. Pralka nie wiruje, przecieka, awaria pompy. Tel: 721 988 949">
-    <meta name="keywords" content="naprawa pralek szczecin, serwis pralek stargard, pralka nie wiruje, pralka przecieka, awaria pralki, wymiana pompy pralki">
-    <link rel="stylesheet" href="../css/style.css">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naprawa Pralek Szczecin, Stargard | Serwis Pralek wszystkich marek | WISA 721 988 949</title>
+  <meta name="description" content="Profesjonalna naprawa pralek w Szczecinie, Stargardzie i całym Zachodniopomorskiem. Pralka nie wiruje, przecieka, awaria pompy. Tel: 721 988 949">
+  <meta name="keywords" content="naprawa pralek szczecin, serwis pralek stargard, pralka nie wiruje, pralka przecieka, awaria pralki, wymiana pompy pralki">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <style>
+    .form-section {
+      margin: 40px auto;
+      max-width: 600px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background: #fafafa;
+    }
+    .form-section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+    .form-section button {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      background: green;
+      color: #fff;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .form-section button:hover {
+      background: darkgreen;
+    }
+  </style>
 </head>
 <body>
- <section class="hero">
-  <div class="container">
-    <h1>Naprawa Pralek</h1>
-    <p>Serwis pralek wszystkich marek – szybka naprawa w Twoim mieście</p>
-    <a href="#order" class="cta-button">Zamów Naprawę</a>
+  <section class="hero">
+    <div class="container">
+      <h1>Naprawa Pralek</h1>
+      <p>Serwis pralek wszystkich marek – szybka naprawa w Twoim mieście</p>
+      <a href="#order" class="cta-button">Zamów Naprawę</a>
+    </div>
+  </section>    
+
+  <div class="problems-grid">
+    <div class="problem-card"><h3>Pralka nie otwiera drzwi</h3></div>
+    <div class="problem-card"><h3>Pralka nie wypompowuje wody</h3></div>
+    <div class="problem-card"><h3>Pralka nie grzeje wody</h3></div>
+    <div class="problem-card"><h3>Pralka nie pobiera wody</h3></div>
+    <div class="problem-card"><h3>Pralka nie wiruje</h3></div>
+    <div class="problem-card"><h3>Pralka hałasuje</h3></div>
+    <div class="problem-card"><h3>Pralka zatrzymuje program</h3></div>
+    <div class="problem-card"><h3>Wyskakuje błąd na wyświetlaczu</h3></div>
+    <div class="problem-card"><h3>Cieknie woda</h3></div>
   </div>
-</section>    
-    
 
-    
-
-          <div class="problems-grid">
-    <div class="problem-card">
-        <h3>Pralka nie otwiera drzwi</h3>
-    </div>
-    <div class="problem-card">
-        <h3>Pralka nie wypompowuje wody</h3>
-    </div>
-    <div class="problem-card">
-        <h3>Pralka nie grzeje wody</h3>
-    </div>
-    <div class="problem-card">
-        <h3>Pralka nie pobiera wody</h3>
-    </div>
-    <div class="problem-card">
-        <h3>Pralka nie wiruje</h3>
-    </div>
-    <div class="problem-card">
-        <h3>Pralka hałasuje</h3>
-    </div>
-    <div class="problem-card">
-        <h3>Pralka zatrzymuje program</h3>
-    </div>
-    <div class="problem-card">
-        <h3>Wyskakuje błąd na wyświetlaczu</h3>
-    </div>
-    <div class="problem-card">
-        <h3>Cieknie woda</h3>
-    </div>
+  <!-- Форма -->
+  <section id="order" class="form-section">
+    <h2>Formularz zgłoszeniowy</h2>
+    <form onsubmit="sendToWhatsApp(event)">
+      <div class="form-group">
+        <label>Imię i nazwisko:</label>
+        <input type="text" id="name" required>
+      </div>
+      <div class="form-group">
+        <label>Telefon:</label>
+        <input type="tel" id="phone" required>
+      </div>
+      <div class="form-group">
+        <label>Marka i model pralki:</label>
+        <input type="text" id="brand" placeholder="np. Samsung WF80F5E2W2W">
+      </div>
+      <div class="form-group">
+        <label>Adres:</label>
+        <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania">
+      </div>
+      <div class="form-group">
+  <label>Miasto:</label>
+  <select id="city" required>
+    <option value="">Wybierz miasto</option>
+    <option value="Szczecin">Szczecin</option>
+    <option value="Stargard">Stargard</option>
+    <option value="Goleniów">Goleniów</option>
+    <option value="Nowogard">Nowogard</option>
+    <option value="Maszewo">Maszewo</option>
+    <option value="Police">Police</option>
+    <option value="Pyrzyce">Pyrzyce</option>
+  </select>
 </div>
-    <div class="breadcrumb container">
-        <a href="../index.html">Strona Główna</a> > <span>Naprawa Pralek</span>
-    </div>
-        <h2>Wybierz swoje miasto:</h2>
-        <div class="cities-grid">
-            <a href="szczecin/" class="city-card">Szczecin</a>
-            <a href="stargard/" class="city-card">Stargard</a>
-            <a href="goleniow/" class="city-card">Goleniów</a>
-            <a href="nowogard/" class="city-card">Nowogard</a>
-            <a href="maszewo/" class="city-card">Maszewo</a>
-            <a href="pyrzyce/" class="city-card">Pyrzyce</a>
-            <a href="police/" class="city-card">Police</a>
-        </div>
-    </div>
-<div class="order-form container">
-  <h2>Zamów Naprawę Pralki</h2>
-  <form onsubmit="sendToWhatsApp(event)">
-    <div class="form-group">
-      <label>Imię i nazwisko:</label>
-      <input type="text" id="name" required>
-    </div>
-    <div class="form-group">
-      <label>Telefon:</label>
-      <input type="tel" id="phone" required>
-    </div>
-    <div class="form-group">
-      <label>Marka i model pralki:</label>
-      <input type="text" id="brand" placeholder="np. Samsung WF80F5E2W2W">
-    </div>
-    <div class="form-group">
-      <label>Miasto:</label>
-      <select id="city" required>
-        <option value="">Wybierz miasto</option>
-        <option value="Szczecin">Szczecin</option>
-        <option value="Stargard">Stargard</option>
-        <option value="Goleniów">Goleniów</option>
-        <option value="Nowogard">Nowogard</option>
-        <option value="Maszewo">Maszewo</option>
-        <option value="Pyrzyce">Pyrzyce</option>
-        <option value="Police">Police</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label>Adres:</label>
-      <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania">
-    </div>
-    <div class="form-group">
-      <label>Opis problemu:</label>
-      <textarea id="message" rows="4" required placeholder="Opisz dokładnie problem z pralką..."></textarea>
-    </div>
-    <button type="submit" class="cta-button">Wyślij na WhatsApp</button>
-  </form>
-</div>
+      <div class="form-group">
+        <label>Opis usterki:</label>
+        <textarea id="message" rows="4" required placeholder="Opisz dokładnie problem z pralką..."></textarea>
+      </div>
+      <button type="submit">Wyślij na WhatsApp</button>
+    </form>
+  </section>
 
-<script>
-function sendToWhatsApp(event) {
-  event.preventDefault();
-  const name = document.getElementById("name").value;
-  const phone = document.getElementById("phone").value;
-  const brand = document.getElementById("brand").value;
-  const message = document.getElementById("message").value;
-  const address = document.getElementById("address").value;
-  const city = document.getElementById("city").value;
+  <script>
+    function sendToWhatsApp(event) {
+      event.preventDefault();
+      let name = document.getElementById("name").value;
+      let phone = document.getElementById("phone").value;
+      let brand = document.getElementById("brand").value;
+      let message = document.getElementById("message").value;
+      let address = document.getElementById("address").value;
+      let city = document.getElementById("city").value;
 
-  if (!city) {
-    alert("Proszę wybrać miasto!");
-    return;
-  }
-
-  const text = `🔧 NAPRAWA PRALKI - ${city}\n\n` +
-               `👤 Imię: ${name}\n` +
-               `📞 Telefon: ${phone}\n` +
-               `🏠 Adres: ${address}\n` +
-               `🔧 Marka/model: ${brand}\n` +
-               `❗ Problem: ${message}\n\n` +
-               `📍 Miasto: ${city}`;
-               
-  window.open("https://wa.me/48721988949?text=" + encodeURIComponent(text), '_blank');
-  alert("Twoja zgłoszenie zostało wysłane!");
-}
-</script>
+      let text = `🔧 NAPRAWA PRALKI\n\n` +
+                 `👤 Imię: ${name}\n` +
+                 `📞 Telefon: ${phone}\n` +
+                 `🏠 Adres: ${address}\n` +
+                 `🏙️ Miasto: ${city}\n` +
+                 `🔧 Marka/model: ${brand}\n` +
+                 `❗ Problem: ${message}`;
+                 
+      let url = "https://wa.me/48721988949?text=" + encodeURIComponent(text);
+      window.open(url, '_blank');
+      alert("Twoje zgłoszenie zostało wysłane na WhatsApp ✅");
+    }
+  </script>
 </body>
 </html>
