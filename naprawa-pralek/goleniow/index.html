@@ -1,122 +1,108 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Naprawa Pralek Goleniów | Serwis AGD WISA</title>
-  <meta name="description" content="Naprawa pralek w Goleniowie. Szybki serwis pralek, diagnostyka, naprawa wszystkich marek. Dojazd do klienta, gwarancja jakości.">
-  <meta name="keywords" content="naprawa pralek Goleniów, serwis AGD Goleniów, pralka nie wiruje, pralka nie grzeje, pralka nie pobiera wody, naprawa pralek">
-  <link rel="stylesheet" href="../../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naprawa Pralek Goleniów | Serwis Pralek wszystkich marek | WISA 721 988 949</title>
+    <meta name="description" content="Profesjonalna naprawa pralek w Goleniowie. Pralka nie otwiera drzwi, nie wypompowuje wody, nie grzeje wody. Tel: 721 988 949">
+    <meta name="keywords" content="naprawa pralek goleniow, serwis pralek, pralka nie wiruje, pralka cieknie, awaria pralki">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="../index.html" class="logo">WISA</a>
+                <a href="tel:+48721988949" class="phone">📞 721 988 949</a>
+            </div>
+        </div>
+    </header>
 
-<!-- Хедер -->
-<header>
-  <div class="container">
-    <div class="header-content">
-      <a href="../../index.html" class="logo">WISA</a>
-      <a href="tel:+48721988949" class="phone">📞 721 988 949</a>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Naprawa Pralek Goleniów</h1>
+            <p>Serwis pralek wszystkich marek – szybka naprawa w Goleniowie</p>
+            <a href="#order" class="cta-button">Zamów Naprawę</a>
+        </div>
+    </section>
+
+    <!-- Common Problems -->
+    <div class="problems-grid container">
+        <div class="problem-card"><h3>Pralka nie otwiera drzwi</h3></div>
+        <div class="problem-card"><h3>Pralka nie wypompowuje wody</h3></div>
+        <div class="problem-card"><h3>Pralka nie grzeje wody</h3></div>
+        <div class="problem-card"><h3>Pralka nie pobiera wody</h3></div>
+        <div class="problem-card"><h3>Pralka nie wiruje</h3></div>
+        <div class="problem-card"><h3>Pralka hałasuje</h3></div>
+        <div class="problem-card"><h3>Pralka zatrzymuje program</h3></div>
+        <div class="problem-card"><h3>Wyskakuje błąd na wyświetlaczu</h3></div>
+        <div class="problem-card"><h3>Cieknie woda</h3></div>
     </div>
-  </div>
-</header>
 
-<!-- Плавающие кнопки -->
-<div class="floating-contact">
-  <a href="tel:+48721988949" class="float-btn call-btn">📞 Zadzwoń</a>
-  <a href="https://wa.me/48721988949" target="_blank" class="float-btn whatsapp-btn">💬 WhatsApp</a>
-</div>
+    <!-- Order Form -->
+    <section id="order" class="order-section">
+        <div class="container">
+            <form class="order-form" id="orderForm">
+                <h2>Zamów Naprawę Pralki</h2>
+                <div class="form-group">
+                    <label>Imię:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label>Telefon:</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label>Marka i model pralki:</label>
+                    <input type="text" id="brand" placeholder="np. Samsung WF80F5E2W2W">
+                </div>
+                <div class="form-group">
+                    <label>Adres:</label>
+                    <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania">
+                </div>
+                <input type="hidden" id="city" value="Goleniów">
+                <div class="form-group">
+                    <label>Opis problemu:</label>
+                    <textarea id="message" placeholder="Opisz problem z pralką"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Wyślij na WhatsApp</button>
+            </form>
+        </div>
+    </section>
 
-<!-- Форма заказа -->
-<section class="order-section">
-  <div class="container order-form">
-    <form onsubmit="sendToWhatsApp(event)">
-      <div class="form-group">
-        <label>Imię i nazwisko:</label>
-        <input type="text" id="name" required>
-      </div>
-      <div class="form-group">
-        <label>Telefon:</label>
-        <input type="tel" id="phone" required>
-      </div>
-      <div class="form-group">
-        <label>Marka i model pralki:</label>
-        <input type="text" id="brand" placeholder="np. Samsung WF80F5E2W2W">
-      </div>
-      <div class="form-group">
-        <label>Adres w Goleniowie:</label>
-        <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania" required>
-      </div>
-      <button type="submit" class="submit-btn">Wyślij zgłoszenie na WhatsApp</button>
-    </form>
-  </div>
-</section>
+    <!-- Breadcrumb -->
+    <div class="breadcrumb container">
+        <a href="../index.html">Strona Główna</a> > <span>Naprawa Pralek Goleniów</span>
+    </div>
 
-<!-- Информационный блок -->
-<section class="info-section">
-  <div class="container">
-    <h2>Naprawa pralek w Goleniowie</h2>
-    <p>Oferujemy kompleksowy serwis pralek wszystkich marek w Goleniowie i okolicach. Dojazd do klienta, szybka diagnoza i profesjonalna naprawa.</p>
-    <h3>Typowe usterki pralek:</h3>
-    <ul>
-      <li>Pralka nie pobiera wody</li>
-      <li>Pralka nie wiruje</li>
-      <li>Pralka nie grzeje wody</li>
-      <li>Pralka zatrzymuje program</li>
-      <li>Pralka przecieka</li>
-      <li>Pralka hałasuje podczas prania</li>
-      <li>Pralka nie odpompowuje wody</li>
-      <li>Błędy na wyświetlaczu</li>
-    </ul>
-    <h3>Dlaczego warto wybrać nasz serwis?</h3>
-    <ul>
-      <li>✓ Dojazd do klienta w Goleniowie</li>
-      <li>✓ Diagnoza i wycena</li>
-      <li>✓ Oryginalne części zamienne</li>
-      <li>✓ Gwarancja na wykonane usługi</li>
-      <li>✓ Fachowo wykonane naprawy</li>
-      <li>✓ Konkurencyjne ceny</li>
-    </ul>
-  </div>
-</section>
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/48721988949" class="whatsapp-float" target="_blank">📱</a>
 
-<!-- SEO-текст внизу -->
-<section class="seo-text">
-  <div class="container">
-    <p>Każda naprawa wykonywana jest fachowo. Serwis pralek w Goleniowie – szybka diagnostyka, naprawa i gwarancja jakości. Zadzwoń lub napisz na WhatsApp, aby umówić się na serwis. <a href="../../index.html">Powrót na stronę główną</a></p>
-  </div>
-</section>
+    <!-- WhatsApp Script -->
+    <script>
+        document.getElementById('orderForm').addEventListener('submit', function(event){
+            event.preventDefault();
+            let name = document.getElementById("name").value;
+            let phone = document.getElementById("phone").value;
+            let brand = document.getElementById("brand").value;
+            let message = document.getElementById("message").value;
+            let address = document.getElementById("address").value;
+            let city = document.getElementById("city").value;
 
-<!-- Футер -->
-<footer>
-  <div class="container">
-    <p>© 2025 WISA | Naprawa Pralek Goleniów | Tel: +48 721 988 949</p>
-  </div>
-</footer>
+            let text = `🔧 NAPRAWA PRALKI - ${city}\n\n` +
+                       `👤 Imię: ${name}\n` +
+                       `📞 Telefon: ${phone}\n` +
+                       `🏠 Adres: ${address}\n` +
+                       `🔧 Marka/model: ${brand}\n` +
+                       `❗ Problem: ${message}\n\n` +
+                       `📍 Miasto: ${city}`;
 
-<script>
-function sendToWhatsApp(event) {
-  event.preventDefault();
-  const name = document.getElementById("name").value;
-  const phone = document.getElementById("phone").value;
-  const brand = document.getElementById("brand").value;
-  const message = document.getElementById("message").value;
-  const address = document.getElementById("address").value;
-
-  const text = `🔧 NAPRAWA PRALKI - GOLENIÓW\n\n` +
-               `👤 Imię: ${name}\n` +
-               `📞 Telefon: ${phone}\n` +
-               `🏠 Adres: ${address}\n` +
-               `🔧 Marka/model: ${brand}\n` +
-               `❗ Problem: ${message}\n\n` +
-               `📍 Miasto: Goleniów`;
-
-  // Сразу переходим на WhatsApp с текстом
-  window.location.href = "https://wa.me/48721988949?text=" + encodeURIComponent(text);
-
-  // Показываем уведомление
-  alert("Twoja wiadomość została wysłana do WhatsApp!");
-}
-</script>
-
+            let url = "https://wa.me/48721988949?text=" + encodeURIComponent(text);
+            window.open(url, '_blank');
+            alert("Twoja wiadomość została wysłana na WhatsApp!");
+        });
+    </script>
 </body>
 </html>
