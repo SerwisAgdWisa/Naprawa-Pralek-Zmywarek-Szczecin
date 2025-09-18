@@ -105,9 +105,10 @@
                        `🔧 Marka/model: ${brand}\n` +
                        `❗ Problem: ${message}`;
 
-            let url = "https://wa.me/48721988949?text=" + encodeURIComponent(text);
-            window.open(url, '_blank');
-            alert("Twoja zgłoszenie zostało wysłane na WhatsApp!");
+           let url = "https://api.whatsapp.com/send?phone=48721988949&text=" + encodeURIComponent(text);
+window.open(url, '_blank');
+
+alert("Twoja zgłoszenie zostało wysłane na WhatsApp!"); 
         }
     </script>
 </body>
