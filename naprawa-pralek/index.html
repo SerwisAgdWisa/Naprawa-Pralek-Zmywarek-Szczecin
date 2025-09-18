@@ -60,8 +60,7 @@
             </div>
         </div>
     </section>
-
-    <script>
+<script>
 function sendToWhatsApp(event) {
     event.preventDefault();
     let name = document.getElementById("name").value;
@@ -90,23 +89,6 @@ function sendToWhatsApp(event) {
     alert("Twoja zgłoszenie zostało wysłane na WhatsApp!");
 }
 </script>
-<script>
-function sendToWhatsApp(event) {
-    event.preventDefault();
-    let name = encodeURIComponent(document.getElementById("name").value);
-    let phone = encodeURIComponent(document.getElementById("phone").value);
-    let brand = encodeURIComponent(document.getElementById("brand").value);
-    let city = encodeURIComponent(document.getElementById("city").value);
-    let address = encodeURIComponent(document.getElementById("address").value);
-    let message = encodeURIComponent(document.getElementById("message").value);
-
-    let text = `🔧 NAPRAWA PRALKI\n\n👤 Imię: ${name}\n📞 Telefon: ${phone}\n🏠 Adres: ${address}, ${city}\n🔧 Marka/model: ${brand}\n❗ Problem: ${message}`;
     
-    // Используем api.whatsapp.com
-    let url = `https://api.whatsapp.com/send?phone=48721988949&text=${text}`;
-    
-    window.open(url, '_blank');
-}
-</script>
 </body>
 </html>
