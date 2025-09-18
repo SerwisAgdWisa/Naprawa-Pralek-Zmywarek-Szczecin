@@ -46,15 +46,25 @@
 </section>
 
 <section id="order" class="order-section">
-    <div class="container order-form">
+  <div class="container order-form">
     <h2>Zamów serwis pralki</h2>
     <form id="orderForm">
-      <input type="text" name="name" placeholder="Imię i nazwisko" required>
-      <input type="tel" name="phone" placeholder="Telefon" required>
-      <input type="text" name="address" placeholder="Adres w Szczecinie" required>
-      <input type="text" name="brand" placeholder="Marka pralki (np. Samsung)">
-      <textarea name="problem" placeholder="Opis problemu (np. błąd F05, pralka nie odpompowuje)" required></textarea>
-      <button type="submit" class="btn">Wyślij przez WhatsApp</button>
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Imię i nazwisko" required>
+      </div>
+      <div class="form-group">
+        <input type="tel" name="phone" placeholder="Telefon" required>
+      </div>
+      <div class="form-group">
+        <input type="text" name="address" placeholder="Adres w Szczecinie" required>
+      </div>
+      <div class="form-group">
+        <input type="text" name="brand" placeholder="Marka pralki (np. Samsung)">
+      </div>
+      <div class="form-group">
+        <textarea name="problem" placeholder="Opis problemu (np. błąd F05, pralka nie odpompowuje)" required></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Wyślij przez WhatsApp</button>
     </form>
     <div id="confirmation">✅ Dziękujemy! Wiadomość została przygotowana w WhatsApp.</div>
   </div>
