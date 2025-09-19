@@ -46,36 +46,67 @@
         </div>
     </section>
    <section id="order" class="order-section">
-    <div class="container order-form">
-      <form onsubmit="sendToWhatsApp(event)">
-        <div class="form-group">
-          <label>Imię i nazwisko:</label>
-          <input type="text" id="name" required>
-        </div>
-        <div class="form-group">
-          <label>Telefon:</label>
-          <input type="tel" id="phone" required>
-        </div>
-        <div class="form-group">
-          <label>Marka i model pralki:</label>
-          <input type="text" id="brand" placeholder="np. Samsung WF80F5E2W2W">
-        </div>
-        <div class="form-group">
-          <label>Opis usterki:</label>
-          <textarea id="message" rows="4" required placeholder="Błąd E03, pralka nie wiruje, zatrzymuje program..."></textarea>
-        </div>
-        <div class="form-group">
-          <label>Adres w Stargardzie:</label>
-          <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania">
-        </div>
-        <button type="submit" class="submit-btn">Wyślij zgłoszenie na WhatsApp</button>
-      </form>
-    </div>
-  </section>
+  <div class="container order-form">
+    <h2>Zamów serwis pralki w Stargardzie</h2>
+    <form id="orderForm">
+      <label>Imię i nazwisko:
+        <input type="text" id="name" required>
+      </label>
+      <label>Telefon:
+        <input type="tel" id="phone" required>
+      </label>
+      <label>Marka i model pralki:
+        <input type="text" id="brand" placeholder="np. Samsung WF80F5E2W2W">
+      </label>
+      <label>Opis usterki:
+        <textarea id="message" rows="4" required placeholder="Opisz dokładnie problem z pralką..."></textarea>
+      </label>
+      <label>Adres w Stargardzie:
+        <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania">
+      </label>
+      <button type="submit">Wyślij zgłoszenie</button>
+    </form>
+    <div id="confirmation" style="display:none; color:green; margin-top:10px;">✅ Zgłoszenie wysłane!</div>
+  </div>
+</section>
+
+<script>
+document.getElementById("orderForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const address = document.getElementById("address").value.trim();
+  const brand = document.getElementById("brand").value.trim();
+  const message = document.getElementById("message").value.trim();
+
+  const text = `🔧 Serwis pralki w Stargardzie\n👤 ${name}\n📞 ${phone}\n🏠 ${address}\n🔧 Marka: ${brand}\n❗ Problem: ${message}`;
+
+  if (/Mobi|Android/i.test(navigator.userAgent)) {
+    // Мобильный → WhatsApp
+    window.open("https://wa.me/48721988949?text=" + encodeURIComponent(text), "_blank");
+  } else {
+    // ПК → Telegram
+    fetch("https://api.telegram.org/bot<YOUR_BOT_TOKEN>/sendMessage", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        chat_id: "<YOUR_CHAT_ID>",
+        text: text
+      })
+    })
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById("confirmation").style.display = "block";
+    })
+    .catch(err => alert("Błąd wysyłki: " + err));
+  }
+});
+</script>
 
 
 
-<a href="tel:+48721988949" class="call-float-stargard">📞</a>
+
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   const form = document.getElementById("orderFormStargard");
@@ -132,7 +163,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <footer>
   <p>© 2025 Naprawa Pralek Stargard | Serwis AGD | Tel: +48 721 988 949</p>
 </footer>
-
+<a href="https://wa.me/48721988949" class="whatsapp-float" target="_blank">📱</a>
 <script>
 function sendToWhatsApp(event) {
   event.preventDefault();
