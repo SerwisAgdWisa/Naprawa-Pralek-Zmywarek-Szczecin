@@ -115,19 +115,17 @@
 <a href="https://wa.me/48721988949" class="whatsapp-float" target="_blank">📱</a>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-  const form = document.getElementById("orderFormStargard"); // убедись, что форма имеет id="orderFormStargard"
+  const form = document.getElementById("orderFormStargard");
   
   form.addEventListener("submit", function(e) {
     e.preventDefault();
 
-    // получаем значения
     const name = form.querySelector("[name='name']").value.trim();
     const phone = form.querySelector("[name='phone']").value.trim();
     const address = form.querySelector("[name='address']").value.trim();
     const brand = form.querySelector("[name='brand']").value.trim();
     const problem = form.querySelector("[name='problem']").value.trim();
 
-    // формируем текст сообщения
     let text = `🔧 NAPRAWA PRALKI - STARGARD\n\n` +
                `👤 Imię: ${name}\n` +
                `📞 Telefon: ${phone}\n` +
@@ -144,17 +142,16 @@ document.addEventListener("DOMContentLoaded", function() {
       window.open(waUrl, "_blank");
     } else {
       // Telegram для ПК
-      // Замени <YOUR_BOT_TOKEN> и <YOUR_CHAT_ID> на свои значения
-      fetch("https://api.telegram.org/bot<YOUR_BOT_TOKEN>/sendMessage", {
+      fetch("https://api.telegram.org/bot7386128627:AAG2wQ4Y-5qcAr_gxtl355b5Y70XkZqMA28/sendMessage", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          chat_id: "<YOUR_CHAT_ID>",
+          chat_id: 5661489883,
           text: text
         })
       })
       .then(response => response.json())
-      .then(data => {
+      .then(() => {
         alert("Zgłoszenie zostało wysłane do Telegram!");
         form.reset();
       })
