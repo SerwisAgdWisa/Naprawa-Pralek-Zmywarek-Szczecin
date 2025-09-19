@@ -76,24 +76,26 @@
 </footer>
 <a href="https://wa.me/48721988949" class="whatsapp-float" target="_blank">📱</a>
 <script>
-function sendToWhatsApp(event) {
-  event.preventDefault();
-  let name = document.getElementById("name").value;
-  let phone = document.getElementById("phone").value;
-  let brand = document.getElementById("brand").value;
-  let message = document.getElementById("message").value;
-  let address = document.getElementById("address").value;
+function sendToWhatsApp() {
+  let name = document.getElementById("name").value.trim();
+  let phone = document.getElementById("phone").value.trim();
+  let address = document.getElementById("address").value.trim();
+  let brand = document.getElementById("brand").value.trim();
+  let problem = document.getElementById("problem").value.trim();
 
   let text = `🔧 NAPRAWA PRALKI - STARGARD\n\n` +
              `👤 Imię: ${name}\n` +
              `📞 Telefon: ${phone}\n` +
              `🏠 Adres: ${address}\n` +
-             `🔧 Marka/model: ${brand}\n` +
-             `❗ Problem: ${message}\n\n` +
+             (brand ? `🔧 Marka/model: ${brand}\n` : "") +
+             `❗ Problem: ${problem}\n\n` +
              `📍 Miasto: Stargard`;
-             
-  let url = "https://wa.me/48721988949?text=" + encodeURIComponent(text);
-  window.open(url, '_blank');
+
+  // заменяем переносы строк на %0A (WhatsApp понимает лучше)
+  text = text.replace(/\n/g, "%0A");
+
+  let url = "https://wa.me/48721988949?text=" + text;
+  window.open(url, "_blank");
 }
 </script>
 <!-- Breadcrumbs -->
