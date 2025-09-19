@@ -45,30 +45,62 @@
             <a href="#order" class="cta-button">Zamów Naprawę</a>
         </div>
     </section>
-   <section id="order" class="order-section">
+  <section id="order" class="order-section">
   <div class="container order-form">
-    <h2>Zamów serwis pralki w Stargardzie</h2>
-    <form id="orderForm">
-      <label>Imię i nazwisko:
+    <form onsubmit="sendMessage(event)">
+      <div class="form-group">
+        <label>Imię i nazwisko:</label>
         <input type="text" id="name" required>
-      </label>
-      <label>Telefon:
+      </div>
+      <div class="form-group">
+        <label>Telefon:</label>
         <input type="tel" id="phone" required>
-      </label>
-      <label>Marka i model pralki:
+      </div>
+      <div class="form-group">
+        <label>Marka i model pralki:</label>
         <input type="text" id="brand" placeholder="np. Samsung WF80F5E2W2W">
-      </label>
-      <label>Opis usterki:
-        <textarea id="message" rows="4" required placeholder="Opisz dokładnie problem z pralką..."></textarea>
-      </label>
-      <label>Adres w Stargardzie:
+      </div>
+      <div class="form-group">
+        <label>Opis usterki:</label>
+        <textarea id="message" rows="4" required placeholder="Błąd E03, pralka nie wiruje, zatrzymuje program..."></textarea>
+      </div>
+      <div class="form-group">
+        <label>Adres w Stargardzie:</label>
         <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania">
-      </label>
+      </div>
       <button type="submit">Wyślij zgłoszenie</button>
     </form>
-    <div id="confirmation" style="display:none; color:green; margin-top:10px;">✅ Zgłoszenie wysłane!</div>
   </div>
 </section>
+
+<script>
+function sendMessage(e) {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const brand = document.getElementById("brand").value.trim();
+  const message = document.getElementById("message").value.trim();
+  const address = document.getElementById("address").value.trim();
+
+  const text = `🔧 PRALKA – STARGARD\n\n👤 ${name}\n📞 ${phone}\n🏠 ${address}\n🔧 Marka: ${brand}\n❗ ${message}`;
+
+  const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+  if(isMobile){
+    // WhatsApp для мобильных
+    const waUrl = "https://wa.me/48721988949?text=" + encodeURIComponent(text);
+    window.open(waUrl, "_blank");
+  } else {
+    // Telegram для ПК (замени YOUR_TELEGRAM_USERNAME на своего)
+    const tgUrl = "https://t.me/YOUR_TELEGRAM_USERNAME?start=" + encodeURIComponent(text);
+    window.open(tgUrl, "_blank");
+  }
+
+  alert("Zgłoszenie zostało wysłane!");
+  e.target.reset();
+}
+</script> 
 
 <script>
 document.getElementById("orderForm").addEventListener("submit", function(e) {
