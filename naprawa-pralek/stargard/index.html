@@ -41,7 +41,7 @@
     <section class="hero">
         <div class="container">
             <h1>Naprawa Pralek Stargard</h1>
-            <p>Serwis pralek wszystkich marek – szybka naprawa w Goleniowie</p>
+            <p>Serwis pralek wszystkich marek – szybka naprawa w Stargsrdzie</p>
             <a href="#order" class="cta-button">Zamów Naprawę</a>
         </div>
     <section id="order" class="order-section">
@@ -84,13 +84,13 @@ function sendToWhatsApp(event) {
   let message = document.getElementById("message").value;
   let address = document.getElementById("address").value;
 
-  let text = `🔧 NAPRAWA PRALKI - MASZEWO\n\n` +
+  let text = `🔧 NAPRAWA PRALKI - STARGARD\n\n` +
              `👤 Imię: ${name}\n` +
              `📞 Telefon: ${phone}\n` +
              `🏠 Adres: ${address}\n` +
              `🔧 Marka/model: ${brand}\n` +
              `❗ Problem: ${message}\n\n` +
-             `📍 Miasto: Maszewo`;
+             `📍 Miasto: Stargard`;
              
   let url = "https://wa.me/48721988949?text=" + encodeURIComponent(text);
   window.open(url, '_blank');
