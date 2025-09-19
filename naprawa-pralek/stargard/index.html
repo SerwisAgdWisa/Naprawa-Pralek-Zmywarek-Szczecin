@@ -45,23 +45,36 @@
             <a href="#order" class="cta-button">Zamów Naprawę</a>
         </div>
     </section>
+   <section id="order" class="order-section">
+    <div class="container order-form">
+      <form onsubmit="sendToWhatsApp(event)">
+        <div class="form-group">
+          <label>Imię i nazwisko:</label>
+          <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+          <label>Telefon:</label>
+          <input type="tel" id="phone" required>
+        </div>
+        <div class="form-group">
+          <label>Marka i model pralki:</label>
+          <input type="text" id="brand" placeholder="np. Samsung WF80F5E2W2W">
+        </div>
+        <div class="form-group">
+          <label>Opis usterki:</label>
+          <textarea id="message" rows="4" required placeholder="Błąd E03, pralka nie wiruje, zatrzymuje program..."></textarea>
+        </div>
+        <div class="form-group">
+          <label>Adres w Maszewie:</label>
+          <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania">
+        </div>
+        <button type="submit" class="submit-btn">Wyślij zgłoszenie na WhatsApp</button>
+      </form>
+    </div>
+  </section>
 
 
 
-<section id="order" class="order-section">
-  <div class="container order-form">
-    <h2>Zamów serwis pralki w Stargardzie</h2>
-    <form id="orderFormStargard">
-      <input type="text" name="name" placeholder="Imię i nazwisko" required>
-      <input type="tel" name="phone" placeholder="Telefon" required>
-      <input type="text" name="address" placeholder="Adres w Stargardzie" required>
-      <input type="text" name="brand" placeholder="Marka pralki (np. Samsung)">
-      <textarea name="problem" placeholder="Opis problemu (np. błąd F05, pralka nie odpompowuje)" required></textarea>
-      <button type="submit" class="btn">Wyślij przez WhatsApp</button>
-    </form>
-    <div id="confirmationStargard">✅ Dziękujemy! Wiadomość została przygotowana w WhatsApp.</div>
-  </div>
-</section>
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
