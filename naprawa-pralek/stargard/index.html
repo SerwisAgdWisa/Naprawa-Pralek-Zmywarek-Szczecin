@@ -73,95 +73,12 @@
   </div>
 </section>
 
-<script>
-function sendMessage(e) {
-  e.preventDefault();
-
-  const name = document.getElementById("name").value.trim();
-  const phone = document.getElementById("phone").value.trim();
-  const brand = document.getElementById("brand").value.trim();
-  const message = document.getElementById("message").value.trim();
-  const address = document.getElementById("address").value.trim();
-
-  const text = `🔧 PRALKA – STARGARD\n\n👤 ${name}\n📞 ${phone}\n🏠 ${address}\n🔧 Marka: ${brand}\n❗ ${message}`;
-
-  const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-
-  if(isMobile){
-    // WhatsApp для мобильных
-    const waUrl = "https://wa.me/48721988949?text=" + encodeURIComponent(text);
-    window.open(waUrl, "_blank");
-  } else {
-    // Telegram для ПК (замени YOUR_TELEGRAM_USERNAME на своего)
-    const tgUrl = "https://t.me/YOUR_TELEGRAM_USERNAME?start=" + encodeURIComponent(text);
-    window.open(tgUrl, "_blank");
-  }
-
-  alert("Zgłoszenie zostało wysłane!");
-  e.target.reset();
-}
-</script> 
-
-<script>
-document.getElementById("orderForm").addEventListener("submit", function(e) {
-  e.preventDefault();
-
-  const name = document.getElementById("name").value.trim();
-  const phone = document.getElementById("phone").value.trim();
-  const address = document.getElementById("address").value.trim();
-  const brand = document.getElementById("brand").value.trim();
-  const message = document.getElementById("message").value.trim();
-
-  const text = `🔧 Serwis pralki w Stargardzie\n👤 ${name}\n📞 ${phone}\n🏠 ${address}\n🔧 Marka: ${brand}\n❗ Problem: ${message}`;
-
-  if (/Mobi|Android/i.test(navigator.userAgent)) {
-    // Мобильный → WhatsApp
-    window.open("https://wa.me/48721988949?text=" + encodeURIComponent(text), "_blank");
-  } else {
-    // ПК → Telegram
-    fetch("https://api.telegram.org/bot<YOUR_BOT_TOKEN>/sendMessage", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        chat_id: "<YOUR_CHAT_ID>",
-        text: text
-      })
-    })
-    .then(response => response.json())
-    .then(data => {
-      document.getElementById("confirmation").style.display = "block";
-    })
-    .catch(err => alert("Błąd wysyłki: " + err));
-  }
-});
-</script>
 
 
 
 
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  const form = document.getElementById("orderFormStargard");
-  form.addEventListener("submit", function(e) {
-    e.preventDefault();
 
-    const name = document.querySelector("#orderFormStargard [name='name']").value.trim();
-    const phone = document.querySelector("#orderFormStargard [name='phone']").value.trim();
-    const address = document.querySelector("#orderFormStargard [name='address']").value.trim();
-    const brand = document.querySelector("#orderFormStargard [name='brand']").value.trim();
-    const problem = document.querySelector("#orderFormStargard [name='problem']").value.trim();
 
-    let msg = `🔧 PRALKA – STARGARD\n\n👤 ${name}\n📞 ${phone}\n🏠 ${address}\n❗ ${problem}`;
-    if (brand) msg += `\n🔧 Marka: ${brand}`;
-
-    document.getElementById("confirmationStargard").style.display = "block";
-
-    setTimeout(() => {
-      window.open("https://wa.me/48721988949?text=" + encodeURIComponent(msg), "_blank");
-    }, 500);
-  });
-});
-</script>
 
 <section>
   <h2>Naprawa pralek w Stargardzie</h2>
@@ -197,25 +114,54 @@ document.addEventListener("DOMContentLoaded", function() {
 </footer>
 <a href="https://wa.me/48721988949" class="whatsapp-float" target="_blank">📱</a>
 <script>
-function sendToWhatsApp(event) {
-  event.preventDefault();
-  let name = document.getElementById("name").value;
-  let phone = document.getElementById("phone").value;
-  let brand = document.getElementById("brand").value;
-  let message = document.getElementById("message").value;
-  let address = document.getElementById("address").value;
+document.addEventListener("DOMContentLoaded", function() {
+  const form = document.getElementById("orderFormStargard"); // убедись, что форма имеет id="orderFormStargard"
+  
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
 
-  let text = `🔧 NAPRAWA PRALKI - STARGARD\n\n` +
-             `👤 Imię: ${name}\n` +
-             `📞 Telefon: ${phone}\n` +
-             `🏠 Adres: ${address}\n` +
-             `🔧 Marka/model: ${brand}\n` +
-             `❗ Problem: ${message}\n\n` +
-             `📍 Miasto: Stargard`;
-             
-  let url = "https://wa.me/48721988949?text=" + encodeURIComponent(text);
-  window.open(url, '_blank');
-}
+    // получаем значения
+    const name = form.querySelector("[name='name']").value.trim();
+    const phone = form.querySelector("[name='phone']").value.trim();
+    const address = form.querySelector("[name='address']").value.trim();
+    const brand = form.querySelector("[name='brand']").value.trim();
+    const problem = form.querySelector("[name='problem']").value.trim();
+
+    // формируем текст сообщения
+    let text = `🔧 NAPRAWA PRALKI - STARGARD\n\n` +
+               `👤 Imię: ${name}\n` +
+               `📞 Telefon: ${phone}\n` +
+               `🏠 Adres: ${address}\n` +
+               (brand ? `🔧 Marka/model: ${brand}\n` : "") +
+               `❗ Problem: ${problem}\n\n` +
+               `📍 Miasto: Stargard`;
+
+    const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+    if (isMobile) {
+      // WhatsApp для мобильных
+      const waUrl = "https://wa.me/48721988949?text=" + encodeURIComponent(text);
+      window.open(waUrl, "_blank");
+    } else {
+      // Telegram для ПК
+      // Замени <YOUR_BOT_TOKEN> и <YOUR_CHAT_ID> на свои значения
+      fetch("https://api.telegram.org/bot<YOUR_BOT_TOKEN>/sendMessage", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          chat_id: "<YOUR_CHAT_ID>",
+          text: text
+        })
+      })
+      .then(response => response.json())
+      .then(data => {
+        alert("Zgłoszenie zostało wysłane do Telegram!");
+        form.reset();
+      })
+      .catch(err => alert("Błąd wysyłki: " + err));
+    }
+  });
+});
 </script>
 <!-- Breadcrumbs -->
 <div class="breadcrumb container">
