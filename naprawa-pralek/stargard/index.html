@@ -40,31 +40,44 @@
   <a href="#form">Zamów Naprawę</a>
 </section>
 
-<section>
-  <div class="contact-info">
-    <p>📞 Zadzwoń teraz: <a href="tel:+48721988949" class="phone-link">+48 721 988 949</a></p>
-    <p>💬 WhatsApp: <a href="https://wa.me/48721988949" class="phone-link">+48 721 988 949</a></p>
+<section id="order" class="order-section">
+  <div class="container order-form">
+    <h2>Zamów serwis pralki w Stargardzie</h2>
+    <form id="orderFormStargard">
+      <input type="text" name="name" placeholder="Imię i nazwisko" required>
+      <input type="tel" name="phone" placeholder="Telefon" required>
+      <input type="text" name="address" placeholder="Adres w Stargardzie" required>
+      <input type="text" name="brand" placeholder="Marka pralki (np. Samsung)">
+      <textarea name="problem" placeholder="Opis problemu (np. błąd F05, pralka nie odpompowuje)" required></textarea>
+      <button type="submit" class="btn">Wyślij przez WhatsApp</button>
+    </form>
+    <div id="confirmationStargard">✅ Dziękujemy! Wiadomość została przygotowana w WhatsApp.</div>
   </div>
-
-  <form id="form" onsubmit="sendToWhatsApp(event)">
-    <label>Imię i nazwisko:
-      <input type="text" id="name" required>
-    </label>
-    <label>Telefon:
-      <input type="tel" id="phone" required>
-    </label>
-    <label>Marka i model pralki:
-      <input type="text" id="brand" placeholder="np. Samsung WF80F5E2W2W">
-    </label>
-    <label>Opis usterki:
-      <textarea id="message" rows="4" required placeholder="Opisz dokładnie problem z pralką..."></textarea>
-    </label>
-    <label>Adres w Stargardzie:
-      <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania">
-    </label>
-    <button type="submit">Wyślij zgłoszenie na WhatsApp</button>
-  </form>
 </section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const form = document.getElementById("orderFormStargard");
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const name = document.querySelector("#orderFormStargard [name='name']").value.trim();
+    const phone = document.querySelector("#orderFormStargard [name='phone']").value.trim();
+    const address = document.querySelector("#orderFormStargard [name='address']").value.trim();
+    const brand = document.querySelector("#orderFormStargard [name='brand']").value.trim();
+    const problem = document.querySelector("#orderFormStargard [name='problem']").value.trim();
+
+    let msg = `🔧 PRALKA – STARGARD\n\n👤 ${name}\n📞 ${phone}\n🏠 ${address}\n❗ ${problem}`;
+    if (brand) msg += `\n🔧 Marka: ${brand}`;
+
+    document.getElementById("confirmationStargard").style.display = "block";
+
+    setTimeout(() => {
+      window.open("https://wa.me/48721988949?text=" + encodeURIComponent(msg), "_blank");
+    }, 500);
+  });
+});
+</script>
 
 <section>
   <h2>Naprawa pralek w Stargardzie</h2>
