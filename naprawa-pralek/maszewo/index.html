@@ -54,9 +54,31 @@
     </div>
   </section>
 
-  <!-- Кнопка WhatsApp -->
-  <a href="https://wa.me/48721988949" class="whatsapp-float" target="_blank">📱</a>
+ <section>
+  <a href="tel:+48721988949" class="floating-call-button">📞</a>
+</section>
 
+<style>
+.floating-call-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  font-size: 24px;
+  z-index: 9999;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  text-decoration: none;
+}
+.floating-call-button:hover {
+  background-color: #218838;
+}
+</style>
 </body> 
 <section class="content-section">
   <h2>Naprawa pralek w Maszewie</h2>
@@ -109,6 +131,8 @@ function sendToWhatsApp(event) {
   window.open(url, '_blank');
 }
 </script>
-<a href="https://wa.me/48721988949" class="whatsapp-float" target="_blank">📱</a>
+<div class="breadcrumb container">
+    <a href="../../index.html">Strona Główna</a> > <span>Naprawa Pralek Stargard</span>
+</div>
 </body>
 </html>
