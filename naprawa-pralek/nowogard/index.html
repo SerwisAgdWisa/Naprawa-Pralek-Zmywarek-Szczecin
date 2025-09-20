@@ -108,27 +108,25 @@
 </footer>
 
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-  const form = document.getElementById("orderForm");
-  form.addEventListener("submit", function(e) {
-    e.preventDefault();
+function sendToWhatsApp(event) {
+  event.preventDefault();
+  let name = document.getElementById("name").value;
+  let phone = document.getElementById("phone").value;
+  let brand = document.getElementById("brand").value;
+  let message = document.getElementById("message").value;
+  let address = document.getElementById("address").value;
 
-    const name = document.getElementById("name").value.trim();
-    const phone = document.getElementById("phone").value.trim();
-    const address = document.getElementById("address").value.trim();
-    const brand = document.getElementById("brand").value.trim();
-    const problem = document.getElementById("problem").value.trim();
-
-    let msg = `🔧 PRALKA – NOWOGARD\n\n👤 ${name}\n📞 ${phone}\n🏠 ${address}\n❗ ${problem}`;
-    if (brand) msg += `\n🔧 Marka: ${brand}`;
-
-    document.getElementById("confirmation").style.display = "block";
-
-    setTimeout(() => {
-      window.open("https://wa.me/48721988949?text=" + encodeURIComponent(msg), "_blank");
-    }, 500);
-  });
-});
+  let text = `🔧 NAPRAWA PRALKI - POLICE\n\n` +
+             `👤 Imię: ${name}\n` +
+             `📞 Telefon: ${phone}\n` +
+             `🏠 Adres: ${address}\n` +
+             `🔧 Marka/model: ${brand}\n` +
+             `❗ Problem: ${message}\n\n` +
+             `📍 Miasto: Police`;
+             
+  let url = "https://wa.me/48721988949?text=" + encodeURIComponent(text);
+  window.open(url, '_blank');
+}
 </script>
 
 </body>
