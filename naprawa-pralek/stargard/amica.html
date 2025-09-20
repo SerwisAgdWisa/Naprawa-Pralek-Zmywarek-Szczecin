@@ -30,23 +30,57 @@
     }
   }
   </script>
-</head>
-    <body>
-    <header>
+  <!-- ✅ BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Strona Główna",
+        "item": "https://serwisagdwisa.github.io/index.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Naprawa Pralek",
+        "item": "https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-pralek/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Stargard",
+        "item": "https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-pralek/stargard/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Amica",
+        "item": "https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-pralek/stargard/amica.html"
+      }
+    ]
+  }
+  </script>
+    
+    </head>
+     <body>   
+    
+       <header>
         <div class="container header-content">
             <div class="logo">WISA</div>
             <a href="tel:+48721988949" class="phone-header">721 988 949</a>
         </div>
     </header>
-    
-
         <div class="hero">
             <h1>Profesjonalny Serwis Pralek Amica w Stargardzie</h1>
             <p>Naprawiamy pralki Amica w Stargardzie i okolicach. Szybka diagnoza, profesjonalny serwis, gwarancja na wykonane naprawy.</p>
             <a href="#order" class="cta-button">Zamów Naprawę</a>
         </div>
 
-        <div class="content-section">
+        <section class="content">
+         <div class="container">
             <h2>Naprawiamy wszystkie modele pralek Amica</h2>
             <p>Jako doświadczony serwis pralek Amica w Stargardzie, zajmujemy się naprawą wszystkich modeli tej marki. Specjalizujemy się w:</p>
             
@@ -86,7 +120,8 @@
                 </div>
             </div>
         </div>
-
+         </div>
+</section>
         <div class="form-section" id="order">
             <h2>Zamów naprawę pralki Amica</h2>
             <form id="orderForm">
