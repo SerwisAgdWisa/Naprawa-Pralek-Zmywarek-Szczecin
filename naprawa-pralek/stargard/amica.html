@@ -194,29 +194,27 @@
 }
 </style> 
     <script>
-        document.getElementById('orderForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const formData = new FormData(this);
-            
-            // Tworzymy wiadomość z danymi formularza
-            let message = `🔧 ZGŁOSZENIE: Pralka Amica Stargard\n\n`;
-            message += `👤 Imię: ${formData.get('name')}\n`;
-            message += `📞 Telefon: ${formData.get('phone')}\n`;
-            message += `📍 Adres: ${formData.get('address')}\n`;
-            
-            if (formData.get('model')) {
-                message += `🏷️ Model: ${formData.get('model')}\n`;
-            }
-            
-            message += `❗ Problem: ${formData.get('problem')}\n`;
-            
-            // Kodujemy wiadomość dla URL
-            const encodedMessage = encodeURIComponent(message);
-            
-            // Otwieramy WhatsApp z przygotowaną wiadomością
-            window.open(`https://wa.me/48721988949?text=${encodedMessage}`, '_blank');
-        });
-    </script>
+document.getElementById('orderForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const formData = new FormData(this);
+    
+    let message = `🔧 ZGŁOSZENIE: Pralka Amica Stargard\n\n`;
+    message += `👤 Imię: ${formData.get('name')}\n`;
+    message += `📞 Telefon: ${formData.get('phone')}\n`;
+    message += `📍 Adres: ${formData.get('address')}\n`;
+    
+    if (formData.get('model')) {
+        message += `🏷️ Model: ${formData.get('model')}\n`;
+    }
+    
+    message += `❗ Problem: ${formData.get('problem')}\n`;
+    
+    const encodedMessage = encodeURIComponent(message);
+    
+    // Открываем WhatsApp через новую вкладку
+    window.open(`https://wa.me/48721988949?text=${encodedMessage}`, '_blank');
+});
+</script>
  <div class="container">
         <div class="breadcrumb">
             <a href="../../../index.html">Strona Główna</a> > 
