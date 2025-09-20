@@ -83,22 +83,28 @@
     <li>✓ Konkurencyjne ceny</li>
   </ul>
 </section>
-<a href="tel:+48721988949" class="call-button">📞 Zadzwoń teraz</a>
+<a href="tel:+48721988949" class="floating-call">📞 Zadzwoń teraz</a>
 
 <style>
-.call-button {
-  display: inline-block;
-  padding: 12px 30px;
-  background: #28a745; /* зеленый цвет */
+.floating-call {
+  position: fixed; /* остаётся на экране при скролле */
+  bottom: 20px;
+  right: 20px;
+  background: #28a745;
   color: white;
   font-weight: bold;
+  padding: 15px 25px;
+  border-radius: 50px;
   text-decoration: none;
-  border-radius: 25px;
   font-size: 16px;
-  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+  transition: transform 0.2s;
 }
-.call-button:hover {
+
+.floating-call:hover {
   background: #218838;
+  transform: scale(1.1); /* немного увеличивается при наведении */
 }
 </style>
 <footer>
