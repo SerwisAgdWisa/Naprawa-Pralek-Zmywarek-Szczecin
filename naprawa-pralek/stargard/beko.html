@@ -1,85 +1,173 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naprawa Pralek Beko Stargard | Serwis Pralek Beko | 721 988 949</title>
-    <meta name="description" content="Profesjonalna naprawa pralek Beko w Stargardzie. Specjalizujemy się w modelach Beko. Tel: 721 988 949">
-    <meta name="keywords" content="naprawa pralek beko stargard, serwis beko stargard, pralka beko nie wiruje stargard, awaria pralki beko stargard">
-    <link rel="stylesheet" href="../../../css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naprawa Pralek Beko Stargard | Serwis Pralek Beko | 721 988 949</title>
+  <meta name="description" content="Naprawa pralek Beko w Stargardzie. Blokada drzwi, pralka nie wiruje, nie grzeje wody, wycieki? Zadzwoń lub napisz na WhatsApp – szybka naprawa!">
+  <meta name="keywords" content="naprawa pralek beko stargard, serwis beko stargard, pralka beko nie wiruje, blokada drzwi Beko, awaria pralki Beko Stargard">
+  <link rel="stylesheet" href="../../../css/style.css">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Naprawa Pralek Stargard",
+    "image": "https://serwisagdwisa.github.io/logo.jpg",
+    "telephone": "+48 721 988 949",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Stargard",
+      "addressRegion": "Zachodniopomorskie",
+      "addressCountry": "PL"
+    },
+    "url": "https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-pralek/stargard/beko.html",
+    "makesOffer": {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Product",
+        "name": "Naprawa pralki Beko"
+      }
+    }
+  }
+  </script>
 </head>
 <body>
-    <div class="breadcrumb container">
-        <a href="../../../index.html">Strona Główna</a> > 
-        <a href="../../index.html">Naprawa Pralek</a> > 
-        <a href="../index.html">Stargard</a> > 
-        <span>Pralki Beko</span>
+
+<div class="container">
+  <!-- Хлебные крошки -->
+  <div class="breadcrumb">
+    <a href="../../../index.html">Strona Główna</a> > 
+    <a href="../../index.html">Naprawa Pralek</a> > 
+    <a href="../index.html">Stargard</a> > 
+    <span>Pralki Beko</span>
+  </div>
+
+  <!-- Заголовок -->
+  <section>
+    <h1>Serwis Pralek Beko w Stargardzie</h1>
+    <p>Naprawiamy pralki Beko w Stargardzie i okolicach. Szybkie diagnozy i naprawa wszystkich modeli.</p>
+    <a href="#order" class="cta-button">Zamów Naprawę</a>
+
+  </section>
+
+  <!-- Typowe problemy -->
+  <section>
+    <h2>Typowe problemy pralek Beko</h2>
+    <ul>
+      <li>Blokada drzwi – zamek nie otwiera drzwi</li>
+      <li>Pralka nie wiruje lub zatrzymuje program</li>
+      <li>Nie grzeje wody podczas prania</li>
+      <li>Przecieki wody spod pralki</li>
+      <li>Hałas i wibracje podczas wirowania</li>
+      <li>Błędy na wyświetlaczu – elektronika</li>
+      <li>Awaria pompy lub systemu odpompowywania wody</li>
+    </ul>
+  </section>
+
+  <!-- Formularz -->
+  <section id="order" class="order-section">
+    <div class="order-form">
+      <h2>Zamów Naprawę Pralki Beko</h2>
+      <form onsubmit="sendToWhatsApp(event)">
+        <div class="form-group">
+          <label>Imię i nazwisko:</label>
+          <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+          <label>Telefon:</label>
+          <input type="tel" id="phone" required>
+        </div>
+        <div class="form-group">
+          <label>Marka i model pralki:</label>
+          <input type="text" id="brand" placeholder="np. Beko WMY 61283 PTLE">
+        </div>
+        <div class="form-group">
+          <label>Opis usterki:</label>
+          <textarea id="message" rows="4" required placeholder="Blokada drzwi, pralka nie wiruje, wycieki..."></textarea>
+        </div>
+        <div class="form-group">
+          <label>Adres w Stargardzie:</label>
+          <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania">
+        </div>
+        <button type="submit" class="submit-btn">Wyślij zgłoszenie na WhatsApp</button>
+      </form>
     </div>
+  </section>
 
-    <div class="container">
-        <h1>Profesjonalny Serwis Pralek Beko w Stargardzie</h1>
-        
-        <div class="emergency-banner">
-            <h2>⏰ Awaria pralki Beko? Zadzwoń: 721 988 949</h2>
-        </div>
+  <!-- CTA -->
+  <section class="contact-cta">
+    <h2>Lepiej zadzwonić?</h2>
+    <a href="tel:+48721988949" class="cta-button">📞 721 988 949</a>
+    <p>Czynne: Pon-Pt: 8:00-18:00 | Sob: 9:00-14:00</p>
+  </section>
 
-        <div class="problems-grid">
-            <div class="problem-card">
-                <h3>Modele z funkcją anty-alergen</h3>
-                <p>Naprawa systemów usuwania alergenów</p>
-            </div>
-            <div class="problem-card">
-                <h3>Ekonomiczne pralki Beko</h3>
-                <p>Naprawa systemów oszczędzania energii</p>
-            </div>
-        </div>
+</div>
+<section class="other-cities">
+  <h2>Naprawa pralek Beko w innych miastach:</h2>
+  <ul>
+    <li><a href="../szczecin/beko.html">Szczecin</a></li>
+    <li><a href="../stargard/beko.html">Stargard</a></li>
+    <li><a href="../goleniów/beko.html">Goleniów</a></li>
+    <li><a href="../nowogard/beko.html">Nowogard</a></li>
+    <li><a href="../maszewo/beko.html">Maszewo</a></li>
+    <li><a href="../pyrzyce/beko.html">Pyrzyce</a></li>
+    <li><a href="../police/beko.html">Police</a></li>
+  </ul>
+</section>
+<section>
+  <a href="tel:+48721988949" class="floating-call-button">📞</a>
+</section>
 
-        <section class="order-section" id="order">
-            <div class="order-form">
-                <h2>Zamów Naprawę Pralki Beko</h2>
-                <form id="orderForm">
-                    <div class="form-group">
-                        <label for="name">Imię i nazwisko:</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Telefon:</label>
-                        <input type="tel" id="phone" name="phone" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="address">Adres (Stargard):</label>
-                        <input type="text" id="address" name="address" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="problem">Opis problemu:</label>
-                        <textarea id="problem" name="problem" placeholder="Opisz co się dzieje z pralką Beko..."></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Wyślij Zgłoszenie</button>
-                </form>
-            </div>
-        </section>
+<style>
+.floating-call-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  font-size: 24px;
+  z-index: 9999;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  text-decoration: none;
+}
+.floating-call-button:hover {
+  background-color: #218838;
+}
+</style>
+function sendToWhatsApp(event) {
+  event.preventDefault();
+  let name = document.getElementById("name").value;
+  let phone = document.getElementById("phone").value;
+  let brand = document.getElementById("brand").value;
+  let message = document.getElementById("message").value;
+  let address = document.getElementById("address").value;
 
-        <div class="contact-cta">
-            <h2>Lepiej zadzwonić?</h2>
-            <a href="tel:+48721988949" class="cta-button">📞 721 988 949</a>
-        </div>
-    </div>
+  let text = `🔧 NAPRAWA PRALKI - STARGARD\n\n` +
+             `👤 Imię: ${name}\n` +
+             `📞 Telefon: ${phone}\n` +
+             `🏠 Adres: ${address}\n` +
+             `🔧 Marka/model: ${brand}\n` +
+             `❗ Problem: ${message}\n\n` +
+             `📍 Miasto: Stargard`;
 
-    <a href="https://wa.me/48721988949" class="whatsapp-float" target="_blank">💬</a>
-
-    <script>
-        document.getElementById('orderForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const formData = new FormData(this);
-            let message = `🔧 ZGŁOSZENIE: Pralka Beko Stargard\n\n`;
-            message += `👤 Imię: ${formData.get('name')}\n`;
-            message += `📞 Telefon: ${formData.get('phone')}\n`;
-            message += `📍 Adres: ${formData.get('address')}\n`;
-            message += `❗ Problem: ${formData.get('problem')}\n`;
-            const whatsappURL = `https://wa.me/48721988949?text=${encodeURIComponent(message)}`;
-            window.open(whatsappURL, '_blank');
-            alert('Dziękujemy! Za chwilę zostaniesz przekierowany do WhatsApp.');
-        });
-    </script>
+  // Добавляем небольшую задержку
+  setTimeout(function() {
+    window.open("https://wa.me/48721988949?text=" + encodeURIComponent(text), '_blank');
+  }, 500); // 500 миллисекунд = 0,5 секунды
+}
+<!-- Хлебные крошки -->
+  <div class="breadcrumb">
+    <a href="../../../index.html">Strona Główna</a> > 
+    <a href="../../index.html">Naprawa Pralek</a> > 
+    <a href="../index.html">Stargard</a> > 
+    <span>Pralki Beko</span>
+  </div>
 </body>
 </html>
