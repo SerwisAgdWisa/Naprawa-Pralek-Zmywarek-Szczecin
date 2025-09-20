@@ -141,6 +141,7 @@
   background-color: #218838;
 }
 </style>
+<script>
 function sendToWhatsApp(event) {
   event.preventDefault();
   let name = document.getElementById("name").value;
@@ -157,11 +158,12 @@ function sendToWhatsApp(event) {
              `❗ Problem: ${message}\n\n` +
              `📍 Miasto: Stargard`;
 
-  // Добавляем небольшую задержку
+  // Задержка перед открытием WhatsApp
   setTimeout(function() {
     window.open("https://wa.me/48721988949?text=" + encodeURIComponent(text), '_blank');
-  }, 500); // 500 миллисекунд = 0,5 секунды
+  }, 700); // 700 мс задержка
 }
+</script>
 <!-- Хлебные крошки -->
   <div class="breadcrumb">
     <a href="../../../index.html">Strona Główna</a> > 
