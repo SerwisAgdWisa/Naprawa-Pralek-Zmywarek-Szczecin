@@ -7,115 +7,54 @@
   <title>Naprawa Pralek Pyrzyce | Serwis Pralek AGD</title>
   <meta name="description" content="Naprawa pralek Pyrzyce – szybki serwis, dojazd do klienta. Pralka nie wiruje, nie pobiera wody, nie grzeje? Zadzwoń lub napisz na WhatsApp – naprawimy!">
   <meta name="keywords" content="naprawa pralek Pyrzyce, serwis pralek Pyrzyce, pralka nie wiruje, pralka nie pobiera wody, pralka nie grzeje, naprawa AGD Pyrzyce">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-    }
-    section {
-      padding: 20px;
-      max-width: 600px;
-      margin: auto;
-      background: white;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      margin-top: 20px;
-    }
-    form label {
-      display: block;
-      margin-bottom: 10px;
-      font-weight: bold;
-    }
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
-    button {
-      margin-top: 15px;
-      padding: 12px;
-      background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
-      border: none;
-      color: white;
-      font-size: 16px;
-      cursor: pointer;
-      border-radius: 25px;
-      width: 100%;
-      font-weight: bold;
-    }
-    button:hover {
-      background: linear-gradient(135deg, #e55a2b 0%, #de831a 100%);
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #eee;
-      margin-top: 20px;
-    }
-    .contact-info {
-      background: #e6f3ff;
-      padding: 15px;
-      border-radius: 5px;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .phone-link {
-      color: #667eea;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 18px;
-    }
-    .phone-link:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
-
 <header>
-  <h1>Naprawa Pralek Pyrzyce</h1>
-  <p>Profesjonalny serwis pralek w Pyrzycach</p>
-</header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">WISA</div>
+        <a href="tel:+48721988949" class="phone">📞 721 988 949</a>
+      </div>
+    </div>
+  </header>
 
-<section>
-  <div class="contact-info">
-    <p>📞 Zadzwoń teraz: <a href="tel:+48721988949" class="phone-link">+48 721 988 949</a></p>
-    <p>💬 WhatsApp: <a href="https://wa.me/48721988949" class="phone-link">+48 721 988 949</a></p>
+<section class="hero">
+  <div class="container">
+    <h1>Naprawa Pralek Pyrzyce</h1>
+    <p>Serwis pralek wszystkich marek – Pyrzyce i okolice</p>
+    <a href="#order" class="cta-button">Zamów Naprawę</a>
   </div>
-
-  <form onsubmit="sendToWhatsApp(event)">
-    <label>Imię i nazwisko:
-      <input type="text" id="name" required>
-    </label>
-    <label>Telefon:
-      <input type="tel" id="phone" required>
-    </label>
-    <label>Marka i model pralki:
-      <input type="text" id="brand" placeholder="np. Samsung WF80F5E2W2W">
-    </label>
-    <label>Opis usterki:
-      <textarea id="message" rows="4" required placeholder="Opisz dokładnie problem z pralką..."></textarea>
-    </label>
-    <label>Adres w Pyrzycach:
-      <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania">
-    </label>
-    <button type="submit">Zamów Naprawę</button>
-  </form>
 </section>
+
+<section id="order" class="order-section">
+    <div class="container order-form">
+      <form onsubmit="sendToWhatsApp(event)">
+        <div class="form-group">
+          <label>Imię i nazwisko:</label>
+          <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+          <label>Telefon:</label>
+          <input type="tel" id="phone" required>
+        </div>
+        <div class="form-group">
+          <label>Marka i model pralki:</label>
+          <input type="text" id="brand" placeholder="np. Samsung WF80F5E2W2W">
+        </div>
+        <div class="form-group">
+          <label>Opis usterki:</label>
+          <textarea id="message" rows="4" required placeholder="Błąd E03, pralka nie wiruje, zatrzymuje program..."></textarea>
+        </div>
+        <div class="form-group">
+          <label>Adres w Pyrzyce:</label>
+          <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania">
+        </div>
+        <button type="submit" class="submit-btn">Wyślij zgłoszenie na WhatsApp</button>
+      </form>
+    </div>
+  </section>
+  
 
 <section>
   <h2>Naprawa pralek w Pyrzycach</h2>
