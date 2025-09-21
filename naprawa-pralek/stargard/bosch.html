@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
@@ -6,7 +7,9 @@
     <title>Naprawa Pralek Bosch Stargard | Serwis Pralek Bosch | 721 988 949</title>
     <meta name="description" content="Specjalistyczny serwis pralek Bosch w Stargardzie. Naprawa pralek Bosch serie 6, 8, 9. Gwarancja na usługi. Tel: 721 988 949">
     <meta name="keywords" content="naprawa pralek bosch stargard, serwis bosch stargard, pralka bosch nie wiruje stargard, awaria pralki bosch stargard">
-     <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
+
+```
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -52,149 +55,164 @@
   }
 }
 </script>
+```
+
 </head>
 <body>
- <header>
-        <div class="container">
-            <div class="header-content">
-                <a href="../index.html" class="logo">WISA</a>
-                <a href="tel:+48721988949" class="phone">📞 721 988 949</a>
-            </div>
-        </div>
-    </header>   
-   <section class="hero">
-  <div class="container">
-    <h1>Naprawa Pralek Bosch w Stargardzie</h1>
-    <p>Serwis pralek wszystkich modeli Bosch – Stargard i okolice</p>
-    <a href="#order" class="cta-button">Zamów Naprawę</a>
-  </div>
-</section>
-
-        <section class="services">
-  <div class="container">
-    <h2>Typowe problemy pralek Bosch w Stargardzie</h2>
-    <div class="problems-grid">
-      <div class="problem-card">
-        <h3>Bosch Serie 4 Klassik, 6, 8, 9</h3>
-        <ul>
-          <li>Awaria elektroniki i modułów sterujących</li>
-          <li>Blokada drzwi – zamek nie otwiera drzwi</li>
-          <li>Brak wirowania lub zatrzymanie programu</li>
-          <li>Nie grzeje wody</li>
-          <li>Przecieki wody spod pralki</li>
-          <li>Hałas i wibracje podczas wirowania</li>
-        </ul>
-      </div>
-      <div class="problem-card">
-        <h3>Błędy: E01, E16, E17, E20, E21, E23, E25, E32</h3>
-        <ul>
-          <li>E01</li>
-          <li>E16</li>
-          <li>E17</li>
-          <li>E20</li>
-          <li>E21</li>
-          <li>E23</li>
-          <li>E25</li>
-          <li>E32</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="order" class="order-section">
-  <div class="container order-form">
-    <h2>Zamów Naprawę Pralki Bosch</h2>
-    <div class="form-group">
-      <label for="name">Imię i nazwisko:</label>
-      <input type="text" id="name" placeholder="Twoje imię i nazwisko">
-    </div>
-    <div class="form-group">
-      <label for="phone">Telefon:</label>
-      <input type="tel" id="phone" placeholder="Twój numer telefonu">
-    </div>
-    <div class="form-group">
-      <label for="brand">Marka i model pralki Bosch:</label>
-      <input type="text" id="brand" placeholder="np. Bosch Serie 6">
-    </div>
-    <div class="form-group">
-      <label for="message">Opis usterki:</label>
-      <textarea id="message" rows="4" placeholder="Błąd E03, pralka nie wiruje, zatrzymuje program..."></textarea>
-    </div>
-    <div class="form-group">
-      <label for="address">Adres w Stargardzie:</label>
-      <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania">
-    </div>
-    <button type="button" id="sendBtn" class="submit-btn">Wyślij zgłoszenie na WhatsApp</button>
-  </div>
-</section>
-
-
-          
-
- <section>
-  <a href="tel:+48721988949" class="floating-call-button">📞</a>
-</section>
-
-<style>
-.floating-call-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 60px;
-  height: 60px;
-  background-color: #28a745;
-  color: white;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 60px;
-  font-size: 24px;
-  z-index: 9999;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-  text-decoration: none;
-}
-.floating-call-button:hover {
-  background-color: #218838;
-}     
-  </style>                                       
-   <script>
-    document.getElementById('orderForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    const formData = new FormData(this);
-    const name = formData.get('name');
-    const phone = formData.get('phone');
-    const address = formData.get('address');
-    const problem = formData.get('problem');
-    const time = formData.get('time');
-    
-    // Фиксированные значения
-    const city = 'Stargard';
-    const brand = 'Bosch';
-    const service = 'Naprawa pralek';
-    
-    let message = `🔧 NOWE ZGŁOSZENIE SERWISOWE\n\n`;
-    message += `👤 Imię: ${name}\n`;
-    message += `📞 Telefon: ${phone}\n`;
-    message += `📍 Adres: ${address}\n`;
-    message += `🏙️ Miasto: ${city}\n`;
-    message += `🔧 Marka: ${brand}\n`;
-    message += `⚙️ Usługa: ${service}\n`;
-    if (problem) message += `❗ Problem: ${problem}\n`;
-    if (time) message += `⏰ Termin: ${time}\n`;
-    
-    const whatsappURL = `https://wa.me/48721988949?text=${encodeURIComponent(message)}`;
-    window.open(whatsappURL, '_blank');
-    
-    alert('Dziękujemy za zgłoszenie! Za chwilę zostaniesz przekierowany do WhatsApp.');
-}); 
-
-    </script>
-
- <div class="breadcrumb container">
+    <div class="breadcrumb container">
         <a href="../../../index.html">Strona Główna</a> > 
         <a href="../../index.html">Naprawa Pralek</a> > 
         <a href="../index.html">Stargard</a> > 
-        <span>Pralki Bosch</span>
+        <span class="current">Pralki Bosch</span>
     </div>
+
+```
+<header>
+    <div class="container">
+        <div class="header-content">
+            <a href="../../../index.html" class="logo">WISA</a>
+            <a href="tel:+48721988949" class="phone">📞 721 988 949</a>
+        </div>
+    </div>
+</header>   
+
+<section class="hero">
+    <div class="container">
+        <h1>Naprawa Pralek Bosch w Stargardzie</h1>
+        <p>Serwis pralek wszystkich modeli Bosch – Stargard i okolice</p>
+        <a href="#order" class="cta-button">Zamów Naprawę</a>
+    </div>
+</section>
+
+<section class="services">
+    <div class="container">
+        <h2>Typowe problemy pralek Bosch w Stargardzie</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Bosch Serie 4, 6, 8, 9</h3>
+                <ul>
+                    <li>Awaria elektroniki i modułów sterujących</li>
+                    <li>Blokada drzwi – zamek nie otwiera drzwi</li>
+                    <li>Brak wirowania lub zatrzymanie programu</li>
+                    <li>Nie grzeje wody</li>
+                    <li>Przecieki wody spod pralki</li>
+                    <li>Hałas i wibracje podczas wirowania</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <h3>Kody błędów Bosch</h3>
+                <ul>
+                    <li>E01 - Problem z zamkiem drzwi</li>
+                    <li>E16 - Błąd napełniania wodą</li>
+                    <li>E17 - Za długie napełnianie</li>
+                    <li>E20 - Brak odpływu wody</li>
+                    <li>E21 - Problem z pompą odpływową</li>
+                    <li>E23 - Woda w podstawie</li>
+                    <li>E25 - Problem z czujnikiem poziomu</li>
+                    <li>E32 - Problem z czujnikiem ciśnienia</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="order" class="order-section">
+    <div class="container">
+        <div class="order-form">
+            <h2>Zamów Naprawę Pralki Bosch</h2>
+            <form id="orderForm">
+                <div class="form-group">
+                    <label for="name">Imię i nazwisko:</label>
+                    <input type="text" id="name" name="name" placeholder="Twoje imię i nazwisko" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefon:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Twój numer telefonu" required>
+                </div>
+                <div class="form-group">
+                    <label for="brand">Marka i model pralki Bosch:</label>
+                    <input type="text" id="brand" name="brand" placeholder="np. Bosch Serie 6 WAG28490PL" value="Bosch">
+                </div>
+                <div class="form-group">
+                    <label for="problem">Opis usterki:</label>
+                    <textarea id="problem" name="problem" rows="4" placeholder="Błąd E03, pralka nie wiruje, zatrzymuje program..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="address">Adres w Stargardzie:</label>
+                    <input type="text" id="address" name="address" placeholder="Ulica, numer domu/mieszkania" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Preferowany termin (opcjonalnie):</label>
+                    <input type="datetime-local" id="time" name="time">
+                </div>
+                <button type="submit" class="submit-btn">Wyślij zgłoszenie na WhatsApp</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/48721988949" class="whatsapp-float" target="_blank">💬</a>
+
+<script>
+    // Form submission handling
+    document.getElementById('orderForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get form data
+        const formData = new FormData(this);
+        const name = formData.get('name');
+        const phone = formData.get('phone');
+        const brand = formData.get('brand');
+        const address = formData.get('address');
+        const problem = formData.get('problem');
+        const time = formData.get('time');
+        
+        // Fixed values
+        const city = 'Stargard';
+        const service = 'Naprawa pralek Bosch';
+        
+        // Create WhatsApp message
+        let message = `🔧 NOWE ZGŁOSZENIE SERWISOWE\n\n`;
+        message += `👤 Imię: ${name}\n`;
+        message += `📞 Telefon: ${phone}\n`;
+        message += `🏙️ Miasto: ${city}\n`;
+        message += `📍 Adres: ${address}\n`;
+        message += `🔧 Marka: ${brand}\n`;
+        message += `⚙️ Usługa: ${service}\n`;
+        if (problem) message += `❗ Problem: ${problem}\n`;
+        if (time) message += `⏰ Termin: ${time}\n`;
+        
+        // Open WhatsApp with pre-filled message
+        const whatsappURL = `https://wa.me/48721988949?text=${encodeURIComponent(message)}`;
+        window.open(whatsappURL, '_blank');
+        
+        // Show confirmation
+        alert('Dziękujemy za zgłoszenie! Za chwilę zostaniesz przekierowany do WhatsApp.');
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+
+    // Phone number click tracking
+    document.querySelectorAll('a[href^="tel:"]').forEach(phoneLink => {
+        phoneLink.addEventListener('click', function() {
+            console.log('Phone number clicked');
+        });
+    });
+</script>
+```
+
 </body>
 </html>
