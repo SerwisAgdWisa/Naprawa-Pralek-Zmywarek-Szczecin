@@ -139,17 +139,19 @@
     </div>
   </div>
 </section>
-
-<!-- Floating buttons -->
-<a href="tel:+48721988949" class="floating-call-button">📞</a>
-
+<section>
+  <a href="tel:+48721988949" class="floating-call-button">📞</a>
+</section>
 
 <style>
-.floating-call-button, .floating-whatsapp-button {
+.floating-call-button {
   position: fixed;
   bottom: 20px;
+  right: 20px;
   width: 60px;
   height: 60px;
+  background-color: #28a745;
+  color: white;
   border-radius: 50%;
   text-align: center;
   line-height: 60px;
@@ -157,13 +159,12 @@
   z-index: 9999;
   box-shadow: 0 4px 6px rgba(0,0,0,0.2);
   text-decoration: none;
-  color: white;
 }
-.floating-call-button { right: 90px; background-color: #28a745; }
-.floating-call-button:hover { background-color: #218838; }
-.floating-whatsapp-button { right: 20px; background-color: #25D366; }
-.floating-whatsapp-button:hover { background-color: #1ebe57; }
+.floating-call-button:hover {
+  background-color: #218838;
+}
 </style>
+
 <!-- Breadcrumbs -->
 <div class="breadcrumb container">
   <a href="../../index.html">Strona Główna</a> > 
