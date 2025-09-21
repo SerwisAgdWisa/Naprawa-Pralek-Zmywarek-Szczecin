@@ -101,33 +101,29 @@
     </div>
   </div>
 </section>
-<section id="order" class="order-section">
-    <div class="container order-form">
-      <form onsubmit="sendToWhatsApp(event)">
-        <div class="form-group">
-          <label>Imię i nazwisko:</label>
-          <input type="text" id="name" required>
-        </div>
-        <div class="form-group">
-          <label>Telefon:</label>
-          <input type="tel" id="phone" required>
-        </div>
-        <div class="form-group">
-          <label>Model pralki Bosch:</label>
-          <input type="text" id="brand" placeholder="np. Bosch WAN24M2SPL Serie 4 ">
-        </div>
-        <div class="form-group">
-          <label>Opis usterki:</label>
-          <textarea id="message" rows="4" required placeholder="Błąd E03, pralka nie wiruje, zatrzymuje program..."></textarea>
-        </div>
-        <div class="form-group">
-          <label>Adres w Stargsrdzie:</label>
-          <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania">
-        </div>
-        <button type="submit" class="submit-btn">Wyślij zgłoszenie na WhatsApp</button>
-      </form>
-    </div>
-  </section>
+<div class="order-form">
+  <div class="form-group">
+    <label for="name">Imię i nazwisko:</label>
+    <input type="text" id="name">
+  </div>
+  <div class="form-group">
+    <label for="phone">Telefon:</label>
+    <input type="tel" id="phone">
+  </div>
+  <div class="form-group">
+    <label for="brand">Marka i model pralki Bosch:</label>
+    <input type="text" id="brand">
+  </div>
+  <div class="form-group">
+    <label for="message">Opis usterki:</label>
+    <textarea id="message"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="address">Adres:</label>
+    <input type="text" id="address">
+  </div>
+
+
 
           
 
@@ -156,16 +152,16 @@
   background-color: #218838;
 }     
   </style>                                       
+
 <script>
 document.getElementById("sendBtn").addEventListener("click", function() {
-  let name = document.getElementById("name").value.trim();
-  let phone = document.getElementById("phone").value.trim();
-  let brand = document.getElementById("brand").value.trim();
-  let message = document.getElementById("message").value.trim();
-  let address = document.getElementById("address").value.trim();
+  const name = document.getElementById("name").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const brand = document.getElementById("brand").value.trim();
+  const message = document.getElementById("message").value.trim();
+  const address = document.getElementById("address").value.trim();
   const city = "Stargard";
 
-  // Формируем текст построчно
   const lines = [
     "🔧 NAPRAWA PRALKI",
     `📍 Miasto: ${city}`,
@@ -176,14 +172,10 @@ document.getElementById("sendBtn").addEventListener("click", function() {
     `❗ Problem: ${message}`
   ];
 
-  // Кодируем каждую строку и соединяем через %0A
   const encodedText = lines.map(line => encodeURIComponent(line)).join("%0A");
 
-  // Ссылка на WhatsApp
-  const whatsappUrl = "https://api.whatsapp.com/send?phone=48721988949&text=" + encodedText;
-
-  // Открываем WhatsApp
-  window.open(whatsappUrl, '_blank');
+  // Перенаправляем браузер на WhatsApp
+  window.location.href = "https://api.whatsapp.com/send?phone=48721988949&text=" + encodedText;
 });
 </script>
  <div class="breadcrumb container">
