@@ -6,16 +6,55 @@
     <title>Naprawa Pralek Bosch Stargard | Serwis Pralek Bosch | 721 988 949</title>
     <meta name="description" content="Specjalistyczny serwis pralek Bosch w Stargardzie. Naprawa pralek Bosch serie 6, 8, 9. Gwarancja na usługi. Tel: 721 988 949">
     <meta name="keywords" content="naprawa pralek bosch stargard, serwis bosch stargard, pralka bosch nie wiruje stargard, awaria pralki bosch stargard">
-    <link rel="stylesheet" href="../../../css/style.css">
+     <link rel="stylesheet" href="../../css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Naprawa Pralek Bosch Stargard",
+  "image": "https://serwisagdwisa.github.io/logo.jpg",
+  "telephone": "+48 721 988 949",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Podaj ulicę i numer",
+    "addressLocality": "Stargard",
+    "addressRegion": "Zachodniopomorskie",
+    "postalCode": "73-110",
+    "addressCountry": "PL"
+  },
+  "url": "https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-pralek/stargard/bosch.html",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "08:00",
+      "closes": "18:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "09:00",
+      "closes": "14:00"
+    }
+  ],
+  "makesOffer": {
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Service",
+      "name": "Naprawa pralek Bosch"
+    }
+  }
+}
+</script>
 </head>
 <body>
-    <div class="breadcrumb container">
-        <a href="../../../index.html">Strona Główna</a> > 
-        <a href="../../index.html">Naprawa Pralek</a> > 
-        <a href="../index.html">Stargard</a> > 
-        <span>Pralki Bosch</span>
-    </div>
-
+    
     <div class="container">
         <h1>Specjalistyczny Serwis Pralek Bosch w Stargardzie</h1>
         
@@ -26,11 +65,11 @@
 
         <div class="problems-grid">
             <div class="problem-card">
-                <h3>Bosch Serie 6, 8, 9</h3>
+                <h3>Bosch Serie 4 Klassik, 6, 8, 9</h3>
                 <p>Naprawa elektroniki, modułów sterujących</p>
             </div>
             <div class="problem-card">
-                <h3>Błędy: E01, E16, E17</h3>
+                <h3>Błędy: E01, E16, E17, E20, E21, E23, E25, E32</h3>
                 <p>Diagnoza i naprawa kodów błędów Bosch</p>
             </div>
         </div>
@@ -66,21 +105,31 @@
         </div>
     </div>
 
-    <a href="https://wa.me/48721988949" class="whatsapp-float" target="_blank">💬</a>
-
     <script>
-        document.getElementById('orderForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const formData = new FormData(this);
-            let message = `🔧 ZGŁOSZENIE: Pralka Bosch Stargard\n\n`;
-            message += `👤 Imię: ${formData.get('name')}\n`;
-            message += `📞 Telefon: ${formData.get('phone')}\n`;
-            message += `📍 Adres: ${formData.get('address')}\n`;
-            message += `❗ Problem: ${formData.get('problem')}\n`;
-            const whatsappURL = `https://wa.me/48721988949?text=${encodeURIComponent(message)}`;
-            window.open(whatsappURL, '_blank');
-            alert('Dziękujemy! Za chwilę zostaniesz przekierowany do WhatsApp.');
-        });
-    </script>
+  document.getElementById('orderForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const formData = new FormData(this);
+    let message = `🔧 ZGŁOSZENIE: Pralka Bosch Stargard\n\n`;
+    message += `👤 Imię: ${formData.get('name')}\n`;
+    message += `📞 Telefon: ${formData.get('phone')}\n`;
+    message += `📍 Adres: ${formData.get('address')}\n`;
+    message += `❗ Problem: ${formData.get('problem')}\n`;
+
+    const whatsappURL = `https://wa.me/48721988949?text=${encodeURIComponent(message)}`;
+
+    alert('Dziękujemy! Za chwilę zostaniesz przekierowany do WhatsApp.');
+
+    // задержка 1 секунда (1000 мс)
+    setTimeout(function() {
+      window.open(whatsappURL, '_blank');
+    }, 1000);
+  });
+</script>    
+ <div class="breadcrumb container">
+        <a href="../../../index.html">Strona Główna</a> > 
+        <a href="../../index.html">Naprawa Pralek</a> > 
+        <a href="../index.html">Stargard</a> > 
+        <span>Pralki Bosch</span>
+    </div>   
 </body>
 </html>
