@@ -156,28 +156,28 @@
 .floating-call-button:hover {
   background-color: #218838;
 }
-<script>
-document.getElementById('orderForm').addEventListener('submit', function(e) {
-  e.preventDefault();
-  const name = document.getElementById("name").value;
-  const phone = document.getElementById("phone").value;
-  const brand = document.getElementById("brand").value;
-  const problem = document.getElementById("message").value;
-  const address = document.getElementById("address").value;
+ <script>
+function sendToWhatsAppAmica(event) {
+  event.preventDefault();
+  let name = document.getElementById("name").value;
+  let phone = document.getElementById("phone").value;
+  let brand = document.getElementById("brand").value;
+  let message = document.getElementById("message").value;
+  let address = document.getElementById("address").value;
 
-  const text = `🔧 NAPRAWA PRALKI - BOSCH STARGARD\n\n` +
-               `👤 Imię: ${name}\n` +
-               `📞 Telefon: ${phone}\n` +
-               `🏠 Adres: ${address}\n` +
-               `🔧 Marka/model: ${brand}\n` +
-               `❗ Problem: ${problem}\n\n` +
-               `📍 Miasto: Stargard`;
+  let text = `🔧 ZGŁOSZENIE: Pralka Amica Stargard\n\n` +
+             `👤 Imię: ${name}\n` +
+             `📞 Telefon: ${phone}\n` +
+             `🏠 Adres: ${address}\n` +
+             `🏷️ Marka/model: ${brand}\n` +
+             `❗ Problem: ${message}\n`;
 
-  // Задержка 2 секунды перед переходом
+  // Добавляем небольшую задержку, чтобы WhatsApp точно успел обработать текст
   setTimeout(() => {
-    window.location.href = "https://wa.me/48721988949?text=" + encodeURIComponent(text);
-  }, 2000);
-});
+    let url = "https://wa.me/48721988949?text=" + encodeURIComponent(text);
+    window.open(url, '_blank');
+  }, 300);
+}
 </script>    
  <div class="breadcrumb container">
         <a href="../../../index.html">Strona Główna</a> > 
