@@ -159,7 +159,10 @@
 <script>
 function sendToWhatsAppBosch(event) {
   event.preventDefault();
-
+if (!name || !phone || !message) {
+    alert("Proszę wypełnić wszystkie wymagane pola!");
+    return;
+  }
  const text = `🔧 NAPRAWA PRALKI\n\n` +
              `📍 Miasto: Stargard\n` +  // <-- вот тут явно город
              `👤 Imię: ${name}\n` +
@@ -167,10 +170,7 @@ function sendToWhatsAppBosch(event) {
              `🏠 Adres: ${address}\n` +
              `🔧 Marka/model: ${brand}\n` +
              `❗ Problem: ${message}`;
-  if (!name || !phone || !message) {
-    alert("Proszę wypełnić wszystkie wymagane pola!");
-    return;
-  }
+  
 
   
   // Ссылка через api.whatsapp.com
