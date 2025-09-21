@@ -172,7 +172,7 @@ function sendToWhatsApp(event) {
              `🔧 Bosch/model: ${brand}\n` +
              `❗ Problem: ${message}\n\n` +
              `📍 Miasto: Stargard`;
-             
+ let encodedText = lines.map(line => encodeURIComponent(line)).join("%0A");        
   let url = "https://wa.me/48721988949?text=" + encodeURIComponent(text);
   window.open(url, '_blank');
 }
