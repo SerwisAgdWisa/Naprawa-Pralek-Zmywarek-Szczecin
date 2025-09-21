@@ -178,7 +178,6 @@ function sendToWhatsAppBosch(event) {
   ];
 
   const encodedText = lines.map(line => encodeURIComponent(line)).join("%0A");
-
   const whatsappUrl = "https://api.whatsapp.com/send?phone=48721988949&text=" + encodedText;
 
   // Таймаут 1 сек для мобильного, чтобы перенос точно работал
