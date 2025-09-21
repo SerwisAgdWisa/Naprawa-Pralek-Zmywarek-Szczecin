@@ -167,14 +167,12 @@
     message += `📍 Adres: ${formData.get('address')}\n`;
     message += `❗ Problem: ${formData.get('problem')}\n`;
 
-    const whatsappURL = `https://wa.me/48721988949?text=${encodeURIComponent(message)}`;
-
-    alert('Dziękujemy! Za chwilę zostaniesz przekierowany do WhatsApp.');
-
-    // задержка 1 секунда (1000 мс)
-    setTimeout(function() {
-      window.open(whatsappURL, '_blank');
-    }, 1000);
+   alert('Dziękujemy! Za chwilę zostaniesz przekierowany do WhatsApp.');
+    
+    // Задержка 3 секунды
+    setTimeout(() => {
+      window.open("https://wa.me/48721988949?text=" + encodeURIComponent(text), '_blank');
+    }, 3000);
   });
 </script>    
  <div class="breadcrumb container">
