@@ -102,35 +102,35 @@
   </div>
 </section>
 
-</section>
-   <section id="order" class="order-section">
+
+          
+<section id="order" class="order-section">
   <div class="container order-form">
     <form onsubmit="sendToWhatsAppBosch(event)">
       <div class="form-group">
-        <label>Imię i nazwisko:</label>
+        <label for="name">Imię i nazwisko:</label>
         <input type="text" id="name" required>
       </div>
       <div class="form-group">
-        <label>Telefon:</label>
+        <label for="phone">Telefon:</label>
         <input type="tel" id="phone" required>
       </div>
       <div class="form-group">
-        <label>Marka i model pralki Bosch:</label>
-        <input type="text" id="brand" placeholder="np. Amica AWB 510">
+        <label for="brand">Marka i model pralki Bosch:</label>
+        <input type="text" id="brand" placeholder="np. Bosch Serie 6">
       </div>
       <div class="form-group">
-        <label>Opis usterki:</label>
+        <label for="message">Opis usterki:</label>
         <textarea id="message" rows="4" required placeholder="Błąd E03, pralka nie wiruje, zatrzymuje program..."></textarea>
       </div>
       <div class="form-group">
-        <label>Adres w Stargardzie:</label>
+        <label for="address">Adres w Stargardzie:</label>
         <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania">
       </div>
       <button type="submit" class="submit-btn">Wyślij zgłoszenie na WhatsApp</button>
     </form>
   </div>
-</section>       
-
+</section>
  <section>
   <a href="tel:+48721988949" class="floating-call-button">📞</a>
 </section>
