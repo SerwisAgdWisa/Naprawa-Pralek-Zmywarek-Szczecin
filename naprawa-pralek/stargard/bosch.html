@@ -172,13 +172,7 @@ function sendToWhatsAppBosch(event) {
     return;
   }
 
-  const text = `🔧 NAPRAWA PRALKI - ${city}\n\n` +
-               `👤 Imię: ${name}\n` +
-               `📞 Telefon: ${phone}\n` +
-               `🏠 Adres: ${address}\n` +
-               `🔧 Marka/model: ${brand}\n` +
-               `❗ Problem: ${message}`;
-
+  
   // Ссылка через api.whatsapp.com
   const url = "https://api.whatsapp.com/send?phone=48721988949&text=" + encodeURIComponent(text);
 
