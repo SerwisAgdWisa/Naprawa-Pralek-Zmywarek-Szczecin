@@ -157,7 +157,7 @@
 }     
   </style>                                       
  <script>
-function sendToWhatsAppAmica(event) {
+function sendToWhatsAppBosch(event) {
   event.preventDefault();
   let name = document.getElementById("name").value;
   let phone = document.getElementById("phone").value;
@@ -165,20 +165,18 @@ function sendToWhatsAppAmica(event) {
   let message = document.getElementById("message").value;
   let address = document.getElementById("address").value;
 
-  let text = `🔧 ZGŁOSZENIE: Pralka Amica Stargard\n\n` +
+  let text = `🔧 ZGŁOSZENIE: Pralka Bosch Stargard\n\n` +
              `👤 Imię: ${name}\n` +
              `📞 Telefon: ${phone}\n` +
              `🏠 Adres: ${address}\n` +
              `🏷️ Marka/model: ${brand}\n` +
              `❗ Problem: ${message}\n`;
 
-  // Добавляем небольшую задержку, чтобы WhatsApp точно успел обработать текст
   setTimeout(() => {
     let url = "https://wa.me/48721988949?text=" + encodeURIComponent(text);
     window.open(url, '_blank');
   }, 300);
 }
-   
 </script>    
  <div class="breadcrumb container">
         <a href="../../../index.html">Strona Główna</a> > 
