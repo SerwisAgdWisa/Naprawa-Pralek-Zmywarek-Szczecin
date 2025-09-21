@@ -160,13 +160,13 @@
 function sendToWhatsAppBosch(event) {
   event.preventDefault();
 
-  const name = document.getElementById("name").value.trim();
-  const phone = document.getElementById("phone").value.trim();
-  const brand = document.getElementById("brand").value.trim();
-  const message = document.getElementById("message").value.trim();
-  const address = document.getElementById("address").value.trim();
-  const city = "Stargard";
-
+ const text = `🔧 NAPRAWA PRALKI\n\n` +
+             `📍 Miasto: Stargard\n` +  // <-- вот тут явно город
+             `👤 Imię: ${name}\n` +
+             `📞 Telefon: ${phone}\n` +
+             `🏠 Adres: ${address}\n` +
+             `🔧 Marka/model: ${brand}\n` +
+             `❗ Problem: ${message}`;
   if (!name || !phone || !message) {
     alert("Proszę wypełnić wszystkie wymagane pola!");
     return;
