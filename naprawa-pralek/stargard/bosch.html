@@ -156,9 +156,8 @@
   background-color: #218838;
 }     
   </style>                                       
-function sendToWhatsApp(event) {
-  event.preventDefault();
-
+<script>
+document.getElementById("sendBtn").addEventListener("click", function() {
   let name = document.getElementById("name").value.trim();
   let phone = document.getElementById("phone").value.trim();
   let brand = document.getElementById("brand").value.trim();
@@ -166,6 +165,7 @@ function sendToWhatsApp(event) {
   let address = document.getElementById("address").value.trim();
   const city = "Stargard";
 
+  // Формируем текст построчно
   const lines = [
     "🔧 NAPRAWA PRALKI",
     `📍 Miasto: ${city}`,
@@ -176,14 +176,16 @@ function sendToWhatsApp(event) {
     `❗ Problem: ${message}`
   ];
 
+  // Кодируем каждую строку и соединяем через %0A для переноса
   const encodedText = lines.map(line => encodeURIComponent(line)).join("%0A");
 
+  // Ссылка на WhatsApp
   const whatsappUrl = "https://api.whatsapp.com/send?phone=48721988949&text=" + encodedText;
 
-  setTimeout(() => {
-    window.open(whatsappUrl, '_blank');
-  }, 1000);
-}
+  // Открываем WhatsApp
+  window.open(whatsappUrl, '_blank');
+});
+</script>
  <div class="breadcrumb container">
         <a href="../../../index.html">Strona Główna</a> > 
         <a href="../../index.html">Naprawa Pralek</a> > 
