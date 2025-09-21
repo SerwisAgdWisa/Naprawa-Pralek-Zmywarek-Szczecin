@@ -156,7 +156,7 @@
   background-color: #218838;
 }     
   </style>                                       
- <script>
+<script>
 function sendToWhatsAppBosch(event) {
   event.preventDefault();
 
@@ -165,21 +165,27 @@ function sendToWhatsAppBosch(event) {
   const brand = document.getElementById("brand").value.trim();
   const message = document.getElementById("message").value.trim();
   const address = document.getElementById("address").value.trim();
+  const city = "Stargard";
 
   if (!name || !phone || !message) {
     alert("Proszę wypełnić wszystkie wymagane pola!");
     return;
   }
 
-  const text = `🔧 ZGŁOSZENIE: Pralka Bosch Stargard\n\n` +
+  const text = `🔧 NAPRAWA PRALKI - ${city}\n\n` +
                `👤 Imię: ${name}\n` +
                `📞 Telefon: ${phone}\n` +
                `🏠 Adres: ${address}\n` +
-               `🏷️ Marka/model: ${brand}\n` +
+               `🔧 Marka/model: ${brand}\n` +
                `❗ Problem: ${message}`;
 
-  const url = "https://wa.me/48721988949?text=" + encodeURIComponent(text);
-  window.open(url, '_blank');
+  // Ссылка через api.whatsapp.com
+  const url = "https://api.whatsapp.com/send?phone=48721988949&text=" + encodeURIComponent(text);
+
+  // Таймаут 500 мс для стабильного переноса
+  setTimeout(() => {
+    window.open(url, '_blank');
+  }, 500);
 }
 </script>   
  <div class="breadcrumb container">
