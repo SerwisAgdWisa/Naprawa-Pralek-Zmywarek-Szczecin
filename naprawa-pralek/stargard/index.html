@@ -43,32 +43,41 @@
             <a href="#order" class="cta-button">Zamów Naprawę</a>
         </div>
     <section id="order" class="order-section">
-    <div class="container order-form">
-      <form onsubmit="sendToWhatsApp(event)">
-        <div class="form-group">
-          <label>Imię i nazwisko:</label>
-          <input type="text" id="name" required>
+    <div class="container">
+        <div class="order-form">
+            <h2>Zamów Naprawę Pralki</h2>
+            <form id="orderFormStargard">
+                <div class="form-group">
+                    <label for="name">Imię i nazwisko:</label>
+                    <input type="text" id="name" name="name" placeholder="Twoje imię i nazwisko" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefon:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Twój numer telefonu" required>
+                </div>
+                <div class="form-group">
+                    <label for="brand">Marka i model pralki:</label>
+                    <input type="text" id="brand" name="brand" placeholder="np. Amica, Bosch, LG, Samsung...">
+                </div>
+                <div class="form-group">
+                    <label for="problem">Opis usterki:</label>
+                    <textarea id="problem" name="problem" rows="4" placeholder="Pralka nie wiruje, nie grzeje, zatrzymuje program..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="address">Adres w Stargardzie:</label>
+                    <input type="text" id="address" name="address" placeholder="Ulica, numer domu/mieszkania" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Preferowany termin (opcjonalnie):</label>
+                    <input type="datetime-local" id="time" name="time">
+                </div>
+                <button type="submit" class="submit-btn">Wyślij zgłoszenie na WhatsApp</button>
+            </form>
         </div>
-        <div class="form-group">
-          <label>Telefon:</label>
-          <input type="tel" id="phone" required>
-        </div>
-        <div class="form-group">
-          <label>Marka i model pralki:</label>
-          <input type="text" id="brand" placeholder="np. Samsung WF80F5E2W2W">
-        </div>
-        <div class="form-group">
-          <label>Opis usterki:</label>
-          <textarea id="message" rows="4" required placeholder="Błąd E03, pralka nie wiruje, zatrzymuje program..."></textarea>
-        </div>
-        <div class="form-group">
-          <label>Adres w Stargsrdzie:</label>
-          <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania">
-        </div>
-        <button type="submit" class="submit-btn">Wyślij zgłoszenie na WhatsApp</button>
-      </form>
     </div>
-  </section>
+</section>
+
+
 <section class="content">
   <div class="container">
     <h2>Naprawa pralek w Stargardzie</h2>
@@ -123,25 +132,35 @@
 }
 </style>
 <script>
-function sendToWhatsApp(event) {
-  event.preventDefault();
-  let name = document.getElementById("name").value;
-  let phone = document.getElementById("phone").value;
-  let brand = document.getElementById("brand").value;
-  let message = document.getElementById("message").value;
-  let address = document.getElementById("address").value;
+    document.getElementById('orderFormStargard').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const formData = new FormData(this);
+        const name = formData.get('name');
+        const phone = formData.get('phone');
+        const brand = formData.get('brand');
+        const address = formData.get('address');
+        const problem = formData.get('problem');
+        const time = formData.get('time');
+        
+        const city = 'Stargard';
+        const service = 'Naprawa Pralek';
 
-  let text = `🔧 NAPRAWA PRALKI - STARGARD\n\n` +
-             `👤 Imię: ${name}\n` +
-             `📞 Telefon: ${phone}\n` +
-             `🏠 Adres: ${address}\n` +
-             `🔧 Marka/model: ${brand}\n` +
-             `❗ Problem: ${message}\n\n` +
-             `📍 Miasto: Stargard`;
-             
-  let url = "https://wa.me/48721988949?text=" + encodeURIComponent(text);
-  window.open(url, '_blank');
-}
+        let message = `🔧 NOWE ZGŁOSZENIE SERWISOWE\n\n`;
+        message += `👤 Imię: ${name}\n`;
+        message += `📞 Telefon: ${phone}\n`;
+        message += `🏙️ Miasto: ${city}\n`;
+        message += `📍 Adres: ${address}\n`;
+        if (brand) message += `🔧 Marka: ${brand}\n`;
+        message += `⚙️ Usługa: ${service}\n`;
+        if (problem) message += `❗ Problem: ${problem}\n`;
+        if (time) message += `⏰ Termin: ${time}\n`;
+        
+        const whatsappURL = `https://wa.me/48721988949?text=${encodeURIComponent(message)}`;
+        window.open(whatsappURL, '_blank');
+
+        alert('Dziękujemy za zgłoszenie! Za chwilę zostaniesz przekierowany do WhatsApp.');
+    });
 </script>
 </script>
 <!-- Breadcrumbs -->
