@@ -159,25 +159,29 @@
  <script>
 function sendToWhatsAppBosch(event) {
   event.preventDefault();
-  let name = document.getElementById("name").value;
-  let phone = document.getElementById("phone").value;
-  let brand = document.getElementById("brand").value;
-  let message = document.getElementById("message").value;
-  let address = document.getElementById("address").value;
 
-  let text = `🔧 ZGŁOSZENIE: Pralka Bosch Stargard\n\n` +
-             `👤 Imię: ${name}\n` +
-             `📞 Telefon: ${phone}\n` +
-             `🏠 Adres: ${address}\n` +
-             `🏷️ Marka/model: ${brand}\n` +
-             `❗ Problem: ${message}\n`;
+  const name = document.getElementById("name").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const brand = document.getElementById("brand").value.trim();
+  const message = document.getElementById("message").value.trim();
+  const address = document.getElementById("address").value.trim();
 
-  setTimeout(() => {
-    let url = "https://wa.me/48721988949?text=" + encodeURIComponent(text);
-    window.open(url, '_blank');
-  }, 300);
+  if (!name || !phone || !message) {
+    alert("Proszę wypełnić wszystkie wymagane pola!");
+    return;
+  }
+
+  const text = `🔧 ZGŁOSZENIE: Pralka Bosch Stargard\n\n` +
+               `👤 Imię: ${name}\n` +
+               `📞 Telefon: ${phone}\n` +
+               `🏠 Adres: ${address}\n` +
+               `🏷️ Marka/model: ${brand}\n` +
+               `❗ Problem: ${message}`;
+
+  const url = "https://wa.me/48721988949?text=" + encodeURIComponent(text);
+  window.open(url, '_blank');
 }
-</script>    
+</script>   
  <div class="breadcrumb container">
         <a href="../../../index.html">Strona Główna</a> > 
         <a href="../../index.html">Naprawa Pralek</a> > 
