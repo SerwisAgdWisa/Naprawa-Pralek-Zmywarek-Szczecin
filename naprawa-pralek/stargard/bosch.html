@@ -157,25 +157,34 @@
 }     
   </style>                                       
 <script>
-function sendToWhatsApp(event) {
-  event.preventDefault();
-  let name = document.getElementById("name").value;
-  let phone = document.getElementById("phone").value;
-  let brand = document.getElementById("brand").value;
-  let message = document.getElementById("message").value;
-  let address = document.getElementById("address").value;
+document.getElementById("sendBtn").addEventListener("click", function() {
+  let name = document.getElementById("name").value.trim();
+  let phone = document.getElementById("phone").value.trim();
+  let brand = document.getElementById("brand").value.trim();
+  let message = document.getElementById("message").value.trim();
+  let address = document.getElementById("address").value.trim();
+  const city = "Stargard";
 
-  let text = `🔧 NAPRAWA PRALKI - STARGARD\n\n` +
-             `👤 Imię: ${name}\n` +
-             `📞 Telefon: ${phone}\n` +
-             `🏠 Adres: ${address}\n` +
-             `🔧 Bosch/model: ${brand}\n` +
-             `❗ Problem: ${message}\n\n` +
-             `📍 Miasto: Stargard`;
- let encodedText = lines.map(line => encodeURIComponent(line)).join("%0A");        
-  let url = "https://wa.me/48721988949?text=" + encodeURIComponent(text);
-  window.open(url, '_blank');
-}
+  // Формируем текст построчно
+  const lines = [
+    "🔧 NAPRAWA PRALKI",
+    `📍 Miasto: ${city}`,
+    `👤 Imię: ${name}`,
+    `📞 Telefon: ${phone}`,
+    `🏠 Adres: ${address}`,
+    `🔧 Bosch/model: ${brand}`,
+    `❗ Problem: ${message}`
+  ];
+
+  // Кодируем каждую строку и соединяем через %0A
+  const encodedText = lines.map(line => encodeURIComponent(line)).join("%0A");
+
+  // Ссылка на WhatsApp
+  const whatsappUrl = "https://api.whatsapp.com/send?phone=48721988949&text=" + encodedText;
+
+  // Открываем WhatsApp
+  window.open(whatsappUrl, '_blank');
+});
 </script>
  <div class="breadcrumb container">
         <a href="../../../index.html">Strona Główna</a> > 
