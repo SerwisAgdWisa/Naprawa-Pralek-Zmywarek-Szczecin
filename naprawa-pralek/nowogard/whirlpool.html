@@ -142,7 +142,27 @@
 <section>
   <a href="tel:+48721988949" class="floating-call-button">📞</a>
 </section>
-
+<style>
+.floating-call-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  font-size: 24px;
+  z-index: 9999;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  text-decoration: none;
+}
+.floating-call-button:hover {
+  background-color: #218838;
+}
+</style> 
 <!-- Breadcrumb for SEO -->
 <div class="breadcrumb container">
   <a href="../../index.html">Strona Główna</a> > 
@@ -183,39 +203,5 @@ document.getElementById('orderForm').addEventListener('submit', function(e){
 });
 </script>
 
-<style>
-.floating-call-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 60px;
-  height: 60px;
-  background-color: #28a745;
-  color: white;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 60px;
-  font-size: 24px;
-  z-index: 9999;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-  text-decoration: none;
-}
-.floating-call-button:hover {
-  background-color: #218838;
-}
-.container { max-width:1100px; margin:0 auto; padding:0 15px; }
-.hero { padding:40px 0; background:#f3f3f3; text-align:center; }
-.services-grid { display:flex; gap:20px; flex-wrap:wrap; }
-.service-card { flex:1 1 300px; background:#fff; padding:20px; border:1px solid #ddd; border-radius:6px; }
-.order-section { padding:30px 0; }
-.order-form { background:#fff; padding:20px; border-radius:6px; border:1px solid #eee; }
-.form-group { margin-bottom:15px; }
-input, textarea { width:100%; padding:8px; border:1px solid #ccc; border-radius:4px; }
-.submit-btn { background:#28a745; color:#fff; border:none; padding:10px 20px; cursor:pointer; border-radius:4px; }
-.submit-btn:hover { background:#218838; }
-footer { padding:20px 0; background:#333; color:#fff; text-align:center; margin-top:20px; }
-.breadcrumb { margin:20px 0; }
-</style>
 
-</body>
 </html> 
