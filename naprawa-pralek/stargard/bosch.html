@@ -156,15 +156,14 @@
   background-color: #218838;
 }     
   </style>                                       
-<script>
-function sendToWhatsAppBosch(event) {
+function sendToWhatsApp(event) {
   event.preventDefault();
 
-  const name = document.getElementById("name").value.trim();
-  const phone = document.getElementById("phone").value.trim();
-  const brand = document.getElementById("brand").value.trim();
-  const message = document.getElementById("message").value.trim();
-  const address = document.getElementById("address").value.trim();
+  let name = document.getElementById("name").value.trim();
+  let phone = document.getElementById("phone").value.trim();
+  let brand = document.getElementById("brand").value.trim();
+  let message = document.getElementById("message").value.trim();
+  let address = document.getElementById("address").value.trim();
   const city = "Stargard";
 
   const lines = [
@@ -178,14 +177,13 @@ function sendToWhatsAppBosch(event) {
   ];
 
   const encodedText = lines.map(line => encodeURIComponent(line)).join("%0A");
+
   const whatsappUrl = "https://api.whatsapp.com/send?phone=48721988949&text=" + encodedText;
 
-  // Таймаут 1 сек для мобильного, чтобы перенос точно работал
   setTimeout(() => {
     window.open(whatsappUrl, '_blank');
   }, 1000);
 }
-</script>
  <div class="breadcrumb container">
         <a href="../../../index.html">Strona Główna</a> > 
         <a href="../../index.html">Naprawa Pralek</a> > 
