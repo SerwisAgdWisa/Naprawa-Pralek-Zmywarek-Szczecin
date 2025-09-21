@@ -160,25 +160,33 @@
 function sendToWhatsAppBosch(event) {
   event.preventDefault();
 
- const text = `🔧 NAPRAWA PRALKI\n\n` +
-             `📍 Miasto: Stargard\n` +  // <-- вот тут явно город
-             `👤 Imię: ${name}\n` +
-             `📞 Telefon: ${phone}\n` +
-             `🏠 Adres: ${address}\n` +
-             `🔧 Marka/model: ${brand}\n` +
-             `❗ Problem: ${message}`;
-  
+  const name = document.getElementById("name").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const brand = document.getElementById("brand").value.trim();
+  const message = document.getElementById("message").value.trim();
+  const address = document.getElementById("address").value.trim();
+  const city = "Stargard";
 
-  
-  // Ссылка через api.whatsapp.com
-  const url = "https://api.whatsapp.com/send?phone=48721988949&text=" + encodeURIComponent(text);
+  const lines = [
+    "🔧 NAPRAWA PRALKI",
+    `📍 Miasto: ${city}`,
+    `👤 Imię: ${name}`,
+    `📞 Telefon: ${phone}`,
+    `🏠 Adres: ${address}`,
+    `🔧 Marka/model: ${brand}`,
+    `❗ Problem: ${message}`
+  ];
 
-  // Таймаут 500 мс для стабильного переноса
+  const encodedText = lines.map(line => encodeURIComponent(line)).join("%0A");
+
+  const whatsappUrl = "https://api.whatsapp.com/send?phone=48721988949&text=" + encodedText;
+
+  // Таймаут 1 сек для мобильного, чтобы перенос точно работал
   setTimeout(() => {
-    window.open(url, '_blank');
-  }, 500);
+    window.open(whatsappUrl, '_blank');
+  }, 1000);
 }
-</script>   
+</script>
  <div class="breadcrumb container">
         <a href="../../../index.html">Strona Główna</a> > 
         <a href="../../index.html">Naprawa Pralek</a> > 
