@@ -161,24 +161,28 @@
 .floating-call-button:hover {
   background-color: #218838;
 }
-</style> 
-    <script>
-  document.getElementById('orderForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const formData = new FormData(this);
-    let message = `🔧 ZGŁOSZENIE: Pralka Bosch Stargard\n\n`;
-    message += `👤 Imię: ${formData.get('name')}\n`;
-    message += `📞 Telefon: ${formData.get('phone')}\n`;
-    message += `📍 Adres: ${formData.get('address')}\n`;
-    message += `❗ Problem: ${formData.get('problem')}\n`;
+<script>
+document.getElementById('orderForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const name = document.getElementById("name").value;
+  const phone = document.getElementById("phone").value;
+  const brand = document.getElementById("brand").value;
+  const problem = document.getElementById("message").value;
+  const address = document.getElementById("address").value;
 
-   alert('Dziękujemy! Za chwilę zostaniesz przekierowany do WhatsApp.');
-    
-    // Задержка 3 секунды
-    setTimeout(() => {
-      window.open("https://wa.me/48721988949?text=" + encodeURIComponent(text), '_blank');
-    }, 3000);
-  });
+  const text = `🔧 NAPRAWA PRALKI - BOSCH STARGARD\n\n` +
+               `👤 Imię: ${name}\n` +
+               `📞 Telefon: ${phone}\n` +
+               `🏠 Adres: ${address}\n` +
+               `🔧 Marka/model: ${brand}\n` +
+               `❗ Problem: ${problem}\n\n` +
+               `📍 Miasto: Stargard`;
+
+  // Задержка 2 секунды перед переходом
+  setTimeout(() => {
+    window.location.href = "https://wa.me/48721988949?text=" + encodeURIComponent(text);
+  }, 2000);
+});
 </script>    
  <div class="breadcrumb container">
         <a href="../../../index.html">Strona Główna</a> > 
