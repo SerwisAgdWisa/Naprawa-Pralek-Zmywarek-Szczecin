@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Naprawa Pralek Electrolux Nowogard | Serwis Electrolux | 721 988 949</title>
-  <meta name="description" content="Specjalistyczny serwis pralek Electrolux w Nowogardzie. Naprawa wszystkich modeli pralek Electrolux. Szybka diagnoza, gwarancja na usługi. Tel: 721 988 949">
-  <meta name="keywords" content="naprawa pralek electrolux nowogard, serwis electrolux nowogard, pralka electrolux nie wiruje, awaria pralki electrolux nowogard">
+  <title>Naprawa Pralek Electrolux Nowogard | Serwis Electrolux</title>
+  <meta name="description" content="Serwis pralek Electrolux w Nowogardzie. Naprawa usterek, diagnoza i szybka naprawa w domu klienta. Tel: 721 988 949">
   <link rel="stylesheet" href="../../css/style.css">
 
   <script type="application/ld+json">
@@ -50,8 +49,6 @@
 </head>
 <body>
 
-
-
 <header>
   <div class="container">
     <div class="header-content">
@@ -64,7 +61,7 @@
 <section class="hero">
   <div class="container">
     <h1>Naprawa Pralek Electrolux w Nowogardzie</h1>
-    <p>Serwis pralek Electrolux – Nowogard i okolice. Naprawiamy wszystkie modele pralek Electrolux.</p>
+    <p>Profesjonalny serwis pralek Electrolux – szybka diagnostyka i naprawa usterek w Twoim domu.</p>
     <a href="#order" class="cta-button">Zamów Naprawę</a>
   </div>
 </section>
@@ -74,17 +71,16 @@
     <h2>Typowe problemy pralek Electrolux w Nowogardzie</h2>
     <div class="services-grid">
       <div class="service-card">
-        <h3>Najczęstsze awarie</h3>
+        <h3>Najczęstsze usterki</h3>
         <ul>
-          <li>Pralka Electrolux zatrzymuje się w trakcie wirowania</li>
-          <li>Nie odpompowuje wody po zakończeniu cyklu</li>
-          <li>Nie nagrzewa wody zgodnie z ustawioną temperaturą</li>
-          <li>Hałas podczas pracy przy pełnym wsadzie</li>
-          <li>Problemy z pobieraniem detergentu lub nadmiarem piany</li>
-          <li>Drzwi blokują się i nie można otworzyć bębna</li>
-          <li>Pralka drży lub przesuwa się podczas wirowania</li>
-          <li>Wyciek wody przy szufladzie na detergent</li>
-          <li>Pralka nie uruchamia wybranego programu</li>
+          <li>Bęben pralki nie obraca się podczas cyklu wirowania</li>
+          <li>Brak odpompowania wody po zakończeniu prania</li>
+          <li>Grzałka nie nagrzewa wody</li>
+          <li>Głośne odgłosy podczas prania i wirowania</li>
+          <li>Pralka nie pobiera wody lub pompa się nie włącza</li>
+          <li>Blokada drzwi uniemożliwia otwarcie</li>
+          <li>Wycieki wody spod pralki</li>
+          <li>Pralka nie startuje po wciśnięciu przycisku start</li>
         </ul>
       </div>
       <div class="service-card">
@@ -92,10 +88,10 @@
         <ul>
           <li>E10 – problem z dopływem wody</li>
           <li>E20 – problem z odpływem wody</li>
-          <li>E35 / E40 – problem z grzałką lub czujnikiem temperatury</li>
-          <li>E50 – problem z elektroniką sterującą</li>
-          <li>DE – błąd drzwi</li>
-          <li>HE – awaria grzałki</li>
+          <li>E35/E40 – problem z modułem sterującym</li>
+          <li>E50 – błąd grzałki</li>
+          <li>DE – problem z drzwiami</li>
+          <li>HE – problem z grzałką</li>
           <li>OE – brak odpompowania wody</li>
         </ul>
       </div>
@@ -117,12 +113,12 @@
           <input type="tel" id="phone" name="phone" placeholder="Twój numer telefonu" required>
         </div>
         <div class="form-group">
-          <label for="brand">Marka i model pralki Electrolux:</label>
-          <input type="text" id="brand" name="brand" placeholder="np. Electrolux EWT1266CIW" value="Electrolux">
+          <label for="brand">Marka i model pralki:</label>
+          <input type="text" id="brand" name="brand" placeholder="np. Electrolux EWF..." value="Electrolux">
         </div>
         <div class="form-group">
           <label for="problem">Opis usterki:</label>
-          <textarea id="problem" name="problem" rows="4" placeholder="Błąd E10, pralka nie wiruje, nie odpompowuje..." required></textarea>
+          <textarea id="problem" name="problem" rows="4" placeholder="Błąd E10, pralka nie wiruje..." required></textarea>
         </div>
         <div class="form-group">
           <label for="address">Adres w Nowogardzie:</label>
@@ -143,7 +139,7 @@
   <a href="tel:+48721988949" class="floating-call-button">📞</a>
 </section>
 
-<!-- Breadcrumbs SEO link -->
+<!-- Breadcrumbs для SEO -->
 <div class="breadcrumb container">
   <a href="../../index.html">Strona Główna</a> > 
   <a href="../../index.html">Naprawa Pralek</a> > 
@@ -188,4 +184,21 @@ document.getElementById('orderForm').addEventListener('submit', function(e){
   const problem = formData.get('problem');
   const time = formData.get('time');
   const city = 'Nowogard';
-  const service = 'Naprawa pralek Electrol
+  const service = 'Naprawa pralek Electrolux';
+  let message = `🔧 NOWE ZGŁOSZENIE SERWISOWE\n\n`;
+  message += `👤 Imię: ${name}\n`;
+  message += `📞 Telefon: ${phone}\n`;
+  message += `🏙️ Miasto: ${city}\n`;
+  message += `📍 Adres: ${address}\n`;
+  message += `🔧 Marka: ${brand}\n`;
+  message += `⚙️ Usługa: ${service}\n`;
+  if(problem) message += `❗ Problem: ${problem}\n`;
+  if(time) message += `⏰ Termin: ${time}\n`;
+  const whatsappURL = `https://wa.me/48721988949?text=${encodeURIComponent(message)}`;
+  window.open(whatsappURL,'_blank');
+  alert('Dziękujemy za zgłoszenie! Za chwilę zostaniesz przekierowany do WhatsApp.');
+});
+</script>
+
+</body>
+</html>
