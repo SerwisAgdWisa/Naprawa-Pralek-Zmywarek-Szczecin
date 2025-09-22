@@ -3,95 +3,204 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Beko Maszewo | Naprawa Pralek E01 E02 E03</title>
-  <meta name="description" content="Maszewo – naprawa pralek Beko z błędami E01, E02, E03. Diagnoza, części, serwis na miejscu. Modele: WRE, WTV, EWUE, MWUE, Beyond.">
-  <meta name="keywords" content="Beko Maszewo, Beko E01, Beko E02, Beko E03, serwis Beko Maszewo, naprawa pralki Beko">
-  <style>/* Твой CSS — без изменений */</style>
+  <title>Naprawa Pralek Beko Maszewo | Serwis Beko</title>
+  <meta name="description" content="Naprawa pralek Beko w Maszewie i okolicach. Profesjonalny serwis, szybka diagnoza i gwarancja na naprawy. Zadzwoń: 721 988 949">
+  <meta name="keywords" content="naprawa pralek Beko Maszewo, serwis Beko Maszewo, pralka Beko nie działa Maszewo">
+  <link rel="stylesheet" href="../../css/style.css">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Naprawa Pralek Beko Maszewo",
+    "image": "https://serwisagdwisa.github.io/logo.jpg",
+    "url": "https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek/naprawa-pralek/maszewo/beko.html",
+    "telephone": "+48 721 988 949",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Maszewo",
+      "addressRegion": "Zachodniopomorskie",
+      "postalCode": "72-130",
+      "addressCountry": "PL"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "08:00",
+        "closes": "20:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "09:00",
+        "closes": "16:00"
+      }
+    ],
+    "makesOffer": {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Naprawa pralek Beko"
+      }
+    }
+  }
+  </script>
 </head>
 <body>
 
-<header>
-  <h1>Pralka Beko – Maszewo</h1>
-  <p>Błąd E01, E02, E03 – serwis na miejscu</p>
-</header>
+  <!-- Header -->
+  <header>  
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">WISA</div>
+        <a href="tel:+48721988949" class="phone">📞 721 988 949</a>
+      </div>
+    </div>
+  </header> 
 
-<section>
-  <div class="contact-info">
-    <p>📞 Zadzwoń teraz: <a href="tel:+48721988949" class="phone-link">+48 721 988 949</a></p>
-    <p>💬 WhatsApp: <a href="https://wa.me/48721988949" class="phone-link">+48 721 988 949</a></p>
+  <!-- Hero -->
+  <div class="hero">
+    <h1>Profesjonalny Serwis Pralek Beko w Maszewie</h1>
+    <p>Naprawiamy pralki Beko w Maszewie i okolicach. Skuteczna diagnostyka, szybkie usuwanie usterek, gwarancja na wykonane naprawy.</p>
+    <a href="#order" class="cta-button">Zamów Naprawę</a>
+  </div>
+<section class="services">
+  <div class="container">
+    <h2>Typowe usterki pralek Beko w Maszewie</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Najczęstsze problemy</h3>
+        <ul>
+          <li>Woda zostaje w bębnie po zakończeniu prania</li>
+          <li>Pralka Beko nie pobiera detergentu z szuflady</li>
+          <li>Silne drgania i głośne stukanie podczas wirowania</li>
+          <li>Urządzenie nagle zatrzymuje program i nie kończy cyklu</li>
+          <li>Brak grzania wody w czasie prania</li>
+          <li>Problemy z blokadą drzwi – nie zamykają się lub nie otwierają</li>
+          <li>Wycieki wody spod pralki</li>
+          <li>Całkowity brak reakcji po wciśnięciu przycisku start</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <h3>Kody błędów Beko</h3>
+        <ul>
+          <li>E01 – problem z blokadą drzwi</li>
+          <li>E02 – brak dopływu wody</li>
+          <li>E03 – błąd odpompowania</li>
+          <li>E04 – przepełnienie wodą</li>
+          <li>E05 – problem z grzałką</li>
+          <li>E06 – uszkodzenie czujnika temperatury</li>
+          <li>E09 – błąd elektroniki sterującej</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Formularz -->
+  <section id="order" class="order-section">
+    <div class="container">
+      <div class="order-form">
+        <h2>Zamów Naprawę Pralki Beko</h2>
+        <form id="orderForm">
+          <div class="form-group">
+            <label for="name">Imię i nazwisko:</label>
+            <input type="text" id="name" name="name" placeholder="Twoje imię i nazwisko" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Telefon:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Twój numer telefonu" required>
+          </div>
+          <div class="form-group">
+            <label for="brand">Marka i model pralki:</label>
+            <input type="text" id="brand" name="brand" placeholder="np. Beko WUE6511" value="Beko">
+          </div>
+          <div class="form-group">
+            <label for="problem">Opis usterki:</label>
+            <textarea id="problem" name="problem" rows="4" placeholder="Np. pralka nie wiruje, kod błędu E02..." required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="address">Adres w Maszewie:</label>
+            <input type="text" id="address" name="address" placeholder="Ulica, numer domu/mieszkania" required>
+          </div>
+          <div class="form-group">
+            <label for="time">Preferowany termin (opcjonalnie):</label>
+            <input type="datetime-local" id="time" name="time">
+          </div>
+          <button type="submit" class="submit-btn">Wyślij zgłoszenie na WhatsApp</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating call button -->
+  <section>
+    <a href="tel:+48721988949" class="floating-call-button">📞</a>
+  </section>
+
+  <style>
+  .floating-call-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 24px;
+    z-index: 9999;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    text-decoration: none;
+  }
+  .floating-call-button:hover {
+    background-color: #218838;
+  }
+  </style>
+
+  <!-- Breadcrumbs -->
+  <div class="breadcrumb container">
+    <a href="../../index.html">Strona Główna</a> > 
+    <a href="../../index.html">Naprawa Pralek</a> > 
+    <a href="../index.html">Maszewo</a> > 
+    <span class="current">Pralki Beko</span>
   </div>
 
-  <form onsubmit="sendToWhatsApp(event)">
-    <label>Imię i nazwisko:
-      <input type="text" id="name" required>
-    </label>
-    <label>Telefon:
-      <input type="tel" id="phone" required>
-    </label>
-    <label>Model pralki Beko:
-      <input type="text" id="brand" placeholder="np. Beko WRE7612XWW">
-    </label>
-    <label>Opis usterki:
-      <textarea id="message" rows="4" required placeholder="Błąd E01, pralka nie odpompowuje, zatrzymuje program..."></textarea>
-    </label>
-    <label>Adres w Maszewie:
-      <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania">
-    </label>
-    <button type="submit">Wyślij zgłoszenie na WhatsApp</button>
-  </form>
-</section>
+  <footer>
+    <p>© 2025 Naprawa Pralek Beko Maszewo | Serwis AGD | Tel: +48 721 988 949</p>
+  </footer>
 
-<section>
-  <h2>Naprawa pralek Beko – Maszewo</h2>
-  <p>Serwisujemy pralki Beko z błędami E01, E02, E03.  
-  Diagnoza na miejscu, części, konkretna robota.</p>
-
-  <h3>Typowe błędy Beko:</h3>
-  <ul>
-    <li><strong>E01</strong> – problem z odpływem wody</li>
-    <li><strong>E02</strong> – awaria czujnika poziomu wody</li>
-    <li><strong>E03</strong> – błąd silnika lub elektroniki</li>
-    <li>Inne: zatrzymanie programu, brak wirowania, przeciek</li>
-  </ul>
-
-  <p>Modele: WRE, WTV, EWUE, MWUE, Beyond</p>
-</section>
-
-<section>
-  <h2>Serwis Beko – Maszewo</h2>
-  <ul>
-    <li>Dojazd do klienta</li>
-    <li>Diagnoza i części</li>
-    <li>Naprawa bez gadania</li>
-    <li>Gwarancja na usługę</li>
-  </ul>
-</section>
-
-<footer>
-  <p>© 2025 Naprawa Pralek Beko Maszewo | Serwis AGD | Tel: +48 721 988 949</p>
-</footer>
-
-<script>
-function sendToWhatsApp(event) {
-  event.preventDefault();
-  let name = document.getElementById("name").value;
-  let phone = document.getElementById("phone").value;
-  let brand = document.getElementById("brand").value;
-  let message = document.getElementById("message").value;
-  let address = document.getElementById("address").value;
-
-  let text = `🔧 PRALKA BEKO – MASZEWO\n\n` +
-             `👤 Imię: ${name}\n` +
-             `📞 Telefon: ${phone}\n` +
-             `🏠 Adres: ${address}\n` +
-             `🔧 Model: ${brand}\n` +
-             `❗ Problem: ${message}\n\n` +
-             `📍 Miasto: Maszewo`;
-             
-  let url = "https://wa.me/48721988949?text=" + encodeURIComponent(text);
-  window.open(url, '_blank');
-}
-</script>
+  <script>
+  document.getElementById('orderForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    const formData = new FormData(this);
+    const name = formData.get('name');
+    const phone = formData.get('phone');
+    const brand = formData.get('brand');
+    const address = formData.get('address');
+    const problem = formData.get('problem');
+    const time = formData.get('time');
+    const city = 'Maszewo';
+    const service = 'Naprawa pralek Beko';
+    let message = `🔧 NOWE ZGŁOSZENIE SERWISOWE\n\n`;
+    message += `👤 Imię: ${name}\n`;
+    message += `📞 Telefon: ${phone}\n`;
+    message += `🏙️ Miasto: ${city}\n`;
+    message += `📍 Adres: ${address}\n`;
+    message += `🔧 Marka: ${brand}\n`;
+    message += `⚙️ Usługa: ${service}\n`;
+    if(problem) message += `❗ Problem: ${problem}\n`;
+    if(time) message += `⏰ Termin: ${time}\n`;
+    const whatsappURL = `https://wa.me/48721988949?text=${encodeURIComponent(message)}`;
+    window.open(whatsappURL,'_blank');
+    alert('Dziękujemy za zgłoszenie! Za chwilę zostaniesz przekierowany do WhatsApp.');
+  });
+  </script>
 
 </body>
 </html>
