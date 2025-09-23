@@ -1,178 +1,232 @@
 <!DOCTYPE html>
-
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Naprawa Zmywarek Szczecin | Serwis Zmywarek AGD</title>
-  <meta name="description" content="Naprawa zmywarek Szczecin – szybki serwis, dojazd do klienta. Zmywarka nie pobiera wody, nie grzeje, nie domywa naczyń? Zadzwoń lub napisz na WhatsApp – naprawimy!">
-  <meta name="keywords" content="naprawa zmywarek Szczecin, serwis zmywarek Szczecin, zmywarka nie pobiera wody, zmywarka nie grzeje, zmywarka nie domywa naczyń, naprawa AGD Szczecin">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-    }
-    section {
-      padding: 20px;
-      max-width: 600px;
-      margin: auto;
-      background: white;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      margin-top: 20px;
-    }
-    form label {
-      display: block;
-      margin-bottom: 10px;
-      font-weight: bold;
-    }
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
-    button {
-      margin-top: 15px;
-      padding: 12px;
-      background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
-      border: none;
-      color: white;
-      font-size: 16px;
-      cursor: pointer;
-      border-radius: 25px;
-      width: 100%;
-      font-weight: bold;
-    }
-    button:hover {
-      background: linear-gradient(135deg, #e55a2b 0%, #de831a 100%);
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #eee;
-      margin-top: 20px;
-    }
-    .contact-info {
-      background: #e6f3ff;
-      padding: 15px;
-      border-radius: 5px;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .phone-link {
-      color: #667eea;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 18px;
-    }
-    .phone-link:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <title>Naprawa Zmywarek Szczecin | Serwis AGD</title>
+  <meta name="description" content="Profesjonalna naprawa zmywarek w Szczecinie. Dojeżdżamy do klienta, naprawiamy wszystkie marki. Skontaktuj się przez telefon lub WhatsApp!">
+  <meta name="keywords" content="zmywarka nie myje, zmywarka nie pobiera wody Szczecin, zmywarka nie odprowadza wody Szczecin, naprawa zmywarek Szczecin, serwis AGD Szczecin">
+  <link rel="stylesheet" href="../../css/style.css">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Naprawa Zmywarek Szczecin",
+    "image": "https://serwisagdwisa.github.io/logo.jpg",
+    "telephone": "+48 721 988 949",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Szczecin",
+      "addressRegion": "Zachodniopomorskie",
+      "addressCountry": "PL"
+    },
+    "url": "https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-zmywarek/szczecin/"
+  }
+  </script>
 </head>
 <body>
 
 <header>
-  <h1>Naprawa Zmywarek Szczecin</h1>
-  <p>Profesjonalny serwis zmywarek w Szczecinie</p>
+  <div class="container">
+    <div class="header-content">
+      <a href="../../index.html" class="logo">WISA</a>
+      <a href="tel:+48721988949" class="phone">📞 721 988 949</a>
+    </div>
+  </div>
 </header>
 
-<section>
-  <div class="contact-info">
-    <p>📞 Zadzwoń teraz: <a href="tel:+48721988949" class="phone-link">+48 721 988 949</a></p>
-    <p>💬 WhatsApp: <a href="https://wa.me/48721988949" class="phone-link">+48 721 988 949</a></p>
+<section class="hero">
+  <div class="container">
+    <h1>Naprawa Zmywarek Szczecin</h1>
+    <p>Serwisujemy zmywarki wszystkich marek – szybka naprawa w Szczecinie</p>
+    <a href="#order" class="cta-button">Zamów Naprawę</a>
   </div>
-
-  <form onsubmit="sendToWhatsApp(event)">
-    <label>Imię i nazwisko:
-      <input type="text" id="name" required>
-    </label>
-    <label>Telefon:
-      <input type="tel" id="phone" required>
-    </label>
-    <label>Marka i model zmywarki:
-      <input type="text" id="brand" placeholder="np. Bosch SMS46AW01E">
-    </label>
-    <label>Opis usterki:
-      <textarea id="message" rows="4" required placeholder="Opisz dokładnie problem ze zmywarką..."></textarea>
-    </label>
-    <label>Adres w Szczecinie:
-      <input type="text" id="address" placeholder="Dzielnica, ulica, numer domu/mieszkania">
-    </label>
-    <button type="submit">Zamów Naprawę</button>
-  </form>
 </section>
 
-<section>
-  <h2>Naprawa zmywarek w Szczecinie</h2>
-  <p>Największy serwis zmywarek w stolicy województwa zachodniopomorskiego. Szczecin - miasto portowe z wyjątkowymi wyzwaniami: wilgoć, sól w powietrzu, stare instalacje w kamienicach. Obsługujemy wszystkie dzielnice: Centrum, Pogodno, Gumieńce, Żelechowa, Dąbie, Niebuszewo.</p>
-
-  <h3>Specyficzne awarie zmywarek w Szczecinie:</h3>
-  <ul>
-    <li>Przyspieszona korozja - klimat morski i wilgoć portowa</li>
-    <li>Osady solne w przewodach - bliskość Odry i portu</li>
-    <li>Problemy elektryczne - stare instalacje w kamienicach Centrum</li>
-    <li>Uszkodzenia od wibracji - tramwaje i ciężki ruch uliczny</li>
-    <li>Awarie pomp w zimie - skrajne temperatury nad wodą</li>
-    <li>Problemy z odpływem - przeciążona kanalizacja miejska</li>
-    <li>Uszkodzenia elektroniki - burze nad Odrą i Bałtykiem</li>
-    <li>Zatykanie filtrów - pył portowy i przemysłowy</li>
-  </ul>
-
-  <p><strong>Wszystkie dzielnice Szczecina:</strong> Śródmieście, Prawobrzeże, Północ, Zachód - dojazd w ciągu godziny.</p>
+<section id="order" class="order-section">
+  <div class="container">
+    <div class="order-form">
+      <h2>Zamów Naprawę Zmywarki</h2>
+      <form id="orderFormSzczecin">
+        <div class="form-group">
+          <label for="name">Imię i nazwisko:</label>
+          <input type="text" id="name" name="name" placeholder="Twoje imię i nazwisko" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Telefon:</label>
+          <input type="tel" id="phone" name="phone" placeholder="Twój numer telefonu" required>
+        </div>
+        <div class="form-group">
+          <label for="brand">Marka i model zmywarki:</label>
+          <input type="text" id="brand" name="brand" placeholder="np. Bosch, LG, Samsung...">
+        </div>
+        <div class="form-group">
+          <label for="problem">Opis usterki:</label>
+          <textarea id="problem" name="problem" rows="4" placeholder="Zmywarka nie myje, nie odprowadza wody..." required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="address">Adres w Szczecinie:</label>
+          <input type="text" id="address" name="address" placeholder="Ulica, numer domu/mieszkania" required>
+        </div>
+        <div class="form-group">
+          <label for="time">Preferowany termin (opcjonalnie):</label>
+          <input type="datetime-local" id="time" name="time">
+        </div>
+        <button type="submit" class="submit-btn">Wyślij zgłoszenie na WhatsApp</button>
+      </form>
+    </div>
+  </div>
 </section>
 
-<section>
-  <h2>Dlaczego warto wybrać nasz serwis w Szczecinie?</h2>
-  <ul>
-    <li>✓ Znajomość specyfiki klimatu portowego</li>
-    <li>✓ Części odporne na korozję morską</li>
-    <li>✓ Doświadczenie z instalacjami w zabytkowych kamienicach</li>
-    <li>✓ Obsługa wszystkich dzielnic Szczecina</li>
-    <li>✓ Gwarancja uwzględniająca warunki klimatyczne</li>
-    <li>✓ Ekspresowy dojazd komunikacją miejską</li>
-  </ul>
+<section class="services">
+  <div class="container">
+    <h2>Popularne usterki zmywarek w Szczecinie</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Bosch</h3>
+        <ul>
+          <li>E01 – Problem z dopływem wody</li>
+          <li>E02 – Nie odprowadza wody</li>
+          <li>E03 – Nie domyka się drzwi</li>
+          <li>E04 – Awaria grzałki</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <h3>LG</h3>
+        <ul>
+          <li>IE – Problem z dopływem wody</li>
+          <li>OE – Nie odprowadza wody</li>
+          <li>UE – Niewyważenie bębna</li>
+          <li>DE – Drzwi nie zamknięte</li>
+          <li>LE – Problem z silnikiem</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <h3>Samsung</h3>
+        <ul>
+          <li>4C – Problem z dopływem wody</li>
+          <li>5C – Problem z odpływem wody</li>
+          <li>3E – Błąd elektroniki</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <h3>Beko</h3>
+        <ul>
+          <li>IE – Problem z dopływem wody</li>
+          <li>OE – Nie odprowadza wody</li>
+          <li>UE – Niewyważenie bębna</li>
+          <li>DE – Drzwi nie zamknięte</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <h3>Electrolux</h3>
+        <ul>
+          <li>E10 – Problem z dopływem wody</li>
+          <li>E20 – Problem z odpływem wody</li>
+          <li>E30 – Problem z grzałką</li>
+          <li>E40 – Błąd elektroniki</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <h3>Whirlpool</h3>
+        <ul>
+          <li>F1 – Problem z dopływem wody</li>
+          <li>F2 – Błąd odpływu wody</li>
+          <li>F3 – Awaria grzałki</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <h3>Haier</h3>
+        <ul>
+          <li>ERR1 – Problem z blokadą drzwi</li>
+          <li>ERR2 – Brak dopływu wody</li>
+          <li>ERR3 – Problem z odpompowaniem wody</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="other-cities">
+  <div class="container">
+    <h3>Naprawiamy też w innych miastach:</h3>
+    <ul>
+      <li><a href="../stargard/zmywarki.html">Stargard</a></li>
+      <li><a href="../goleniow/zmywarki.html">Goleniów</a></li>
+      <li><a href="../maszewo/zmywarki.html">Maszewo</a></li>
+      <li><a href="../nowogard/zmywarki.html">Nowogard</a></li>
+      <li><a href="../pyrzyce/zmywarki.html">Pyrzyce</a></li>
+      <li><a href="../police/zmywarki.html">Police</a></li>
+    </ul>
+  </div>
 </section>
 
 <footer>
   <p>© 2025 Naprawa Zmywarek Szczecin | Serwis AGD | Tel: +48 721 988 949</p>
 </footer>
 
-<script>
-function sendToWhatsApp(event) {
-  event.preventDefault();
-  let name = document.getElementById("name").value;
-  let phone = document.getElementById("phone").value;
-  let brand = document.getElementById("brand").value;
-  let message = document.getElementById("message").value;
-  let address = document.getElementById("address").value;
+<!-- Floating call button -->
+<section>
+  <a href="tel:+48721988949" class="floating-call-button">📞</a>
+</section>
 
-  let text = `🔧 NAPRAWA ZMYWARKI - SZCZECIN\n\n` +
-             `👤 Imię: ${name}\n` +
-             `📞 Telefon: ${phone}\n` +
-             `🏠 Adres: ${address}\n` +
-             `🔧 Marka/model: ${brand}\n` +
-             `❗ Problem: ${message}\n\n` +
-             `📍 Miasto: Szczecin`;
-             
-  let url = "https://wa.me/48721988949?text=" + encodeURIComponent(text);
-  window.open(url, '_blank');
+<style>
+.floating-call-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  font-size: 24px;
+  z-index: 9999;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  text-decoration: none;
 }
+.floating-call-button:hover {
+  background-color: #218838;
+}
+</style>
+
+<script>
+document.getElementById('orderFormSzczecin').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const formData = new FormData(this);
+  const name = formData.get('name');
+  const phone = formData.get('phone');
+  const brand = formData.get('brand');
+  const address = formData.get('address');
+  const problem = formData.get('problem');
+  const time = formData.get('time');
+  const city = 'Szczecin';
+  const service = 'Naprawa Zmywarek';
+
+  let message = `🔧 NOWE ZGŁOSZENIE SERWISOWE\n\n`;
+  message += `👤 Imię: ${name}\n`;
+  message += `📞 Telefon: ${phone}\n`;
+  message += `🏙️ Miasto: ${city}\n`;
+  message += `📍 Adres: ${address}\n`;
+  if(brand) message += `🔧 Marka: ${brand}\n`;
+  message += `⚙️ Usługa: ${service}\n`;
+  if(problem) message += `❗ Problem: ${problem}\n`;
+  if(time) message += `⏰ Termin: ${time}\n`;
+
+  const whatsappURL = `https://wa.me/48721988949?text=${encodeURIComponent(message)}`;
+  window.open(whatsappURL, '_blank');
+  alert('Dziękujemy za zgłoszenie! Za chwilę zostaniesz przekierowany do WhatsApp.');
+});
 </script>
+
+<!-- Breadcrumbs -->
+<div class="breadcrumb container">
+  <a href="../../index.html">Strona Główna</a> > <span>Naprawa Zmywarek Szczecin</span>
+</div>
 
 </body>
 </html>
