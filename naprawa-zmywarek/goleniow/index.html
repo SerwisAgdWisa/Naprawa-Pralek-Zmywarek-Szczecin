@@ -3,35 +3,185 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Naprawa Zmywarek Goleniów | Serwis Zmywarek AGD</title>
-  <meta name="description" content="Naprawa zmywarek Goleniów – profesjonalny serwis, dojazd do klienta. Zmywarka nie pobiera wody, nie grzeje, nie domywa naczyń? Zadzwoń lub napisz na WhatsApp – naprawimy!">
-  <meta name="keywords" content="naprawa zmywarek Goleniów, serwis zmywarek Goleniów, zmywarka nie pobiera wody, zmywarka nie grzeje, zmywarka nie domywa naczyń, naprawa AGD Goleniów">
-  <style>
-    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f9f9f9; color:#333; }
-    header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; text-align: center; }
-    header h1 { margin: 0; }
-    .top-button { margin: 20px auto; display:block; width:200px; padding:12px; background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%); color:white; text-align:center; border-radius:25px; font-weight:bold; text-decoration:none; }
-    .top-button:hover { background: linear-gradient(135deg, #e55a2b 0%, #de831a 100%); }
-    section { padding: 20px; max-width: 600px; margin: auto; background: white; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-top: 20px; }
-    form label { display:block; margin-bottom:10px; font-weight:bold; }
-    input, textarea { width:100%; padding:10px; margin-top:5px; border:1px solid #ccc; border-radius:4px; box-sizing:border-box; }
-    button { margin-top:15px; padding:12px; background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%); border:none; color:white; font-size:16px; cursor:pointer; border-radius:25px; width:100%; font-weight:bold; }
-    button:hover { background: linear-gradient(135deg, #e55a2b 0%, #de831a 100%); }
-    footer { text-align:center; padding:20px; background:#eee; margin-top:20px; }
-    .contact-info { background:#e6f3ff; padding:15px; border-radius:5px; text-align:center; margin-bottom:20px; }
-    .phone-link { color:#667eea; text-decoration:none; font-weight:bold; font-size:18px; }
-    .phone-link:hover { text-decoration:underline; }
-  </style>
+  <title>Naprawa Zmywarek Goleniów | Serwis AGD</title>
+  <meta name="description" content="Profesjonalny serwis zmywarek w Goleniowie. Naprawa wszystkich modeli zmywarek – szybka diagnoza, dojazd do klienta i gwarancja na naprawy.">
+  <meta name="keywords" content="naprawa zmywarek Goleniów, serwis AGD Goleniów, zmywarka nie działa, nie spływa woda, wycieki, kody błędów, serwis zmywarek">
+  <link rel="stylesheet" href="../../css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Naprawa Zmywarek Goleniów",
+    "image": "https://serwisagdwisa.github.io/logo.jpg",
+    "telephone": "+48 721 988 949",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Goleniów",
+      "addressRegion": "Zachodniopomorskie",
+      "addressCountry": "PL"
+    },
+    "url": "https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-zmywarek/goleniow/"
+  }
+  </script>
 </head>
 <body>
-
 <header>
-  <h1>Naprawa Zmywarek Goleniów</h1>
-  <p>Profesjonalny serwis zmywarek w Goleniowie</p>
-  <a href="#contact-form" class="top-button">Zamów Naprawę</a>
+  <div class="container">
+    <div class="header-content">
+      <a href="../index.html" class="logo">WISA</a>
+      <a href="tel:+48721988949" class="phone">📞 721 988 949</a>
+    </div>
+  </div>
 </header>
 
-<section id="contact-form">
-  <div class="contact-info">
-    <p>📞 Zadzwoń teraz: <a href="tel:+48721988949" class="phone-link">+48 721 988 949</a></p>
-    <p>💬 WhatsApp: <a href="https://wa.me/48721988949" class="phone-link">+48 721 988
+<section class="hero">
+  <div class="container">
+    <h1>Naprawa Zmywarek Goleniów</h1>
+    <p>Serwis zmywarek w Goleniowie – szybka diagnoza i naprawa bezpośrednio u klienta</p>
+    <a href="#order" class="cta-button">Zgłoś Awarię</a>
+  </div>
+</section>
+
+<section id="order" class="order-section">
+  <div class="container">
+    <div class="order-form">
+      <h2>Zamów Serwis Zmywarki</h2>
+      <form id="orderFormZmywarki">
+        <div class="form-group">
+          <label for="name">Imię i nazwisko:</label>
+          <input type="text" id="name" name="name" placeholder="Twoje imię i nazwisko" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Telefon:</label>
+          <input type="tel" id="phone" name="phone" placeholder="Twój numer telefonu" required>
+        </div>
+        <div class="form-group">
+          <label for="brand">Marka i model zmywarki:</label>
+          <input type="text" id="brand" name="brand" placeholder="np. Bosch, Amica, Whirlpool...">
+        </div>
+        <div class="form-group">
+          <label for="problem">Opis usterki:</label>
+          <textarea id="problem" name="problem" rows="4" placeholder="np. nie pobiera wody, problem z odpompowaniem, wycieki..." required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="address">Adres w Goleniowie:</label>
+          <input type="text" id="address" name="address" placeholder="Ulica, numer domu/mieszkania" required>
+        </div>
+        <div class="form-group">
+          <label for="time">Preferowany termin (opcjonalnie):</label>
+          <input type="datetime-local" id="time" name="time">
+        </div>
+        <button type="submit" class="submit-btn">Wyślij na WhatsApp</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="content">
+  <div class="container">
+    <h2>Serwis zmywarek w Goleniowie</h2>
+    <p>Oferujemy kompleksową obsługę zmywarek w Goleniowie i okolicach. Nasz serwis dojeżdża do klienta, diagnozuje usterkę i wykonuje naprawy sprawnie i skutecznie.</p>
+
+    <h3>Najczęstsze problemy zmywarek:</h3>
+    <ul>
+      <li>Brak dopływu wody (H2O, 4C/4E)</li>
+      <li>Nie działa odpompowanie wody (5C/5E)</li>
+      <li>Nie grzeje wody (HE / HE1 / HE2)</li>
+      <li>Wycieki lub protokół LC / LE</li>
+      <li>Wyświetlane kody błędów (F01, F02, DE/DE1/DE2, E1–E9)</li>
+      <li>Hałas, wibracje lub zatrzymanie cyklu</li>
+    </ul>
+
+    <h3>Marki, które naprawiamy:</h3>
+    <ul>
+      <li>Bosch, Siemens, Electrolux, Whirlpool</li>
+      <li>Samsung, LG, Beko, Amica</li>
+      <li>Indesit, Candy, Hisense i inne popularne marki</li>
+      <li>Na wszystkie naprawy udzielamy gwarancji</li>
+    </ul>
+
+    <p>Obsługujemy cały Goleniów oraz pobliskie miejscowości, m.in. Maszewo, Stargard, Nowogard. Skontaktuj się, aby umówić wizytę serwisanta.</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Naprawa Zmywarek Goleniów | Serwis AGD | Tel: +48 721 988 949</p>
+</footer>
+
+<section>
+  <a href="tel:+48721988949" class="floating-call-button">📞</a>
+</section>
+
+<style>
+.floating-call-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  font-size: 24px;
+  z-index: 9999;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  text-decoration: none;
+}
+.floating-call-button:hover {
+  background-color: #218838;
+}
+</style>
+
+<script>
+document.getElementById('orderFormZmywarki').addEventListener('submit', function(e){
+  e.preventDefault();
+  const formData = new FormData(this);
+  const name = formData.get('name');
+  const phone = formData.get('phone');
+  const brand = formData.get('brand');
+  const address = formData.get('address');
+  const problem = formData.get('problem');
+  const time = formData.get('time');
+  const city = 'Goleniów';
+  const service = 'Naprawa Zmywarek';
+  let message = `🔧 NOWE ZGŁOSZENIE SERWISOWE\n\n`;
+  message += `👤 Imię: ${name}\n`;
+  message += `📞 Telefon: ${phone}\n`;
+  message += `🏙️ Miasto: ${city}\n`;
+  message += `📍 Adres: ${address}\n`;
+  if (brand) message += `🔧 Marka: ${brand}\n`;
+  message += `⚙️ Usługa: ${service}\n`;
+  if (problem) message += `❗ Problem: ${problem}\n`;
+  if (time) message += `⏰ Termin: ${time}\n`;
+  const whatsappURL = `https://wa.me/48721988949?text=${encodeURIComponent(message)}`;
+  window.open(whatsappURL,'_blank');
+  alert('Dziękujemy za zgłoszenie! Za chwilę zostaniesz przekierowany do WhatsApp.');
+});
+</script>
+
+<section class="other-brands">
+  <div class="container">
+    <h3>Naprawiamy również zmywarki:</h3>
+    <ul>
+      <li><a href="beko.html">Beko</a></li>
+      <li><a href="bosch.html">Bosch</a></li>
+      <li><a href="amica.html">Amica</a></li>
+      <li><a href="whirlpool.html">Whirlpool</a></li>
+      <li><a href="samsung.html">Samsung</a></li>
+      <li><a href="electrolux.html">Electrolux</a></li>
+      <li><a href="siemens.html">Siemens</a></li>
+      <li><a href="candy.html">Candy</a></li>
+      <li><a href="indesit.html">Indesit</a></li>
+      <li><a href="hisense.html">Hisense</a></li>
+    </ul>
+  </div>
+</section>
+
+<div class="breadcrumb container">
+  <a href="../../index.html">Strona Główna</a> > 
+  <span>Naprawa Zmywarek Goleniów</span>
+</div>
+</body>
+</html>
