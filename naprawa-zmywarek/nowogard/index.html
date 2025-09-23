@@ -1,176 +1,186 @@
 <!DOCTYPE html>
-
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Naprawa Pralek Nowogard | Serwis Pralek AGD</title>
-  <meta name="description" content="Naprawa pralek Nowogard – szybki serwis, dojazd do klienta. Pralka nie wiruje, nie pobiera wody, nie grzeje? Zadzwoń lub napisz na WhatsApp – naprawimy!">
-  <meta name="keywords" content="naprawa pralek Nowogard, serwis pralek Nowogard, pralka nie wiruje, pralka nie pobiera wody, pralka nie grzeje, naprawa AGD Nowogard">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-    }
-    section {
-      padding: 20px;
-      max-width: 600px;
-      margin: auto;
-      background: white;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      margin-top: 20px;
-    }
-    form label {
-      display: block;
-      margin-bottom: 10px;
-      font-weight: bold;
-    }
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
-    button {
-      margin-top: 15px;
-      padding: 12px;
-      background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
-      border: none;
-      color: white;
-      font-size: 16px;
-      cursor: pointer;
-      border-radius: 25px;
-      width: 100%;
-      font-weight: bold;
-    }
-    button:hover {
-      background: linear-gradient(135deg, #e55a2b 0%, #de831a 100%);
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #eee;
-      margin-top: 20px;
-    }
-    .contact-info {
-      background: #e6f3ff;
-      padding: 15px;
-      border-radius: 5px;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .phone-link {
-      color: #667eea;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 18px;
-    }
-    .phone-link:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <title>Naprawa Zmywarek Nowogard | Serwis AGD</title>
+  <meta name="description" content="Naprawa i serwis zmywarek w Nowogardzie. Usuwamy awarie wszystkich marek – szybka diagnoza, części zamienne i gwarancja na usługę.">
+  <meta name="keywords" content="naprawa zmywarek Nowogard, serwis AGD Nowogard, serwis zmywarek Nowogard, zmywarka nie działa, kody błędów zmywarki, AGD Nowogard">
+  <link rel="stylesheet" href="../../css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Naprawa Zmywarek Nowogard",
+    "image": "https://serwisagdwisa.github.io/logo.jpg",
+    "telephone": "+48 721 988 949",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Nowogard",
+      "addressRegion": "Zachodniopomorskie",
+      "addressCountry": "PL"
+    },
+    "url": "https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-zmywarek/nowogard/"
+  }
+  </script>
 </head>
 <body>
-
 <header>
-  <h1>Naprawa Pralek Nowogard</h1>
-  <p>Profesjonalny serwis pralek w Goleniowie</p>
+  <div class="container">
+    <div class="header-content">
+      <a href="../index.html" class="logo">WISA</a>
+      <a href="tel:+48721988949" class="phone">📞 721 988 949</a>
+    </div>
+  </div>
 </header>
 
-<section>
-  <div class="contact-info">
-    <p>📞 Zadzwoń teraz: <a href="tel:+48721988949" class="phone-link">+48 721 988 949</a></p>
-    <p>💬 WhatsApp: <a href="https://wa.me/48721988949" class="phone-link">+48 721 988 949</a></p>
+<section class="hero">
+  <div class="container">
+    <h1>Naprawa Zmywarek Nowogard</h1>
+    <p>Szybka pomoc serwisowa w Nowogardzie – naprawa zmywarek w domu klienta z gwarancją</p>
+    <a href="#order" class="cta-button">Zgłoś Awarię</a>
   </div>
-
-  <form onsubmit="sendToWhatsApp(event)">
-    <label>Imię i nazwisko:
-      <input type="text" id="name" required>
-    </label>
-    <label>Telefon:
-      <input type="tel" id="phone" required>
-    </label>
-    <label>Marka i model pralki:
-      <input type="text" id="brand" placeholder="np. Samsung WF80F5E2W2W">
-    </label>
-    <label>Opis usterki:
-      <textarea id="message" rows="4" required placeholder="Opisz dokładnie problem z pralką..."></textarea>
-    </label>
-    <label>Adres w Goleniowie:
-      <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania">
-    </label>
-    <button type="submit">Zamów Naprawę</button>
-  </form>
 </section>
 
-<section>
-  <h2>Naprawa pralek w Nowogardzie</h2>
-  <p>Oferujemy kompleksowy serwis pralek wszystkich marek w Goleniowie i okolicach. Dojazd do klienta, szybka diagnoza i profesjonalna naprawa.</p>
-
-  <h3>Typowe usterki pralek:</h3>
-  <ul>
-    <li>Pralka nie pobiera wody</li>
-    <li>Pralka nie wiruje</li>
-    <li>Pralka nie grzeje wody</li>
-    <li>Pralka zatrzymuje program</li>
-    <li>Pralka przecieka</li>
-    <li>Pralka hałasuje podczas prania</li>
-    <li>Pralka nie odpompowuje wody</li>
-    <li>Błędy na wyświetlaczu</li>
-  </ul>
+<section id="order" class="order-section">
+  <div class="container">
+    <div class="order-form">
+      <h2>Zamów Serwis Zmywarki</h2>
+      <form id="orderFormZmywarki">
+        <div class="form-group">
+          <label for="name">Imię i nazwisko:</label>
+          <input type="text" id="name" name="name" placeholder="Twoje imię i nazwisko" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Telefon:</label>
+          <input type="tel" id="phone" name="phone" placeholder="Twój numer telefonu" required>
+        </div>
+        <div class="form-group">
+          <label for="brand">Marka i model zmywarki:</label>
+          <input type="text" id="brand" name="brand" placeholder="np. Bosch, Amica, Whirlpool...">
+        </div>
+        <div class="form-group">
+          <label for="problem">Opis usterki:</label>
+          <textarea id="problem" name="problem" rows="4" placeholder="np. nie pobiera wody, nie odpompowuje, głośno pracuje..." required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="address">Adres w Nowogardzie:</label>
+          <input type="text" id="address" name="address" placeholder="Ulica, numer domu/mieszkania" required>
+        </div>
+        <div class="form-group">
+          <label for="time">Preferowany termin (opcjonalnie):</label>
+          <input type="datetime-local" id="time" name="time">
+        </div>
+        <button type="submit" class="submit-btn">Wyślij na WhatsApp</button>
+      </form>
+    </div>
+  </div>
 </section>
 
-<section>
-  <h2>Dlaczego warto wybrać nasz serwis?</h2>
-  <ul>
-    <li>✓ Dojazd do klienta w Nowogadzie</li>
-    <li>✓ Diagnoza i wycena</li>
-    <li>✓ Oryginalne części zamienne</li>
-    <li>✓ Gwarancja na wykonane usługi</li>
-    <li>✓ Wieloletnie doświadczenie</li>
-    <li>✓ Konkurencyjne ceny</li>
-  </ul>
+<section class="content">
+  <div class="container">
+    <h2>Serwis zmywarek w Nowogardzie</h2>
+    <p>Oferujemy profesjonalną naprawę zmywarek w Nowogardzie oraz pobliskich wsiach i miasteczkach. Dojazd do klienta w krótkim czasie oraz skuteczna diagnoza na miejscu.</p>
+
+    <h3>Typowe awarie zmywarek:</h3>
+    <ul>
+      <li>Brak dopływu wody lub błąd H2O</li>
+      <li>Nie działa odpompowanie (np. błąd E2, F4)</li>
+      <li>Zmywarka nie grzeje wody</li>
+      <li>Wyciek spod urządzenia</li>
+      <li>Kody błędów na wyświetlaczu (np. F01, F03, E1–E9)</li>
+      <li>Hałaśliwa praca lub zatrzymanie w połowie cyklu</li>
+    </ul>
+
+    <h3>Marki, które serwisujemy:</h3>
+    <ul>
+      <li>Bosch, Siemens, Electrolux, Whirlpool</li>
+      <li>Samsung, LG, Beko, Amica</li>
+      <li>Indesit, Candy, Hisense i inne</li>
+      <li>Każda naprawa objęta jest gwarancją</li>
+    </ul>
+
+    <p>Obsługujemy cały Nowogard oraz okolice – m.in. Maszewo, Golczewo, Przybiernów. Zadzwoń i zamów wizytę serwisanta już dziś.</p>
+  </div>
 </section>
 
 <footer>
-  <p>© 2025 Naprawa Pralek Nowogard | Serwis AGD | Tel: +48 721 988 949</p>
+  <p>© 2025 Naprawa Zmywarek Nowogard | Serwis AGD | Tel: +48 721 988 949</p>
 </footer>
 
-<script>
-function sendToWhatsApp(event) {
-  event.preventDefault();
-  let name = document.getElementById("name").value;
-  let phone = document.getElementById("phone").value;
-  let brand = document.getElementById("brand").value;
-  let message = document.getElementById("message").value;
-  let address = document.getElementById("address").value;
+<section>
+  <a href="tel:+48721988949" class="floating-call-button">📞</a>
+</section>
 
-  let text = `🔧 NAPRAWA PRALKI - GOLENIÓW\n\n` +
-             `👤 Imię: ${name}\n` +
-             `📞 Telefon: ${phone}\n` +
-             `🏠 Adres: ${address}\n` +
-             `🔧 Marka/model: ${brand}\n` +
-             `❗ Problem: ${message}\n\n` +
-             `📍 Miasto: Goleniów`;
-             
-  let url = "https://wa.me/48721988949?text=" + encodeURIComponent(text);
-  window.open(url, '_blank');
+<style>
+.floating-call-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  font-size: 24px;
+  z-index: 9999;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  text-decoration: none;
 }
-</script>
+.floating-call-button:hover {
+  background-color: #218838;
+}
+</style>
 
+<script>
+document.getElementById('orderFormZmywarki').addEventListener('submit', function(e){
+  e.preventDefault();
+  const formData = new FormData(this);
+  const name = formData.get('name');
+  const phone = formData.get('phone');
+  const brand = formData.get('brand');
+  const address = formData.get('address');
+  const problem = formData.get('problem');
+  const time = formData.get('time');
+  const city = 'Nowogard';
+  const service = 'Naprawa Zmywarek';
+  let message = `🔧 NOWE ZGŁOSZENIE SERWISOWE\n\n`;
+  message += `👤 Imię: ${name}\n`;
+  message += `📞 Telefon: ${phone}\n`;
+  message += `🏙️ Miasto: ${city}\n`;
+  message += `📍 Adres: ${address}\n`;
+  if (brand) message += `🔧 Marka: ${brand}\n`;
+  message += `⚙️ Usługa: ${service}\n`;
+  if (problem) message += `❗ Problem: ${problem}\n`;
+  if (time) message += `⏰ Termin: ${time}\n`;
+  const whatsappURL = `https://wa.me/48721988949?text=${encodeURIComponent(message)}`;
+  window.open(whatsappURL,'_blank');
+  alert('Dziękujemy za zgłoszenie! Za chwilę zostaniesz przekierowany do WhatsApp.');
+});
+</script>
+<section class="other-brands">
+  <div class="container">
+    <h3>Naprawiamy również zmywarki:</h3>
+    <ul>
+      <li><a href="beko.html">Beko</a></li>
+      <li><a href="bosch.html">Bosch</a></li>
+      <li><a href="amica.html">Amica</a></li>
+      <li><a href="whirlpool.html">Whirlpool</a></li>
+      <li><a href="samsung.html">Samsung</a></li>
+      <li><a href="electrolux.html">Electrolux</a></li>
+      <li><a href="siemens.html">Siemens</a></li>
+      <li><a href="candy.html">Candy</a></li>
+      <li><a href="indesit.html">Indesit</a></li>
+      <li><a href="hisense.html">Hisense</a></li>
+    </ul>
+  </div>
+</section>
+<!-- Breadcrumbs -->
+<div class="breadcrumb container">
+  <a href="../../index.html">Strona Główna</a> > 
+  <span>Naprawa Zmywarek Nowogard</span>
+</div>
 </body>
 </html>
