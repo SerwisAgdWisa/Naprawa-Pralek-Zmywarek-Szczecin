@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Naprawa Piekarników Maszewo | Profesjonalny Serwis | 721 988 949</title>
+<meta name="description" content="Naprawa piekarników w Maszewie – szybki i profesjonalny serwis. Usuwamy usterki grzałek, termoobiegu, zwarcia i inne problemy. Gwarancja jakości.">
+<link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+
+<header>  
+  <div class="container">
+    <div class="header-content">
+      <div class="logo">WISA</div>
+      <a href="tel:+48721988949" class="phone">📞 721 988 949</a>
+    </div>
+  </div>
+</header> 
+
+<div class="hero">
+  <h1>Naprawa Piekarników w Maszewie</h1>
+  <p>Oferujemy profesjonalny serwis piekarników w Maszewie i okolicach. Naprawiamy wszystkie marki: Amica, Beko, Bosch, Siemens, Whirlpool, Electrolux, Samsung i inne.</p>
+  <a href="#order" class="cta-button">Zamów Naprawę</a>
+</div>
+
+<section class="services">
+  <div class="container">
+    <h2>Najczęstsze usterki piekarników w Maszewie</h2>
+    <p>Podczas naszej pracy najczęściej spotykamy następujące awarie piekarników:</p>
+    <div class="services-grid">
+      <div class="service-card">
+  <h3>Najczęstsze awarie piekarników</h3>
+  <ul>
+    <li>Piekarnik nie osiąga zadanej temperatury</li>
+    <li>Jedna z grzałek działa słabo lub wcale</li>
+    <li>Błyskawiczne wyłączanie po uruchomieniu</li>
+    <li>Nierówne pieczenie – spieczone z jednej strony, surowe z drugiej</li>
+    <li>Wentylator buczy lub nie obraca się</li>
+    <li>Na wyświetlaczu pojawiają się dziwne symbole</li>
+    <li>Piekarnik przestaje działać po kilku minutach</li>
+    <li>Uszkodzone zawiasy lub problem z domykaniem drzwi</li>
+    <li>Przepalone przewody lub zapach spalenizny</li>
+    <li>Zbyt długie nagrzewanie albo brak nagrzewania</li>
+    <li>Błędy elektroniki po przerwie w dostawie prądu</li>
+    <li>Szyba drzwi pęknięta lub zabrudzona od wewnątrz</li>
+  </ul>
+   </div>
+      </div>
+      <div class="service-card">
+        <h3>Kody błędów</h3>
+        <p>Najczęściej spotykane kody błędów w piekarnikach:</p>
+        <ul>
+          <li>F1 – Uszkodzony czujnik temperatury</li>
+          <li>F2 – Awaria modułu sterującego</li>
+          <li>F3 – Błąd termoobiegu</li>
+          <li>F4 – Uszkodzona grzałka górna</li>
+          <li>F5 – Uszkodzona grzałka dolna</li>
+          <li>E1 – Zwarcie w obwodzie elektrycznym</li>
+          <li>E2 – Uszkodzenie czujnika drzwi</li>
+          <li>H1 – Brak grzania od góry</li>
+          <li>H2 – Brak grzania od dołu</li>
+          <li>Z1 – Problem z wentylatorem</li>
+          <li>Z2 – Błąd programów automatycznych</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="order" class="order-section">
+  <div class="container">
+    <div class="order-form">
+      <h2>Zamów Naprawę Piekarnika w Maszewie</h2>
+      <form id="orderForm">
+        <div class="form-group">
+          <label for="name">Imię i nazwisko:</label>
+          <input type="text" id="name" name="name" placeholder="Twoje imię i nazwisko" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Telefon:</label>
+          <input type="tel" id="phone" name="phone" placeholder="Twój numer telefonu" required>
+        </div>
+        <div class="form-group">
+          <label for="brand">Marka i model piekarnika:</label>
+          <input type="text" id="brand" name="brand" placeholder="np. Bosch HBA23" value="">
+        </div>
+        <div class="form-group">
+          <label for="problem">Opis usterki:</label>
+          <textarea id="problem" name="problem" rows="4" placeholder="Np. błąd F1, piekarnik nie grzeje..." required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="address">Adres w Maszewie:</label>
+          <input type="text" id="address" name="address" placeholder="Ulica, numer domu/mieszkania" required>
+        </div>
+        <div class="form-group">
+          <label for="time">Preferowany termin (opcjonalnie):</label>
+          <input type="datetime-local" id="time" name="time">
+        </div>
+        <button type="submit" class="submit-btn">Wyślij zgłoszenie na WhatsApp</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Naprawa Piekarników Maszewo | Profesjonalny Serwis | Tel: +48 721 988 949</p>
+</footer>
+
+<script>
+document.getElementById('orderForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const formData = new FormData(this);
+  const name = formData.get('name');
+  const phone = formData.get('phone');
+  const brand = formData.get('brand');
+  const address = formData.get('address');
+  const problem = formData.get('problem');
+  const time = formData.get('time');
+  const city = 'Maszewo';
+  const service = 'Naprawa Piekarników';
+  let message = `🔧 NOWE ZGŁOSZENIE SERWISOWE\n\n`;
+  message += `👤 Imię: ${name}\n`;
+  message += `📞 Telefon: ${phone}\n`;
+  message += `🏙️ Miasto: ${city}\n`;
+  message += `📍 Adres: ${address}\n`;
+  message += `🔧 Marka: ${brand}\n`;
+  message += `⚙️ Usługa: ${service}\n`;
+  if(problem) message += `❗ Problem: ${problem}\n`;
+  if(time) message += `⏰ Termin: ${time}\n`;
+  const whatsappURL = `https://wa.me/48721988949?text=${encodeURIComponent(message)}`;
+  window.open(whatsappURL,'_blank');
+  alert('Dziękujemy za zgłoszenie! Za chwilę zostaniesz przekierowany do WhatsApp.');
+});
+</script>
+
+</body>
+</html>
