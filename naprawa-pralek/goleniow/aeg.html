@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naprawa Pralek AEG Goleniów | WISA 721 988 949</title>
+    <meta name="description" content="Profesjonalna naprawa pralek AEG w Goleniowie i okolicach. Serwis door-to-door, szybka diagnoza i skuteczna naprawa. Zadzwoń: 721 988 949.">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="../css/style.css"> 
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "WISA - Naprawa Pralek AEG",
+      "image": "https://twojadomena.pl/images/pralki-aeg-goleniow.jpg",
+      "@id": "",
+      "url": "https://twojadomena.pl/goleniow/aeg.html",
+      "telephone": "+48 721 988 949",
+      "priceRange": "PLN",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Goleniów",
+        "addressLocality": "Goleniów",
+        "postalCode": "72-100",
+        "addressCountry": "PL"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 53.563,
+        "longitude": 14.828
+      },
+      "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "08:00",
+        "closes": "20:00"
+      }],
+      "sameAs": [
+        "https://www.facebook.com/",
+        "https://wa.me/48721988949"
+      ],
+      "serviceType": "Naprawa pralek AEG",
+      "areaServed": {
+        "@type": "Place",
+        "name": "Goleniów i okolice"
+      }
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="../index.html" class="logo">WISA</a>
+                <a href="tel:+48721988949" class="phone">📞 721 988 949</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Naprawa Pralek AEG Goleniów</h1>
+            <p>Profesjonalny serwis pralek AEG – szybka i skuteczna naprawa w Goleniowie i okolicach</p>
+            <a href="#order" class="cta-button">Zamów Naprawę</a>
+        </div>
+    </section>
+
+    <!-- Problems Grid -->
+    <section class="services">
+        <div class="container">
+            <h2>Najczęstsze problemy z pralkami AEG</h2>
+            <div class="services-grid">
+                <div class="service-card"><h3>Pralka AEG nie włącza się</h3></div>
+                <div class="service-card"><h3>Wybija korki przy uruchomieniu</h3></div>
+                <div class="service-card"><h3>Pralka nie grzeje wody</h3></div>
+                <div class="service-card"><h3>Nie pobiera lub nie wypompowuje wody</h3></div>
+                <div class="service-card"><h3>Głośna praca, stukanie bębna</h3></div>
+                <div class="service-card"><h3>Wycieki wody z pralki</h3></div>
+                <div class="service-card"><h3>Program zatrzymuje się w połowie</h3></div>
+                <div class="service-card"><h3>Błędy systemowe na wyświetlaczu</h3></div>
+                <div class="service-card"><h3>Problemy z wirowaniem</h3></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cities Navigation -->
+    <section class="cities-navigation">
+        <div class="container">
+            <h2>Obsługiwane lokalizacje:</h2>
+            <div class="cities-grid">
+                <a href="../szczecin/" class="city-card">Szczecin</a>
+                <a href="../stargard/" class="city-card">Stargard</a>
+                <a href="../goleniow/" class="city-card">Goleniów</a>
+                <a href="../nowogard/" class="city-card">Nowogard</a>
+                <a href="../maszewo/" class="city-card">Maszewo</a>
+                <a href="../pyrzyce/" class="city-card">Pyrzyce</a>
+                <a href="../police/" class="city-card">Police</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form -->
+    <section id="order" class="order-section">
+        <div class="container">
+            <form class="order-form" onsubmit="sendToWhatsApp(event)">
+                <h2>Zamów naprawę pralki AEG</h2>
+                <div class="form-group">
+                    <label>Imię:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label>Telefon:</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label>Model pralki AEG:</label>
+                    <input type="text" id="brand" placeholder="np. AEG L6FBI48S">
+                </div>
+                <div class="form-group">
+                    <label>Miasto:</label>
+                    <select id="city" required>
+                        <option value="">Wybierz miasto</option>
+                        <option value="Szczecin">Szczecin</option>
+                        <option value="Stargard">Stargard</option>
+                        <option value="Goleniów">Goleniów</option>
+                        <option value="Nowogard">Nowogard</option>
+                        <option value="Maszewo">Maszewo</option>
+                        <option value="Pyrzyce">Pyrzyce</option>
+                        <option value="Police">Police</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Adres:</label>
+                    <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania" required>
+                </div>
+                <div class="form-group">
+                    <label>Opis problemu:</label>
+                    <textarea id="message" placeholder="Krótki opis problemu" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Wyślij na WhatsApp</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/48721988949" target="_blank" class="whatsapp-float">💬</a>
+
+    <!-- WhatsApp Script -->
+    <script>
+        function sendToWhatsApp(event) {
+            event.preventDefault();
+            let name = document.getElementById("name").value;
+            let phone = document.getElementById("phone").value;
+            let brand = document.getElementById("brand").value;
+            let message = document.getElementById("message").value;
+            let city = document.getElementById("city").value;
+            let address = document.getElementById("address").value;
+
+            let text = `🔧 NAPRAWA PRALKI AEG\n\n` +
+                       `👤 Imię: ${name}\n` +
+                       `📞 Telefon: ${phone}\n` +
+                       `🏠 Adres: ${address}, ${city}\n` +
+                       `🔧 Model: ${brand}\n` +
+                       `❗ Problem: ${message}`;
+
+            let url = "https://api.whatsapp.com/send?phone=48721988949&text=" + encodeURIComponent(text);
+            window.open(url, '_blank');
+
+            alert("Twoje zgłoszenie zostało wysłane na WhatsApp!");
+        }
+    </script>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb container">
+        <a href="../index.html">Strona Główna</a> > <a href="../goleniow/">Goleniów</a> > <span>Naprawa Pralek AEG</span>
+    </div>
+</body>
+</html>
