@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Strona główna -->
+  <sitemap>
+    <loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/sitemap-glowna.xml</loc>
+    <lastmod>2025-09-28</lastmod>
+  </sitemap>
+
+  <!-- Naprawa Pralek -->
+  <sitemap>
+    <loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/sitemap-pralki.xml</loc>
+    <lastmod>2025-09-28</lastmod>
+  </sitemap>
+
+  <!-- Naprawa Zmywarek -->
+  <sitemap>
+    <loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/sitemap-zmywarki.xml</loc>
+    <lastmod>2025-09-28</lastmod>
+  </sitemap>
+
+  <!-- Naprawa Piekarników -->
+  <sitemap>
+    <loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/sitemap-piekarniki.xml</loc>
+    <lastmod>2025-09-28</lastmod>
+  </sitemap>
+
+  <!-- Naprawa Suszarek -->
+  <sitemap>
+    <loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/sitemap-suszarki.xml</loc>
+    <lastmod>2025-09-28</lastmod>
+  </sitemap>
+
+</sitemapindex>
