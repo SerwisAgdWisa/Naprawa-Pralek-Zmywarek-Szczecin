@@ -1,6 +1,5 @@
-
 User-agent: *
 Allow: /
 
-
+Sitemap: https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/sitemap_index.xml
 Sitemap: https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/sitemap.xml
