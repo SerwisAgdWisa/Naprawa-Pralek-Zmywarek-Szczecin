@@ -1,197 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Strona główna -->
   <url>
-    <loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/</loc>
+    <loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin</loc>
     <lastmod>2025-09-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <!-- Добавь остальные страницы по аналогии -->
-
-
-
-
-  <url>
-    <loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/</loc>
-    <lastmod>2025-09-27</lastmod>
-    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <!-- Naprawa Pralek -->
-  <url>
-    <loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-pralek/szczecin/</loc>
-    <lastmod>2025-09-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-pralek/stargard/</loc>
-    <lastmod>2025-09-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-pralek/maszewo/</loc>
-    <lastmod>2025-09-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-pralek/nowogard/</loc>
-    <lastmod>2025-09-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-pralek/police/</loc>
-    <lastmod>2025-09-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-pralek/goleniow/</loc>
-    <lastmod>2025-09-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-pralek/pyrzyce/</loc>
-    <lastmod>2025-09-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
+  <url><loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-pralek/szczecin</loc><lastmod>2025-09-28</lastmod></url>
+  <url><loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-pralek/stargard</loc><lastmod>2025-09-28</lastmod></url>
+  <url><loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-pralek/maszewo</loc><lastmod>2025-09-28</lastmod></url>
+  <url><loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-pralek/nowogard</loc><lastmod>2025-09-28</lastmod></url>
+  <url><loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-pralek/police</loc><lastmod>2025-09-28</lastmod></url>
+  <url><loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-pralek/goleniow</loc><lastmod>2025-09-28</lastmod></url>
+  <url><loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-pralek/pyrzyce</loc><lastmod>2025-09-28</lastmod></url>
 
   <!-- Naprawa Zmywarek -->
-  <url>
-    <loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-zmywarek/szczecin/</loc>
-    <lastmod>2025-09-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-zmywarek/stargard/</loc>
-    <lastmod>2025-09-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-zmywarek/maszewo/</loc>
-    <lastmod>2025-09-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-zmywarek/nowogard/</loc>
-    <lastmod>2025-09-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-zmywarek/police/</loc>
-    <lastmod>2025-09-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-zmywarek/goleniow/</loc>
-    <lastmod>2025-09-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-zmywarek/pyrzyce/</loc>
-    <lastmod>2025-09-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
+  <url><loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-zmywarek/szczecin</loc><lastmod>2025-09-28</lastmod></url>
+  <url><loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-zmywarek/stargard</loc><lastmod>2025-09-28</lastmod></url>
+  <url><loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-zmywarek/maszewo</loc><lastmod>2025-09-28</lastmod></url>
+  <url><loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-zmywarek/nowogard</loc><lastmod>2025-09-28</lastmod></url>
+  <url><loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-zmywarek/police</loc><lastmod>2025-09-28</lastmod></url>
+  <url><loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-zmywarek/goleniow</loc><lastmod>2025-09-28</lastmod></url>
+  <url><loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-zmywarek/pyrzyce</loc><lastmod>2025-09-28</lastmod></url>
 
   <!-- Naprawa Piekarnikow -->
-  <url>
-    <loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-piekarnikow/szczecin/</loc>
-    <lastmod>2025-09-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-piekarnikow/stargard/</loc>
-    <lastmod>2025-09-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-piekarnikow/maszewo/</loc>
-    <lastmod>2025-09-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-piekarnikow/nowogard/</loc>
-    <lastmod>2025-09-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-piekarnikow/police/</loc>
-    <lastmod>2025-09-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-piekarnikow/goleniow/</loc>
-    <lastmod>2025-09-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-piekarnikow/pyrzyce/</loc>
-    <lastmod>2025-09-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
+  <url><loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-piekarnikow/szczecin</loc><lastmod>2025-09-28</lastmod></url>
+  <url><loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-piekarnikow/stargard</loc><lastmod>2025-09-28</lastmod></url>
+  <url><loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-piekarnikow/maszewo</loc><lastmod>2025-09-28</lastmod></url>
+  <url><loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-piekarnikow/nowogard</loc><lastmod>2025-09-28</lastmod></url>
+  <url><loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-piekarnikow/police</loc><lastmod>2025-09-28</lastmod></url>
+  <url><loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-piekarnikow/goleniow</loc><lastmod>2025-09-28</lastmod></url>
+  <url><loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-piekarnikow/pyrzyce</loc><lastmod>2025-09-28</lastmod></url>
 
   <!-- Naprawa Suszarek -->
-  <url>
-    <loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-suszarek/szczecin/</loc>
-    <lastmod>2025-09-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-suszarek/stargard/</loc>
-    <lastmod>2025-09-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-suszarek/maszewo/</loc>
-    <lastmod>2025-09-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-suszarek/nowogard/</loc>
-    <lastmod>2025-09-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-suszarek/police/</loc>
-    <lastmod>2025-09-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-suszarek/goleniow/</loc>
-    <lastmod>2025-09-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-suszarek/pyrzyce/</loc>
-    <lastmod>2025-09-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
+  <url><loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-suszarek/szczecin</loc><lastmod>2025-09-28</lastmod></url>
+  <url><loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-suszarek/stargard</loc><lastmod>2025-09-28</lastmod></url>
+  <url><loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-suszarek/maszewo</loc><lastmod>2025-09-28</lastmod></url>
+  <url><loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-suszarek/nowogard</loc><lastmod>2025-09-28</lastmod></url>
+  <url><loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-suszarek/police</loc><lastmod>2025-09-28</lastmod></url>
+  <url><loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-suszarek/goleniow</loc><lastmod>2025-09-28</lastmod></url>
+  <url><loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-suszarek/pyrzyce</loc><lastmod>2025-09-28</lastmod></url>
+
+  <!-- Naprawa Lodówek -->
+  <url><loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-lodowek/szczecin</loc><lastmod>2025-09-28</lastmod></url>
+  <url><loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-lodowek/stargard</loc><lastmod>2025-09-28</lastmod></url>
+  <url><loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-lodowek/maszewo</loc><lastmod>2025-09-28</lastmod></url>
+  <url><loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-lodowek/nowogard</loc><lastmod>2025-09-28</lastmod></url>
+  <url><loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-lodowek/police</loc><lastmod>2025-09-28</lastmod></url>
+  <url><loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-lodowek/goleniow</loc><lastmod>2025-09-28</lastmod></url>
+  <url><loc>https://serwisagdwisa.github.io/Naprawa-Pralek-Zmywarek-Szczecin/naprawa-lodowek/pyrzyce</loc><lastmod>2025-09-28</lastmod></url>
 
 </urlset>
