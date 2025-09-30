@@ -1,240 +1,178 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta name="robots" content="index, follow">
-  <title>Naprawa Suszarek | Szczecin, Stargard, Goleniów | Profesjonalny Serwis AGD</title>
-  <meta name="description" content="Profesjonalna naprawa suszarek w Szczecinie, Stargardzie, Goleniowie. Serwis wszystkich marek suszarek bębnowych. Dojazd gratis. Tel: 721 988 949">
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #333; }
-    header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; text-align: center; }
-    header h1 { margin: 0; font-size: 2.5em; }
-    header p { margin: 10px 0 0 0; font-size: 1.2em; opacity: 0.9; }
-    
-    .breadcrumb { background: #fff; padding: 15px; border-bottom: 1px solid #ddd; }
-    .breadcrumb a { color: #667eea; text-decoration: none; }
-    .breadcrumb a:hover { text-decoration: underline; }
-    
-    section { padding: 30px 20px; max-width: 1000px; margin: 0 auto; background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-top: 20px; border-radius: 10px; }
-    
-    .emergency-banner { background: linear-gradient(135deg, #e67e22, #d35400); color: white; padding: 30px; border-radius: 15px; text-align: center; margin: 30px 0; box-shadow: 0 8px 25px rgba(231, 76, 60, 0.3); }
-    .emergency-banner h2 { margin: 0 0 15px 0; font-size: 2em; }
-    .emergency-banner p { margin: 0; font-size: 1.1em; }
-    
-    .contact-info { background: linear-gradient(135deg, #e6f3ff, #f0f8ff); padding: 25px; border-radius: 12px; text-align: center; margin-bottom: 30px; border: 2px solid #b3d9ff; }
-    .phone-link { color: #667eea; text-decoration: none; font-weight: bold; font-size: 20px; }
-    .phone-link:hover { text-decoration: underline; }
-    
-    .services-intro { background: linear-gradient(135deg, #f8f9fa, #e9ecef); padding: 30px; border-radius: 12px; margin: 30px 0; }
-    .services-intro h2 { color: #667eea; margin-top: 0; }
-    
-    .brands-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 30px 0; }
-    .brand-card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 3px 15px rgba(0,0,0,0.1); border-left: 4px solid #e67e22; text-align: center; }
-    .brand-card h4 { color: #667eea; margin: 0 0 10px 0; }
-    
-    .problems-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin: 30px 0; }
-    .problem-card { background: #fff3e0; padding: 25px; border-radius: 12px; box-shadow: 0 3px 15px rgba(0,0,0,0.1); border-left: 4px solid #ff9800; }
-    .problem-card h4 { color: #e65100; margin: 0 0 15px 0; }
-    
-    .cities-section { background: #f8f9fa; padding: 30px; border-radius: 12px; margin: 30px 0; }
-    .cities-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 25px; }
-    .cities-grid a { background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 25px; border-radius: 12px; text-decoration: none; font-weight: bold; transition: all 0.3s ease; text-align: center; box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3); }
-    .cities-grid a:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4); text-decoration: none; color: white; }
-    
-    .pricing-section { background: linear-gradient(135deg, #e8f5e8, #f1f8e9); padding: 30px; border-radius: 12px; margin: 30px 0; border: 2px solid #c8e6c9; }
-    .pricing-section h3 { color: #2e7d32; margin-top: 0; }
-    .price-list { list-style: none; padding: 0; }
-    .price-list li { background: white; margin: 10px 0; padding: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-left: 4px solid #4caf50; }
-    
-    .why-us { background: linear-gradient(135deg, #fff3e0, #fafafa); padding: 30px; border-radius: 12px; margin: 30px 0; }
-    .advantages-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px; }
-    .advantage-card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 3px 12px rgba(0,0,0,0.1); border-top: 4px solid #ff9800; }
-    .advantage-card h4 { color: #e65100; margin: 0 0 10px 0; }
-    
-    .cta-section { background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 40px; border-radius: 15px; text-align: center; margin: 40px 0; }
-    .cta-button { background: #e67e22; color: white; padding: 15px 30px; border: none; border-radius: 25px; font-size: 18px; font-weight: bold; text-decoration: none; display: inline-block; margin: 20px 10px 0 10px; transition: all 0.3s ease; }
-    .cta-button:hover { background: #d35400; transform: translateY(-2px); color: white; text-decoration: none; }
-    
-    footer { text-align: center; padding: 30px; background: #2c3e50; color: white; margin-top: 40px; }
-    footer a { color: #3498db; text-decoration: none; }
-    footer a:hover { text-decoration: underline; }
-    
-    @media (max-width: 768px) {
-      header h1 { font-size: 2em; }
-      .emergency-banner h2 { font-size: 1.5em; }
-      .phone-link { font-size: 18px; }
-      section { margin-top: 10px; padding: 20px 15px; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<title>Naprawa Suszarek – Wyjazdowy Serwis | WISA 721 988 949</title>
+<meta name="description" content="Profesjonalny wyjazdowy serwis suszarek wszystkich marek. Naprawa w Twoim mieście – suszarka nie grzeje, przerywa cykl, hałasuje lub nie obraca bębna.">
+<link rel="stylesheet" href="../css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Wyjazdowy serwis suszarek",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "WISA",
+    "image": "https://serwisagdwisa.github.io/logo.jpg",
+    "telephone": "+48 721 988 949",
+    "url": "https://serwisagdwisa.github.io/naprawa-suszarek/"
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Szczecin, Stargard, Goleniów, Nowogard, Maszewo, Pyrzyce, Police"
+  }
+}
+</script>
 </head>
 <body>
-  <div class="breadcrumb">
-    <a href="../">← Powrót do głównej</a> / Naprawa Suszarek
+
+<header>
+  <div class="container">
+    <div class="header-content">
+      <a href="../index.html" class="logo">WISA</a>
+      <a href="tel:+48721988949" class="phone">📞 721 988 949</a>
+    </div>
   </div>
+</header>
 
-  <header>
-    <h1>🔧 Naprawa Suszarek</h1>
-    <p>Profesjonalny serwis suszarek bębnowych w Szczecinie i okolicach</p>
-  </header>
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <h1>Naprawa Suszarek – Wyjazdowy Serwis</h1>
+    <p>Profesjonalna naprawa suszarek wszystkich marek w Twoim mieście. Naprawiamy suszarki, które nie grzeją, przerywają cykl, hałasują lub nie obracają bębna.</p>
+    <a href="#order" class="cta-button">Zamów Naprawę</a>
+  </div>
+</section>
 
-  <section>
-    <div class="emergency-banner">
-      <h2>⚡ Awaria suszarki? Zadzwoń: 721 988 949</h2>
-      <p>Szybka naprawa w Szczecinie, Stargardzie, Goleniowie • Dojazd w ciągu 24h</p>
+<!-- Problems Grid -->
+<section class="services">
+  <div class="container">
+    <h2>Najczęstsze problemy z suszarkami</h2>
+    <div class="services-grid">
+      <div class="service-card"><h3>Suszarka nie grzeje</h3></div>
+      <div class="service-card"><h3>Suszarka przerywa cykl</h3></div>
+      <div class="service-card"><h3>Bęben nie obraca się</h3></div>
+      <div class="service-card"><h3>Suszarka hałasuje lub drży</h3></div>
+      <div class="service-card"><h3>Nie kończy programu suszenia</h3></div>
+      <div class="service-card"><h3>Błąd na wyświetlaczu (np. E61, E66, E73)</h3></div>
+      <div class="service-card"><h3>Nieszczelne drzwi lub zatrzaski</h3></div>
     </div>
+  </div>
+</section>
 
-    <div class="contact-info">
-      <p>📞 Zadzwoń teraz: <a href="tel:+48721988949" class="phone-link">+48 721 988 949</a></p>
-      <p>💬 WhatsApp: <a href="https://wa.me/48721988949" class="phone-link">+48 721 988 949</a></p>
-      <p><strong>Diagnoza gratis • Gwarancja na usługę • Oryginalne części</strong></p>
+<!-- Cities Navigation -->
+<section class="cities-navigation">
+  <div class="container">
+    <h2>Wybierz swoje miasto:</h2>
+    <div class="cities-grid">
+      <a href="szczecin/" class="city-card">Szczecin</a>
+      <a href="stargard/" class="city-card">Stargard</a>
+      <a href="goleniow/" class="city-card">Goleniów</a>
+      <a href="nowogard/" class="city-card">Nowogard</a>
+      <a href="maszewo/" class="city-card">Maszewo</a>
+      <a href="pyrzyce/" class="city-card">Pyrzyce</a>
+      <a href="police/" class="city-card">Police</a>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section>
-    <div class="services-intro">
-      <h2>Profesjonalna Naprawa Suszarek</h2>
-      <p>Specjalizujemy się w naprawie suszarek bębnowych wszystkich marek i typów. Nasi doświadczeni technicy przeprowadzą dokładną diagnostykę i szybko usuną usterkę. Używamy wyłącznie oryginalnych części zamiennych z gwarancją.</p>
-    </div>
+<!-- Order Form -->
+<section id="order" class="order-section">
+  <div class="container">
+    <form class="order-form" onsubmit="sendToWhatsApp(event)">
+      <h2>Zamów naprawę suszarki</h2>
+      <div class="form-group">
+        <label>Imię:</label>
+        <input type="text" id="name" required>
+      </div>
+      <div class="form-group">
+        <label>Telefon:</label>
+        <input type="tel" id="phone" required>
+      </div>
+      <div class="form-group">
+        <label>Marka i model suszarki:</label>
+        <input type="text" id="brand" placeholder="np. Bosch WTR85V01PL">
+      </div>
+      <div class="form-group">
+        <label>Miasto:</label>
+        <select id="city" required>
+          <option value="">Wybierz miasto</option>
+          <option value="Szczecin">Szczecin</option>
+          <option value="Stargard">Stargard</option>
+          <option value="Goleniów">Goleniów</option>
+          <option value="Nowogard">Nowogard</option>
+          <option value="Maszewo">Maszewo</option>
+          <option value="Pyrzyce">Pyrzyce</option>
+          <option value="Police">Police</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Adres:</label>
+        <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania" required>
+      </div>
+      <div class="form-group">
+        <label>Opis problemu:</label>
+        <textarea id="message" placeholder="Krótki opis problemu" required></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Wyślij na WhatsApp</button>
+    </form>
+  </div>
+</section>
 
-    <h3>Naprawiamy wszystkie marki suszarek:</h3>
-    <div class="brands-grid">
-      <div class="brand-card">
-        <h4>Bosch</h4>
-        <p>Wszystkie modele suszarek Bosch</p>
-      </div>
-      <div class="brand-card">
-        <h4>Siemens</h4>
-        <p>Pełna gama suszarek Siemens</p>
-      </div>
-      <div class="brand-card">
-        <h4>Samsung</h4>
-        <p>Suszarki Samsung wszystkich typów</p>
-      </div>
-      <div class="brand-card">
-        <h4>LG</h4>
-        <p>Nowoczesne suszarki LG</p>
-      </div>
-      <div class="brand-card">
-        <h4>Whirlpool</h4>
-        <p>Suszarki Whirlpool i Bauknecht</p>
-      </div>
-      <div class="brand-card">
-        <h4>Electrolux</h4>
-        <p>Suszarki Electrolux i AEG</p>
-      </div>
-      <div class="brand-card">
-        <h4>Beko</h4>
-        <p>Popularne modele Beko</p>
-      </div>
-      <div class="brand-card">
-        <h4>Inne marki</h4>
-        <p>Miele, Candy, Hotpoint i inne</p>
-      </div>
-    </div>
-  </section>
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/48721988949" target="_blank" class="whatsapp-float">💬</a>
 
-  <section>
-    <h3>Najczęstsze problemy z suszarkami:</h3>
-    <div class="problems-grid">
-      <div class="problem-card">
-        <h4>🚫 Suszarka nie włącza się</h4>
-        <p>Problem z zasilaniem, uszkodzony włącznik, awaria płyty głównej lub zabezpieczeń termicznych.</p>
-      </div>
-      <div class="problem-card">
-        <h4>🌡️ Nie grzeje</h4>
-        <p>Uszkodzona grzałka, termostat, czujnik temperatury lub problem z układem sterowania.</p>
-      </div>
-      <div class="problem-card">
-        <h4>💨 Słabo suszy</h4>
-        <p>Zatkany filtr, uszkodzony wentylator, problem z cyrkulacją powietrza lub czujnikiem wilgotności.</p>
-      </div>
-      <div class="problem-card">
-        <h4>🔄 Bęben nie obraca się</h4>
-        <p>Uszkodzony pasek napędowy, silnik, łożyska lub problem z układem napędowym.</p>
-      </div>
-      <div class="problem-card">
-        <h4>💧 Nie usuwa wody</h4>
-        <p>Zatkany przewód kondensatu, uszkodzona pompa lub problem z odprowadzaniem kondensatu.</p>
-      </div>
-      <div class="problem-card">
-        <h4>🔊 Hałasuje</h4>
-        <p>Zużyte łożyska, luźne elementy, uszkodzony wentylator lub problem z amortyzatorami.</p>
-      </div>
-    </div>
-  </section>
+<!-- WhatsApp Script -->
+<script>
+function sendToWhatsApp(event) {
+  event.preventDefault();
+  let name = document.getElementById("name").value;
+  let phone = document.getElementById("phone").value;
+  let brand = document.getElementById("brand").value;
+  let message = document.getElementById("message").value;
+  let city = document.getElementById("city").value;
+  let address = document.getElementById("address").value;
 
-  <section>
-    <div class="cities-section">
-      <h3>Wybierz swoje miasto - Naprawa Suszarek:</h3>
-      <div class="cities-grid">
-        <a href="szczecin/">🏙️ Szczecin<br><small>Naprawa suszarek</small></a>
-        <a href="stargard/">🏛️ Stargard<br><small>Naprawa suszarek</small></a>
-        <a href="goleniow/">✈️ Goleniów<br><small>Naprawa suszarek</small></a>
-        <a href="nowogard/">🌳 Nowogard<br><small>Naprawa suszarek</small></a>
-      </div>
-    </div>
-  </section>
+  let text = `🔧 NAPRAWA SUSZARKI\n\n` +
+             `👤 Imię: ${name}\n` +
+             `📞 Telefon: ${phone}\n` +
+             `🏠 Adres: ${address}, ${city}\n` +
+             `🔧 Marka/model: ${brand}\n` +
+             `❗ Problem: ${message}`;
 
-  <section>
-    <div class="pricing-section">
-      <h3>💰 Cennik naprawy suszarek</h3>
-      <ul class="price-list">
-        <li><strong>Dojazd i diagnoza:</strong> od 100 zł (w cenie naprawy)</li>
-        <li><strong>Wymiana filtra/czyszczenie:</strong> od 80 zł</li>
-        <li><strong>Wymiana grzałki:</strong> od 200 zł + część</li>
-        <li><strong>Naprawa układu napędowego:</strong> od 150 zł + części</li>
-        <li><strong>Wymiana pompy kondensatu:</strong> od 180 zł + część</li>
-      </ul>
-      <p><em><strong>Dokładna cena ustalana po diagnozie. Gwarancja na wszystkie naprawy!</strong></em></p>
-    </div>
-  </section>
+  let url = "https://api.whatsapp.com/send?phone=48721988949&text=" + encodeURIComponent(text);
+  window.open(url, '_blank');
+  alert("Twoje zgłoszenie zostało wysłane na WhatsApp!");
+}
+</script>
 
-  <section>
-    <div class="why-us">
-      <h3>Dlaczego warto wybrać nasz serwis?</h3>
-      <div class="advantages-grid">
-        <div class="advantage-card">
-          <h4>⚡ Szybko</h4>
-          <p>Dojazd w ciągu 24 godzin. Większość napraw wykonujemy od ręki.</p>
-        </div>
-        <div class="advantage-card">
-          <h4>👨‍🔧 Profesjonalnie</h4>
-          <p>Doświadczeni technicy z wieloletnim stażem w branży AGD.</p>
-        </div>
-        <div class="advantage-card">
-          <h4>🛡️ Gwarancja</h4>
-          <p>Pełna gwarancja na wykonane naprawy i zamontowane części.</p>
-        </div>
-        <div class="advantage-card">
-          <h4>🔧 Oryginalne części</h4>
-          <p>Używamy wyłącznie oryginalnych części zamiennych od producentów.</p>
-        </div>
-        <div class="advantage-card">
-          <h4>💰 Uczciwe ceny</h4>
-          <p>Przejrzyste ceny bez ukrytych kosztów. Diagnoza gratis przy naprawie.</p>
-        </div>
-        <div class="advantage-card">
-          <h4>📞 Dostępność</h4>
-          <p>Jesteśmy dostępni 7 dni w tygodniu. Kontakt telefoniczny i WhatsApp.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="cta-section">
-      <h2>Potrzebujesz naprawy suszarki?</h2>
-      <p>Nie czekaj! Zadzwoń teraz i umów się na szybką naprawę</p>
-      <a href="tel:+48721988949" class="cta-button">📞 Zadzwoń: 721 988 949</a>
-      <a href="https://wa.me/48721988949" class="cta-button">💬 WhatsApp</a>
-    </div>
-  </section>
-
-  <footer>
-    <p><strong>Naprawa Suszarek | Profesjonalny Serwis AGD</strong></p>
-    <p>Szczecin, Stargard, Goleniów, Nowogard i okolice</p>
-    <p>📞 Tel: <a href="tel:+48721988949">+48 721 988 949</a> | 💬 WhatsApp: <a href="https://wa.me/48721988949">+48 721 988 949</a></p>
-    <p><small>© 2025 Wszystkie prawa zastrzeżone</small></p>
-  </footer>
+<style>
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  font-size: 24px;
+  z-index: 9999;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  text-decoration: none;
+}
+.whatsapp-float:hover {
+  background-color: #218838;
+}
+</style>
+<div class="breadcrumb container">
+    <a href="../../index.html">Strona Główna</a> > 
+    <span class="current">Naprawa Suszarek</span>
+</div>
 </body>
 </html>
