@@ -1,139 +1,202 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
-    <title>Naprawa Suszarek Maszewo | WISA 721 988 949</title>
-    <meta name="description" content="Naprawa suszarek w Maszewie – szybki serwis w domu klienta. Rozwiązujemy problemy z grzałką, bębnem, filtrem i elektroniką.">
-    <link rel="stylesheet" href="../../css/style.css">
-    <script type="application/ld+json">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<title>Naprawa Suszarek Maszewo | Wyjazdowy Serwis | 721 988 949</title>
+<meta name="description" content="Wyjazdowy serwis suszarek w Maszewo. Naprawa w domu klienta, diagnoza usterek, awarie grzałek, bębna i elektroniki.">
+<link rel="stylesheet" href="../../css/style.css">
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Wyjazdowy Serwis Suszarek Maszewo",
+  "image": "https://serwisagdwisa.github.io/logo.jpg",
+  "url": "https://serwisagdwisa.github.io/Naprawa-Suszarek-Szczecin/maszewo.html",
+  "telephone": "+48 721 988 949",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Podaj ulicę i numer",
+    "addressLocality": "Maszewo",
+    "addressRegion": "Zachodniopomorskie",
+    "postalCode": "72-130",
+    "addressCountry": "PL"
+  },
+  "openingHoursSpecification": [
     {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Naprawa Suszarek Maszewo",
-        "image": "https://serwisagdwisa.github.io/logo.jpg",
-        "url": "https://serwisagdwisa.github.io/Naprawa-Suszarek-Szczecin/maszewo.html",
-        "telephone": "+48 721 988 949",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Maszewo",
-            "addressRegion": "Zachodniopomorskie",
-            "addressCountry": "PL"
-        },
-        "openingHoursSpecification": [
-            {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-                "opens": "08:00",
-                "closes": "21:00"
-            },
-            {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": "Saturday",
-                "opens": "09:00",
-                "closes": "18:00"
-            }
-        ],
-        "makesOffer": {
-            "@type": "Offer",
-            "itemOffered": {
-                "@type": "Service",
-                "name": "Wyjazdowy serwis suszarek"
-            }
-        }
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "08:00",
+      "closes": "21:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "09:00",
+      "closes": "18:00"
     }
-    </script>
+  ],
+  "makesOffer": {
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Service",
+      "name": "Wyjazdowy serwis suszarek – naprawa w domu klienta w Maszewo"
+    }
+  }
+}
+</script>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <a href="../index.html" class="logo">WISA</a>
-                <a href="tel:+48721988949" class="phone">📞 721 988 949</a>
-            </div>
-        </div>
-    </header>
-    <section class="hero">
-        <div class="container">
-            <h1>Naprawa Suszarek Maszewo</h1>
-            <p>Wyjazdowy serwis suszarek w Maszewie – diagnoza i naprawa w domu klienta. Rozwiązujemy problemy z grzałką, bębnem, filtrem i elektroniką.</p>
-            <a href="#order" class="cta-button">Zamów Naprawę</a>
-        </div>
-    </section>
-    <section class="services">
-        <div class="container">
-            <h2>Najczęstsze problemy z suszarkami w Maszewie</h2>
-            <div class="services-grid">
-                <div class="service-card"><h3>Suszarka nie nagrzewa</h3></div>
-                <div class="service-card"><h3>Suszarka nie suszy ubrań do końca</h3></div>
-                <div class="service-card"><h3>Suszarka zatrzymuje się w trakcie cyklu</h3></div>
-                <div class="service-card"><h3>Nie działa bęben – nie kręci się</h3></div>
-                <div class="service-card"><h3>Suszarka hałasuje lub drży podczas pracy</h3></div>
-                <div class="service-card"><h3>Filtr lub kanał powietrzny zapchany</h3></div>
-                <div class="service-card"><h3>Na wyświetlaczu pojawia się błąd (np. E61, E66, E73)</h3></div>
-                <div class="service-card"><h3>Suszarka długo suszy lub nie kończy programu</h3></div>
-                <div class="service-card"><h3>Drzwi suszarki nieszczelne lub źle zamykają się</h3></div>
-            </div>
-        </div>
-    </section>
-    <section id="order" class="order-section">
-        <div class="container">
-            <form class="order-form" onsubmit="sendToWhatsApp(event)">
-                <h2>Zamów wyjazdowy serwis suszarki w Maszewie</h2>
-                <div class="form-group">
-                    <label>Imię:</label>
-                    <input type="text" id="name" required>
-                </div>
-                <div class="form-group">
-                    <label>Telefon:</label>
-                    <input type="tel" id="phone" required>
-                </div>
-                <div class="form-group">
-                    <label>Marka i model suszarki:</label>
-                    <input type="text" id="brand" placeholder="np. Bosch WTH83001PL">
-                </div>
-                <div class="form-group">
-                    <label>Miasto:</label>
-                    <input type="text" id="city" value="Maszewo" readonly>
-                </div>
-                <div class="form-group">
-                    <label>Adres:</label>
-                    <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania" required>
-                </div>
-                <div class="form-group">
-                    <label>Opis problemu:</label>
-                    <textarea id="message" placeholder="Krótki opis problemu" required></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Wyślij na WhatsApp</button>
-            </form>
-        </div>
-    </section>
-    <a href="tel:+48721988949" class="floating-call-button">📞</a>
-    <footer>
-        <p>© 2025 Naprawa Suszarek Maszewo | Serwis AGD | Tel: +48 721 988 949</p>
-    </footer>
-    <script>
-        function sendToWhatsApp(event) {
-            event.preventDefault();
-            let name = document.getElementById("name").value;
-            let phone = document.getElementById("phone").value;
-            let brand = document.getElementById("brand").value;
-            let message = document.getElementById("message").value;
-            let city = document.getElementById("city").value;
-            let address = document.getElementById("address").value;
 
-            let text = `🔧 NAPRAWA SUSZARKI\n\n` +
-                       `👤 Imię: ${name}\n` +
-                       `📞 Telefon: ${phone}\n` +
-                       `🏠 Adres: ${address}, ${city}\n` +
-                       `🔧 Marka/model: ${brand}\n` +
-                       `❗ Problem: ${message}`;
+<header>
+  <div class="container">
+    <div class="header-content">
+      <a href="../index.html" class="logo">WISA</a>
+      <a href="tel:+48721988949" class="phone">📞 721 988 949</a>
+    </div>
+  </div>
+</header>
 
-            let url = "https://api.whatsapp.com/send?phone=48721988949&text=" + encodeURIComponent(text);
-            window.open(url, '_blank');
-            alert("Twoja zgłoszenie zostało wysłane na WhatsApp!");
-        }
-    </script>
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <h1>Wyjazdowy Serwis Suszarek w Maszewo</h1>
+    <p>Naprawiamy suszarki wszystkich marek w domu klienta w Maszewo i okolicach. Specjalizujemy się w awariach bębna, grzałek i elektroniki, zapewniając szybki wyjazd i gwarancję jakości.</p>
+    <a href="#order" class="cta-button">Zamów Naprawę</a>
+  </div>
+</section>
+
+<!-- Popular Problems -->
+<section class="services">
+  <div class="container">
+    <h2>Najczęstsze problemy z suszarkami w Maszewo</h2>
+    <div class="services-grid">
+      <div class="service-card"><h3>Suszarka nie grzeje lub suszy zbyt długo</h3></div>
+      <div class="service-card"><h3>Program przerywa się lub nie kończy cyklu</h3></div>
+      <div class="service-card"><h3>Bęben nie obraca się prawidłowo</h3></div>
+      <div class="service-card"><h3>Suszarka hałasuje lub drży podczas pracy</h3></div>
+      <div class="service-card"><h3>Wyświetlacz pokazuje błędy (np. E61, E66, E73)</h3></div>
+      <div class="service-card"><h3>Przegrzewanie suszarki lub czujnik temperatury nie działa</h3></div>
+      <div class="service-card"><h3>Drzwi suszarki nie domykają się prawidłowo</h3></div>
+      <div class="service-card"><h3>Problemy z odprowadzaniem wilgoci</h3></div>
+      <div class="service-card"><h3>Nieprawidłowe działanie funkcji automatycznych</h3></div>
+    </div>
+  </div>
+</section>
+
+<!-- Breadcrumbs -->
+<div class="breadcrumb container">
+  <a href="../../index.html">Strona Główna</a> > 
+  <a href="../../index.html">Naprawa Suszarek</a> > 
+  <span class="current">Maszewo</span>
+</div>
+
+<!-- Other Cities -->
+<section class="other-cities">
+  <div class="container">
+    <h3>Naprawiamy też w okolicy:</h3>
+    <ul>
+      <li><a href="../szczecin/index.html">Szczecin</a></li>
+      <li><a href="../goleniow/index.html">Goleniów</a></li>
+      <li><a href="../nowogard/index.html">Nowogard</a></li>
+      <li><a href="../pyrzyce/index.html">Pyrzyce</a></li>
+      <li><a href="../police/index.html">Police</a></li>
+      <li><a href="../stargard/index.html">Stargard</a></li>
+      <li><a href="../chociwel/index.html">Chociwel</a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- Order Form -->
+<section id="order" class="order-section">
+  <div class="container">
+    <form class="order-form" onsubmit="sendToWhatsApp(event)">
+      <h2>Zamów wyjazdowy serwis suszarki</h2>
+      <div class="form-group">
+        <label>Imię i nazwisko:</label>
+        <input type="text" id="name" required>
+      </div>
+      <div class="form-group">
+        <label>Telefon:</label>
+        <input type="tel" id="phone" required>
+      </div>
+      <div class="form-group">
+        <label>Marka i model suszarki:</label>
+        <input type="text" id="brand" placeholder="np. Bosch WTW875W0PL">
+      </div>
+      <div class="form-group">
+        <label>Miasto:</label>
+        <input type="text" id="city" value="Maszewo" readonly>
+      </div>
+      <div class="form-group">
+        <label>Adres:</label>
+        <input type="text" id="address" placeholder="Ulica, numer domu/mieszkania" required>
+      </div>
+      <div class="form-group">
+        <label>Opis problemu:</label>
+        <textarea id="message" placeholder="Krótki opis problemu" required></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Wyślij zgłoszenie na WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<!-- Floating Call Button -->
+<section>
+  <a href="tel:+48721988949" class="floating-call-button">📞</a>
+</section>
+
+<style>
+.floating-call-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  font-size: 24px;
+  z-index: 9999;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  text-decoration: none;
+}
+.floating-call-button:hover {
+  background-color: #218838;
+}
+</style>
+
+<script>
+function sendToWhatsApp(event) {
+  event.preventDefault();
+  const name = document.getElementById("name").value;
+  const phone = document.getElementById("phone").value;
+  const brand = document.getElementById("brand").value;
+  const city = document.getElementById("city").value;
+  const address = document.getElementById("address").value;
+  const message = document.getElementById("message").value;
+
+  const text = `🔧 WYJAZDOWY SERWIS SUSZAREK\n\n` +
+               `👤 Imię i nazwisko: ${name}\n` +
+               `📞 Telefon: ${phone}\n` +
+               `🏠 Adres: ${address}, ${city}\n` +
+               `🔧 Marka/model: ${brand}\n` +
+               `❗ Problem: ${message}`;
+
+  const url = "https://api.whatsapp.com/send?phone=48721988949&text=" + encodeURIComponent(text);
+  window.open(url, '_blank');
+  alert("Twoje zgłoszenie zostało wysłane na WhatsApp!");
+}
+</script>
+
+<footer>
+  <p>© 2025 Wyjazdowy Serwis Suszarek Maszewo | WISA | Tel: +48 721 988 949</p>
+</footer>
+
 </body>
 </html>
