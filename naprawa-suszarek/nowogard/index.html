@@ -4,46 +4,33 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow">
-<title>Naprawa Suszarek Nowogard | Wyjazdowy Serwis | 721 988 949</title>
-<meta name="description" content="Wyjazdowy serwis suszarek w Nowogard. Naprawa w domu klienta, diagnoza usterek, awarie bębna, grzałek i elektroniki.">
+<title>Naprawa Suszarek Nowogard | Serwis | 721 988 949</title>
+<meta name="description" content="Serwis suszarek w Nowogard. Naprawa w domu klienta, diagnoza usterek, awarie bębna, grzałek i elektroniki.">
 <link rel="stylesheet" href="../../css/style.css">
 
 <!-- Schema.org -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Wyjazdowy Serwis Suszarek Nowogard",
-  "image": "https://serwisagdwisa.github.io/logo.jpg",
-  "url": "https://serwisagdwisa.github.io/Naprawa-Suszarek-Szczecin/nowogard.html",
-  "telephone": "+48 721 988 949",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Podaj ulicę i numer",
-    "addressLocality": "Nowogard",
-    "addressRegion": "Zachodniopomorskie",
-    "postalCode": "72-200",
-    "addressCountry": "PL"
-  },
-  "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-      "opens": "08:00",
-      "closes": "21:00"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": "Saturday",
-      "opens": "09:00",
-      "closes": "18:00"
+  "@type": "Service",
+  "serviceType": "Wyjazdowy serwis suszarek",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Wyjazdowy Serwis Suszarek Nowogard",
+    "telephone": "+48 721 988 949",
+    "url": "https://serwisagdwisa.github.io/Naprawa-Suszarek-Szczecin/nowogard.html",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Nowogard",
+      "addressRegion": "Zachodniopomorskie",
+      "addressCountry": "PL"
     }
-  ],
-  "makesOffer": {
-    "@type": "Offer",
-    "itemOffered": {
-      "@type": "Service",
-      "name": "Wyjazdowy serwis suszarek – naprawa w domu klienta w Nowogard"
+  },
+  "areaServed": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Nowogard"
     }
   }
 }
@@ -63,8 +50,8 @@
 <!-- Hero Section -->
 <section class="hero">
   <div class="container">
-    <h1>Wyjazdowy Serwis Suszarek w Nowogard</h1>
-    <p>Naprawiamy suszarki wszystkich marek w domu klienta w Nowogard i okolicach. Specjalizujemy się w awariach bębna, grzałek i elektroniki, zapewniając szybki wyjazd i gwarancję jakości.</p>
+    <h1>Serwis Suszarek w Nowogard</h1>
+    <p>Naprawiamy suszarki wszystkich marek w Nowogard i okolicach. Specjalizujemy się w awariach bębna, grzałek i elektroniki, zapewniając gwarancję jakości.</p>
     <a href="#order" class="cta-button">Zamów Naprawę</a>
   </div>
 </section>
@@ -114,7 +101,7 @@
 <section id="order" class="order-section">
   <div class="container">
     <form class="order-form" onsubmit="sendToWhatsApp(event)">
-      <h2>Zamów wyjazdowy serwis suszarki</h2>
+      <h2>Zamów serwis suszarki</h2>
       <div class="form-group">
         <label>Imię i nazwisko:</label>
         <input type="text" id="name" required>
@@ -181,7 +168,7 @@ function sendToWhatsApp(event) {
   const address = document.getElementById("address").value;
   const message = document.getElementById("message").value;
 
-  const text = `🔧 WYJAZDOWY SERWIS SUSZAREK\n\n` +
+  const text = `🔧 SERWIS SUSZAREK\n\n` +
                `👤 Imię i nazwisko: ${name}\n` +
                `📞 Telefon: ${phone}\n` +
                `🏠 Adres: ${address}, ${city}\n` +
@@ -195,7 +182,7 @@ function sendToWhatsApp(event) {
 </script>
 
 <footer>
-  <p>© 2025 Wyjazdowy Serwis Suszarek Nowogard | WISA | Tel: +48 721 988 949</p>
+  <p>© 2025 Serwis Suszarek Nowogard | WISA | Tel: +48 721 988 949</p>
 </footer>
 
 </body>
