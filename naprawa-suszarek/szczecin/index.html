@@ -1,196 +1,183 @@
 <!DOCTYPE html>
-
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
   <title>Naprawa Suszarek Szczecin | Serwis Suszarek AGD</title>
   <meta name="description" content="Naprawa suszarek Szczecin – szybki serwis, dojazd do klienta. Suszarka nie grzeje, nie wiruje, nie włącza się? Zadzwoń lub napisz na WhatsApp – naprawimy!">
   <meta name="keywords" content="naprawa suszarek Szczecin, serwis suszarek Szczecin, suszarka nie grzeje, suszarka nie wiruje, naprawa AGD Szczecin">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      color: #333;
+  <link rel="stylesheet" href="../../css/style.css">
+
+  <!-- Schema.org Wyjazdowy Serwis -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Wyjazdowy Serwis Suszarek Szczecin",
+    "image": "https://serwisagdwisa.github.io/logo.jpg",
+    "telephone": "+48 721 988 949",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Szczecin",
+      "addressRegion": "Zachodniopomorskie",
+      "addressCountry": "PL"
+    },
+    "url": "https://serwisagdwisa.github.io/Naprawa-Suszarek-Szczecin/",
+    "makesOffer": {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Wyjazdowy serwis suszarek – naprawa w domu klienta w Szczecinie"
+      }
     }
-    header {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-    }
-    section {
-      padding: 20px;
-      max-width: 600px;
-      margin: auto;
-      background: white;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      margin-top: 20px;
-    }
-    form label {
-      display: block;
-      margin-bottom: 10px;
-      font-weight: bold;
-    }
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-    }
-    button {
-      margin-top: 15px;
-      padding: 12px;
-      background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
-      border: none;
-      color: white;
-      font-size: 16px;
-      cursor: pointer;
-      border-radius: 25px;
-      width: 100%;
-      font-weight: bold;
-    }
-    button:hover {
-      background: linear-gradient(135deg, #e55a2b 0%, #de831a 100%);
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #eee;
-      margin-top: 20px;
-    }
-    .contact-info {
-      background: #e6f3ff;
-      padding: 15px;
-      border-radius: 5px;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .phone-link {
-      color: #667eea;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 18px;
-    }
-    .phone-link:hover {
-      text-decoration: underline;
-    }
-    .breadcrumb {
-      background: rgba(255,255,255,0.9);
-      padding: 10px 20px;
-      margin: 20px auto;
-      max-width: 600px;
-      border-radius: 5px;
-    }
-    .breadcrumb a {
-      color: #667eea;
-      text-decoration: none;
-    }
-    .breadcrumb a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  }
+  </script>
 </head>
 <body>
 
 <header>
-  <h1>Naprawa Suszarek Szczecin</h1>
-  <p>Profesjonalny serwis suszarek w Szczecinie</p>
-  <a href="#order-form" style="display: inline-block; background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%); color: white; padding: 15px 30px; text-decoration: none; border-radius: 25px; font-size: 18px; font-weight: bold; margin-top: 20px;">Zamów Naprawę Teraz</a>
+  <div class="container">
+    <div class="header-content">
+      <a href="../../index.html" class="logo">WISA</a>
+      <a href="tel:+48721988949" class="phone">📞 721 988 949</a>
+    </div>
+  </div>
 </header>
 
-<div class="breadcrumb">
-  <a href="/">Home</a> → <a href="/naprawa-suszarek/">Naprawa Suszarek</a> → <span>Szczecin</span>
-</div>
-
-<section>
-  <div class="contact-info">
-    <p>📞 Zadzwoń teraz: <a href="tel:+48721988949" class="phone-link">+48 721 988 949</a></p>
-    <p>💬 WhatsApp: <a href="https://wa.me/48721988949" class="phone-link">+48 721 988 949</a></p>
+<section class="hero">
+  <div class="container">
+    <h1>Naprawa Suszarek Szczecin</h1>
+    <p>Serwisujemy suszarki wszystkich marek – szybka naprawa w domu klienta w Szczecinie</p>
+    <a href="#order" class="cta-button">Zamów Naprawę</a>
   </div>
-
-  <form id="order-form" onsubmit="sendToWhatsApp(event)">
-    <label>Imię i nazwisko:
-      <input type="text" id="name" required>
-    </label>
-    <label>Telefon:
-      <input type="tel" id="phone" required>
-    </label>
-    <label>Marka i model suszarki:
-      <input type="text" id="brand" placeholder="np. Bosch WTW87560PL">
-    </label>
-    <label>Opis usterki:
-      <textarea id="message" rows="4" required placeholder="Opisz dokładnie problem z suszarką..."></textarea>
-    </label>
-    <label>Adres w Szczecinie:
-      <input type="text" id="address" placeholder="Dzielnica, ulica, numer domu/mieszkania">
-    </label>
-    <button type="submit">Zamów Naprawę</button>
-  </form>
 </section>
 
-<section>
-  <h2>Naprawa suszarek w Szczecinie</h2>
-  <p>Profesjonalny serwis suszarek w stolicy województwa zachodniopomorskiego. Obsługujemy wszystkie dzielnice Szczecina: Centrum, Pogodno, Gumieńce, Żelechowa, Dąbie, Niebuszewo.</p>
-
-  <h3>Najczęstsze usterki suszarek:</h3>
-  <ul>
-    <li>Suszarka nie grzeje - uszkodzony element grzejny</li>
-    <li>Suszarka nie wiruje - zerwany pas lub uszkodzony silnik</li>
-    <li>Suszarka nie włącza się - awaria elektroniki</li>
-    <li>Nadmierne wibracje podczas pracy</li>
-    <li>Suszarka zatrzymuje się w trakcie programu</li>
-    <li>Przecieki kondensatu</li>
-    <li>Błędy na wyświetlaczu</li>
-    <li>Problem z filtrem lub pompą kondensatu</li>
-  </ul>
+<section id="order" class="order-section">
+  <div class="container">
+    <div class="order-form">
+      <h2>Zamów Naprawę Suszarki</h2>
+      <form id="orderFormSzczecin">
+        <div class="form-group">
+          <label for="name">Imię i nazwisko:</label>
+          <input type="text" id="name" name="name" placeholder="Twoje imię i nazwisko" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Telefon:</label>
+          <input type="tel" id="phone" name="phone" placeholder="Twój numer telefonu" required>
+        </div>
+        <div class="form-group">
+          <label for="brand">Marka i model suszarki:</label>
+          <input type="text" id="brand" name="brand" placeholder="np. Bosch, LG, Samsung...">
+        </div>
+        <div class="form-group">
+          <label for="problem">Opis usterki:</label>
+          <textarea id="problem" name="problem" rows="4" placeholder="Suszarka nie grzeje, nie wiruje, problem z kondensacją..." required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="address">Adres w Szczecinie:</label>
+          <input type="text" id="address" name="address" placeholder="Ulica, numer domu/mieszkania" required>
+        </div>
+        <button type="submit" class="submit-btn">Wyślij zgłoszenie na WhatsApp</button>
+      </form>
+    </div>
+  </div>
 </section>
 
-<section>
-  <h2>Dlaczego warto wybrać nasz serwis w Szczecinie?</h2>
-  <ul>
-    <li>✓ Dojazd do klienta we wszystkich dzielnicach Szczecina</li>
-    <li>✓ Oryginalne części zamienne</li>
-    <li>✓ Gwarancja na wykonane usługi</li>
-    <li>✓ Wieloletnie doświadczenie</li>
-    <li>✓ Konkurencyjne ceny</li>
-    <li>✓ Szybka realizacja napraw</li>
-  </ul>
+<section class="services">
+  <div class="container">
+    <h2>Popularne usterki suszarek w Szczecinie</h2>
+    <div class="services-grid">
+      <div class="service-card"><h3>Suszarka nie nagrzewa się</h3></div>
+      <div class="service-card"><h3>Suszarka nie wiruje prawidłowo</h3></div>
+      <div class="service-card"><h3>Bęben nie obraca się</h3></div>
+      <div class="service-card"><h3>Suszarka hałasuje lub drży</h3></div>
+      <div class="service-card"><h3>Wyświetlacz pokazuje błędy</h3></div>
+      <div class="service-card"><h3>Nie kończy cyklu suszenia</h3></div>
+      <div class="service-card"><h3>Nieszczelne drzwi lub problemy z uszczelką</h3></div>
+      <div class="service-card"><h3>Problemy z kondensacją suszarek</h3></div>
+      <div class="service-card"><h3>Przegrzewanie suszarki</h3></div>
+    </div>
+  </div>
+</section>
+
+<section class="other-cities">
+  <div class="container">
+    <h3>Naprawiamy też w innych miastach:</h3>
+    <ul>
+      <li><a href="../stargard/suszarki.html">Stargard</a></li>
+      <li><a href="../goleniow/suszarki.html">Goleniów</a></li>
+      <li><a href="../maszewo/suszarki.html">Maszewo</a></li>
+      <li><a href="../nowogard/suszarki.html">Nowogard</a></li>
+      <li><a href="../pyrzyce/suszarki.html">Pyrzyce</a></li>
+      <li><a href="../police/suszarki.html">Police</a></li>
+    </ul>
+  </div>
 </section>
 
 <footer>
   <p>© 2025 Naprawa Suszarek Szczecin | Serwis AGD | Tel: +48 721 988 949</p>
-  <p><a href="/" style="color: #667eea;">← Powrót do strony głównej</a> | <a href="/naprawa-suszarek/" style="color: #667eea;">← Naprawa Suszarek</a></p>
+  <p><a href="../../index.html">← Powrót do strony głównej</a> | <a href="../../naprawa-suszarek/index.html">← Naprawa Suszarek</a></p>
 </footer>
 
-<script>
-function sendToWhatsApp(event) {
-  event.preventDefault();
-  let name = document.getElementById("name").value;
-  let phone = document.getElementById("phone").value;
-  let brand = document.getElementById("brand").value;
-  let message = document.getElementById("message").value;
-  let address = document.getElementById("address").value;
+<!-- Floating call button -->
+<section>
+  <a href="tel:+48721988949" class="floating-call-button">📞</a>
+</section>
 
-  let text = `🌪️ NAPRAWA SUSZARKI - SZCZECIN\n\n` +
-             `👤 Imię: ${name}\n` +
-             `📞 Telefon: ${phone}\n` +
-             `🏠 Adres: ${address}\n` +
-             `🔧 Marka/model: ${brand}\n` +
-             `❗ Problem: ${message}\n\n` +
-             `📍 Miasto: Szczecin`;
-             
-  let url = "https://wa.me/48721988949?text=" + encodeURIComponent(text);
-  window.open(url, '_blank');
+<style>
+.floating-call-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  font-size: 24px;
+  z-index: 9999;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  text-decoration: none;
 }
+.floating-call-button:hover {
+  background-color: #218838;
+}
+</style>
+
+<script>
+document.getElementById('orderFormSzczecin').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const formData = new FormData(this);
+  const name = formData.get('name');
+  const phone = formData.get('phone');
+  const brand = formData.get('brand');
+  const address = formData.get('address');
+  const problem = formData.get('problem');
+  const city = 'Szczecin';
+  const service = 'Naprawa Suszarek';
+
+  let message = `🔧 NOWE ZGŁOSZENIE SERWISOWE\n\n`;
+  message += `👤 Imię: ${name}\n`;
+  message += `📞 Telefon: ${phone}\n`;
+  message += `🏙️ Miasto: ${city}\n`;
+  message += `📍 Adres: ${address}\n`;
+  if(brand) message += `🔧 Marka: ${brand}\n`;
+  message += `⚙️ Usługa: ${service}\n`;
+  if(problem) message += `❗ Problem: ${problem}\n`;
+
+  const whatsappURL = `https://wa.me/48721988949?text=${encodeURIComponent(message)}`;
+  window.open(whatsappURL, '_blank');
+  alert('Dziękujemy za zgłoszenie! Za chwilę zostaniesz przekierowany do WhatsApp.');
+});
 </script>
+
+<!-- Breadcrumbs -->
+<div class="breadcrumb container">
+  <a href="../../index.html">Strona Główna</a> > <a href="../../naprawa-suszarek/index.html">Naprawa Suszarek</a> > <span>Szczecin</span>
+</div>
 
 </body>
 </html>
