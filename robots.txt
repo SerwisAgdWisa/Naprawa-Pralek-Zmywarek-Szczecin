@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://naprawaagd24.home.pl/sitemap_index.xml
+
 Sitemap: https://naprawaagd24.home.pl/sitemap.xml
