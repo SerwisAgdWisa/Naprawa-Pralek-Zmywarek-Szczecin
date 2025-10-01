@@ -3,53 +3,53 @@
 
   <!-- Strona główna -->
   <url>
-    <loc>https://naprawaagd24.home.pl/</loc>
+    <loc>https://naprawaagd24.pl/</loc>
     <priority>1.0</priority>
   </url>
 
   <!-- Naprawa Pralek -->
-  <url><loc>https://naprawaagd24.home.pl/naprawa-pralek/szczecin/</loc></url>
-  <url><loc>https://naprawaagd24.home.pl/naprawa-pralek/stargard/</loc></url>
-  <url><loc>https://naprawaagd24.home.pl/naprawa-pralek/maszewo/</loc></url>
-  <url><loc>https://naprawaagd24.home.pl/naprawa-pralek/nowogard/</loc></url>
-  <url><loc>https://naprawaagd24.home.pl/naprawa-pralek/police/</loc></url>
-  <url><loc>https://naprawaagd24.home.pl/naprawa-pralek/goleniow/</loc></url>
-  <url><loc>https://naprawaagd24.home.pl/naprawa-pralek/pyrzyce/</loc></url>
+  <url><loc>https://naprawaagd24.pl/naprawa-pralek/szczecin/</loc></url>
+  <url><loc>https://naprawaagd24.pl/naprawa-pralek/stargard/</loc></url>
+  <url><loc>https://naprawaagd24.pl/naprawa-pralek/maszewo/</loc></url>
+  <url><loc>https://naprawaagd24.pl/naprawa-pralek/nowogard/</loc></url>
+  <url><loc>https://naprawaagd24.pl/naprawa-pralek/police/</loc></url>
+  <url><loc>https://naprawaagd24.pl/naprawa-pralek/goleniow/</loc></url>
+  <url><loc>https://naprawaagd24.pl/naprawa-pralek/pyrzyce/</loc></url>
 
   <!-- Naprawa Zmywarek -->
-  <url><loc>https://naprawaagd24.home.pl/naprawa-zmywarek/szczecin/</loc></url>
-  <url><loc>https://naprawaagd24.home.pl/naprawa-zmywarek/stargard/</loc></url>
-  <url><loc>https://naprawaagd24.home.pl/naprawa-zmywarek/maszewo/</loc></url>
-  <url><loc>https://naprawaagd24.home.pl/naprawa-zmywarek/nowogard/</loc></url>
-  <url><loc>https://naprawaagd24.home.pl/naprawa-zmywarek/police/</loc></url>
-  <url><loc>https://naprawaagd24.home.pl/naprawa-zmywarek/goleniow/</loc></url>
-  <url><loc>https://naprawaagd24.home.pl/naprawa-zmywarek/pyrzyce/</loc></url>
+  <url><loc>https://naprawaagd24.pl/naprawa-zmywarek/szczecin/</loc></url>
+  <url><loc>https://naprawaagd24.pl/naprawa-zmywarek/stargard/</loc></url>
+  <url><loc>https://naprawaagd24.pl/naprawa-zmywarek/maszewo/</loc></url>
+  <url><loc>https://naprawaagd24.pl/naprawa-zmywarek/nowogard/</loc></url>
+  <url><loc>https://naprawaagd24.pl/naprawa-zmywarek/police/</loc></url>
+  <url><loc>https://naprawaagd24.pl/naprawa-zmywarek/goleniow/</loc></url>
+  <url><loc>https://naprawaagd24.pl/naprawa-zmywarek/pyrzyce/</loc></url>
 
   <!-- Naprawa Piekarnikow -->
-  <url><loc>https://naprawaagd24.home.pl/naprawa-piekarnikow/szczecin/</loc></url>
-  <url><loc>https://naprawaagd24.home.pl/naprawa-piekarnikow/stargard/</loc></url>
-  <url><loc>https://naprawaagd24.home.pl/naprawa-piekarnikow/maszewo/</loc></url>
-  <url><loc>https://naprawaagd24.home.pl/naprawa-piekarnikow/nowogard/</loc></url>
-  <url><loc>https://naprawaagd24.home.pl/naprawa-piekarnikow/police/</loc></url>
-  <url><loc>https://naprawaagd24.home.pl/naprawa-piekarnikow/goleniow/</loc></url>
-  <url><loc>https://naprawaagd24.home.pl/naprawa-piekarnikow/pyrzyce/</loc></url>
+  <url><loc>https://naprawaagd24.pl/naprawa-piekarnikow/szczecin/</loc></url>
+  <url><loc>https://naprawaagd24.pl/naprawa-piekarnikow/stargard/</loc></url>
+  <url><loc>https://naprawaagd24.pl/naprawa-piekarnikow/maszewo/</loc></url>
+  <url><loc>https://naprawaagd24.pl/naprawa-piekarnikow/nowogard/</loc></url>
+  <url><loc>https://naprawaagd24.pl/naprawa-piekarnikow/police/</loc></url>
+  <url><loc>https://naprawaagd24.pl/naprawa-piekarnikow/goleniow/</loc></url>
+  <url><loc>https://naprawaagd24.pl/naprawa-piekarnikow/pyrzyce/</loc></url>
 
   <!-- Naprawa Suszarek -->
-  <url><loc>https://naprawaagd24.home.pl/naprawa-suszarek/szczecin/</loc></url>
-  <url><loc>https://naprawaagd24.home.pl/naprawa-suszarek/stargard/</loc></url>
-  <url><loc>https://naprawaagd24.home.pl/naprawa-suszarek/maszewo/</loc></url>
-  <url><loc>https://naprawaagd24.home.pl/naprawa-suszarek/nowogard/</loc></url>
-  <url><loc>https://naprawaagd24.home.pl/naprawa-suszarek/police/</loc></url>
-  <url><loc>https://naprawaagd24.home.pl/naprawa-suszarek/goleniow/</loc></url>
-  <url><loc>https://naprawaagd24.home.pl/naprawa-suszarek/pyrzyce/</loc></url>
+  <url><loc>https://naprawaagd24.pl/naprawa-suszarek/szczecin/</loc></url>
+  <url><loc>https://naprawaagd24.pl/naprawa-suszarek/stargard/</loc></url>
+  <url><loc>https://naprawaagd24.pl/naprawa-suszarek/maszewo/</loc></url>
+  <url><loc>https://naprawaagd24.pl/naprawa-suszarek/nowogard/</loc></url>
+  <url><loc>https://naprawaagd24.pl/naprawa-suszarek/police/</loc></url>
+  <url><loc>https://naprawaagd24.pl/naprawa-suszarek/goleniow/</loc></url>
+  <url><loc>https://naprawaagd24.pl/naprawa-suszarek/pyrzyce/</loc></url>
 
   <!-- Naprawa Lodówek -->
-  <url><loc>https://naprawaagd24.home.pl/naprawa-lodowek/szczecin/</loc></url>
-  <url><loc>https://naprawaagd24.home.pl/naprawa-lodowek/stargard/</loc></url>
-  <url><loc>https://naprawaagd24.home.pl/naprawa-lodowek/maszewo/</loc></url>
-  <url><loc>https://naprawaagd24.home.pl/naprawa-lodowek/nowogard/</loc></url>
-  <url><loc>https://naprawaagd24.home.pl/naprawa-lodowek/police/</loc></url>
-  <url><loc>https://naprawaagd24.home.pl/naprawa-lodowek/goleniow/</loc></url>
-  <url><loc>https://naprawaagd24.home.pl/naprawa-lodowek/pyrzyce/</loc></url>
+  <url><loc>https://naprawaagd24.pl/naprawa-lodowek/szczecin/</loc></url>
+  <url><loc>https://naprawaagd24.pl/naprawa-lodowek/stargard/</loc></url>
+  <url><loc>https://naprawaagd24.pl/naprawa-lodowek/maszewo/</loc></url>
+  <url><loc>https://naprawaagd24.pl/naprawa-lodowek/nowogard/</loc></url>
+  <url><loc>https://naprawaagd24.pl/naprawa-lodowek/police/</loc></url>
+  <url><loc>https://naprawaagd24.pl/naprawa-lodowek/goleniow/</loc></url>
+  <url><loc>https://naprawaagd24.pl/naprawa-lodowek/pyrzyce/</loc></url>
 
 </urlset>

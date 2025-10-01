@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 
-Sitemap: https://naprawaagd24.home.pl/sitemap.xml
+Sitemap: https://naprawaagd24.pl/sitemap.xml
