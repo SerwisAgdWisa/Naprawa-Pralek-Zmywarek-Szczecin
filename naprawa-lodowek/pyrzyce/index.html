@@ -215,10 +215,10 @@ function sendToWhatsApp(event) {
   let text = `🧊 NAPRAWA LODÓWKI\n\n` +
              `👤 Imię: ${name}\n` +
              `📞 Telefon: ${phone}\n` +
-             `🏠 Adres: ${address}, ${city}\n` +
+             `🏠 Adres: ${address}\n` +
              `🧾 Marka/model: ${brand}\n` +
              `❗ Problem: ${message}`;
-  
+             `📍 Miasto: Pyrzyce`;
   let url = "https://api.whatsapp.com/send?phone=48721988949&text=" + encodeURIComponent(text);
   window.open(url, '_blank');
   alert("Twoje zgłoszenie zostało wysłane na WhatsApp!");
