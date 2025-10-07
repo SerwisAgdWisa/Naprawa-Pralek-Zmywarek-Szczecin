@@ -45,7 +45,13 @@
     </div>
   </div>
 </header>
-
+section class="hero">
+  <div class="container">
+    <h1>Naprawa Lodówek Stargard</h1>
+    <p>Naprawa lodówek w Stargadzie – naprawa u klienta, szybka diagnostyka, wymiana części i uzupełnianie czynnika chłodniczego.</p>
+    <a href="#order" class="cta-button">Zamów Serwis</a>
+  </div>
+</section>
 <section class="services">
   <div class="container">
     <h2>Najczęstsze awarie lodówek w Stargard</h2>
@@ -188,29 +194,35 @@
   background-color: #218838;
 }
 </style>
-
 <script>
-function sendToWhatsApp(event) {
-  event.preventDefault();
-  let name = document.getElementById("name").value;
-  let phone = document.getElementById("phone").value;
-  let brand = document.getElementById("brand").value;
-  let city = document.getElementById("city").value;
-  let address = document.getElementById("address").value;
-  let message = document.getElementById("message").value;
+document.getElementById('orderFormStargard').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const formData = new FormData(this);
+  const name = formData.get('name');
+  const phone = formData.get('phone');
+  const brand = formData.get('brand');
+  const address = formData.get('address');
+  const problem = formData.get('problem');
+  const time = formData.get('time');
+  const city = 'Stargard';
+  const service = 'Naprawa Lodowek';
 
-  let text = `🧊 NAPRAWA LODÓWKI\n\n` +
-             `👤 Imię: ${name}\n` +
-             `📞 Telefon: ${phone}\n` +
-             `🏠 Adres: ${address}, ${city}\n` +
-             `🧾 Marka/model: ${brand}\n` +
-             `❗ Problem: ${message}`;
-  
-  let url = "https://api.whatsapp.com/send?phone=48721988949&text=" + encodeURIComponent(text);
-  window.open(url, '_blank');
-  alert("Twoje zgłoszenie zostało wysłane na WhatsApp!");
-}
+  let message = `🔧 NOWE ZGŁOSZENIE SERWISOWE\n\n`;
+  message += `👤 Imię: ${name}\n`;
+  message += `📞 Telefon: ${phone}\n`;
+  message += `🏙️ Miasto: ${city}\n`;
+  message += `📍 Adres: ${address}\n`;
+  if(brand) message += `🔧 Marka: ${brand}\n`;
+  message += `⚙️ Usługa: ${service}\n`;
+  if(problem) message += `❗ Problem: ${problem}\n`;
+  if(time) message += `⏰ Termin: ${time}\n`;
+
+  const whatsappURL = `https://wa.me/48721988949?text=${encodeURIComponent(message)}`;
+  window.open(whatsappURL, '_blank');
+  alert('Dziękujemy za zgłoszenie! Za chwilę zostaniesz przekierowany do WhatsApp.');
+});
 </script>
+
 
 <div class="breadcrumb container">
   <a href="../index.html">Strona Główna</a> › <span>Naprawa Lodówek Stargard</span>
