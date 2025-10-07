@@ -201,29 +201,28 @@
   background-color: #218838;
 }
 </style>
-
 <script>
 function sendToWhatsApp(event) {
   event.preventDefault();
   let name = document.getElementById("name").value;
   let phone = document.getElementById("phone").value;
   let brand = document.getElementById("brand").value;
-  
-  let address = document.getElementById("address").value;
   let message = document.getElementById("message").value;
+  let address = document.getElementById("address").value;
 
-  let text = `🧊 NAPRAWA LODÓWKI\n\n` +
+  let text = `🔧 NAPRAWA PRALKI - PYRZYCE\n\n` +
              `👤 Imię: ${name}\n` +
              `📞 Telefon: ${phone}\n` +
              `🏠 Adres: ${address}\n` +
-             `🧾 Marka/model: ${brand}\n` +
-             `❗ Problem: ${message}`;
+             `🔧 Marka/model: ${brand}\n` +
+             `❗ Problem: ${message}\n\n` +
              `📍 Miasto: Pyrzyce`;
-  let url = "https://api.whatsapp.com/send?phone=48721988949&text=" + encodeURIComponent(text);
+             
+  let url = "https://wa.me/48721988949?text=" + encodeURIComponent(text);
   window.open(url, '_blank');
-  alert("Twoje zgłoszenie zostało wysłane na WhatsApp!");
 }
 </script>
+
 
 <div class="breadcrumb container">
   <a href="../index.html">Strona Główna</a> › <span>Naprawa Lodówek Pyrzyce</span>
