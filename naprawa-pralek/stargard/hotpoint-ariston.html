@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<title>Pralka Hotpoint-Ariston nie działa Stargard | Naprawa Hotpoint-Ariston | Serwis AGD WISA | 721 988 949</title>
+<meta name="description" content="Pralka Hotpoint-Ariston nie wiruje w Stargard? Pokazuje błędy? Specjalizujemy się w naprawie pralek Hotpoint-Ariston w Stargard. Mobilny serwis AGD – dojazd do klienta!">
+<link rel="canonical" href="https://naprawaagd24.pl/naprawa-pralek/stargard/hotpoint-ariston.html">
+<link rel="stylesheet" href="../../css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Naprawa Pralek Hotpoint-Ariston WISA Stargard",
+  "serviceType": "Mobilny serwis pralek Hotpoint-Ariston",
+  "telephone": "+48721988949",
+  "url": "https://naprawaagd24.pl/naprawa-pralek/stargard/hotpoint-ariston.html",
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Stargard"
+    }
+  ],
+  "makesOffer": {
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Service",
+      "name": "Naprawa pralek Hotpoint-Ariston w Stargard – z dojazdem do klienta"
+    }
+  }
+}
+</script>
+</head>
+<body>
+<header>
+ <div class="container">
+   <div class="header-content">
+     <a href="../" class="logo">WISA</a>
+     <a href="tel:+48721988949" class="phone">Tel: 721 988 949</a>
+   </div>
+ </div>
+</header>
+
+<section class="hero">
+ <div class="container">
+   <h1>Pralka Hotpoint-Ariston nie działa w Stargard?</h1>
+   <p>Specjalizujemy się w naprawie pralek Hotpoint-Ariston w Stargard. Pomagamy gdy nie wiruje, wycieka, hałasuje</p>
+   <a href="#whatsapp-form" class="cta-button">Napisz na WhatsApp</a>
+ </div>
+</section>
+
+<section class="content">
+ <div class="container">
+   <div class="brand-info">
+     <h2>Naprawa pralek Hotpoint-Ariston w Stargard</h2>
+     <p>Specjalizujemy się w naprawie marki Hotpoint-Ariston we wszystkich dzielnicach Stargard.</p>
+   </div>
+ </div>
+</section>
+
+<section id="whatsapp-form">
+ <div class="container">
+   <div class="whatsapp-form-container">
+ <div class="whatsapp-form">
+   <h3>Zgłoszenie serwisowe - Stargard</h3>
+   <form id="orderFormPralki">
+     <div class="form-group">
+       <label>Imię:</label>
+       <input type="text" name="name" placeholder="Twoje imię" required>
+     </div>
+     <div class="form-group">
+       <label>Telefon:</label>
+       <input type="tel" name="phone" placeholder="500 123 456" pattern="\+?[0-9]{9,15}" required>
+     </div>
+     <div class="form-group">
+       <label>Marka pralki:</label>
+       <select name="brand" required>
+         <option value="">-- Wybierz markę --</option>
+         <option value="Samsung" >Samsung</option>
+         <option value="LG" >LG</option>
+         <option value="Bosch" >Bosch</option>
+         <option value="Whirlpool" >Whirlpool</option>
+         <option value="Electrolux" >Electrolux</option>
+         <option value="Beko" >Beko</option>
+         <option value="Candy" >Candy</option>
+         <option value="Amica" >Amica</option>
+         <option value="Indesit" >Indesit</option>
+         <option value="Zanussi" >Zanussi</option>
+         <option value="Gorenje" >Gorenje</option>
+         <option value="Hotpoint-Ariston" selected>Hotpoint-Ariston</option>
+         <option value="Miele" >Miele</option>
+         <option value="Sharp" >Sharp</option>
+         <option value="Haier" >Haier</option>
+         <option value="Hisense" >Hisense</option>
+       </select>
+     </div>
+     <div class="form-group">
+       <label>Adres:</label>
+       <input type="text" name="address" placeholder="ul. Główna 15" required>
+     </div>
+     <div class="form-group">
+       <label>Problem:</label>
+       <textarea name="problem" rows="3" placeholder="Opisz problem z pralką"></textarea>
+     </div>
+     <div class="form-group">
+       <label>Preferowany termin:</label>
+       <input type="text" name="time" placeholder="np. jutro popołudniu">
+     </div>
+     <button type="submit" class="whatsapp-submit-btn">Wyślij zgłoszenie</button>
+   </form>
+ </div>
+</div>
+
+<script>
+document.getElementById('orderFormPralki').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const formData = new FormData(this);
+  const name = formData.get('name').trim();
+  const phone = formData.get('phone').trim();
+  const brand = formData.get('brand');
+  const address = formData.get('address').trim();
+  const problem = formData.get('problem').trim();
+  const time = formData.get('time').trim();
+  const city = 'Stargard';
+  const service = 'Naprawa Pralek';
+  if (!name || !phone || !brand || !address) {
+    alert("Proszę wypełnić wszystkie wymagane pola!");
+    return;
+  }
+  let message = 'NOWE ZGŁOSZENIE SERWISOWE\n\n';
+  message += 'Imię: ' + name + '\n';
+  message += 'Telefon: ' + phone + '\n';
+  message += 'Miasto: ' + city + '\n';
+  message += 'Adres: ' + address + '\n';
+  if (brand) message += 'Marka: ' + brand + '\n';
+  message += 'Usługa: ' + service + '\n';
+  if (problem) message += 'Problem: ' + problem + '\n';
+  if (time) message += 'Termin: ' + time + '\n';
+  const whatsappURL = 'https://wa.me/48721988949?text=' + encodeURIComponent(message);
+  window.open(whatsappURL, '_blank');
+  alert('Dziękujemy za zgłoszenie! Za chwilę zostaniesz przekierowany do WhatsApp.');
+});
+</script>
+
+<style>
+.whatsapp-form-container {
+ background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+ padding: 40px 20px;
+ margin: 40px 0;
+}
+.whatsapp-form {
+ max-width: 600px;
+ margin: 0 auto;
+ background: white;
+ padding: 30px;
+ border-radius: 15px;
+}
+.form-group {
+ margin-bottom: 20px;
+}
+.form-group label {
+ display: block;
+ margin-bottom: 8px;
+ color: #333;
+ font-weight: 600;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+ width: 100%;
+ padding: 12px;
+ border: 2px solid #e0e0e0;
+ border-radius: 8px;
+ font-size: 15px;
+ box-sizing: border-box;
+}
+.whatsapp-submit-btn {
+ width: 100%;
+ background: #25D366;
+ color: white;
+ border: none;
+ padding: 15px;
+ font-size: 18px;
+ font-weight: bold;
+ border-radius: 8px;
+ cursor: pointer;
+}
+.whatsapp-submit-btn:hover {
+ background: #1da851;
+}
+</style>
+
+ </div>
+</section>
+
+<footer>
+ <div class="container">
+   <p>2025 Naprawa Pralek Hotpoint-Ariston Stargard | Tel: 721 988 949</p>
+ </div>
+</footer>
+
+<style>
+body {
+ font-family: Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+}
+.container {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0 20px;
+}
+.header-content {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 20px 0;
+}
+.phone {
+ color: #007bff;
+ text-decoration: none;
+ font-weight: bold;
+ font-size: 18px;
+}
+.hero {
+ background: #f8f9fa;
+ padding: 60px 0;
+ text-align: center;
+}
+.brand-info {
+ background: #e9f7fe;
+ padding: 20px;
+ border-radius: 8px;
+ margin: 20px 0;
+}
+footer {
+ background: #343a40;
+ color: white;
+ text-align: center;
+ padding: 20px 0;
+ margin-top: 40px;
+}
+</style>
+</body>
+</html>
