@@ -121,5 +121,29 @@
     </footer>
     
     <a href="tel:+48721988949" class="floating-call-button">📞</a>
+     <!-- WhatsApp Script -->
+    <script>
+        function sendToWhatsApp(event) {
+            event.preventDefault();
+            let name = document.getElementById("name").value;
+            let phone = document.getElementById("phone").value;
+            let brand = document.getElementById("brand").value;
+            let message = document.getElementById("message").value;
+            let city = document.getElementById("city").value;
+            let address = document.getElementById("address").value;
+
+            let text = `🔧 NAPRAWA PRALKI\n\n` +
+                       `👤 Imię: ${name}\n` +
+                       `📞 Telefon: ${phone}\n` +
+                       `🏠 Adres: ${address}, ${city}\n` +
+                       `🔧 Marka/model: ${brand}\n` +
+                       `❗ Problem: ${message}`;
+
+            let url = "https://api.whatsapp.com/send?phone=48721988949&text=" + encodeURIComponent(text);
+            window.open(url, '_blank');
+
+            alert("Twoje zgłoszenie zostało wysłane na WhatsApp!");
+        }
+    </script>
 </body>
 </html>
