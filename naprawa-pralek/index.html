@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
     <title>Naprawa Pralek | Serwis WISA | Szczecin, Stargard, Police</title>
-    <meta name="description" content="Profesjonalny serwis i naprawa pralek w Zachodniopomorskiem. Obsługujemy: Gryfino, Stargard, Szczecin, Police, Goleniów, Nowogard, Maszewo, Pyrzyce. Szybki dojazd, diagnoza gratis.">
+    <meta name="description" content="Profesjonalny serwis i naprawa pralek w Zachodniopomorskiem. Obsługujemy: Gryfino, Stargard, Szczecin, Police, Goleniów, Nowogard, Maszewo, Pyrzyce. Szybki dojazd.">
     <link rel="canonical" href="https://naprawaagd24.pl/naprawa-pralek/">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" type="image/x-icon" href="https://naprawaagd24.pl/favicon.ico">
@@ -21,7 +21,6 @@
         </div>
     </header>
 
-    
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
@@ -36,7 +35,6 @@
         <div class="container">
             <h2>Wybierz Miasto</h2>
             <div class="cities-grid">
-                
                 <a href="gryfino/" class="city-card">
                     <h3>Gryfino</h3>
                     <p>Naprawa pralek wszystkich marek</p>
@@ -73,12 +71,57 @@
         </div>
     </section>
 
+    <!-- Contact / WhatsApp Form -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Zgłoszenie przez WhatsApp</h2>
+            <form id="whatsappForm" onsubmit="sendToWhatsApp(event)">
+                <div class="form-row">
+                    <label for="name">Imię</label>
+                    <input id="name" name="name" type="text" required>
+                </div>
+                <div class="form-row">
+                    <label for="phone">Telefon</label>
+                    <input id="phone" name="phone" type="tel" placeholder="+48..." required>
+                </div>
+                <div class="form-row">
+                    <label for="city">Miasto</label>
+                    <select id="city" name="city" required>
+                        <option value="">Wybierz...</option>
+                        <option>Gryfino</option>
+                        <option>Stargard</option>
+                        <option>Szczecin</option>
+                        <option>Police</option>
+                        <option>Goleniów</option>
+                        <option>Nowogard</option>
+                        <option>Maszewo</option>
+                        <option>Pyrzyce</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="address">Adres (opcjonalnie)</label>
+                    <input id="address" name="address" type="text">
+                </div>
+                <div class="form-row">
+                    <label for="brand">Marka / model</label>
+                    <input id="brand" name="brand" type="text" required>
+                </div>
+                <div class="form-row">
+                    <label for="message">Opis problemu</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <div class="form-row">
+                    <button type="submit" class="cta-button">Wyślij przez WhatsApp</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
     <!-- Common Problems -->
     <section class="services">
         <div class="container">
             <h2>Najczęstsze Problemy z Pralkami</h2>
             <div class="services-grid">
-                
                 <div class="service-card">
                     <div class="service-icon">🔄</div>
                     <h3>Pralka nie wiruje</h3>
@@ -112,37 +155,52 @@
             </div>
         </div>
     </section>
-    
 
     <footer>
         <div class="container">
             <p>&copy; 2025 Serwis AGD WISA | Tel: 721 988 949</p>
         </div>
     </footer>
-    
+
     <a href="tel:+48721988949" class="floating-call-button">📞</a>
-     <!-- WhatsApp Script -->
+
+    <!-- WhatsApp Script -->
     <script>
         function sendToWhatsApp(event) {
             event.preventDefault();
-            let name = document.getElementById("name").value;
-            let phone = document.getElementById("phone").value;
-            let brand = document.getElementById("brand").value;
-            let message = document.getElementById("message").value;
-            let city = document.getElementById("city").value;
-            let address = document.getElementById("address").value;
 
-            let text = `🔧 NAPRAWA PRALKI\n\n` +
-                       `👤 Imię: ${name}\n` +
-                       `📞 Telefon: ${phone}\n` +
-                       `🏠 Adres: ${address}, ${city}\n` +
-                       `🔧 Marka/model: ${brand}\n` +
-                       `❗ Problem: ${message}`;
+            // Получаем элементы (будут не-null, т.к. форма добавлена)
+            let name = document.getElementById("name").value.trim();
+            let phone = document.getElementById("phone").value.trim();
+            let brand = document.getElementById("brand").value.trim();
+            let message = document.getElementById("message").value.trim();
+            let city = document.getElementById("city").value.trim();
+            let address = document.getElementById("address").value.trim();
 
-            let url = "https://api.whatsapp.com/send?phone=48721988949&text=" + encodeURIComponent(text);
+            // Простая валидация номера (можно расширить)
+            if (!phone) {
+                alert("Proszę podać numer telefonu.");
+                return;
+            }
+
+            let text = "🔧 NAPRAWA PRALKI\n\n" +
+                       "👤 Imię: " + name + "\n" +
+                       "📞 Telefon: " + phone + "\n" +
+                       "🏠 Adres: " + (address ? address + ", " + city : city) + "\n" +
+                       "🔧 Marka/model: " + brand + "\n" +
+                       "❗ Problem: " + message;
+
+            // Номер принят в международном формате без пробелов: 48XXXXXXXXX
+            // Ваш текущий номер: 48721988949 (ok)
+            const targetNumber = "48721988949";
+            const url = "https://api.whatsapp.com/send?phone=" + encodeURIComponent(targetNumber) + "&text=" + encodeURIComponent(text);
+
+            // Открыть в новом окне/вкладке — может блокироваться попап-блокером в некоторых браузерах
             window.open(url, '_blank');
 
+            // Можно очистить форму или показать сообщение
             alert("Twoje zgłoszenie zostało wysłane na WhatsApp!");
+            document.getElementById("whatsappForm").reset();
         }
     </script>
 </body>
